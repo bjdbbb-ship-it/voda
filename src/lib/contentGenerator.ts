@@ -187,11 +187,11 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     // 4. 기사 객체 생성
     const article: Article = {
         id: `auto-${Date.now()}`,
-        slug: `${topic.category}-${Date.now()}`,
+        slug: `${topic.keywords[0] || 'article'}-${Date.now()}`,
         title: topic.title,
         subtitle: topic.subtitle,
         category: topic.category,
-        author: "VODA AI",
+        author: "VODA",
         publishedAt: new Date().toISOString().split('T')[0],
         imageUrl: getImageForCategory(topic.category),
         content: content,

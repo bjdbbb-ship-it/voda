@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { ArticleImage } from "./ArticleImage";
 import { Article } from "@/lib/data";
 
 interface ArticleCardProps {
@@ -15,11 +15,10 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
             className={`group block overflow-hidden border border-transparent hover:border-border/50 transition-all duration-300 ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
         >
             <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
-                <Image
+                <ArticleImage
                     src={article.imageUrl}
                     alt={article.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
 

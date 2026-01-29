@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, Share2 } from "lucide-react";
+import { ArticleImage } from "@/components/magazine/ArticleImage";
 import { articles } from "@/lib/data";
 
 interface ArticlePageProps {
@@ -29,11 +29,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <article className="min-h-screen bg-background">
             {/* Hero Header */}
             <div className="relative h-[60vh] w-full">
-                <Image
+                <ArticleImage
                     src={article.imageUrl}
                     alt={article.title}
-                    fill
-                    className="object-cover"
                     priority
                 />
                 <div className="absolute inset-0 bg-black/40" />
@@ -141,11 +139,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                                     {articles.filter(a => a.id !== article.id).slice(0, 3).map(rec => (
                                         <Link key={rec.id} href={`/article/${rec.slug}`} className="group block">
                                             <div className="aspect-video relative mb-3 overflow-hidden rounded bg-muted">
-                                                <Image
+                                                <ArticleImage
                                                     src={rec.imageUrl}
                                                     alt={rec.title}
-                                                    fill
-                                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    className="group-hover:scale-105 transition-transform duration-500"
                                                 />
                                             </div>
                                             <h5 className="font-serif font-bold text-primary group-hover:text-secondary transition-colors">

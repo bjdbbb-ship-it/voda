@@ -20,7 +20,7 @@ export const articles: Article[] = [
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-28",
-        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=3000&auto=format&fit=crop",
+        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop",
         content: `
 ## 더 작고 강력하게: 미니 믹솔로지의 부상
 
@@ -46,7 +46,7 @@ Doghouse Distillery의 설립자 Katherine Saunders는 말합니다. "재생 농
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=3000&auto=format&fit=crop",
+        imageUrl: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=1200&auto=format&fit=crop",
         content: `
 ## 경계를 허무는 협업의 시대
 
@@ -72,9 +72,9 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         title: "2026년 아메리칸 위스키의 새로운 시대: 성숙기와 라이의 혁명",
         subtitle: "급성장의 시대를 넘어 품질과 다양성으로 향하는 버번과 라이 위스키의 미래",
         category: "아메리칸 위스키",
-        author: "VODA AI",
+        author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=3000&auto=format&fit=crop",
+        imageUrl: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=1200&auto=format&fit=crop",
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -197,9 +197,9 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         title: "위스키 레시피의 탄생: 마스터 블렌더의 비밀스러운 창작 과정",
         subtitle: "아이디어에서 병입까지, 하나의 위스키가 완성되는 정교한 설계도",
         category: "위스키 101",
-        author: "VODA AI",
+        author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?q=80&w=3000&auto=format&fit=crop",
+        imageUrl: "https://images.unsplash.com/photo-1594911776510-9f57912bc780?q=80&w=1200&auto=format&fit=crop",
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -289,42 +289,45 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
     },
     {
         id: "auto-1769674708306",
-        slug: "컬렉팅-1769674708306",
+        slug: "whisky-investment-trends-2025",
         title: "2025년 경매 최고가 기록: 위스키 투자의 현주소",
-        subtitle: "소더비와 크리스티 경매에서 주목받은 희귀 위스키들",
+        subtitle: "소더비와 크리스티 경매에서 주목받은 희귀 위스키들과 투자의 미래",
         category: "컬렉팅",
-        author: "VODA AI",
+        author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3000&auto=format&fit=crop",
-        content: `위스키는 단순한 음료를 넘어 투자와 컬렉션의 대상이 되었습니다. 2025년 경매 최고가 기록: 위스키 투자의 현주소를 통해 현명한 컬렉터가 되는 방법을 알아봅시다.
+        imageUrl: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=1200&auto=format&fit=crop",
+        content: `
+## 위스키, 이제는 '대체 투자'의 중심에 서다
 
+위스키는 단순한 기호품을 넘어 이제 예술품과 같은 '대체 투자' 자산으로 확고히 자리 잡았습니다. 2025년 한 해 동안 소더비(Sotheby's)와 크리스티(Christie's) 등 세계적인 경매장에서 기록된 수치들은 위스키 시장의 뜨거운 열기를 그대로 보여줍니다.
 
+## 2025년 경매장을 뒤흔든 주인공들
+
+지난 한 해 동안 가장 주목받은 것은 역시 '맥켈란(The Macallan)'이었습니다. 초희귀 빈티지 라인업인 'Fine & Rare' 시리즈 중 하나가 수십억 원대에 낙찰되며 다시 한번 왕좌를 지켰습니다. 하지만 맥켈란만이 전부는 아니었습니다.
+
+1. **포트 엘런(Port Ellen) 45년**: 폐쇄되었다가 다시 문을 연 이 증류소의 올드 빈티지는 희소성 때문에 가격이 천정부지로 치솟았습니다.
+2. **카루이자와(Karuizawa) 50년**: 일본의 전설적인 폐쇄 증류소 원액은 여전히 아시아 시장을 중심으로 강력한 투자가치를 입증했습니다.
+3. **스프링뱅크(Springbank) 로컬 발리**: 크래프트 위스키 팬들 사이에서 신격화되는 이 브랜드의 한정판 또한 경매 시장의 다크호스로 떠올렀습니다.
+
+## 현명한 위스키 투자를 위한 3가지 법칙
+
+위스키 투자는 수익률이 높을 수 있지만, 그만큼 리스크도 존재합니다. 2026년을 준비하는 컬렉터라면 다음 세 가지를 기억해야 합니다.
+
+### 1. '희소성'이 모든 것을 결정한다
+단순한 한정판보다는 증류소의 폐쇄 정보, 숙성 연수, 그리고 병입 개수가 명확히 적은 기획물을 노려야 합니다.
+
+### 2. 브랜드의 '팬덤'을 이해하라
+맥켈란, 스프링뱅크, 야마자키처럼 전 세계적으로 탄탄한 팬층을 거느린 브랜드는 하락장에서도 방어력이 뛰어납니다.
+
+### 3. 상태와 보관(Condition & Storage)
+라벨의 손상 여부, 코크의 상태, 그리고 리필 여부 등은 경매 가에 결정적인 영향을 미칩니다. 일정한 온도와 습도가 유지되는 곳에서 '세워서' 보관하는 것이 원칙입니다.
 
 ## 마치며
 
-소더비와 크리스티 경매에서 주목받은 희귀 위스키들 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+위스키 투자는 단순히 돈을 쫓는 과정이 아니라, 한 병의 술에 담긴 시간과 문화를 소유하는 과정입니다. 오늘 소개한 정보들이 여러분을 더 현명하고 행복한 위스키 컬렉터의 길로 안내하기를 바랍니다. 
 
-다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
-        tags: ["auction", "investment", "rare", "collectible", "컬렉팅"],
-    },
-    {
-        id: "auto-1769674725163",
-        slug: "컬렉팅-1769674725163",
-        title: "2025년 경매 최고가 기록: 위스키 투자의 현주소",
-        subtitle: "소더비와 크리스티 경매에서 주목받은 희귀 위스키들",
-        category: "컬렉팅",
-        author: "VODA AI",
-        publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3000&auto=format&fit=crop",
-        content: `위스키는 단순한 음료를 넘어 투자와 컬렉션의 대상이 되었습니다. 2025년 경매 최고가 기록: 위스키 투자의 현주소를 통해 현명한 컬렉터가 되는 방법을 알아봅시다.
-
-
-
-## 마치며
-
-소더비와 크리스티 경매에서 주목받은 희귀 위스키들 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
-
-다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃
+        `,
         tags: ["auction", "investment", "rare", "collectible", "컬렉팅"],
     }
 ];
