@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:article": "tsx scripts/generateDailyArticle.js"
+    "generate:article": "tsx scripts/generateDailyArticle.js",
+    "generate:deploy": "tsx scripts/generateDailyArticle.js --push"
   },
   "dependencies": {
     "clsx": "^2.1.1",

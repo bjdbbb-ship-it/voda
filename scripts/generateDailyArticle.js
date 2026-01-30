@@ -12,9 +12,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
-// TypeScript 파일을 직접 실행하기 위해 ts-node 사용
-// 또는 빌드된 파일 사용
 async function main() {
     try {
         console.log('🚀 일일 위스키 기사 생성 시작...\n');
@@ -77,6 +76,29 @@ ${newArticleString}
         fs.writeFileSync(dataFilePath, dataContent, 'utf-8');
 
         console.log('\n💾 data.ts 파일이 업데이트되었습니다.');
+
+        // Git Push 자동화 (GitHub Actions 환경이거나 --push 인자가 있을 경우)
+        const shouldPush = process.env.GITHUB_ACTIONS === 'true' || process.argv.includes('--push');
+
+        if (shouldPush) {
+            try {
+                console.log('📤 변경 사항을 GitHub에 푸시하는 중...');
+
+                if (process.env.GITHUB_ACTIONS !== 'true') {
+                    // 로컬 환경에서의 푸시
+                    execSync('git add src/lib/data.ts');
+                    execSync(`git commit -m "🤖 Add daily whisky article [${new Date().toISOString().split('T')[0]}]"`);
+                    execSync('git push');
+                    console.log('✅ 성공적으로 푸시되었습니다! 잠시 후 배포가 완료됩니다.');
+                } else {
+                    console.log('⚙️ GitHub Actions 환경입니다. 워크플로우의 다음 스텝에서 푸시를 진행합니다.');
+                }
+            } catch (error) {
+                console.warn('⚠️ Git Push 중 주의사항:', error.message);
+                console.log('💡 수동으로 푸시가 필요할 수 있습니다.');
+            }
+        }
+
         console.log(`\n🎉 완료! 새 기사가 성공적으로 추가되었습니다.`);
         console.log(`\n📰 사이트를 확인하세요: http://localhost:3000\n`);
 

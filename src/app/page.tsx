@@ -5,7 +5,8 @@ export default function Home() {
   // Sort articles by date (descending) and filter future posts
   const publishedArticles = articles
     .filter((article) => new Date(article.publishedAt) <= new Date())
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .slice(0, 10); // 표시 개수 제한
 
   return (
     <div className="flex flex-col min-h-screen">

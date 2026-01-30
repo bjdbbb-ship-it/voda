@@ -28,12 +28,15 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
             </div>
 
             <div className="py-6 pr-4">
-                <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-medium tracking-widest uppercase text-secondary">
-                        {article.category}
+                <div className="flex items-center gap-2 mb-3">
+                    <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold tracking-widest uppercase border ${article.category === "리뷰" ? "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-800" :
+                            article.category === "팟캐스트" || article.category === "인터뷰" ? "bg-indigo-100 text-indigo-800 border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-800" :
+                                article.category === "뉴스" ? "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800" :
+                                    "text-secondary border-transparent"
+                        }`}>
+                        {['팟캐스트', '인터뷰'].includes(article.category) && "🎙️ "}{article.category}
                     </span>
-                    <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
-                    <span className="text-xs text-muted-foreground">
+                    <span className="text-xs text-muted-foreground ml-1">
                         {article.publishedAt}
                     </span>
                 </div>

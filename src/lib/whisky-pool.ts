@@ -2,22 +2,22 @@ import { Whisky } from "./data";
 
 export const whiskyPool: Partial<Whisky>[] = [
     // --- Islay (Peaty) ---
-    { id: "p1", name: "Lagavulin 12 Year Old Special Release", type: "Single Malt", region: "Islay", basePrice: 150, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" }, availableDate: "2026-01-29" },
-    { id: "p2", name: "Ardbeg Corryvreckan", type: "Single Malt", region: "Islay", basePrice: 120, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" }, availableDate: "2026-01-29" },
-    { id: "p3", name: "Laphroaig Quarter Cask", type: "Single Malt", region: "Islay", basePrice: 60, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" }, availableDate: "2026-01-29" },
-    { id: "p4", name: "Bowmore 15 Year Old", type: "Single Malt", region: "Islay", basePrice: 90, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" }, availableDate: "2026-01-30" },
-    { id: "p5", name: "Caol Ila Moch", type: "Single Malt", region: "Islay", basePrice: 65, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "brown" }, availableDate: "2026-01-30" },
+    { id: "p1", name: "Lagavulin 12 Year Old Special Release", type: "Single Malt", region: "Islay", basePrice: 150, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" }, imageUrl: "", availableDate: "2026-01-29" },
+    { id: "p2", name: "Ardbeg Corryvreckan", type: "Single Malt", region: "Islay", basePrice: 120, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" }, imageUrl: "", availableDate: "2026-01-29" },
+    { id: "p3", name: "Laphroaig Quarter Cask", type: "Single Malt", region: "Islay", basePrice: 60, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" }, imageUrl: "", availableDate: "2026-01-29" },
+    { id: "p4", name: "Bowmore 15 Year Old", type: "Single Malt", region: "Islay", basePrice: 90, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-30" },
+    { id: "p5", name: "Caol Ila Moch", type: "Single Malt", region: "Islay", basePrice: 65, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "brown" }, imageUrl: "", availableDate: "2026-01-30" },
 
     // --- Speyside / Highland (Sherry/Sweet) ---
-    { id: "p6", name: "Aberlour A'bunadh Batch 75", type: "Single Malt", region: "Speyside", basePrice: 115, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "mahogany", glassColor: "clear" }, availableDate: "2026-01-30" },
-    { id: "p7", name: "GlenDronach 15 Year Old Revival", type: "Single Malt", region: "Highland", basePrice: 100, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "brown" }, availableDate: "2026-01-31" },
-    { id: "p8", name: "The Balvenie 14 Year Old Caribbean Cask", type: "Single Malt", region: "Speyside", basePrice: 85, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" }, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Balvenie_DoubleWood.jpg", availableDate: "2026-01-31" },
-    { id: "p9", name: "Glenmorangie 18 Year Old", type: "Single Malt", region: "Highland", basePrice: 140, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" }, availableDate: "2026-01-31" },
-    { id: "p10", name: "Dalmore King Alexander III", type: "Single Malt", region: "Highland", basePrice: 280, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" }, availableDate: "2026-01-31" },
+    { id: "p6", name: "Aberlour A'bunadh Batch 75", type: "Single Malt", region: "Speyside", basePrice: 115, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "mahogany", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-30" },
+    { id: "p7", name: "GlenDronach 15 Year Old Revival", type: "Single Malt", region: "Highland", basePrice: 100, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "brown" }, imageUrl: "", availableDate: "2026-01-31" },
+    { id: "p8", name: "The Balvenie 14 Year Old Caribbean Cask", type: "Single Malt", region: "Speyside", basePrice: 85, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-31" },
+    { id: "p9", name: "Glenmorangie 18 Year Old", type: "Single Malt", region: "Highland", basePrice: 140, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-31" },
+    { id: "p10", name: "Dalmore King Alexander III", type: "Single Malt", region: "Highland", basePrice: 280, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-31" },
 
     // --- Japanese (Faceted/Elegant) ---
     { id: "p11", name: "Hibiki 21 Year Old", type: "Blended", region: "Japan", basePrice: 1200, currency: "USD", visualProfile: { bottleShape: "faceted", liquidColor: "mahogany", glassColor: "clear" }, availableDate: "2026-02-01" },
-    { id: "p11-v2", name: "Hibiki Japanese Harmony", type: "Blended", region: "Japan", basePrice: 110, currency: "USD", visualProfile: { bottleShape: "faceted", liquidColor: "gold", glassColor: "clear" }, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg/800px-Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg", availableDate: "2026-01-29" },
+    { id: "p11-v2", name: "Hibiki Japanese Harmony", type: "Blended", region: "Japan", basePrice: 110, currency: "USD", visualProfile: { bottleShape: "faceted", liquidColor: "gold", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-29" },
     { id: "p12", name: "Yamazaki 18 Year Old", type: "Single Malt", region: "Japan", basePrice: 1500, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" }, availableDate: "2026-02-01" },
     { id: "p13", name: "Hakushu 18 Year Old", type: "Single Malt", region: "Japan", basePrice: 1300, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" }, availableDate: "2026-02-01" },
 
@@ -47,6 +47,6 @@ export const whiskyPool: Partial<Whisky>[] = [
     { id: "p34", name: "Nikka Yoichi 10 Year Old", type: "Single Malt", region: "Japan", basePrice: 150, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" }, availableDate: "2026-02-06" },
     { id: "p35", name: "Kavalan Solist Vinho Barrique", type: "Single Malt", region: "Taiwan", basePrice: 250, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" }, availableDate: "2026-02-06" },
     { id: "p36", name: "Amrut Intermediate Sherry", type: "Single Malt", region: "India", basePrice: 140, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" }, availableDate: "2026-02-06" },
-    { id: "p37", name: "Monkey Shoulder", type: "Blended Malt", region: "Scotland", basePrice: 45, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" }, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Monkey_Shoulder_scotch_bottle.jpg", availableDate: "2026-01-29" },
-    { id: "p38", name: "Oban 14 Year Old", type: "Single Malt", region: "Highland", basePrice: 95, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" }, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/87/Oban_14yo.jpg", availableDate: "2026-01-29" },
+    { id: "p37", name: "Monkey Shoulder", type: "Blended Malt", region: "Scotland", basePrice: 45, currency: "USD", visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-29" },
+    { id: "p38", name: "Oban 14 Year Old", type: "Single Malt", region: "Highland", basePrice: 95, currency: "USD", visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" }, imageUrl: "", availableDate: "2026-01-29" },
 ];

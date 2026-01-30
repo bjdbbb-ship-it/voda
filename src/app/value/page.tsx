@@ -193,7 +193,7 @@ export default function ValueAssessmentPage() {
                                 />
                                 <Sparkles className="absolute inset-0 m-auto w-12 h-12 text-secondary animate-bounce" />
                             </div>
-                            <h3 className="font-serif text-2xl font-bold text-primary mb-3 text-glow">VODA AI가 전 세계 신규 정보를 분석 중입니다</h3>
+                            <h3 className="font-serif text-2xl font-bold text-primary mb-3 text-glow">VODA가 전 세계 신규 정보를 분석 중입니다</h3>
                             <p className="text-sm text-secondary font-medium tracking-wide">Daily Shot, Whiskybase, TWE 데이터를 실시간 대조 중...</p>
                         </motion.div>
                     )}
@@ -290,7 +290,7 @@ export default function ValueAssessmentPage() {
                                 className="px-10 py-4 bg-primary text-white rounded-xl text-sm font-bold flex items-center gap-3 mx-auto hover:bg-primary/90 transition-all shadow-2xl hover:-translate-y-1 active:scale-95"
                             >
                                 <Sparkles className="w-5 h-5 text-secondary" />
-                                VODA AI 글로벌 정밀 검색 실행
+                                VODA 글로벌 정밀 검색 실행
                             </button>
                         )}
                         <button
@@ -314,7 +314,7 @@ export default function ValueAssessmentPage() {
                             className="text-sm font-bold text-secondary hover:text-primary transition-all flex items-center gap-3 mx-auto bg-white px-6 py-3 rounded-full shadow-md border border-secondary/20"
                         >
                             <Sparkles className="w-4 h-4 fill-secondary" />
-                            찾으시는 명백한 가치가 보이지 않나요? VODA AI로 글로벌 딥스캔
+                            찾으시는 명백한 가치가 보이지 않나요? VODA로 글로벌 딥스캔
                         </button>
                     </motion.div>
                 )}

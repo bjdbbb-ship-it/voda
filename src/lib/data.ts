@@ -20,7 +20,7 @@ export const articles: Article[] = [
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-28",
-        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop",
+        imageUrl: "", // Elegant mini cocktail
         content: `
 ## 더 작고 강력하게: 미니 믹솔로지의 부상
 
@@ -46,7 +46,7 @@ Doghouse Distillery의 설립자 Katherine Saunders는 말합니다. "재생 농
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=1200&auto=format&fit=crop",
+        imageUrl: "", // Surreal moody whiskey
         content: `
 ## 경계를 허무는 협업의 시대
 
@@ -74,7 +74,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "아메리칸 위스키",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=1200&auto=format&fit=crop",
+        imageUrl: "", // Modern bourbon distillery vibe
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -199,7 +199,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "위스키 101",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "https://images.unsplash.com/photo-1594911776510-9f57912bc780?q=80&w=1200&auto=format&fit=crop",
+        imageUrl: "", // Master blender laboratory vibe
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -215,7 +215,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 ## 2단계: 핵심 원료의 선택 (The Foundation)
 
-![위스키 테이스팅용 노징 글래스](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Whisky_glass.jpg/800px-Whisky_glass.jpg)
+
 
 위스키의 뼈대를 이루는 것은 보리, 옥수수, 호밀과 같은 곡물입니다. 하지만 같은 보리라도 품종에 따라, 그리고 건조 방식(피트 사용 여부 등)에 따라 결과물은 하늘과 땅 차이입니다. 
 
@@ -233,7 +233,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 ## 4단계: 블렌딩과 미세 조정 (Blending & Fine-tuning)
 
-![숙성 중인 위스키 오크통들](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Whisky_barrels.jpg/800px-Whisky_barrels.jpg)
+
 
 수천 개의 오크통 중에서 목표한 맛에 가장 근접한 원액들을 골라냅니다. '리드 위스키(Lead Whisky)'라는 중심 원액을 세우고, 그 주변을 보완할 다른 원액들을 한 방울 단위로 섞어보며 최적의 비율을 찾습니다.
 
@@ -295,7 +295,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "컬렉팅",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=1200&auto=format&fit=crop",
+        imageUrl: "", // Ornate luxury collector vibe
         content: `
 ## 위스키, 이제는 '대체 투자'의 중심에 서다
 
@@ -329,6 +329,50 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃
         `,
         tags: ["auction", "investment", "rare", "collectible", "컬렉팅"],
+    }
+    ,
+    {
+        id: "auto-1769796809664",
+        slug: "prohibition-1769796809664",
+        title: "금주령이 만든 위스키의 역사",
+        subtitle: "미국 금주령이 위스키 산업에 미친 영향",
+        category: "역사",
+        author: "VODA",
+        publishedAt: "2026-01-30",
+        imageUrl: "",
+        content: `
+## 암흑의 시대, 그러나 위스키의 황금기가 싹트다
+
+전 세계 위스키 애호가들이 필청하는 팟캐스트, 'WhiskyCast'의 마크 길레스피가 최근 에피소드에서 던진 질문은 꽤 흥미로웠습니다. "만약 1920년 미국의 금주령이 없었다면, 오늘날 우리가 마시는 위스키의 맛은 지금과 같았을까?"라는 물음이었죠. 
+
+오늘 VODA는 WhiskyCast의 통찰력 있는 분석을 바탕으로, 13년간의 '고귀한 실험'이 위스키 산업에 남긴 지울 수 없는 흔적을 깊이 있게 파헤쳐 봅니다.
+
+## '약'으로 처방된 위스키: 합법과 불법의 경계
+
+금주령 시대에도 합법적으로 위스키를 구할 방법이 있었다는 사실을 알고 계셨나요? 바로 **'의료용 위스키(Medicinal Whiskey)'**입니다. 당시 의사들은 위스키가 독감부터 우울증까지 만병통치약이라 믿었고, 정부는 6개의 증류소(Glenmore, Schenley, Brown-Forman 등)에만 의료용 위스키 제조 및 유통 면허를 내주었습니다.
+
+> **Podcast Insight**: WhiskyCast에 따르면, 당시 발급된 위스키 처방전은 무려 수백만 건에 달했습니다. 현재 위스키의 명가로 불리는 브라운 포맨(Brown-Forman)이 대공황과 금주령을 버텨낸 비결도 바로 이 '합법적 약물' 면허 덕분이었습니다.
+
+## 저질 밀주의 구원투수: 칵테일 문화의 반전
+
+불법으로 유통되던 '욕조 진(Bathtub Gin)'이나 조악한 밀주는 맛이 형편없었습니다. 알코올 냄새가 너무 독해서 그대로 마실 수가 없었죠. 그래서 밀주업자들과 '스피크이지(Speakeasy)' 바텐더들은 설탕, 과일즙, 시럽을 섞어 술맛을 가리기 시작했습니다.
+
+이것이 바로 오늘날 우리가 즐기는 클래식 칵테일 문화가 폭발적으로 성장한 배경입니다. 위스키에 콜라를 섞거나 정교한 올드 패션드를 만드는 기술은 사실 **'생존을 위한 맛의 혁명'**이었습니다.
+
+## 사라진 이름들, 그리고 살아남은 거인들
+
+금주령 이전 미국에는 수천 개의 증류소가 있었습니다. 하지만 1933년 금주령이 해제되었을 때, 다시 문을 열 수 있었던 곳은 단 몇 퍼센트에 불과했습니다. 수많은 지역 증류소가 역사 속으로 사라졌고, 이는 미국 위스키 산업이 대형 자본 중심의 독과점 형태로 재편되는 결정적인 계기가 되었습니다.
+
+최근의 크래프트 증류소 붐은 사실 100년 전 금주령이 앗아갔던 '다양성'을 회복하려는 현대적인 움직임으로 해석될 수 있습니다.
+
+## 마치며: 잔 속에 담긴 투쟁의 대가
+
+마크 길레스피는 에피소드를 마무리하며 이렇게 말합니다. "위스키는 단순히 곡물의 정수를 뽑아낸 술이 아닙니다. 그것은 규제와 투쟁, 그리고 인간의 창의성이 만들어낸 역사의 결정체입니다."
+
+미국 금주령은 위스키 산업을 죽이려 했지만, 역설적으로 위스키를 더 정교하고, 더 대중적이며, 더 전설적인 존재로 만들었습니다. 오늘 밤 버번 한 잔을 따르며, 100년 전 어두운 지하실에서 위스키를 지켜냈던 이름 모를 애호가들을 위해 건배해 보는 건 어떨까요?
+
+다음에도 더 흥미로운 위스키 역사 이야기로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["prohibition", "history", "america", "bourbon", "역사", "whiskycast"],
     }
 ];
 
@@ -379,7 +423,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 10, sweet: 2, fruit: 3, spice: 5, body: 9 },
         tags: ["smoky", "medicinal", "iodine", "intense", "라프로익", "피트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Laphroaig_10_yo_bottling.jpg/800px-Laphroaig_10_yo_bottling.jpg",
+        imageUrl: "",
         description: "강렬한 피트 향과 짭조름한 바다 내음, 독보적인 개성을 가진 아일라의 대표 위스키."
     },
     {
@@ -392,7 +436,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 9, sweet: 3, fruit: 5, spice: 6, body: 8 },
         tags: ["peaty", "citrus", "sea salt", "complex", "아드벡", "피트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Ardbeg_10_years_old.jpg/800px-Ardbeg_10_years_old.jpg",
+        imageUrl: "",
         description: "피트의 스모키함 속에 숨겨진 섬세한 라임과 감귤의 단맛이 완벽한 균형을 이룹니다."
     },
     {
@@ -405,7 +449,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 8, sweet: 4, fruit: 4, spice: 5, body: 9 },
         tags: ["smoky", "rich", "dry", "powerful", "라가불린", "피트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lagavulin_16_years_old.jpg/800px-Lagavulin_16_years_old.jpg", // Closest match (Dark tall bottle) until new asset
+        imageUrl: "",
         description: "피트의 제왕. 깊고 풍부한 스모키함과 셰리 캐스크의 달콤함이 우아하게 어우러집니다."
     },
 
@@ -421,7 +465,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 5, body: 7 },
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         tags: ["sherry", "classic", "luxury", "macallan", "맥켈란", "셰리"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Macallan_12.jpg", // Real Macallan Image
+        imageUrl: "",
         description: "셰리 오크 캐스크의 정수. 말린 과일과 스파이스, 그리고 부드러운 목넘김."
     },
     {
@@ -434,7 +478,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 3, body: 5 },
         tags: ["pear", "apple", "honey", "fresh", "글렌피딕", "싱글몰트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Glenfiddich_12_years_old.jpg/800px-Glenfiddich_12_years_old.jpg", // Neutral bottle shape
+        imageUrl: "",
         description: "신선한 배와 사과 향이 특징인, 전 세계에서 가장 사랑받는 입문용 싱글 몰트."
     },
     {
@@ -448,7 +492,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 1, sweet: 7, fruit: 6, spice: 4, body: 6 },
         visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" },
         tags: ["honey", "vanilla", "smooth", "nutty", "발베니", "꿀"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Balvenie_DoubleWood.jpg", // Real Balvenie 12 Image
+        imageUrl: "",
         description: "꿀과 바닐라의 부드러움, 그리고 셰리 오크의 깊이가 조화로운 마스터피스."
     },
     {
@@ -461,7 +505,7 @@ export const whiskies: Whisky[] = [
         currency: "EUR",
         flavorProfile: { peat: 1, sweet: 7, fruit: 8, spice: 8, body: 9 },
         tags: ["strong", "sherry", "spicy", "intense", "글렌파클라스", "CS"],
-        imageUrl: "/images/whiskies/macallan-12.png", // Dark sherry match
+        imageUrl: "",
         description: "60도의 강렬함 속에 터져 나오는 진한 셰리와 과일의 풍미. 가성비 최고의 셰리 밤."
     },
 
@@ -476,7 +520,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 4, sweet: 5, fruit: 5, spice: 4, body: 5 },
         tags: ["balanced", "smoky", "versatile", "classic", "조니워커", "블렌디드"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Johnnie_Walker_Black_Label.jpg/800px-Johnnie_Walker_Black_Label.jpg",
+        imageUrl: "",
         description: "스모키함과 달콤함의 완벽한 균형. 블렌디드 위스키의 표준."
     },
     {
@@ -490,7 +534,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 1, sweet: 7, fruit: 8, spice: 3, body: 5 },
         visualProfile: { bottleShape: "faceted", liquidColor: "gold", glassColor: "clear" },
         tags: ["floral", "orange", "honey", "elegant", "히비키", "하모니", "일본위스키"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg/800px-Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg",
+        imageUrl: "",
         description: "일본의 사계를 표현한 듯한 섬세한 꽃향기와 은은한 달콤함."
     },
     // 3. Bourbon / Sweet & Spicy (Corn & Rye)
@@ -504,7 +548,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 4, spice: 5, body: 6 },
         tags: ["vanilla", "caramel", "oak", "smooth", "버팔로트레이스", "버번"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Buffalo_Trace_Bourbon.jpg/800px-Buffalo_Trace_Bourbon.jpg",
+        imageUrl: "",
         description: "바닐라, 민트, 흑설탕의 풍미가 어우러진 부드럽고 균형 잡힌 버번."
     },
     {
@@ -517,7 +561,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 3, spice: 9, body: 7 },
         tags: ["bold", "spicy", "cinnamon", "kick", "와일드터키", "버번"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wild_Turkey_101.JPG/800px-Wild_Turkey_101.JPG",
+        imageUrl: "",
         description: "높은 도수(50.5도)에서 오는 타격감과 진한 스파이시함이 매력적인 남자의 버번."
     },
     {
@@ -530,7 +574,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 5, spice: 4, body: 6 },
         tags: ["complex", "smooth", "dried fruit", "cocoa", "우드포드리저브", "버번"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Woodford_Reserve_Bourbon.jpg/800px-Woodford_Reserve_Bourbon.jpg",
+        imageUrl: "",
         description: "200가지 이상의 향이 감지된다는 복합적이고 부드러운 프리미엄 버번."
     },
     {
@@ -543,7 +587,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 4, spice: 2, body: 5 },
         tags: ["wheat", "soft", "sweet", "iconic", "메이커스마크", "버번"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Maker%27s_Mark.jpg/800px-Maker%27s_Mark.jpg",
+        imageUrl: "",
         description: "밀(Wheat)을 사용하여 쓴맛 없이 부드럽고 달콤한 맛을 자랑하는 붉은 왁스의 아이콘."
     },
     {
@@ -557,7 +601,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 5, body: 5 },
         visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" },
         tags: ["malty", "vanilla", "creamy", "cocktail", "몽키숄더", "블렌디드몰트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Monkey_Shoulder_scotch_bottle.jpg/800px-Monkey_Shoulder_scotch_bottle.jpg", // Real Monkey Shoulder Image
+        imageUrl: "",
         description: "맥아(Malt) 100% 블렌딩으로 부드러운 바닐라 향이 일품. 칵테일 베이스로도 최고."
     },
 
@@ -572,7 +616,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 6, sweet: 4, fruit: 3, spice: 9, body: 7 },
         tags: ["pepper", "sea salt", "smoky", "wild", "탈리스커", "피트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Talisker_10_Year_Old_Single_Malt_Scotch_Whisky.jpg/800px-Talisker_10_Year_Old_Single_Malt_Scotch_Whisky.jpg",
+        imageUrl: "",
         description: "바다의 짭짤함과 흑후추의 톡 쏘는 매력이 어우러진 스카이 섬의 야성."
     },
     {
@@ -585,7 +629,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 4, sweet: 6, fruit: 5, spice: 4, body: 6 },
         tags: ["heather honey", "light smoke", "balanced", "viking", "하이랜드파크", "피트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Highland_Park_12_Year_Old.jpg/800px-Highland_Park_12_Year_Old.jpg",
+        imageUrl: "",
         description: "달콤한 꿀 향과 은은한 피트 스모크가 절묘하게 어우러진 올라운더 위스키."
     },
     {
@@ -598,7 +642,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 6, body: 8 },
         tags: ["orange", "chocolate", "rich", "royalty", "달모어", "셰리"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Dalmore_12yo.jpg/800px-Dalmore_12yo.jpg",
+        imageUrl: "",
         description: "오렌지 마멀레이드와 초콜릿, 커피의 풍미가 느껴지는 화려하고 고급스러운 맛."
     },
     {
@@ -611,7 +655,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 3, body: 4 },
         tags: ["floral", "peach", "creamy", "delicate", "글렌모린지", "싱글몰트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Glenmorangie_The_Original_whisky.jpg/800px-Glenmorangie_The_Original_whisky.jpg",
+        imageUrl: "",
         description: "가장 목이 긴 증류기에서 만들어져 섬세하고 우아한 꽃향기와 과일 향이 특징."
     },
     {
@@ -625,7 +669,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 2, sweet: 5, fruit: 6, spice: 5, body: 6 },
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         tags: ["sea salt", "fruit", "dry", "coastal", "오반", "싱글몰트"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/87/Oban_14yo.jpg", // Real Oban 14 Image
+        imageUrl: "",
         description: "하이랜드와 아일랜드의 경계에 있는 듯한, 과일 향과 약간의 바다 내음, 스모키함의 조화."
     },
     {
@@ -638,7 +682,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 8, fruit: 8, spice: 4, body: 8 },
         tags: ["smooth", "velvety", "rich", "prestige", "로얄살루트", "로얄살루트21년", "명품위스키"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Royal_Salute_scotch_whiskey.jpg/800px-Royal_Salute_scotch_whiskey.jpg",
+        imageUrl: "",
         description: "여왕의 대관식을 위해 탄생한 위스키. 벨벳처럼 부드럽고 깊은 풍미의 럭셔리 블렌디드."
     },
     {
@@ -651,7 +695,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 6, body: 8 },
         tags: ["sherry bomb", "rich", "dark fruit", "글렌드로낙", "글렌드로낙12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Macallan_12.jpg/800px-Macallan_12.jpg", // Proxy
+        imageUrl: "",
         description: "진한 셰리 오크의 풍미와 달콤한 과일 향이 일품인 셰리 애호가들의 필수 코스."
     },
     {
@@ -664,7 +708,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 4, body: 6 },
         tags: ["smooth", "toffee", "balanced", "아벨라워", "아벨라워12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Balvenie_DoubleWood.jpg", // Proxy
+        imageUrl: "",
         description: "부드러운 단맛과 계피 향, 그리고 토피 사탕같은 고소함이 특징."
     },
     {
@@ -677,7 +721,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 6, sweet: 6, fruit: 5, spice: 4, body: 6 },
         tags: ["balanced smoke", "honey", "lemon", "보모어", "보모어12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bowmore_12_years_old_Scotch_whisky.jpg/800px-Bowmore_12_years_old_Scotch_whisky.jpg",
+        imageUrl: "",
         description: "피트 연기와 상큼한 레몬, 달콤한 꿀의 풍미가 조화롭게 섞인 아일라의 진수."
     },
     {
@@ -690,7 +734,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 6, spice: 3, body: 5 },
         tags: ["irish", "sherry", "smooth", "부쉬밀", "부쉬밀블랙부쉬"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "셰리 캐스크 비중이 높은 아이리시 위스키로, 실크처럼 부드러운 질감을 자랑합니다."
     },
     {
@@ -703,7 +747,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 6, body: 6 },
         tags: ["toasted", "sweet", "vanilla", "제임슨", "제임슨블랙배럴"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jameson_Signature_Reserve_%26_Jameson_Black_Barrel_Select_Reserve.jpg/800px-Jameson_Signature_Reserve_%26_Jameson_Black_Barrel_Select_Reserve.jpg",
+        imageUrl: "",
         description: "두 번 태운 오크통에서 숙성되어 더욱 진한 바닐라와 캐러멜 풍미를 보여줍니다."
     },
     {
@@ -716,7 +760,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 7, spice: 5, body: 7 },
         tags: ["triple distilled", "sherry", "complex", "오켄토션", "오켄토션쓰리우드"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Macallan_12.jpg", // Proxy
+        imageUrl: "", // Proxy
         description: "세 종류의 오크통을 거쳐 완성된, 오켄토션 특유의 부드러움과 복합적인 풍미."
     },
     {
@@ -729,7 +773,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 8, spice: 3, body: 6 },
         tags: ["unpeated islay", "floral", "clean", "브룩라디", "브룩라디클래식래디"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "피트 처리 없이 만든 아일라 위스키. 보리 본연의 맛과 신선한 꽃향기가 특징."
     },
     {
@@ -742,7 +786,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 5, sweet: 7, fruit: 7, spice: 6, body: 8 },
         tags: ["legendary", "honey head", "heather", "하이랜드파크", "하이랜드파크18년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "전 세계 위스키 평론가들의 극찬을 받은 최고의 밸런스를 가진 위스키 중 하나."
     },
     {
@@ -755,7 +799,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 7, spice: 4, body: 5 },
         tags: ["slow distillation", "unpeated", "classic", "글렌고인", "글렌고인12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "피트를 전혀 사용하지 않고 천천히 증류하여 만든, 가장 순수한 위스키의 맛."
     },
     {
@@ -768,7 +812,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 9, fruit: 8, spice: 5, body: 7 },
         tags: ["rum cask", "tropical fruit", "toffee", "발베니", "발베니14년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Balvenie_DoubleWood.jpg", // Proxy
+        imageUrl: "",
         description: "캐리비안 럼 캐스크에서 마무리하여 열대 과일의 달콤함과 부드러운 토피 향이 가득합니다."
     },
     {
@@ -781,7 +825,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 6, body: 7 },
         tags: ["port finish", "dark chocolate", "mint", "글렌모린지", "글렌모린지퀸타루반14년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "포트 와인 캐스크에서 숙성되어 다크 초콜릿과 민트의 세련된 조화를 보여줍니다."
     },
     {
@@ -794,7 +838,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 8, sweet: 4, fruit: 5, spice: 6, body: 6 },
         tags: ["smoky", "oily", "lemon bark", "쿠일라", "쿠일라12년"],
-        imageUrl: "/images/whiskies/laphroaig-10.png",
+        imageUrl: "",
         description: "가벼운 질감 속에 숨겨진 날카로운 연기와 신선한 레몬 껍질의 풍미."
     },
     {
@@ -807,7 +851,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 9, spice: 5, body: 7 },
         tags: ["tropical", "mango", "smooth", "카발란", "카발란클래식"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "대만의 고온 다습한 기후가 만든, 망고와 같은 열대 과일 향이 폭발적인 위스키."
     },
     {
@@ -820,7 +864,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 2, sweet: 7, fruit: 6, spice: 8, body: 9 },
         tags: ["strong", "spicy", "iconic bottle", "니카", "니카프롬더배럴"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nikka_From_The_Barrel.jpg/800px-Nikka_From_The_Barrel.jpg",
+        imageUrl: "",
         description: "51.4도의 강렬한 도수에도 불구하고 깊고 풍부한 꽃향기와 스파이시함이 일품."
     },
     {
@@ -833,7 +877,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 3, spice: 7, body: 7 },
         tags: ["vanilla", "high proof", "value", "에반윌리엄스", "에반윌리엄스바틀인본드"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "가성비 버번의 끝판왕. 50도의 도수에서 오는 타격감과 달콤한 바닐라의 조화."
     },
     {
@@ -846,7 +890,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 4, spice: 5, body: 6 },
         tags: ["classic bourbon", "oak", "smooth", "엘라이저크레이그", "엘라이저크레이그스몰배치"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "잘 구워진 오크통의 풍미와 달콤한 캐러멜이 입안을 가득 채웁니다."
     },
     {
@@ -859,7 +903,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 5, spice: 4, body: 6 },
         tags: ["premium", "smooth", "toffee", "믹터스", "믹터스US1스몰배치"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "엄격한 품질 관리를 거쳐 탄생한, 세련되고 우아한 프리미엄 버번."
     },
     {
@@ -872,7 +916,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 7, spice: 3, body: 7 },
         tags: ["port finish", "dessert", "chocolate", "엔젤스엔비", "엔젤스엔비버번"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "포트 와인 통에서 추가 숙성되어 초콜릿과 베리류의 달콤함이 특별한 버번."
     },
     {
@@ -885,7 +929,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 4, spice: 8, body: 8 },
         tags: ["pre-prohibition", "bold", "oak", "놉크릭", "놉크릭9년"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "금주령 이전의 강하고 묵직한 버번 스타일을 재현한 볼드한 풍미."
     },
     {
@@ -898,7 +942,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 5, body: 7 },
         tags: ["collectible", "horse stopper", "citrus", "블랑톤", "블랑톤싱글배럴"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "세계 최초의 싱글 배럴 버번. 균형 잡힌 맛과 상징적인 말 조각 뚜껑이 특징."
     },
     {
@@ -911,7 +955,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 8, spice: 3, body: 4 },
         tags: ["light", "fresh", "honey", "부쉬밀", "부쉬밀10년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "신선한 꿀과 서양배의 향이 매력적인, 가볍고 우아한 아이리시 싱글 몰트."
     },
     {
@@ -924,7 +968,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 8, body: 8 },
         tags: ["pot still", "creamy", "spice cake", "레드브레스트", "레드브레스트12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Redbreast12.jpg/800px-Redbreast12.jpg", // Stout shape proxy
+        imageUrl: "",
         description: "아이리시 위스키의 보석. 크리미한 질감과 풍부한 말린 과일, 향신료의 조화."
     },
     {
@@ -937,7 +981,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 9, spice: 5, body: 5 },
         tags: ["green apple", "fresh", "smooth", "그린스팟", "그린스팟싱글팟스틸"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "청사과의 아삭함과 신선함이 입안 가득 퍼지는 매우 깔끔하고 부드러운 위스키."
     },
     {
@@ -950,7 +994,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 6, spice: 4, body: 5 },
         tags: ["triple distilled", "sherry", "accessible", "툴라모어", "툴라모어듀12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "세 종류의 오크통 숙성을 통해 완성된, 매우 마시기 편하고 매끄러운 맛."
     },
     {
@@ -963,7 +1007,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 7, body: 8 },
         tags: ["sherry finish", "luxe", "dark nut", "레드브레스트", "레드브레스트루스타우"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "유명한 루스타우 셰리 하우스와의 협업으로 탄생한, 더욱 진하고 고소한 프리미엄 위스키."
     },
     // --- SECOND MASSIVE EXPANSION (80+ Items) ---
@@ -977,7 +1021,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 5, fruit: 8, spice: 3, body: 3 },
         tags: ["light", "floral", "lowland", "글렌킨치", "글렌킨치12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "에든버러의 정원이라 불리는 깔끔하고 가벼운 로우랜드의 대표주자."
     },
     {
@@ -990,7 +1034,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 2, sweet: 6, fruit: 7, spice: 5, body: 8 },
         tags: ["waxy", "honey", "maritime", "클라이넬리쉬", "클라이넬리쉬14년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "입안을 감싸는 왁시(Waxy)한 질감과 은은한 바다 내음이 일품인 미식가들의 위스키."
     },
     {
@@ -1003,7 +1047,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 7, body: 6 },
         tags: ["spicy", "creamy", "oak", "글렌리벳", "글렌리벳15년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "프랑스산 리무쟁 오크통을 사용하여 고소한 너트류의 향과 스파이시함이 조화로운 위스키."
     },
     {
@@ -1016,7 +1060,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 9, spice: 9, body: 9 },
         tags: ["cask strength", "sherry bomb", "heavy", "아벨라워", "아벨라워아부나흐"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Macallan_12.jpg", // Proxy
+        imageUrl: "", // Proxy
         description: "물 한 방울 섞지 않은 고도수의 강력한 셰리 폭탄. 진하고 묵직한 타격감."
     },
     {
@@ -1029,7 +1073,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 7, fruit: 8, spice: 4, body: 7 },
         tags: ["unpeated islay", "nutty", "rich", "부나하벤", "부나하벤12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "아일라 섬에서 드물게 피트 없이 만든 고소하고 달콤한 셰리 스타일 위스키."
     },
     {
@@ -1042,7 +1086,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 8, sweet: 5, fruit: 7, spice: 5, body: 6 },
         tags: ["farm distillery", "peat", "fresh", "킬호만", "킬호만마키베이"],
-        imageUrl: "/images/whiskies/ardbeg-10.png",
+        imageUrl: "",
         description: "아일라 섬의 아름다운 해변 이름을 딴, 신선한 과일과 강력한 피트의 조화."
     },
     {
@@ -1055,7 +1099,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 6, spice: 7, body: 9 },
         tags: ["meaty", "beast of dufftown", "heavy", "모틀락", "모틀락12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Macallan_12.jpg", // Proxy
+        imageUrl: "", // Proxy
         description: "더프타운의 야수라 불리는, 고기같이 묵직하고(Meaty) 황홀한 풍미의 위스키."
     },
     {
@@ -1068,7 +1112,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 2, sweet: 7, fruit: 6, spice: 6, body: 5 },
         tags: ["complex", "herbal", "sweet", "크래건모어", "크래건모어12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "가장 복합적인 향을 지닌 위스키 중 하나로 꼽히는, 우아하고 다채로운 스타일."
     },
     {
@@ -1081,7 +1125,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 6, spice: 5, body: 6 },
         tags: ["un-chillfiltered", "honey", "waxy", "딘스톤", "딘스톤12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "냉각 여과를 하지 않아 보리 본연의 고소함과 왁시한 질감이 잘 살아있습니다."
     },
     {
@@ -1094,7 +1138,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 5, fruit: 6, spice: 6, body: 6 },
         tags: ["maritime malt", "brine", "coastal", "올드펄트니", "올드펄트니12년"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "북쪽 끝 바닷가 마을에서 태어나 짭조름한 바다 내음이 매력적인 위스키."
     },
     {
@@ -1107,7 +1151,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 4, spice: 8, body: 6 },
         tags: ["rye heavy", "spicy", "frontier", "불렛버번", "불렛버번"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "호밀(Rye) 비중이 높아 톡 쏘는 매콤함과 바닐라의 조화가 뛰어납니다."
     },
     {
@@ -1120,7 +1164,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 5, spice: 4, body: 4 },
         tags: ["light", "approachable", "honey", "바질헤이든", "바질헤이든버번"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "가볍고 부드러워 입문자들에게 추천하는 우아한 스타일의 버번 위스키."
     },
     {
@@ -1133,7 +1177,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 6, body: 8 },
         tags: ["rich", "banana", "charcoal", "잭다니엘", "잭다니엘싱글배럴"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "하나의 배럴에서만 병입하여 더욱 진하고 깊은 바나나, 캐러멜 향을 보여줍니다."
     },
     {
@@ -1146,7 +1190,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 5, spice: 5, body: 7 },
         tags: ["long finish", "noble", "complex", "이글레어", "이글레어10년"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "10년이라는 긴 숙성 시간을 거쳐 완성된, 버번 중 드물게 긴 여운을 가진 명품."
     },
     {
@@ -1159,7 +1203,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 4, spice: 5, body: 6 },
         tags: ["smooth", "corn", "tennessee", "조지디켈", "조지디켈넘버12"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "숯 여과 공정을 거쳐 매우 부드러우며, 메이플 시럽 같은 달콤함이 특징입니다."
     },
     {
@@ -1172,7 +1216,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 5, fruit: 7, spice: 9, body: 5 },
         tags: ["rye", "cocktail king", "spicy", "사제락", "사제락라이"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "뉴올리언스의 상징적인 칵테일 '사제락'을 위한, 화려하고 매콤한 호밀 위스키."
     },
     {
@@ -1185,7 +1229,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 6, spice: 9, body: 8 },
         tags: ["premium rye", "mint", "power", "휘슬피그", "휘슬피그10년"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "100% 호밀에 가까운 강력한 힘과 복합적인 민트, 향신료의 여운."
     },
     {
@@ -1198,7 +1242,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 5, fruit: 4, spice: 9, body: 7 },
         tags: ["bartender favorite", "classic", "bold", "리텐하우스", "리텐하우스라이"],
-        imageUrl: "/images/whiskies/buffalo-trace.png",
+        imageUrl: "",
         description: "클래식 칵테일을 만들 때 가장 먼저 선택되는, 정석적인 매운맛의 라이 위스키."
     },
     {
@@ -1211,7 +1255,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 4, spice: 3, body: 4 },
         tags: ["velvet", "smooth", "approachable", "크라운로얄", "크라운로얄디럭스"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "벨벳 같은 부드러움의 대명사. 캐나다 왕실 방문을 기념해 만든 위스키."
     },
     {
@@ -1224,7 +1268,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 5, spice: 9, body: 6 },
         tags: ["canadian rye", "copper pot", "bold", "롯40", "롯40라이위스키"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "부드러운 캐나디안 위스키의 편견을 깨는, 진하고 풍부한 호밀의 맛."
     },
     {
@@ -1237,7 +1281,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 7, fruit: 9, spice: 5, body: 7 },
         tags: ["mizunara", "sandalwood", "finesse", "야마자키", "야마자키12년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/The_Yamazaki_Single_Malt_Whisky_Aged_12_years.JPG/800px-The_Yamazaki_Single_Malt_Whisky_Aged_12_years.JPG",
+        imageUrl: "",
         description: "일본 위스키의 전설. 미즈나라 오크통 숙성을 통한 고풍스러운 백단향(Sandalwood)."
     },
     {
@@ -1250,7 +1294,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 3, sweet: 6, fruit: 8, spice: 4, body: 5 },
         tags: ["forest", "fresh", "mint", "하쿠슈", "하쿠슈12년"],
-        imageUrl: "/images/whiskies/laphroaig-10.png", // Green bottle match
+        imageUrl: "", // Green bottle match
         description: "숲의 증류소라 불리는 곳에서 태어난, 신선한 민트와 은은한 연기의 조화."
     },
     {
@@ -1263,7 +1307,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 6, fruit: 7, spice: 3, body: 3 },
         tags: ["highball", "light", "japanese", "산토리토키", "토키"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "하이볼을 위해 태어난 위스키. 깔끔하고 산뜻한 청사과와 꿀의 향."
     },
     {
@@ -1276,7 +1320,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 9, fruit: 9, spice: 6, body: 9 },
         tags: ["masterpiece", "rare", "elegant", "히비키", "히비키21년"],
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg/800px-Hibiki_the_premium_blended_whisky_from_Japanese_distiller_Suntory.jpg",
+        imageUrl: "",
         description: "전 세계 블렌디드 위스키 중 최고의 상을 휩쓴 마스터피스. 형용할 수 없는 깊이."
     },
     {
@@ -1289,7 +1333,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 5, sweet: 6, fruit: 6, spice: 5, body: 8 },
         tags: ["coastal smoke", "strong", "nikka", "요이치", "요이치싱글몰트"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "석탄 직화 증류 방식을 고집하여 만든, 묵직한 힘과 바다의 짠맛이 느껴지는 위스키."
     },
     {
@@ -1302,7 +1346,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 9, spice: 4, body: 5 },
         tags: ["floral", "sherry", "soft", "미야기쿄", "미야기쿄싱글몰트"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "요이치와 대조되는 부드러움. 화사한 꽃향기와 셰리 오크의 달콤한 과일 맛."
     },
     {
@@ -1315,7 +1359,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 9, spice: 5, body: 6 },
         tags: ["wine casks", "modern", "fruity", "스타워드", "스타워드노바"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "호주산 레드 와인 오크통에서 숙성되어 풍부한 베리 향과 와인 같은 느낌이 납니다."
     },
     {
@@ -1328,7 +1372,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 4, sweet: 6, fruit: 7, spice: 8, body: 7 },
         tags: ["indian whisky", "spicy", "exotic", "암룻", "암룻퓨전"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "인도와 스코틀랜드 보리를 융합하여 만든, 이국적인 향신료와 열대 과일의 조화."
     },
     {
@@ -1341,7 +1385,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 3, sweet: 8, fruit: 7, spice: 5, body: 6 },
         tags: ["soft peat", "honey", "goa", "폴존", "폴존에디티드"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "인도 고아 지역의 따뜻한 기후에서 숙성된, 부드러운 피트와 꿀 같은 단맛."
     },
     {
@@ -1354,7 +1398,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 4, body: 4 },
         tags: ["welsh", "fruity", "clean", "펜더린"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "마데이라 와인 통에서 마무리하여 매우 깔끔하고 신선한 포도, 바닐라 향이 일품."
     },
     {
@@ -1367,7 +1411,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 7, spice: 7, body: 5 },
         tags: ["swedish oak", "ginger", "scandinavian", "맥미라"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "스웨덴산 오크통을 사용하여 매콤한 생강 향과 상큼한 시트러스의 조화가 독특합니다."
     },
     {
@@ -1380,7 +1424,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 8, fruit: 7, spice: 5, body: 7 },
         tags: ["smooth", "velvety", "classic", "시바스리갈"],
-        imageUrl: "/images/whiskies/jw-black.png",
+        imageUrl: "",
         description: "85가지의 풍부한 향을 담고 있다는 평을 듣는, 실크처럼 부드러운 고급 블렌디드."
     },
     {
@@ -1393,7 +1437,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 2, sweet: 7, fruit: 7, spice: 5, body: 7 },
         tags: ["korean favorite", "balanced", "smoke finish", "발렌타인"],
-        imageUrl: "/images/whiskies/jw-black.png",
+        imageUrl: "",
         description: "한국인들이 전 세계에서 가장 사랑하는 위스키 중 하나. 흠잡을 데 없는 완벽한 균형."
     },
     {
@@ -1406,7 +1450,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 3, sweet: 8, fruit: 6, spice: 5, body: 8 },
         tags: ["square bottle", "rich", "malty", "올드파"],
-        imageUrl: "/images/whiskies/buffalo-trace.png", // Square bottle proxy
+        imageUrl: "", // Square bottle proxy
         description: "역사상 가장 오래 산 인물의 이름을 딴 위스키. 맥아 함량이 높아 고소하고 진합니다."
     },
     {
@@ -1419,7 +1463,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 4, body: 8 },
         tags: ["grain whisky", "vanilla", "creamy", "컴파스박스"],
-        imageUrl: "/images/whiskies/talisker-10.png",
+        imageUrl: "",
         description: "그레인 위스키의 재발견. 바닐라 아이스크림을 마시는 듯한 환상적인 부드러움."
     }
 ];

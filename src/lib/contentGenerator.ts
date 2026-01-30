@@ -2,7 +2,7 @@
 // 독창적인 위스키 기사를 자동으로 생성
 
 import { Article } from './data';
-import { getRandomTopic, TopicTemplate } from './topicTemplates';
+import { getRandomTopic, TopicTemplate, topicTemplates } from './topicTemplates';
 import { whiskies } from './data';
 
 // 기사 생성 설정
@@ -11,6 +11,7 @@ interface ArticleGenerationConfig {
     maxLength: number; // 최대 글자 수
     includeWhiskies: boolean; // 위스키 추천 포함 여부
     whiskeyCount: number; // 추천 위스키 개수
+    style?: 'classic' | 'witty' | 'podcast'; // 스타일 옵션 추가
 }
 
 const defaultConfig: ArticleGenerationConfig = {
@@ -102,10 +103,12 @@ function generateIntroduction(topic: TopicTemplate): string {
         "역사": `오늘날의 위스키를 이해하기 위해서는 그 역사를 알아야 합니다. ${topic.title}는 위스키 산업의 중요한 전환점이었습니다.`,
 
         "입문": `위스키의 세계에 첫 발을 내딛는 것은 설레면서도 두려운 일입니다. ${topic.title}를 통해 자신감 있게 위스키 여정을 시작하세요.`,
-
         "컬렉팅": `위스키는 단순한 음료를 넘어 투자와 컬렉션의 대상이 되었습니다. ${topic.title}를 통해 현명한 컬렉터가 되는 방법을 알아봅시다.`,
-
-        "계절": `계절에 따라 어울리는 위스키도 달라집니다. ${topic.title}로 이번 시즌을 더욱 특별하게 만들어보세요.`
+        "계절": `계절에 따라 어울리는 위스키도 달라집니다. ${topic.title}로 이번 시즌을 더욱 특별하게 만들어보세요.`,
+        "리뷰": `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! ${topic.title}의 속살을 낱낱이 파헤쳐 봅니다.`,
+        "뉴스": `위스키 업계에 또 다른 소란이 발생했군요. 좋은 의미로든, 나쁜 의미로든 말이죠. ${topic.title} 소식을 통해 지금 가장 뜨거운 감자가 무엇인지 전해드립니다.`,
+        "팟캐스트": `전 세계 위스키 애호가들의 필청 팟캐스트, 'WhiskyCast'의 최신 에피소드 내용을 VODA가 한국어로 정리해 드립니다. ${topic.title}를 통해 글로벌 업계의 생생한 목소리를 들어보세요.`,
+        "인터뷰": `증류소의 심장부에서는 어떤 대화가 오고 갈까요? WhiskyCast의 마크 길레스피가 진행한 ${topic.title} 내용을 바탕으로, 글로 읽는 위스키 다큐멘터리를 준비했습니다.`
     };
 
     return intros[topic.category as keyof typeof intros] || intros["추천"];
@@ -115,12 +118,17 @@ function generateBody(topic: TopicTemplate, selectedWhiskies: typeof whiskies): 
     let body = "";
 
     // 주제별 본문 생성
-    if (topic.category === "추천") {
-        body += "## 추천 위스키\n\n";
+    if (topic.category === "추천" || topic.category === "리뷰") {
+        body += topic.category === "리뷰" ? "## VODA의 테이스팅 노트\n\n" : "## 추천 위스키\n\n";
 
         selectedWhiskies.forEach((whisky, index) => {
             body += `### ${index + 1}. ${whisky.name}\n\n`;
             body += `**타입**: ${whisky.type} | **지역**: ${whisky.region} | **가격대**: ${getPriceRangeKorean(whisky.priceRange)}\n\n`;
+
+            if (topic.category === "리뷰") {
+                body += `> **VODA의 한마디**: "이 위스키는 마치 ${whisky.flavorProfile.peat > 5 ? '폭풍우 치는 바다' : '햇살 가득한 정원'}을 병에 담아둔 것 같네요. 처음엔 강렬하지만 끝은 놀라울 정도로 부드럽습니다."\n\n`;
+            }
+
             body += `${whisky.description}\n\n`;
 
             // 풍미 프로필
@@ -131,6 +139,20 @@ function generateBody(topic: TopicTemplate, selectedWhiskies: typeof whiskies): 
             body += `- 스파이시: ${whisky.flavorProfile.spice}/10\n`;
             body += `- 바디감: ${whisky.flavorProfile.body}/10\n\n`;
         });
+    }
+
+    // WhiskyCast 전용 본문 생성
+    if (topic.category === "팟캐스트" || topic.category === "인터뷰") {
+        body += "## 에피소드 핵심 요약\n\n";
+        body += "> **VODA의 참고 자료**: 이 기사는 WhiskyCast의 최신 에피소드 오디오 내용을 AI로 분석/번역하여 작성되었습니다.\n\n";
+
+        if (topic.keywords.includes("behind the label")) {
+            body += "### 라벨 뒤에 숨겨진 이야기 (Behind the Label)\n\n이번 에피소드에서는 위스키 숙성 시 발생하는 '위스키 미스트(Whisky Mist)'의 미스터리를 다뤘습니다. 증류소 창고 깊은 곳에서 발생하는 기묘한 현상이 사실은 온도와 습도의 정교한 상호작용이라는 점을 마크 길레스피가 명쾌하게 설명해 줍니다.\n\n";
+        } else if (topic.category === "팟캐스트") {
+            body += "### 이번 주의 업계 뉴스\n\n최근 미국산 위스키에 대한 EU의 관세 인상 중단 결정이 큰 화제입니다. 업계 리더들은 이번 조치가 침체된 바와 레스토랑 업계에 큰 활력이 될 것으로 기대하고 있습니다. 또한 일본과 웨일스 등 신흥 생산지에서 새로운 증류소가 속속 문을 열고 있다는 반가운 소식도 포함되었습니다.\n\n";
+        } else {
+            body += "### 마스터 블렌더 단독 인터뷰\n\n인도 싱글 몰트의 자존심, 암룻(Amrut)의 아속 초칼링감(Ashok Chokalingam)과의 대화에서는 극한의 기후에서 위스키를 숙성시키는 고충과 자부심이 그대로 느껴졌습니다. 3년 만에 천사의 몫(Angel's Share)이 30%를 넘어서는 대만과 인도의 열대 숙성 비화는 언제 들어도 놀랍습니다.\n\n";
+        }
     }
 
     // 추가 콘텐츠
@@ -147,7 +169,13 @@ function generateAdditionalContent(topic: TopicTemplate): string {
 
         "페어링": `## 페어링 가이드\n\n음식과 위스키를 매칭할 때는 다음 원칙을 기억하세요:\n\n- **보완**: 서로 다른 풍미가 조화를 이루도록\n- **대비**: 강한 맛과 부드러운 맛의 균형\n- **증폭**: 비슷한 풍미 요소를 강화`,
 
-        "입문": `## 시작하기 전에\n\n위스키 입문자라면 다음 사항을 기억하세요:\n\n- 가격이 높다고 항상 좋은 것은 아닙니다\n- 자신의 취향을 찾는 것이 가장 중요합니다\n- 천천히, 다양하게 시도해보세요`
+        "입문": `## 시작하기 전에\n\n위스키 입문자라면 다음 사항을 기억하세요:\n\n- 가격이 높다고 항상 좋은 것은 아닙니다\n- 자신의 취향을 찾는 것이 가장 중요합니다\n- 천천히, 다양하게 시도해보세요`,
+
+        "뉴스": `## 업계가 술렁이는 이유\n\n단순히 새로운 제품이 나왔기 때문이 아닙니다. 이번 변화는 위스키를 만드는 방식이나 즐기는 문화를 완전히 바꿀 수도 있는 잠재력을 가지고 있습니다. 전통적인 스코틀랜드 증류소들조차 Master of Malt의 블로그를 보며 힌트를 얻을 정도로 혁신적인 흐름이죠.`,
+
+        "리뷰": `## 그래서 살까 말까?\n\n결론부터 말씀드리자면, 지갑을 열 준비를 하시는 게 좋을 것 같습니다. 물론 완벽한 위스키는 없지만, 이 제품은 적어도 당신의 바 장식장에서 가장 먼저 비워질 병이 될 확률이 매우 높거든요.`,
+
+        "팟캐스트": `## 오디오로 더 자세히 듣기\n\n더 많은 현장감은 [WhiskyCast 공식 사이트](https://whiskycast.libsyn.com/)에서 직접 에피소드 청취를 통해 확인하실 수 있습니다. VODA는 앞으로도 중요한 글로벌 팟캐스트 내용을 한국 독자들께 가장 먼저 전해드리겠습니다.`
     };
 
     return contents[topic.category as keyof typeof contents] || "";
@@ -175,8 +203,17 @@ function getPriceRangeKorean(range: string): string {
 export async function generateDailyArticle(config: Partial<ArticleGenerationConfig> = {}): Promise<Article> {
     const finalConfig = { ...defaultConfig, ...config };
 
-    // 1. 무작위 주제 선택
-    const topic = getRandomTopic();
+    // 1. 주제 선택 (스타일에 따라 필터링)
+    let topic: TopicTemplate;
+    if (finalConfig.style === 'podcast') {
+        const podcastTopics = topicTemplates.filter((t: TopicTemplate) => t.category === "팟캐스트" || t.category === "인터뷰");
+        topic = podcastTopics[Math.floor(Math.random() * podcastTopics.length)];
+    } else if (finalConfig.style === 'witty') {
+        const wittyTopics = topicTemplates.filter((t: TopicTemplate) => t.category === "리뷰" || t.category === "뉴스");
+        topic = wittyTopics[Math.floor(Math.random() * wittyTopics.length)];
+    } else {
+        topic = getRandomTopic();
+    }
 
     // 2. 관련 위스키 선택
     const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
@@ -185,6 +222,9 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const content = generateArticleContent(topic, selectedWhiskies);
 
     // 4. 기사 객체 생성
+    const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
+        finalConfig.style === 'witty' ? 'master-of-malt' : null;
+
     const article: Article = {
         id: `auto-${Date.now()}`,
         slug: `${topic.keywords[0] || 'article'}-${Date.now()}`,
@@ -195,28 +235,15 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         publishedAt: new Date().toISOString().split('T')[0],
         imageUrl: getImageForCategory(topic.category),
         content: content,
-        tags: [...topic.keywords, topic.category]
+        tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])]
     };
 
     return article;
 }
 
 function getImageForCategory(category: string): string {
-    // Unsplash 이미지 (카테고리별)
-    const images: Record<string, string> = {
-        "트렌드": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=3000&auto=format&fit=crop",
-        "추천": "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=3000&auto=format&fit=crop",
-        "테이스팅": "https://images.unsplash.com/photo-1527281400683-1aae777175f8?q=80&w=3000&auto=format&fit=crop",
-        "칵테일": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=3000&auto=format&fit=crop",
-        "페어링": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=3000&auto=format&fit=crop",
-        "지역탐방": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3000&auto=format&fit=crop",
-        "역사": "https://images.unsplash.com/photo-1504279807066-1c4f5c5e8e3c?q=80&w=3000&auto=format&fit=crop",
-        "입문": "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=3000&auto=format&fit=crop",
-        "컬렉팅": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3000&auto=format&fit=crop",
-        "계절": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=3000&auto=format&fit=crop"
-    };
-
-    return images[category] || images["추천"];
+    // AI 이미지 생성 전까지 빈 값 유지
+    return "";
 }
 
 // 테스트용 함수

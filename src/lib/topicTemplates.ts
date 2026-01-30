@@ -1,5 +1,5 @@
 // 위스키 콘텐츠 주제 템플릿
-// Whisky Advocate의 주제를 참고하되 독창적인 관점으로 재해석
+// Whisky Advocate, Master of Malt, WhiskyCast 등의 주제와 스타일을 참고하여 독창적인 관점으로 재해석
 
 export interface TopicTemplate {
     category: string;
@@ -193,6 +193,52 @@ export const topicTemplates: TopicTemplate[] = [
         title: "겨울 저녁, 벽난로 앞에서 즐기는 위스키",
         subtitle: "추운 날씨에 어울리는 묵직하고 따뜻한 위스키",
         keywords: ["winter", "cozy", "rich", "seasonal"],
+        targetAudience: "all"
+    },
+
+    // Master of Malt 스타일 - 뉴스 & 리뷰 (위트 중심)
+    {
+        category: "리뷰",
+        title: "이번 주의 위스키: 당신이 놓쳐서는 안 될 단 한 병",
+        subtitle: "마스터 오브 몰트 스타일의 가감 없는 솔직 리뷰",
+        keywords: ["whisky of the week", "review", "must-buy"],
+        targetAudience: "all"
+    },
+    {
+        category: "뉴스",
+        title: "증류소 스포트라이트: 전통의 틀을 깬 반항아들",
+        subtitle: "업계 기대를 저버린(?) 천재적인 발상의 증류소 탐방",
+        keywords: ["distillery spotlight", "innovation", "news"],
+        targetAudience: "intermediate"
+    },
+    {
+        category: "리뷰",
+        title: "실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유",
+        subtitle: "달콤함 속에 숨겨진 스파이시한 도발",
+        keywords: ["sherry bomb", "sweet", "spice", "review"],
+        targetAudience: "all"
+    },
+
+    // WhiskyCast 스타일 - 팟캐스트 리포트
+    {
+        category: "팟캐스트",
+        title: "WhiskyCast 리포트: 최신 업계 뉴스 브리핑",
+        subtitle: "전 세계를 발로 뛰는 마크 길레스피의 팟캐스트 요약",
+        keywords: ["whiskycast", "news", "report", "podcast"],
+        targetAudience: "all"
+    },
+    {
+        category: "인터뷰",
+        title: "마스터 블렌더와의 대화: WhiskyCast 단독 인터뷰",
+        subtitle: "팟캐스트에서만 공개된 증류소 비하인드 스토리",
+        keywords: ["interview", "whiskycast", "behind the label"],
+        targetAudience: "intermediate"
+    },
+    {
+        category: "팟캐스트",
+        title: "라벨 뒤의 진실: 위스키 미스터리를 풀다",
+        subtitle: "WhiskyCast 'Behind the Label' 코너 한국어 정리",
+        keywords: ["behind the label", "education", "whiskycast"],
         targetAudience: "all"
     }
 ];
