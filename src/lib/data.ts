@@ -374,6 +374,27 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 다음에도 더 흥미로운 위스키 역사 이야기로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["prohibition", "history", "america", "bourbon", "역사", "whiskycast"],
     }
+,
+    {
+        id: "auto-1769892142528",
+        slug: "summer-1769892142528",
+        title: "여름밤을 위한 상쾌한 위스키 칵테일 5선",
+        subtitle: "더위를 식혀주는 시원하고 청량한 레시피",
+        category: "계절",
+        author: "VODA",
+        publishedAt: "2026-01-31",
+        imageUrl: "",
+        content: `계절에 따라 어울리는 위스키도 달라집니다. 여름밤을 위한 상쾌한 위스키 칵테일 5선로 이번 시즌을 더욱 특별하게 만들어보세요.
+
+
+
+## 마치며
+
+더위를 식혀주는 시원하고 청량한 레시피 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["summer","cocktail","refreshing","seasonal","계절"],
+    }
 ];
 
 // --- Whisky Data for Recommendation Engine ---
