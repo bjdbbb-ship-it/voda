@@ -68,6 +68,17 @@ export function Header() {
                     >
                         가치 판단
                     </Link>
+                    <a
+                        href="https://vodabar.lovable.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn(
+                            "text-sm uppercase tracking-widest hover:text-secondary transition-colors font-medium text-secondary/90",
+                            isScrolled ? "text-secondary" : "text-secondary"
+                        )}
+                    >
+                        테이스팅 노트 작성
+                    </a>
                 </nav>
 
                 {/* Actions */}
@@ -113,6 +124,15 @@ export function Header() {
                     >
                         가치 판단
                     </Link>
+                    <a
+                        href="https://vodabar.lovable.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-serif text-3xl text-secondary hover:text-white transition-colors border-t border-white/10 pt-8 w-full text-center"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        테이스팅 노트 작성
+                    </a>
                 </div>
             )}
         </header>

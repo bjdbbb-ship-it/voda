@@ -12,6 +12,7 @@ interface ArticleGenerationConfig {
     includeWhiskies: boolean; // 위스키 추천 포함 여부
     whiskeyCount: number; // 추천 위스키 개수
     style?: 'classic' | 'witty' | 'podcast'; // 스타일 옵션 추가
+    customDate?: string; // 특정 날짜 (YYYY-MM-DD)
 }
 
 const defaultConfig: ArticleGenerationConfig = {
@@ -117,7 +118,12 @@ function generateIntroduction(topic: TopicTemplate): string {
 function generateBody(topic: TopicTemplate, selectedWhiskies: typeof whiskies): string {
     let body = "";
 
-    // 주제별 본문 생성
+    // 1. 템플릿에 정의된 풍성한 본문이 있다면 우선 사용
+    if (topic.fullContent) {
+        body += topic.fullContent + "\n\n";
+    }
+
+    // 2. 주제별 추가 콘텐츠 생성 (기존 로직 유지 및 보강)
     if (topic.category === "추천" || topic.category === "리뷰") {
         body += topic.category === "리뷰" ? "## VODA의 테이스팅 노트\n\n" : "## 추천 위스키\n\n";
 
@@ -126,7 +132,17 @@ function generateBody(topic: TopicTemplate, selectedWhiskies: typeof whiskies): 
             body += `**타입**: ${whisky.type} | **지역**: ${whisky.region} | **가격대**: ${getPriceRangeKorean(whisky.priceRange)}\n\n`;
 
             if (topic.category === "리뷰") {
-                body += `> **VODA의 한마디**: "이 위스키는 마치 ${whisky.flavorProfile.peat > 5 ? '폭풍우 치는 바다' : '햇살 가득한 정원'}을 병에 담아둔 것 같네요. 처음엔 강렬하지만 끝은 놀라울 정도로 부드럽습니다."\n\n`;
+                let comment = "";
+                if (whisky.flavorProfile.peat > 5) {
+                    comment = "강렬한 피트 향이 마치 폭풍우 치는 바다 한가운데 서 있는 듯한 전율을 선사합니다. 남성적이고 파괴적인 매력이 일품이죠.";
+                } else if (whisky.flavorProfile.sweet > 7) {
+                    comment = "꾸덕한 단맛이 혀끝을 감싸 안는 느낌이 일품입니다. 마치 잘 구워진 오플 파이를 입안 가득 베어 문 듯한 풍성함을 느껴보세요.";
+                } else if (whisky.flavorProfile.fruit > 7) {
+                    comment = "싱그러운 과수원길을 걷는 듯한 상쾌함이 느껴집니다. 위스키에서 이런 화사한 꽃향기와 과일 맛이 날 수 있다는 게 놀라울 따름입니다.";
+                } else {
+                    comment = "균형 잡힌 밸런스가 돋보이는 작품입니다. 처음 입에 닿는 순간부터 마지막 목넘김까지 어느 한 곳 치우침 없이 부드럽게 이어지는 맛의 흐름이 인상적입니다.";
+                }
+                body += `> **VODA의 한마디**: "${comment}"\n\n`;
             }
 
             body += `${whisky.description}\n\n`;
@@ -225,14 +241,17 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
         finalConfig.style === 'witty' ? 'master-of-malt' : null;
 
+    const articleDate = finalConfig.customDate || new Date().toISOString().split('T')[0];
+    const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
+
     const article: Article = {
-        id: `auto-${Date.now()}`,
-        slug: `${topic.keywords[0] || 'article'}-${Date.now()}`,
+        id: `auto-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
+        slug: `${(topic.keywords[0] || 'article').replace(/\s+/g, '-')}-${articleDate}`,
         title: topic.title,
         subtitle: topic.subtitle,
         category: topic.category,
         author: "VODA",
-        publishedAt: new Date().toISOString().split('T')[0],
+        publishedAt: articleDate,
         imageUrl: getImageForCategory(topic.category),
         content: content,
         tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])]

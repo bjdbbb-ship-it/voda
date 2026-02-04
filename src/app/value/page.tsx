@@ -6,6 +6,7 @@ import { Search, TrendingUp, DollarSign, Euro, Sparkles, Globe, ShieldCheck, Cal
 import { whiskies, Whisky } from "@/lib/data";
 import { globalWhiskies } from "@/lib/global-data";
 import { whiskyPool } from "@/lib/whisky-pool";
+import { isSameWhisky } from "@/lib/whisky-utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { WhiskyImage } from "@/components/whisky/WhiskyImage";
@@ -30,7 +31,14 @@ export default function ValueAssessmentPage() {
     };
 
     const dailyUnlocked = getDailyUnlocked();
-    const combinedDatabase = [...whiskies, ...dailyUnlocked];
+
+    // Use the utility to ensure no duplicates when merging
+    const combinedDatabase: Whisky[] = [...whiskies];
+    dailyUnlocked.forEach(du => {
+        if (!combinedDatabase.some(lw => isSameWhisky(lw.name, du.name || ""))) {
+            combinedDatabase.push(du as Whisky);
+        }
+    });
 
     const localWhiskies = combinedDatabase.filter(w =>
         w.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -40,7 +48,7 @@ export default function ValueAssessmentPage() {
     const globalResults = globalWhiskies.filter(w =>
         w.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
         w.tags?.some(t => t.toLowerCase().includes(searchTerm.toLowerCase()))
-    ).filter(gw => !localWhiskies.some(lw => lw.name === gw.name)); // Remove duplicates
+    ).filter(gw => !localWhiskies.some(lw => isSameWhisky(lw.name, gw.name || ""))); // Enhanced duplicate removal
 
     const allWhiskies = showGlobal ? [...localWhiskies, ...globalResults] : localWhiskies;
 

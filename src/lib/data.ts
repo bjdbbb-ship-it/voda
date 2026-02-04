@@ -373,7 +373,252 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 다음에도 더 흥미로운 위스키 역사 이야기로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["prohibition", "history", "america", "bourbon", "역사", "whiskycast"],
-    }
+    },
+    {
+        id: "auto-1769817600000-177",
+        slug: "microblend-2026-01-31",
+        title: "마이크로블렌딩의 시대: 소규모 배치가 만드는 큰 변화",
+        subtitle: "대량 생산에서 벗어나 개성을 찾는 위스키 업계의 새로운 흐름",
+        category: "트렌드",
+        author: "VODA",
+        publishedAt: "2026-01-31",
+        imageUrl: "",
+        content: `위스키 업계는 끊임없이 진화하고 있습니다. '마이크로블렌딩의 시대: 소규모 배치가 만드는 큰 변화'는 최근 가장 주목받는 변화 중 하나입니다. 전통을 존중하면서도 혁신을 추구하는 증류소들의 노력이 새로운 트렌드를 만들어내고 있습니다.
+
+## 대량 생산의 시대를 넘어서
+수십만 병씩 찍어내는 대형 브랜드의 위스키들도 훌륭하지만, 최근 위스키 애호가들은 더욱 '개성'에 집중하기 시작했습니다. 마이크로블렌딩(Micro-blending)은 아주 적은 수량의 오크통만을 선택하여, 해당 오크통들이 가진 독특한 풍미를 극대화하는 방식입니다.
+
+## 소규모 배치가 주는 특별함
+소규모 배치(Small Batch) 위스키의 가장 큰 매력은 '희소성'과 '정교함'입니다. 마스터 블렌더는 보통의 블렌딩 과정에서 묻혀버릴 수 있는 미세한 풍미—예를 들면 특정 오크통에서만 나타나는 진한 코코넛 향이나 독특한 향신료의 느낌—를 놓치지 않고 병에 담아냅니다.
+
+## 우리에게 주는 의미
+이러한 흐름은 소비자들에게 더 넓은 선택지를 제공합니다. "항상 같은 맛"이 아닌 "올해만 맛볼 수 있는 특별한 맛"을 찾는 즐거움을 주는 것이죠. 컴파스 박스(Compass Box)와 같은 독립 병입자들이나 신흥 크래프트 증류소들이 이 트렌드를 주도하며 위스키의 지평을 넓히고 있습니다.
+
+## 마치며
+
+대량 생산에서 벗어나 개성을 찾는 위스키 업계의 새로운 흐름은 앞으로도 계속될 것입니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["microblend", "craft", "small batch", "innovation", "트렌드"],
+    },
+    {
+        id: "auto-1769904000000-84",
+        slug: "taiwan-2026-02-01",
+        title: "대만과 인도: 신흥 위스키 강국의 도전",
+        subtitle: "고온 다습한 기후가 만드는 독특한 풍미",
+        category: "지역탐방",
+        author: "VODA",
+        publishedAt: "2026-02-01",
+        imageUrl: "",
+        content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '대만과 인도: 신흥 위스키 강국의 도전'를 통해 위스키 생산지의 매력을 탐험해봅시다.
+
+위스키 하면 스코틀랜드와 아일랜드, 그리고 미국을 먼저 떠올리기 마련입니다. 하지만 최근 세계적인 위스키 대회에서 1위를 휩쓸며 전통 강국들을 위협하는 곳들이 있습니다. 바로 대만과 인도입니다.
+
+## 1. 열대 숙성의 마법 (Tropical Aging)
+대만과 인도의 가장 큰 특징은 압도적인 '숙성 속도'입니다. 스코틀랜드의 서늘한 기후와 달리 이곳은 덥고 습합니다. 이로 인해 오크통과의 상호작용이 훨씬 활발하게 일어나며, 스코틀랜드에서 10년 이상 걸릴 숙성이 이곳에서는 단 3~4년 만에 이루어지기도 합니다.
+
+- **카발란(Kavalan, 대만)**: 설산의 맑은 물과 대만의 고온 다습한 기후를 이용해 망고, 파인애플 같은 열대 과일 향이 폭발적인 위스키를 만들어냅니다.
+- **암룻(Amrut, 인도)**: 히말라야 산맥 근처에서 자란 보리를 사용하여 이국적이고 진한 향신료의 풍미를 담아냅니다.
+
+## 2. 천사들의 높은 지분 (Angel's Share)
+빠른 숙성에는 대가가 따릅니다. 스코틀랜드에서는 매년 약 2% 정도의 원액이 증발하지만, 대만이나 인도에서는 10~15%에 달하는 양이 사라집니다. 천사들이 가져가는 몫이 너무 크지만, 그만큼 살아남은 원액은 놀라울 정도의 농축미를 자랑하게 됩니다.
+
+## 신대륙의 반란이 반가운 이유
+대만과 인도의 성공은 위스키의 테루아가 단순히 북반구에만 국한되지 않음을 증명했습니다. 전통의 무게에 짓눌리지 않고 과감한 실험을 이어가는 이들의 도전은 전 세계 위스키 문화를 더욱 풍요롭게 만들고 있습니다.
+
+## 마치며
+
+고온 다습한 기후가 만드는 독특한 풍미는 이제 신흥 강국들의 강력한 무기가 되었습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["taiwan", "india", "tropical", "emerging", "지역탐방"],
+    },
+    {
+        id: "auto-1769990400000-280",
+        slug: "sherry-bomb-2026-02-02",
+        title: "실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유",
+        subtitle: "달콤함 속에 숨겨진 스파이시한 도발",
+        category: "리뷰",
+        author: "VODA",
+        publishedAt: "2026-02-02",
+        imageUrl: "",
+        content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! 실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유의 속살을 낱낱이 파헤쳐 봅니다.
+
+## VODA의 테이스팅 노트
+
+### 1. Tullamore D.E.W. 12 Year Old
+
+**타입**: Blended Irish | **지역**: Ireland | **가격대**: 중가 (5-10만원)
+
+> **VODA의 한마디**: "아이리시 위스키 특유의 부드러움에 셰리의 달콤함이 더해져, 마치 따뜻한 봄날의 산책 같은 느낌을 줍니다."
+
+세 종류의 오크통 숙성을 통해 완성된, 매우 마시기 편하고 매끄러운 맛.
+
+**풍미 특징**:
+- 피트: 0/10
+- 단맛: 7/10
+- 과일향: 6/10
+- 스파이시: 4/10
+- 바디감: 5/10
+
+### 2. The Macallan 12 Sherry Oak
+
+**타입**: Single Malt | **지역**: Speyside, Scotland | **가격대**: 프리미엄 (10-20만원)
+
+> **VODA의 한마디**: "셰리 위스키의 정석이죠. 말린 과일과 견과류의 풍미가 입안 가득 퍼지는 경험은 언제나 즐겁습니다."
+
+셰리 오크 캐스크의 정수. 말린 과일과 스파이스, 그리고 부드러운 목넘김.
+
+**풍미 특징**:
+- 피트: 0/10
+- 단맛: 8/10
+- 과일향: 7/10
+- 스파이시: 5/10
+- 바디감: 7/10
+
+### 3. Aberlour A'bunadh
+
+**타입**: Single Malt | **지역**: Speyside, Scotland | **가격대**: 프리미엄 (10-20만원)
+
+> **VODA의 한마디**: "고도수에서 뿜어져 나오는 셰리의 폭발력! 이름 그대로 진정한 '셰리 폭탄'의 진수를 보여줍니다."
+
+물 한 방울 섞지 않은 고도수의 강력한 셰리 폭탄. 진하고 묵직한 타격감.
+
+**풍미 특징**:
+- 피트: 0/10
+- 단맛: 9/10
+- 과일향: 9/10
+- 스파이시: 9/10
+- 바디감: 9/10
+
+## 그래서 살까 말까?
+
+결론부터 말씀드리자면, 지갑을 열 준비를 하시는 게 좋을 것 같습니다. 물론 완벽한 위스키는 없지만, 이 제품은 적어도 당신의 바 장식장에서 가장 먼저 비워질 병이 될 확률이 매우 높거든요.
+
+## 마치며
+
+달콤함 속에 숨겨진 스파이시한 도발 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["sherry bomb", "sweet", "spice", "review", "리뷰"],
+    },
+    {
+        id: "auto-1770076800000-688",
+        slug: "label-2026-02-03",
+        title: "위스키 라벨 읽는 법: 병에 담긴 정보 해독하기",
+        subtitle: "숫자와 용어가 알려주는 위스키의 비밀",
+        category: "입문",
+        author: "VODA",
+        publishedAt: "2026-02-03",
+        imageUrl: "",
+        content: `위스키의 세계에 첫 발을 내딛는 것은 설레면서도 두려운 일입니다. '위스키 라벨 읽는 법: 병에 담긴 정보 해독하기'를 통해 자신감 있게 위스키 여정을 시작하세요.
+
+위스키 병 앞에 서면 알 수 없는 숫자와 영어 단어들에 당황하기 쉽습니다. 하지만 라벨의 몇 가지 규칙만 이해하면, 병을 따기도 전에 그 안의 맛을 짐작할 수 있습니다.
+
+## 1. 숫자(Age Statement)의 비밀
+라벨에 크게 적힌 숫자(예: 12, 15, 18)는 병 안에 담긴 원액 중 **가장 어린 원액의 숙성 년도**를 의미합니다. 예를 들어 12년 숙성 위스키라면, 20년 된 원액이 섞였을 수는 있어도 12년보다 덜 숙성된 원액은 한 방울도 들어가지 않았다는 뜻입니다. (단, 숫자가 없는 NAS 위스키도 많습니다!)
+
+## 2. 증류 방식과 재료
+- **Single Malt**: 오직 한 증류소에서 맥아(Malted Barley)만을 사용하여 만든 위스키.
+- **Blended**: 여러 증류소의 몰트 위스키와 그레인 위스키를 섞어 만든 위스키. (조니워커, 발렌타인 등)
+- **Cask Strength (CS)**: 숙성 후 물을 타지 않고 그대로 병입한 위스키. 높은 도수(보통 50~60도)와 강렬한 맛이 특징입니다.
+
+## 3. 캐스크 리스트 (Cask Type)
+위스키 맛의 70%는 오크통에서 옵니다.
+- **Sherry Cask**: 셰리 와인을 담았던 통. 건포도, 초콜릿, 달콤하고 붉은 과일 맛이 납니다.
+- **Bourbon Cask**: 버번 위스키를 담았던 통. 바닐라, 캐러멜, 꿀의 향이 특징입니다.
+
+## 시작하기 전에
+위스키 입문자라면 다음 사항을 기억하세요:
+- 가격이 높다고 항상 좋은 것은 아닙니다. 자신의 취향을 찾는 것이 가장 중요합니다.
+- 천천히, 향부터 즐기며 다양하게 시도해보세요. 라벨은 그 여정을 도와주는 지도일 뿐입니다.
+
+## 마치며
+
+숫자와 용어가 알려주는 위스키의 비밀을 이해하셨나요? 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["label", "age statement", "terminology", "guide", "입문"],
+    },
+    {
+        id: "auto-1770163200000-694",
+        slug: "islay-2026-02-04",
+        title: "아일라 섬 증류소 순례: 피트의 성지를 찾아서",
+        subtitle: "8개 증류소가 만들어내는 다양한 스모키 스펙트럼",
+        category: "지역탐방",
+        author: "VODA",
+        publishedAt: "2026-02-04",
+        imageUrl: "",
+        content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '아일라 섬 증류소 순례: 피트의 성지를 찾아서'를 통해 위스키 생산지의 매력을 탐험해봅시다.
+
+아일라(Islay)는 스코틀랜드 서부 해안에 위치한 작은 섬이지만, 위스키 애호가들에게는 '꿈의 성지'와도 같은 곳입니다. 이곳의 위스키를 규정짓는 결정적인 요소는 바로 **피트(Peat, 토탄)**입니다. 수천 년간 쌓인 이끼와 초목이 썩어 만들어진 피트를 태워 보리를 건조시켰을 때 발생하는 특유의 연기 향은, 누군가에게는 소독약 냄새처럼 느껴지지만, 또 누군가에게는 잊을 수 없는 훈연의 미학을 선사합니다.
+
+## 1. 남부의 강렬한 3인방: 라프로익, 아드벡, 라가불린
+아일라 섬 남쪽 해안에는 가장 강렬한 피트 풍미를 자랑하는 세 증류소가 나란히 자리 잡고 있습니다. 
+
+- **라프로익(Laphroaig)**: "사랑하거나, 증오하거나(Love it or Hate it)"라는 슬로건답게 강렬한 요오드와 약품 향이 특징입니다. 찰스 국왕이 가장 사랑하는 위스키로도 유명하죠.
+- **아드벡(Ardbeg)**: 피트의 강력함 속에 숨겨진 섬세한 라임과 시트러스의 조화가 일품입니다. 아일라의 야생을 가장 잘 표현한다는 평을 받습니다.
+- **라가불린(Lagavulin)**: '피트의 제왕'이라 불리며, 묵직한 스모키함과 셰리 캐스크의 달달함이 만나 우아하고 긴 여운을 만들어냅니다.
+
+## 2. 북부의 반전 매력: 부나하벤과 브룩라디
+남부와 달리 북부 증류소들은 상대적으로 부드럽거나 피트를 사용하지 않는(Unpeated) 스타일로도 유명합니다.
+
+- **부나하벤(Bunnahabhain)**: 전통적으로 피트를 거의 사용하지 않아 과일 향과 고소한 견과류 풍미가 돋보입니다. 바다의 짠맛이 살짝 감도는 것이 매력입니다.
+- **브룩라디(Bruichladdich)**: 테루아(Terroir)를 강조하며 현대적이고 실험적인 시도를 멈추지 않습니다. 피트가 없는 '클래식 래디'부터 세계에서 가장 피트가 강한 '옥토모어'까지 넓은 스펙트럼을 가지고 있습니다.
+
+## 3. 균형과 전통: 보모어와 쿨일라
+섬의 중앙부와 해안가에는 아일라 위스키의 표준을 제시하는 증류소들이 있습니다.
+
+- **보모어(Bowmore)**: 아일라에서 가장 오래된 증류소로, 피트 연기와 달콤한 셰리의 균형이 완벽합니다. '전설의 블랙 보모어'로도 잘 알려져 있죠.
+- **쿨일라(Caol Ila)**: 아일라 최대의 생산량을 자랑하며, 깔끔하고 날카로운 피트 향 뒤에 숨은 신선한 사과와 레몬의 풍미가 인상적입니다.
+
+## 4. 농장의 유산: 킬호만
+2005년에 세워진 **킬호만(Kilchoman)**은 보리 재배부터 병입까지 모든 과정을 섬 안에서 직접 수행하는 '팜 디스틸러리(Farm Distillery)' 방식을 고수합니다. 젊은 증류소임에도 불구하고 놀라운 농축미를 보여주며 아일라의 미래를 그려나가고 있습니다.
+
+## 마치며
+
+8개 증류소가 만들어내는 다양한 스모키 스펙트럼 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["islay", "scotland", "distillery", "peat", "지역탐방"],
+    },
+    {
+        id: "auto-1770249600000-542",
+        slug: "sherry-bomb-2026-02-05",
+        title: "실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유",
+        subtitle: "달콤함 속에 숨겨진 스파이시한 도발",
+        category: "리뷰",
+        author: "VODA",
+        publishedAt: "2026-02-05",
+        imageUrl: "",
+        content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! '실패 없는 셰리 위스키: 우리가 셰리 폭탄에 열광하는 이유'의 속살을 낱낱이 파헤쳐 봅니다.
+
+셰리 캐스크 숙성 위스키는 한국 위스키 애호가들이 가장 사랑하는 스타일 중 하나입니다. 꾸덕한 말린 과일의 달콤함과 견과류의 고소함, 그리고 진한 색감까지. '셰리 밤(Sherry Bomb)'이라 불리는 강렬한 녀석들은 왜 우리의 지갑을 그토록 쉽게 열게 만들까요?
+
+## VODA의 테이스팅 노트
+
+### 1. The Macallan 12 Sherry Oak
+**한줄평**: "셰리 위스키의 교과서, 실패하고 싶지 않다면 무조건 이것."
+셰리 오크 캐스크의 정수를 보여줍니다. 말린 과일의 풍미와 부드러운 목넘김이 예술입니다.
+
+### 2. Aberlour A'bunadh (아벨라워 아부나흐)
+**한줄평**: "진짜 폭탄이 터집니다. 도수와 무게감 모두 압도적!"
+물 한 방울 섞지 않은 고도수의 강력한 셰리 폭탄입니다. 진하고 묵직한 타격감을 원하는 분들께 추천합니다.
+
+### 3. Glenfarclas 105
+**한줄평**: "가성비 최강의 셰리 밤. 60도의 강렬함에 취해보세요."
+강렬한 도수 뒤에 숨겨진 달콤한 과일 향이 일품입니다.
+
+## 그래서 살까 말까?
+결론부터 말씀드리자면, 지갑을 열 준비를 하시는 게 좋을 것 같습니다. 물론 완벽한 위스키는 없지만, 이들 셰리 위스키는 적어도 당신의 바 장식장에서 가장 먼저 비워질 병이 될 확률이 매우 높거든요.
+
+## 마치며
+
+달콤함 속에 숨겨진 스파이시한 도발 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["sherry bomb", "sweet", "spice", "review", "리뷰"],
+    },
 ];
 
 // --- Whisky Data for Recommendation Engine ---
@@ -423,7 +668,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 10, sweet: 2, fruit: 3, spice: 5, body: 9 },
         tags: ["smoky", "medicinal", "iodine", "intense", "라프로익", "피트"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/laphroaig-10.png",
         description: "강렬한 피트 향과 짭조름한 바다 내음, 독보적인 개성을 가진 아일라의 대표 위스키."
     },
     {
@@ -436,7 +681,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 9, sweet: 3, fruit: 5, spice: 6, body: 8 },
         tags: ["peaty", "citrus", "sea salt", "complex", "아드벡", "피트"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/ardbeg-10.png",
         description: "피트의 스모키함 속에 숨겨진 섬세한 라임과 감귤의 단맛이 완벽한 균형을 이룹니다."
     },
     {
@@ -449,7 +694,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 8, sweet: 4, fruit: 4, spice: 5, body: 9 },
         tags: ["smoky", "rich", "dry", "powerful", "라가불린", "피트"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/lagavulin-16.png",
         description: "피트의 제왕. 깊고 풍부한 스모키함과 셰리 캐스크의 달콤함이 우아하게 어우러집니다."
     },
 
@@ -465,7 +710,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 5, body: 7 },
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         tags: ["sherry", "classic", "luxury", "macallan", "맥켈란", "셰리"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/macallan-12.png",
         description: "셰리 오크 캐스크의 정수. 말린 과일과 스파이스, 그리고 부드러운 목넘김."
     },
     {
@@ -520,7 +765,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 4, sweet: 5, fruit: 5, spice: 4, body: 5 },
         tags: ["balanced", "smoky", "versatile", "classic", "조니워커", "블렌디드"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/jw-black.png",
         description: "스모키함과 달콤함의 완벽한 균형. 블렌디드 위스키의 표준."
     },
     {
@@ -534,7 +779,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 1, sweet: 7, fruit: 8, spice: 3, body: 5 },
         visualProfile: { bottleShape: "faceted", liquidColor: "gold", glassColor: "clear" },
         tags: ["floral", "orange", "honey", "elegant", "히비키", "하모니", "일본위스키"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/hibiki-harmony.png",
         description: "일본의 사계를 표현한 듯한 섬세한 꽃향기와 은은한 달콤함."
     },
     // 3. Bourbon / Sweet & Spicy (Corn & Rye)
@@ -548,7 +793,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 4, spice: 5, body: 6 },
         tags: ["vanilla", "caramel", "oak", "smooth", "버팔로트레이스", "버번"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/buffalo-trace.png",
         description: "바닐라, 민트, 흑설탕의 풍미가 어우러진 부드럽고 균형 잡힌 버번."
     },
     {
@@ -561,7 +806,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 3, spice: 9, body: 7 },
         tags: ["bold", "spicy", "cinnamon", "kick", "와일드터키", "버번"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/wild-turkey-101.png",
         description: "높은 도수(50.5도)에서 오는 타격감과 진한 스파이시함이 매력적인 남자의 버번."
     },
     {
@@ -601,7 +846,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 5, body: 5 },
         visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" },
         tags: ["malty", "vanilla", "creamy", "cocktail", "몽키숄더", "블렌디드몰트"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/monkey-shoulder.png",
         description: "맥아(Malt) 100% 블렌딩으로 부드러운 바닐라 향이 일품. 칵테일 베이스로도 최고."
     },
 
@@ -616,7 +861,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 6, sweet: 4, fruit: 3, spice: 9, body: 7 },
         tags: ["pepper", "sea salt", "smoky", "wild", "탈리스커", "피트"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/talisker-10.png",
         description: "바다의 짭짤함과 흑후추의 톡 쏘는 매력이 어우러진 스카이 섬의 야성."
     },
     {
@@ -642,7 +887,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 6, body: 8 },
         tags: ["orange", "chocolate", "rich", "royalty", "달모어", "셰리"],
-        imageUrl: "",
+        imageUrl: "/images/whiskies/dalmore-12.png",
         description: "오렌지 마멀레이드와 초콜릿, 커피의 풍미가 느껴지는 화려하고 고급스러운 맛."
     },
     {
