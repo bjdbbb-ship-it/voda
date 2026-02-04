@@ -1,12 +1,13 @@
 import { ArticleGrid } from "@/components/magazine/ArticleGrid";
 import { articles } from "@/lib/data";
+import Link from "next/link";
 
 export default function Home() {
   // Sort articles by date (descending) and filter future posts
   const publishedArticles = articles
     .filter((article) => new Date(article.publishedAt) <= new Date())
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, 10); // 표시 개수 제한
+    .slice(0, 16); // 표시 개수 제한
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -51,6 +52,15 @@ export default function Home() {
             </div>
 
             <ArticleGrid articles={publishedArticles} />
+
+            <div className="mt-16 text-center">
+              <Link
+                href="/magazine"
+                className="inline-flex items-center px-8 py-4 border border-primary text-primary font-medium rounded hover:bg-primary hover:text-secondary transition-all duration-300"
+              >
+                모든 기사 읽기
+              </Link>
+            </div>
           </div>
         </section>
       </main>

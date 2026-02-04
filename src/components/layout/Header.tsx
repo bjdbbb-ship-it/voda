@@ -39,45 +39,48 @@ export function Header() {
                 </Link>
 
                 {/* Desktop Navigation */}
-                {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
                     <Link
-                        href="/"
+                        href="/magazine"
                         className={cn(
-                            "text-sm uppercase tracking-widest hover:text-secondary transition-colors",
+                            "group relative text-sm uppercase tracking-widest hover:text-secondary transition-colors",
                             isScrolled ? "text-white/80" : "text-white/90"
                         )}
                     >
                         매거진
+                        <span className="absolute -bottom-1 left-0 w-0 h-px bg-secondary transition-all duration-300 group-hover:w-full" />
                     </Link>
                     <Link
                         href="/quiz"
                         className={cn(
-                            "text-sm uppercase tracking-widest hover:text-secondary transition-colors",
+                            "group relative text-sm uppercase tracking-widest hover:text-secondary transition-colors",
                             isScrolled ? "text-white/80" : "text-white/90"
                         )}
                     >
                         취향 분석
+                        <span className="absolute -bottom-1 left-0 w-0 h-px bg-secondary transition-all duration-300 group-hover:w-full" />
                     </Link>
                     <Link
                         href="/value"
                         className={cn(
-                            "text-sm uppercase tracking-widest hover:text-secondary transition-colors",
+                            "group relative text-sm uppercase tracking-widest hover:text-secondary transition-colors",
                             isScrolled ? "text-white/80" : "text-white/90"
                         )}
                     >
                         가치 판단
+                        <span className="absolute -bottom-1 left-0 w-0 h-px bg-secondary transition-all duration-300 group-hover:w-full" />
                     </Link>
                     <a
                         href="https://vodabar.lovable.app"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={cn(
-                            "text-sm uppercase tracking-widest hover:text-secondary transition-colors font-medium text-secondary/90",
-                            isScrolled ? "text-secondary" : "text-secondary"
+                            "group relative text-sm uppercase tracking-widest hover:text-secondary transition-colors",
+                            isScrolled ? "text-white/80" : "text-white/90"
                         )}
                     >
                         테이스팅 노트 작성
+                        <span className="absolute -bottom-1 left-0 w-0 h-px bg-secondary transition-all duration-300 group-hover:w-full" />
                     </a>
                 </nav>
 
@@ -101,40 +104,42 @@ export function Header() {
             </div>
 
             {/* Mobile Menu Overlay */}
-            {isMobileMenuOpen && (
-                <div className="fixed inset-0 bg-primary z-40 flex flex-col items-center justify-center space-y-8 animate-in fade-in duration-200">
-                    <Link
-                        href="/"
-                        className="font-serif text-3xl text-secondary hover:text-white transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        매거진
-                    </Link>
-                    <Link
-                        href="/quiz"
-                        className="font-serif text-3xl text-secondary hover:text-white transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        취향 분석
-                    </Link>
-                    <Link
-                        href="/value"
-                        className="font-serif text-3xl text-secondary hover:text-white transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        가치 판단
-                    </Link>
-                    <a
-                        href="https://vodabar.lovable.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-serif text-3xl text-secondary hover:text-white transition-colors border-t border-white/10 pt-8 w-full text-center"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        테이스팅 노트 작성
-                    </a>
-                </div>
-            )}
-        </header>
+            {
+                isMobileMenuOpen && (
+                    <div className="fixed inset-0 bg-primary z-40 flex flex-col items-center justify-center space-y-8 animate-in fade-in duration-200">
+                        <Link
+                            href="/magazine"
+                            className="font-serif text-3xl text-secondary hover:text-white transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            매거진
+                        </Link>
+                        <Link
+                            href="/quiz"
+                            className="font-serif text-3xl text-secondary hover:text-white transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            취향 분석
+                        </Link>
+                        <Link
+                            href="/value"
+                            className="font-serif text-3xl text-secondary hover:text-white transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            가치 판단
+                        </Link>
+                        <a
+                            href="https://vodabar.lovable.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-serif text-3xl text-secondary hover:text-white transition-colors border-t border-white/10 pt-8 w-full text-center"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            테이스팅 노트 작성
+                        </a>
+                    </div>
+                )
+            }
+        </header >
     );
 }

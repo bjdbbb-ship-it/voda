@@ -74,7 +74,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "아메리칸 위스키",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=800", // Bourbon aging
+        imageUrl: "/images/magazine/american.jpg", // American whiskey - Local asset
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -199,7 +199,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "위스키 101",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Master blender secrets/lab
+        imageUrl: "/images/magazine/recipe.jpg", // Master blender secrets - Local asset
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -295,7 +295,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "컬렉팅",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1582737517272-0ba53d05545a?auto=format&fit=crop&q=80&w=800", // Rare luxury collection
+        imageUrl: "/images/magazine/auction.jpg", // Rare luxury collection - Local asset
         content: `
 ## 위스키, 이제는 '대체 투자'의 중심에 서다
 
@@ -339,7 +339,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "역사",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?auto=format&fit=crop&q=80&w=800", // Prohibition history
+        imageUrl: "/images/magazine/prohibition-v2.jpg", // Prohibition - Dark bar
         content: `
 ## 암흑의 시대, 그러나 위스키의 황금기가 싹트다
 
@@ -382,7 +382,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "트렌드",
         author: "VODA",
         publishedAt: "2026-01-31",
-        imageUrl: "https://images.unsplash.com/photo-1508253165330-6b69ceb3daa1?auto=format&fit=crop&q=80&w=800", // Microblending
+        imageUrl: "/images/magazine/microblend-v2.jpg", // Microblend - Lab
         content: `위스키 업계는 끊임없이 진화하고 있습니다. '마이크로블렌딩의 시대: 소규모 배치가 만드는 큰 변화'는 최근 가장 주목받는 변화 중 하나입니다. 전통을 존중하면서도 혁신을 추구하는 증류소들의 노력이 새로운 트렌드를 만들어내고 있습니다.
 
 ## 대량 생산의 시대를 넘어서
@@ -409,7 +409,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "계절",
         author: "VODA",
         publishedAt: "2026-01-31",
-        imageUrl: "https://images.unsplash.com/photo-1517043583-12053f684495?auto=format&fit=crop&q=80&w=800", // Summer nights cocktail
+        imageUrl: "/images/magazine/summer-v2.jpg", // Summer - Highball
         content: `계절에 따라 어울리는 위스키도 달라집니다. 여름밤을 위한 상쾌한 위스키 칵테일 5선로 이번 시즌을 더욱 특별하게 만들어보세요.
 
 ## 마치며
@@ -427,7 +427,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "추천",
         author: "VODA",
         publishedAt: "2026-02-01",
-        imageUrl: "https://images.unsplash.com/photo-1568213816046-0ee1c4295581?auto=format&fit=crop&q=80&w=800", // Peat roadmap
+        imageUrl: "/images/magazine/peat-v2.jpg", // Peat - Misty Landscape
         content: `위스키의 세계는 넓고 깊습니다. 수많은 선택지 앞에서 어떤 위스키를 선택해야 할지 고민이 되시나요? 오늘은 입문자를 위한 피트 위스키 로드맵를 소개합니다.
 
 ## 추천 위스키
@@ -488,7 +488,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "지역탐방",
         author: "VODA",
         publishedAt: "2026-02-01",
-        imageUrl: "https://images.unsplash.com/photo-1516997121675-4c0d0d8cd522?auto=format&fit=crop&q=80&w=800", // Tropical aging
+        imageUrl: "/images/magazine/taiwan.jpg", // Tropical aging - Local asset
         content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '대만과 인도: 신흥 위스키 강국의 도전'를 통해 위스키 생산지의 매력을 탐험해봅시다.
 
 위스키 하면 스코틀랜드와 아일랜드, 그리고 미국을 먼저 떠올리기 마련입니다. 하지만 최근 세계적인 위스키 대회에서 1위를 휩쓸며 전통 강국들을 위협하는 곳들이 있습니다. 바로 대만과 인도입니다.
@@ -512,75 +512,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["taiwan", "india", "tropical", "emerging", "지역탐방"],
     },
-    {
-        id: "auto-1769990400000-280",
-        slug: "sherry-bomb-2026-02-02",
-        title: "실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유",
-        subtitle: "달콤함 속에 숨겨진 스파이시한 도발",
-        category: "리뷰",
-        author: "VODA",
-        publishedAt: "2026-02-02",
-        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800", // Sherry bomb review
-        content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! 실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유의 속살을 낱낱이 파헤쳐 봅니다.
 
-## VODA의 테이스팅 노트
-
-### 1. Tullamore D.E.W. 12 Year Old
-
-**타입**: Blended Irish | **지역**: Ireland | **가격대**: 중가 (5-10만원)
-
-> **VODA의 한마디**: "아이리시 위스키 특유의 부드러움에 셰리의 달콤함이 더해져, 마치 따뜻한 봄날의 산책 같은 느낌을 줍니다."
-
-세 종류의 오크통 숙성을 통해 완성된, 매우 마시기 편하고 매끄러운 맛.
-
-**풍미 특징**:
-- 피트: 0/10
-- 단맛: 7/10
-- 과일향: 6/10
-- 스파이시: 4/10
-- 바디감: 5/10
-
-### 2. The Macallan 12 Sherry Oak
-
-**타입**: Single Malt | **지역**: Speyside, Scotland | **가격대**: 프리미엄 (10-20만원)
-
-> **VODA의 한마디**: "셰리 위스키의 정석이죠. 말린 과일과 견과류의 풍미가 입안 가득 퍼지는 경험은 언제나 즐겁습니다."
-
-셰리 오크 캐스크의 정수. 말린 과일과 스파이스, 그리고 부드러운 목넘김.
-
-**풍미 특징**:
-- 피트: 0/10
-- 단맛: 8/10
-- 과일향: 7/10
-- 스파이시: 5/10
-- 바디감: 7/10
-
-### 3. Aberlour A'bunadh
-
-**타입**: Single Malt | **지역**: Speyside, Scotland | **가격대**: 프리미엄 (10-20만원)
-
-> **VODA의 한마디**: "고도수에서 뿜어져 나오는 셰리의 폭발력! 이름 그대로 진정한 '셰리 폭탄'의 진수를 보여줍니다."
-
-물 한 방울 섞지 않은 고도수의 강력한 셰리 폭탄. 진하고 묵직한 타격감.
-
-**풍미 특징**:
-- 피트: 0/10
-- 단맛: 9/10
-- 과일향: 9/10
-- 스파이시: 9/10
-- 바디감: 9/10
-
-## 그래서 살까 말까?
-
-결론부터 말씀드리자면, 지갑을 열 준비를 하시는 게 좋을 것 같습니다. 물론 완벽한 위스키는 없지만, 이 제품은 적어도 당신의 바 장식장에서 가장 먼저 비워질 병이 될 확률이 매우 높거든요.
-
-## 마치며
-
-달콤함 속에 숨겨진 스파이시한 도발 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
-
-다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
-        tags: ["sherry bomb", "sweet", "spice", "review", "리뷰"],
-    },
     {
         id: "auto-1770076800000-688",
         slug: "label-2026-02-03",
@@ -589,7 +521,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "입문",
         author: "VODA",
         publishedAt: "2026-02-03",
-        imageUrl: "https://images.unsplash.com/photo-1537151624458-944ec042e970?auto=format&fit=crop&q=80&w=800", // Label reading guide
+        imageUrl: "/images/magazine/label-guide.jpg", // Label reading guide - Local asset
         content: `위스키의 세계에 첫 발을 내딛는 것은 설레면서도 두려운 일입니다. '위스키 라벨 읽는 법: 병에 담긴 정보 해독하기'를 통해 자신감 있게 위스키 여정을 시작하세요.
 
 위스키 병 앞에 서면 알 수 없는 숫자와 영어 단어들에 당황하기 쉽습니다. 하지만 라벨의 몇 가지 규칙만 이해하면, 병을 따기도 전에 그 안의 맛을 짐작할 수 있습니다.
@@ -627,7 +559,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "지역탐방",
         author: "VODA",
         publishedAt: "2026-02-04",
-        imageUrl: "https://images.unsplash.com/photo-1616448247050-b2f7637848e4?auto=format&fit=crop&q=80&w=800", // Islay tour nature
+        imageUrl: "/images/magazine/islay.jpg", // Islay - Local asset
         content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '아일라 섬 증류소 순례: 피트의 성지를 찾아서'를 통해 위스키 생산지의 매력을 탐험해봅시다.
 
 아일라(Islay)는 스코틀랜드 서부 해안에 위치한 작은 섬이지만, 위스키 애호가들에게는 '꿈의 성지'와도 같은 곳입니다. 이곳의 위스키를 규정짓는 결정적인 요소는 바로 **피트(Peat, 토탄)**입니다. 수천 년간 쌓인 이끼와 초목이 썩어 만들어진 피트를 태워 보리를 건조시켰을 때 발생하는 특유의 연기 향은, 누군가에게는 소독약 냄새처럼 느껴지지만, 또 누군가에게는 잊을 수 없는 훈연의 미학을 선사합니다.
@@ -668,8 +600,8 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         subtitle: "달콤함 속에 숨겨진 스파이시한 도발",
         category: "리뷰",
         author: "VODA",
-        publishedAt: "2026-02-05",
-        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=800", // Sherry bomb rich amber
+        publishedAt: "2026-02-04",
+        imageUrl: "/images/magazine/sherry-v2.jpg", // Sherry bomb - Dark/Cask theme
         content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! '실패 없는 셰리 위스키: 우리가 셰리 폭탄에 열광하는 이유'의 속살을 낱낱이 파헤쳐 봅니다.
 
 셰리 캐스크 숙성 위스키는 한국 위스키 애호가들이 가장 사랑하는 스타일 중 하나입니다. 꾸덕한 말린 과일의 달콤함과 견과류의 고소함, 그리고 진한 색감까지. '셰리 밤(Sherry Bomb)'이라 불리는 강렬한 녀석들은 왜 우리의 지갑을 그토록 쉽게 열게 만들까요?
@@ -1774,7 +1706,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 3, sweet: 8, fruit: 6, spice: 5, body: 8 },
         tags: ["square bottle", "rich", "malty", "올드파"],
-        imageUrl: "", // Square bottle proxy
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800", // Old Parr - Rich amber/Traditional
         description: "역사상 가장 오래 산 인물의 이름을 딴 위스키. 맥아 함량이 높아 고소하고 진합니다."
     },
     {
@@ -1787,7 +1719,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 4, body: 8 },
         tags: ["grain whisky", "vanilla", "creamy", "컴파스박스"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1582260661131-4191c94d03e2?auto=format&fit=crop&q=80&w=800", // Compass Box - Light/Grain/Vanilla
         description: "그레인 위스키의 재발견. 바닐라 아이스크림을 마시는 듯한 환상적인 부드러움."
     }
 ];
