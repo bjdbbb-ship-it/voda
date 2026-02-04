@@ -46,7 +46,7 @@ Doghouse Distillery의 설립자 Katherine Saunders는 말합니다. "재생 농
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800", // Savory cocktail/Umami
+        imageUrl: "https://images.unsplash.com/photo-1614313511387-1436a4480ebb?auto=format&fit=crop&q=80&w=800", // Mood/Experimental umami
         content: `
 ## 경계를 허무는 협업의 시대
 
@@ -802,7 +802,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 3, body: 5 },
         tags: ["pear", "apple", "honey", "fresh", "글렌피딕", "싱글몰트"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1596377478065-22e382d6101f?auto=format&fit=crop&q=80&w=800",
         description: "신선한 배와 사과 향이 특징인, 전 세계에서 가장 사랑받는 입문용 싱글 몰트."
     },
     {
@@ -816,7 +816,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 1, sweet: 7, fruit: 6, spice: 4, body: 6 },
         visualProfile: { bottleShape: "stout", liquidColor: "gold", glassColor: "clear" },
         tags: ["honey", "vanilla", "smooth", "nutty", "발베니", "꿀"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&q=80&w=800",
         description: "꿀과 바닐라의 부드러움, 그리고 셰리 오크의 깊이가 조화로운 마스터피스."
     },
     {
@@ -829,7 +829,7 @@ export const whiskies: Whisky[] = [
         currency: "EUR",
         flavorProfile: { peat: 1, sweet: 7, fruit: 8, spice: 8, body: 9 },
         tags: ["strong", "sherry", "spicy", "intense", "글렌파클라스", "CS"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&q=80&w=800",
         description: "60도의 강렬함 속에 터져 나오는 진한 셰리와 과일의 풍미. 가성비 최고의 셰리 밤."
     },
 
@@ -898,7 +898,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 5, spice: 4, body: 6 },
         tags: ["complex", "smooth", "dried fruit", "cocoa", "우드포드리저브", "버번"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800",
         description: "200가지 이상의 향이 감지된다는 복합적이고 부드러운 프리미엄 버번."
     },
     {
@@ -911,7 +911,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 4, spice: 2, body: 5 },
         tags: ["wheat", "soft", "sweet", "iconic", "메이커스마크", "버번"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1502819126416-d387f86d47a1?auto=format&fit=crop&q=80&w=800",
         description: "밀(Wheat)을 사용하여 쓴맛 없이 부드럽고 달콤한 맛을 자랑하는 붉은 왁스의 아이콘."
     },
     {
@@ -953,7 +953,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 4, sweet: 6, fruit: 5, spice: 4, body: 6 },
         tags: ["heather honey", "light smoke", "balanced", "viking", "하이랜드파크", "피트"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1556767576-5ec41e3239ea?auto=format&fit=crop&q=80&w=800",
         description: "달콤한 꿀 향과 은은한 피트 스모크가 절묘하게 어우러진 올라운더 위스키."
     },
     {
@@ -979,7 +979,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 3, body: 4 },
         tags: ["floral", "peach", "creamy", "delicate", "글렌모린지", "싱글몰트"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1510626176961-4b57d4fbadf3?auto=format&fit=crop&q=80&w=800",
         description: "가장 목이 긴 증류기에서 만들어져 섬세하고 우아한 꽃향기와 과일 향이 특징."
     },
     {
@@ -993,7 +993,7 @@ export const whiskies: Whisky[] = [
         flavorProfile: { peat: 2, sweet: 5, fruit: 6, spice: 5, body: 6 },
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         tags: ["sea salt", "fruit", "dry", "coastal", "오반", "싱글몰트"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1616448247050-b2f7637848e4?auto=format&fit=crop&q=80&w=800",
         description: "하이랜드와 아일랜드의 경계에 있는 듯한, 과일 향과 약간의 바다 내음, 스모키함의 조화."
     },
     {
@@ -1006,7 +1006,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 8, fruit: 8, spice: 4, body: 8 },
         tags: ["smooth", "velvety", "rich", "prestige", "로얄살루트", "로얄살루트21년", "명품위스키"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1582737517272-0ba53d05545a?auto=format&fit=crop&q=80&w=800",
         description: "여왕의 대관식을 위해 탄생한 위스키. 벨벳처럼 부드럽고 깊은 풍미의 럭셔리 블렌디드."
     },
     {
@@ -1019,7 +1019,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 9, spice: 6, body: 8 },
         tags: ["sherry bomb", "rich", "dark fruit", "글렌드로낙", "글렌드로낙12년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=800",
         description: "진한 셰리 오크의 풍미와 달콤한 과일 향이 일품인 셰리 애호가들의 필수 코스."
     },
     {
@@ -1032,7 +1032,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 4, body: 6 },
         tags: ["smooth", "toffee", "balanced", "아벨라워", "아벨라워12년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&q=80&w=800",
         description: "부드러운 단맛과 계피 향, 그리고 토피 사탕같은 고소함이 특징."
     },
     {
@@ -1045,7 +1045,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 6, sweet: 6, fruit: 5, spice: 4, body: 6 },
         tags: ["balanced smoke", "honey", "lemon", "보모어", "보모어12년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1574620638522-8378419f4033?auto=format&fit=crop&q=80&w=800",
         description: "피트 연기와 상큼한 레몬, 달콤한 꿀의 풍미가 조화롭게 섞인 아일라의 진수."
     },
     {
