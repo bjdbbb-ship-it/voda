@@ -373,6 +373,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 다음에도 더 흥미로운 위스키 역사 이야기로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["prohibition", "history", "america", "bourbon", "역사", "whiskycast"],
+    },
     {
         id: "auto-1769817600000-177",
         slug: "microblend-2026-01-31",
