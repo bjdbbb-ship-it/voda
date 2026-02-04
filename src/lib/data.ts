@@ -382,7 +382,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "트렌드",
         author: "VODA",
         publishedAt: "2026-01-31",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1508253165330-6b69ceb3daa1?auto=format&fit=crop&q=80&w=800",
         content: `위스키 업계는 끊임없이 진화하고 있습니다. '마이크로블렌딩의 시대: 소규모 배치가 만드는 큰 변화'는 최근 가장 주목받는 변화 중 하나입니다. 전통을 존중하면서도 혁신을 추구하는 증류소들의 노력이 새로운 트렌드를 만들어내고 있습니다.
 
 ## 대량 생산의 시대를 넘어서
@@ -409,7 +409,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "계절",
         author: "VODA",
         publishedAt: "2026-01-31",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1517043583-12053f684495?auto=format&fit=crop&q=80&w=800",
         content: `계절에 따라 어울리는 위스키도 달라집니다. 여름밤을 위한 상쾌한 위스키 칵테일 5선로 이번 시즌을 더욱 특별하게 만들어보세요.
 
 ## 마치며
@@ -427,7 +427,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "추천",
         author: "VODA",
         publishedAt: "2026-02-01",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1568213816046-0ee1c4295581?auto=format&fit=crop&q=80&w=800",
         content: `위스키의 세계는 넓고 깊습니다. 수많은 선택지 앞에서 어떤 위스키를 선택해야 할지 고민이 되시나요? 오늘은 입문자를 위한 피트 위스키 로드맵를 소개합니다.
 
 ## 추천 위스키
@@ -488,7 +488,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "지역탐방",
         author: "VODA",
         publishedAt: "2026-02-01",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1516997121675-4c0d0d8cd522?auto=format&fit=crop&q=80&w=800",
         content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '대만과 인도: 신흥 위스키 강국의 도전'를 통해 위스키 생산지의 매력을 탐험해봅시다.
 
 위스키 하면 스코틀랜드와 아일랜드, 그리고 미국을 먼저 떠올리기 마련입니다. 하지만 최근 세계적인 위스키 대회에서 1위를 휩쓸며 전통 강국들을 위협하는 곳들이 있습니다. 바로 대만과 인도입니다.
