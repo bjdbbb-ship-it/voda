@@ -1,12 +1,30 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import { ArticleGrid } from "@/components/magazine/ArticleGrid";
 import { articles } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
-  // Sort articles by date (descending) and filter future posts
-  const publishedArticles = articles
-    .filter((article) => new Date(article.publishedAt) <= new Date())
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, 10); // 표시 개수 제한
+  const [activeCategory, setActiveCategory] = useState("전체");
+
+  // Get unique categories from articles
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(articles.map((a) => a.category)));
+    return ["전체", ...cats];
+  }, []);
+
+  // Filter and sort articles
+  const filteredArticles = useMemo(() => {
+    return articles
+      .filter((article) => {
+        const isPublished = new Date(article.publishedAt) <= new Date();
+        const matchesCategory = activeCategory === "전체" || article.category === activeCategory;
+        return isPublished && matchesCategory;
+      })
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+      .slice(0, 12);
+  }, [activeCategory]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -34,9 +52,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Decorative Elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            {/* Abstract Background Pattern can go here */}
             <div className="absolute right-0 bottom-0 w-96 h-96 bg-secondary blur-[150px] rounded-full translate-x-1/2 translate-y-1/2"></div>
             <div className="absolute left-0 top-0 w-64 h-64 bg-secondary blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2"></div>
           </div>
@@ -45,12 +61,36 @@ export default function Home() {
         {/* Featured Section */}
         <section id="magazine" className="py-24 bg-background">
           <div className="container px-4 mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4">큐레이션 셀렉션</h2>
-              <div className="w-24 h-1 bg-secondary mx-auto"></div>
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4">매거진 셀렉션</h2>
+              <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+
+              {/* Category Filter Tabs */}
+              <div className="flex flex-wrap justify-center gap-2 mb-12">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={cn(
+                      "px-6 py-2 rounded-full text-sm font-medium transition-all duration-300",
+                      activeCategory === category
+                        ? "bg-secondary text-primary shadow-md"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    )}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <ArticleGrid articles={publishedArticles} />
+            {filteredArticles.length > 0 ? (
+              <ArticleGrid articles={filteredArticles} />
+            ) : (
+              <div className="text-center py-20 bg-muted/30 rounded-lg">
+                <p className="text-muted-foreground italic">이 카테고리에는 아직 기사가 없습니다.</p>
+              </div>
+            )}
           </div>
         </section>
       </main>
