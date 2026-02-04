@@ -373,7 +373,6 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 다음에도 더 흥미로운 위스키 역사 이야기로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["prohibition", "history", "america", "bourbon", "역사", "whiskycast"],
-    },
     {
         id: "auto-1769817600000-177",
         slug: "microblend-2026-01-31",
@@ -520,7 +519,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "리뷰",
         author: "VODA",
         publishedAt: "2026-02-02",
-        imageUrl: "/images/whiskies/macallan-12.png",
+        imageUrl: "",
         content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! 실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유의 속살을 낱낱이 파헤쳐 봅니다.
 
 ## VODA의 테이스팅 노트
@@ -589,7 +588,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "입문",
         author: "VODA",
         publishedAt: "2026-02-03",
-        imageUrl: "/images/whiskies/jw-black.png",
+        imageUrl: "",
         content: `위스키의 세계에 첫 발을 내딛는 것은 설레면서도 두려운 일입니다. '위스키 라벨 읽는 법: 병에 담긴 정보 해독하기'를 통해 자신감 있게 위스키 여정을 시작하세요.
 
 위스키 병 앞에 서면 알 수 없는 숫자와 영어 단어들에 당황하기 쉽습니다. 하지만 라벨의 몇 가지 규칙만 이해하면, 병을 따기도 전에 그 안의 맛을 짐작할 수 있습니다.
@@ -627,7 +626,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "지역탐방",
         author: "VODA",
         publishedAt: "2026-02-04",
-        imageUrl: "/images/whiskies/laphroaig-10.png",
+        imageUrl: "",
         content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '아일라 섬 증류소 순례: 피트의 성지를 찾아서'를 통해 위스키 생산지의 매력을 탐험해봅시다.
 
 아일라(Islay)는 스코틀랜드 서부 해안에 위치한 작은 섬이지만, 위스키 애호가들에게는 '꿈의 성지'와도 같은 곳입니다. 이곳의 위스키를 규정짓는 결정적인 요소는 바로 **피트(Peat, 토탄)**입니다. 수천 년간 쌓인 이끼와 초목이 썩어 만들어진 피트를 태워 보리를 건조시켰을 때 발생하는 특유의 연기 향은, 누군가에게는 소독약 냄새처럼 느껴지지만, 또 누군가에게는 잊을 수 없는 훈연의 미학을 선사합니다.
