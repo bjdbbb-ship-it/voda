@@ -20,7 +20,7 @@ export const articles: Article[] = [
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-28",
-        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800", // Elegant mini cocktail
+        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800", // Mini mixology
         content: `
 ## 더 작고 강력하게: 미니 믹솔로지의 부상
 
@@ -46,7 +46,7 @@ Doghouse Distillery의 설립자 Katherine Saunders는 말합니다. "재생 농
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&q=80&w=800", // Surreal moody whiskey
+        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800", // Savory cocktail/Umami
         content: `
 ## 경계를 허무는 협업의 시대
 
@@ -74,7 +74,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "아메리칸 위스키",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=800", // Modern bourbon distillery vibe
+        imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=800", // Bourbon aging
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -199,7 +199,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "위스키 101",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Master blender laboratory vibe
+        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Master blender secrets/lab
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -295,7 +295,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "컬렉팅",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "https://images.unsplash.com/photo-1582737517272-0ba53d05545a?auto=format&fit=crop&q=80&w=800", // Ornate luxury collector vibe
+        imageUrl: "https://images.unsplash.com/photo-1582737517272-0ba53d05545a?auto=format&fit=crop&q=80&w=800", // Rare luxury collection
         content: `
 ## 위스키, 이제는 '대체 투자'의 중심에 서다
 
