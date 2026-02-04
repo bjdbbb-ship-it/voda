@@ -1058,7 +1058,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 6, spice: 3, body: 5 },
         tags: ["irish", "sherry", "smooth", "부쉬밀", "부쉬밀블랙부쉬"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1516997121675-4c0d0d8cd522?auto=format&fit=crop&q=80&w=800",
         description: "셰리 캐스크 비중이 높은 아이리시 위스키로, 실크처럼 부드러운 질감을 자랑합니다."
     },
     {
@@ -1071,7 +1071,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 6, body: 6 },
         tags: ["toasted", "sweet", "vanilla", "제임슨", "제임슨블랙배럴"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?auto=format&fit=crop&q=80&w=800",
         description: "두 번 태운 오크통에서 숙성되어 더욱 진한 바닐라와 캐러멜 풍미를 보여줍니다."
     },
     {
@@ -1084,7 +1084,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 9, fruit: 7, spice: 5, body: 7 },
         tags: ["triple distilled", "sherry", "complex", "오켄토션", "오켄토션쓰리우드"],
-        imageUrl: "", // Proxy
+        imageUrl: "https://images.unsplash.com/photo-1537151624458-944ec042e970?auto=format&fit=crop&q=80&w=800",
         description: "세 종류의 오크통을 거쳐 완성된, 오켄토션 특유의 부드러움과 복합적인 풍미."
     },
     {
@@ -1097,7 +1097,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 8, spice: 3, body: 6 },
         tags: ["unpeated islay", "floral", "clean", "브룩라디", "브룩라디클래식래디"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1532634710129-7929497a10ee?auto=format&fit=crop&q=80&w=800",
         description: "피트 처리 없이 만든 아일라 위스키. 보리 본연의 맛과 신선한 꽃향기가 특징."
     },
     {
@@ -1110,7 +1110,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 5, sweet: 7, fruit: 7, spice: 6, body: 8 },
         tags: ["legendary", "honey head", "heather", "하이랜드파크", "하이랜드파크18년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1627945934149-8c29bde562c5?auto=format&fit=crop&q=80&w=800",
         description: "전 세계 위스키 평론가들의 극찬을 받은 최고의 밸런스를 가진 위스키 중 하나."
     },
     {
@@ -1123,7 +1123,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 6, fruit: 7, spice: 4, body: 5 },
         tags: ["slow distillation", "unpeated", "classic", "글렌고인", "글렌고인12년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1582234372722-50d7ccc30eb2?auto=format&fit=crop&q=80&w=800",
         description: "피트를 전혀 사용하지 않고 천천히 증류하여 만든, 가장 순수한 위스키의 맛."
     },
     {
@@ -1136,7 +1136,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 1, sweet: 9, fruit: 8, spice: 5, body: 7 },
         tags: ["rum cask", "tropical fruit", "toffee", "발베니", "발베니14년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&q=80&w=800",
         description: "캐리비안 럼 캐스크에서 마무리하여 열대 과일의 달콤함과 부드러운 토피 향이 가득합니다."
     },
     {
@@ -1149,7 +1149,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 6, body: 7 },
         tags: ["port finish", "dark chocolate", "mint", "글렌모린지", "글렌모린지퀸타루반14년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1504113133373-cfdf5be3a19e?auto=format&fit=crop&q=80&w=800",
         description: "포트 와인 캐스크에서 숙성되어 다크 초콜릿과 민트의 세련된 조화를 보여줍니다."
     },
     {
@@ -1162,7 +1162,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 8, sweet: 4, fruit: 5, spice: 6, body: 6 },
         tags: ["smoky", "oily", "lemon bark", "쿠일라", "쿠일라12년"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1544145945-f0e4277f0a9b?auto=format&fit=crop&q=80&w=800",
         description: "가벼운 질감 속에 숨겨진 날카로운 연기와 신선한 레몬 껍질의 풍미."
     },
     {
@@ -1175,7 +1175,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 9, spice: 5, body: 7 },
         tags: ["tropical", "mango", "smooth", "카발란", "카발란클래식"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=800",
         description: "대만의 고온 다습한 기후가 만든, 망고와 같은 열대 과일 향이 폭발적인 위스키."
     },
     {
@@ -1188,7 +1188,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 2, sweet: 7, fruit: 6, spice: 8, body: 9 },
         tags: ["strong", "spicy", "iconic bottle", "니카", "니카프롬더배럴"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1506377247377-2a5b3b0ca7df?auto=format&fit=crop&q=80&w=800",
         description: "51.4도의 강렬한 도수에도 불구하고 깊고 풍부한 꽃향기와 스파이시함이 일품."
     },
     {
@@ -1201,7 +1201,7 @@ export const whiskies: Whisky[] = [
         currency: "USD",
         flavorProfile: { peat: 0, sweet: 7, fruit: 3, spice: 7, body: 7 },
         tags: ["vanilla", "high proof", "value", "에반윌리엄스", "에반윌리엄스바틀인본드"],
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28?auto=format&fit=crop&q=80&w=800",
         description: "가성비 버번의 끝판왕. 50도의 도수에서 오는 타격감과 달콤한 바닐라의 조화."
     },
     {
