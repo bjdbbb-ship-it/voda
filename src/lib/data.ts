@@ -540,6 +540,27 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
         tags: ["sherry cask","sweet","rich","oak","추천"],
     }
+,
+    {
+        id: "auto-1770181104886",
+        slug: "taiwan-1770181104886",
+        title: "대만과 인도: 신흥 위스키 강국의 도전",
+        subtitle: "고온 다습한 기후가 만드는 독특한 풍미",
+        category: "지역탐방",
+        author: "VODA",
+        publishedAt: "2026-02-04",
+        imageUrl: "",
+        content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. 대만과 인도: 신흥 위스키 강국의 도전를 통해 위스키 생산지의 매력을 탐험해봅시다.
+
+
+
+## 마치며
+
+고온 다습한 기후가 만드는 독특한 풍미 위스키의 세계는 끝없이 넓고 깊습니다. 오늘 소개한 내용이 여러분의 위스키 여정에 작은 도움이 되기를 바랍니다. 
+
+다음에는 더 흥미로운 주제로 찾아뵙겠습니다. 건배! 🥃`,
+        tags: ["taiwan","india","tropical","emerging","지역탐방"],
+    }
 ];
 
 // --- Whisky Data for Recommendation Engine ---
