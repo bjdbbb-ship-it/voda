@@ -20,7 +20,7 @@ export const articles: Article[] = [
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-28",
-        imageUrl: "", // Elegant mini cocktail
+        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800", // Elegant mini cocktail
         content: `
 ## 더 작고 강력하게: 미니 믹솔로지의 부상
 
@@ -46,7 +46,7 @@ Doghouse Distillery의 설립자 Katherine Saunders는 말합니다. "재생 농
         category: "2026 트렌드",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "", // Surreal moody whiskey
+        imageUrl: "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&q=80&w=800", // Surreal moody whiskey
         content: `
 ## 경계를 허무는 협업의 시대
 
@@ -74,7 +74,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "아메리칸 위스키",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "", // Modern bourbon distillery vibe
+        imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=800", // Modern bourbon distillery vibe
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -199,7 +199,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "위스키 101",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "", // Master blender laboratory vibe
+        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=800", // Master blender laboratory vibe
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -295,7 +295,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "컬렉팅",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "", // Ornate luxury collector vibe
+        imageUrl: "https://images.unsplash.com/photo-1582737517272-0ba53d05545a?auto=format&fit=crop&q=80&w=800", // Ornate luxury collector vibe
         content: `
 ## 위스키, 이제는 '대체 투자'의 중심에 서다
 
@@ -339,7 +339,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "역사",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?auto=format&fit=crop&q=80&w=800",
         content: `
 ## 암흑의 시대, 그러나 위스키의 황금기가 싹트다
 
@@ -520,7 +520,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "리뷰",
         author: "VODA",
         publishedAt: "2026-02-02",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800",
         content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! 실패 없는 셰리 위스키: 우리가 '셰리 폭탄'에 열광하는 이유의 속살을 낱낱이 파헤쳐 봅니다.
 
 ## VODA의 테이스팅 노트
@@ -589,7 +589,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "입문",
         author: "VODA",
         publishedAt: "2026-02-03",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1537151624458-944ec042e970?auto=format&fit=crop&q=80&w=800",
         content: `위스키의 세계에 첫 발을 내딛는 것은 설레면서도 두려운 일입니다. '위스키 라벨 읽는 법: 병에 담긴 정보 해독하기'를 통해 자신감 있게 위스키 여정을 시작하세요.
 
 위스키 병 앞에 서면 알 수 없는 숫자와 영어 단어들에 당황하기 쉽습니다. 하지만 라벨의 몇 가지 규칙만 이해하면, 병을 따기도 전에 그 안의 맛을 짐작할 수 있습니다.
@@ -627,7 +627,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "지역탐방",
         author: "VODA",
         publishedAt: "2026-02-04",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1616448247050-b2f7637848e4?auto=format&fit=crop&q=80&w=800",
         content: `위스키의 맛은 그것이 만들어진 땅의 이야기를 담고 있습니다. '아일라 섬 증류소 순례: 피트의 성지를 찾아서'를 통해 위스키 생산지의 매력을 탐험해봅시다.
 
 아일라(Islay)는 스코틀랜드 서부 해안에 위치한 작은 섬이지만, 위스키 애호가들에게는 '꿈의 성지'와도 같은 곳입니다. 이곳의 위스키를 규정짓는 결정적인 요소는 바로 **피트(Peat, 토탄)**입니다. 수천 년간 쌓인 이끼와 초목이 썩어 만들어진 피트를 태워 보리를 건조시켰을 때 발생하는 특유의 연기 향은, 누군가에게는 소독약 냄새처럼 느껴지지만, 또 누군가에게는 잊을 수 없는 훈연의 미학을 선사합니다.
@@ -669,7 +669,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "리뷰",
         author: "VODA",
         publishedAt: "2026-02-05",
-        imageUrl: "",
+        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=800",
         content: `이번 주는 조금 특별한 녀석을 가져왔습니다. Master of Malt 블로그에서 영감을 받은 VODA의 아주 솔직하고 가감 없는 리뷰! '실패 없는 셰리 위스키: 우리가 셰리 폭탄에 열광하는 이유'의 속살을 낱낱이 파헤쳐 봅니다.
 
 셰리 캐스크 숙성 위스키는 한국 위스키 애호가들이 가장 사랑하는 스타일 중 하나입니다. 꾸덕한 말린 과일의 달콤함과 견과류의 고소함, 그리고 진한 색감까지. '셰리 밤(Sherry Bomb)'이라 불리는 강렬한 녀석들은 왜 우리의 지갑을 그토록 쉽게 열게 만들까요?
