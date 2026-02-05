@@ -120,66 +120,65 @@ function generateBody(topic: TopicTemplate, selectedWhiskies: typeof whiskies): 
 
     // 1. 템플릿에 정의된 풍성한 본문이 있다면 우선 사용
     body += topic.fullContent + "\n\n";
-}
 
-// [New] Insert a contextual body image
-const bodyImage = getRandomImageForKeywords([...topic.keywords, "detail", "close up"]);
-if (bodyImage) {
-    body += `![${topic.title} relevant image](${bodyImage})\n\n`;
-}
-
-// 2. 주제별 추가 콘텐츠 생성 (기존 로직 유지 및 보강)
-if (topic.category === "추천" || topic.category === "리뷰") {
-    body += topic.category === "리뷰" ? "## VODA의 테이스팅 노트\n\n" : "## 추천 위스키\n\n";
-
-    selectedWhiskies.forEach((whisky, index) => {
-        body += `### ${index + 1}. ${whisky.name}\n\n`;
-        body += `**타입**: ${whisky.type} | **지역**: ${whisky.region} | **가격대**: ${getPriceRangeKorean(whisky.priceRange)}\n\n`;
-
-        if (topic.category === "리뷰") {
-            let comment = "";
-            if (whisky.flavorProfile.peat > 5) {
-                comment = "강렬한 피트 향이 마치 폭풍우 치는 바다 한가운데 서 있는 듯한 전율을 선사합니다. 남성적이고 파괴적인 매력이 일품이죠.";
-            } else if (whisky.flavorProfile.sweet > 7) {
-                comment = "꾸덕한 단맛이 혀끝을 감싸 안는 느낌이 일품입니다. 마치 잘 구워진 오플 파이를 입안 가득 베어 문 듯한 풍성함을 느껴보세요.";
-            } else if (whisky.flavorProfile.fruit > 7) {
-                comment = "싱그러운 과수원길을 걷는 듯한 상쾌함이 느껴집니다. 위스키에서 이런 화사한 꽃향기와 과일 맛이 날 수 있다는 게 놀라울 따름입니다.";
-            } else {
-                comment = "균형 잡힌 밸런스가 돋보이는 작품입니다. 처음 입에 닿는 순간부터 마지막 목넘김까지 어느 한 곳 치우침 없이 부드럽게 이어지는 맛의 흐름이 인상적입니다.";
-            }
-            body += `> **VODA의 한마디**: "${comment}"\n\n`;
-        }
-
-        body += `${whisky.description}\n\n`;
-
-        // 풍미 프로필
-        body += `**풍미 특징**:\n`;
-        body += `- 피트: ${whisky.flavorProfile.peat}/10\n`;
-        body += `- 단맛: ${whisky.flavorProfile.sweet}/10\n`;
-        body += `- 과일향: ${whisky.flavorProfile.fruit}/10\n`;
-        body += `- 스파이시: ${whisky.flavorProfile.spice}/10\n`;
-        body += `- 바디감: ${whisky.flavorProfile.body}/10\n\n`;
-    });
-}
-
-// WhiskyCast 전용 본문 생성
-if (topic.category === "팟캐스트" || topic.category === "인터뷰") {
-    body += "## 에피소드 핵심 요약\n\n";
-    body += "> **VODA의 참고 자료**: 이 기사는 WhiskyCast의 최신 에피소드 오디오 내용을 AI로 분석/번역하여 작성되었습니다.\n\n";
-
-    if (topic.keywords.includes("behind the label")) {
-        body += "### 라벨 뒤에 숨겨진 이야기 (Behind the Label)\n\n이번 에피소드에서는 위스키 숙성 시 발생하는 '위스키 미스트(Whisky Mist)'의 미스터리를 다뤘습니다. 증류소 창고 깊은 곳에서 발생하는 기묘한 현상이 사실은 온도와 습도의 정교한 상호작용이라는 점을 마크 길레스피가 명쾌하게 설명해 줍니다.\n\n";
-    } else if (topic.category === "팟캐스트") {
-        body += "### 이번 주의 업계 뉴스\n\n최근 미국산 위스키에 대한 EU의 관세 인상 중단 결정이 큰 화제입니다. 업계 리더들은 이번 조치가 침체된 바와 레스토랑 업계에 큰 활력이 될 것으로 기대하고 있습니다. 또한 일본과 웨일스 등 신흥 생산지에서 새로운 증류소가 속속 문을 열고 있다는 반가운 소식도 포함되었습니다.\n\n";
-    } else {
-        body += "### 마스터 블렌더 단독 인터뷰\n\n인도 싱글 몰트의 자존심, 암룻(Amrut)의 아속 초칼링감(Ashok Chokalingam)과의 대화에서는 극한의 기후에서 위스키를 숙성시키는 고충과 자부심이 그대로 느껴졌습니다. 3년 만에 천사의 몫(Angel's Share)이 30%를 넘어서는 대만과 인도의 열대 숙성 비화는 언제 들어도 놀랍습니다.\n\n";
+    // [New] Insert a contextual body image
+    const bodyImage = getRandomImageForKeywords([...topic.keywords, "detail", "close up"]);
+    if (bodyImage) {
+        body += `![${topic.title} relevant image](${bodyImage})\n\n`;
     }
-}
 
-// 추가 콘텐츠
-body += generateAdditionalContent(topic);
+    // 2. 주제별 추가 콘텐츠 생성 (기존 로직 유지 및 보강)
+    if (topic.category === "추천" || topic.category === "리뷰") {
+        body += topic.category === "리뷰" ? "## VODA의 테이스팅 노트\n\n" : "## 추천 위스키\n\n";
 
-return body;
+        selectedWhiskies.forEach((whisky, index) => {
+            body += `### ${index + 1}. ${whisky.name}\n\n`;
+            body += `**타입**: ${whisky.type} | **지역**: ${whisky.region} | **가격대**: ${getPriceRangeKorean(whisky.priceRange)}\n\n`;
+
+            if (topic.category === "리뷰") {
+                let comment = "";
+                if (whisky.flavorProfile.peat > 5) {
+                    comment = "강렬한 피트 향이 마치 폭풍우 치는 바다 한가운데 서 있는 듯한 전율을 선사합니다. 남성적이고 파괴적인 매력이 일품이죠.";
+                } else if (whisky.flavorProfile.sweet > 7) {
+                    comment = "꾸덕한 단맛이 혀끝을 감싸 안는 느낌이 일품입니다. 마치 잘 구워진 오플 파이를 입안 가득 베어 문 듯한 풍성함을 느껴보세요.";
+                } else if (whisky.flavorProfile.fruit > 7) {
+                    comment = "싱그러운 과수원길을 걷는 듯한 상쾌함이 느껴집니다. 위스키에서 이런 화사한 꽃향기와 과일 맛이 날 수 있다는 게 놀라울 따름입니다.";
+                } else {
+                    comment = "균형 잡힌 밸런스가 돋보이는 작품입니다. 처음 입에 닿는 순간부터 마지막 목넘김까지 어느 한 곳 치우침 없이 부드럽게 이어지는 맛의 흐름이 인상적입니다.";
+                }
+                body += `> **VODA의 한마디**: "${comment}"\n\n`;
+            }
+
+            body += `${whisky.description}\n\n`;
+
+            // 풍미 프로필
+            body += `**풍미 특징**:\n`;
+            body += `- 피트: ${whisky.flavorProfile.peat}/10\n`;
+            body += `- 단맛: ${whisky.flavorProfile.sweet}/10\n`;
+            body += `- 과일향: ${whisky.flavorProfile.fruit}/10\n`;
+            body += `- 스파이시: ${whisky.flavorProfile.spice}/10\n`;
+            body += `- 바디감: ${whisky.flavorProfile.body}/10\n\n`;
+        });
+    }
+
+    // WhiskyCast 전용 본문 생성
+    if (topic.category === "팟캐스트" || topic.category === "인터뷰") {
+        body += "## 에피소드 핵심 요약\n\n";
+        body += "> **VODA의 참고 자료**: 이 기사는 WhiskyCast의 최신 에피소드 오디오 내용을 AI로 분석/번역하여 작성되었습니다.\n\n";
+
+        if (topic.keywords.includes("behind the label")) {
+            body += "### 라벨 뒤에 숨겨진 이야기 (Behind the Label)\n\n이번 에피소드에서는 위스키 숙성 시 발생하는 '위스키 미스트(Whisky Mist)'의 미스터리를 다뤘습니다. 증류소 창고 깊은 곳에서 발생하는 기묘한 현상이 사실은 온도와 습도의 정교한 상호작용이라는 점을 마크 길레스피가 명쾌하게 설명해 줍니다.\n\n";
+        } else if (topic.category === "팟캐스트") {
+            body += "### 이번 주의 업계 뉴스\n\n최근 미국산 위스키에 대한 EU의 관세 인상 중단 결정이 큰 화제입니다. 업계 리더들은 이번 조치가 침체된 바와 레스토랑 업계에 큰 활력이 될 것으로 기대하고 있습니다. 또한 일본과 웨일스 등 신흥 생산지에서 새로운 증류소가 속속 문을 열고 있다는 반가운 소식도 포함되었습니다.\n\n";
+        } else {
+            body += "### 마스터 블렌더 단독 인터뷰\n\n인도 싱글 몰트의 자존심, 암룻(Amrut)의 아속 초칼링감(Ashok Chokalingam)과의 대화에서는 극한의 기후에서 위스키를 숙성시키는 고충과 자부심이 그대로 느껴졌습니다. 3년 만에 천사의 몫(Angel's Share)이 30%를 넘어서는 대만과 인도의 열대 숙성 비화는 언제 들어도 놀랍습니다.\n\n";
+        }
+    }
+
+    // 추가 콘텐츠
+    body += generateAdditionalContent(topic);
+
+    return body;
 }
 
 function generateAdditionalContent(topic: TopicTemplate): string {
