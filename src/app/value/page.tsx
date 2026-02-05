@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Search, TrendingUp, DollarSign, Euro, Sparkles, Globe, ShieldCheck, Calendar, Zap } from "lucide-react";
 import { whiskies, Whisky } from "@/lib/data";
@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { WhiskyImage } from "@/components/whisky/WhiskyImage";
 
-const EX_RATES = {
+const DEFAULT_EX_RATES = {
     USD: 1428,
     EUR: 1710,
 };
@@ -20,6 +20,34 @@ export default function ValueAssessmentPage() {
     const [searchTerm, setSearchTerm] = useState("");
     const [isAISearching, setIsAISearching] = useState(false);
     const [showGlobal, setShowGlobal] = useState(false);
+    const [exRates, setExRates] = useState(DEFAULT_EX_RATES);
+
+    // Fetch real-time exchange rates
+    useEffect(() => {
+        const fetchRates = async () => {
+            try {
+                // Using Frankfurter API (Free, no key required)
+                // Fetching USD and EUR against KRW
+                const response = await fetch('https://api.frankfurter.app/latest?from=USD&to=KRW');
+                const usdData = await response.json();
+
+                const eurResponse = await fetch('https://api.frankfurter.app/latest?from=EUR&to=KRW');
+                const eurData = await eurResponse.json();
+
+                if (usdData.rates?.KRW && eurData.rates?.KRW) {
+                    setExRates({
+                        USD: Math.round(usdData.rates.KRW),
+                        EUR: Math.round(eurData.rates.KRW)
+                    });
+                }
+            } catch (error) {
+                console.error("Failed to fetch exchange rates:", error);
+                // Keep default rates on error
+            }
+        };
+
+        fetchRates();
+    }, []);
 
     // Daily Unlock System: Unlocks 10 new items every day since launch (Jan 28, 2026)
     const getDailyUnlocked = () => {
@@ -68,7 +96,7 @@ export default function ValueAssessmentPage() {
     };
 
     const formatPrice = (price: number = 0, currency: 'USD' | 'EUR' = 'USD') => {
-        const krw = Math.round(price * EX_RATES[currency]);
+        const krw = Math.round(price * exRates[currency]);
         return {
             original: `${price}`,
             krw: new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(krw)
@@ -93,8 +121,7 @@ export default function ValueAssessmentPage() {
                         위스키 가치 판단
                     </h1>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        전 세계 모든 위스키의 가치를 AI가 분석합니다.<br />
-                        **매일 10종 이상의 신규 위스키 정보가 자동으로 추가**됩니다.
+                        <span className="font-bold text-secondary">매일 10종 이상의 신규 위스키 정보가 자동으로 추가</span>됩니다.
                     </p>
                 </div>
 
@@ -105,7 +132,7 @@ export default function ValueAssessmentPage() {
                         <input
                             type="text"
                             placeholder="매일 업데이트되는 글로벌 위스키를 검색하세요..."
-                            className="w-full pl-12 pr-24 py-5 bg-white border border-border rounded-2xl shadow-xl focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+                            className="w-full pl-12 pr-24 py-5 bg-white/70 backdrop-blur-xl border border-secondary/20 rounded-2xl shadow-2xl focus:outline-none focus:ring-4 focus:ring-secondary/10 focus:border-secondary transition-all placeholder:text-muted-foreground/60"
                             value={searchTerm}
                             onChange={(e) => handleSearch(e.target.value)}
                         />
@@ -124,8 +151,8 @@ export default function ValueAssessmentPage() {
                     {/* Market Rates */}
                     <div className="mt-4 flex justify-between items-center px-4">
                         <div className="flex gap-4 text-[10px] text-muted-foreground font-medium">
-                            <span className="flex items-center gap-1"><TrendingUp className="w-3 h-3 text-secondary" /> 1 USD = {EX_RATES.USD.toLocaleString()}원</span>
-                            <span className="flex items-center gap-1"><TrendingUp className="w-3 h-3 text-secondary" /> 1 EUR = {EX_RATES.EUR.toLocaleString()}원</span>
+                            <span className="flex items-center gap-1"><TrendingUp className="w-3 h-3 text-secondary" /> 1 USD = {exRates.USD.toLocaleString()}원</span>
+                            <span className="flex items-center gap-1"><TrendingUp className="w-3 h-3 text-secondary" /> 1 EUR = {exRates.EUR.toLocaleString()}원</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="text-[10px] text-muted-foreground font-bold flex items-center gap-1">
