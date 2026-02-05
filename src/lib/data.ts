@@ -74,7 +74,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "아메리칸 위스키",
         author: "VODA",
         publishedAt: "2026-01-29",
-        imageUrl: "/images/magazine/american.jpg", // American whiskey - Local asset
+        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1200", // American whiskey - Dark Moody Premium
         content: `
 ## 급성장의 시대가 끝나고, 성숙의 시대가 시작되다
 
@@ -199,7 +199,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "위스키 101",
         author: "VODA",
         publishedAt: "2026-01-30",
-        imageUrl: "/images/magazine/recipe.jpg", // Master blender secrets - Local asset
+        imageUrl: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=1200", // Master blender secrets - Lab Glassware
         content: `
 ## 위스키는 우연히 만들어지지 않습니다
 
@@ -382,7 +382,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
         category: "트렌드",
         author: "VODA",
         publishedAt: "2026-01-31",
-        imageUrl: "/images/magazine/microblend-v2.jpg", // Microblend - Lab
+        imageUrl: "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&q=80&w=1200", // Microblend - Verified Dark Barrels
         content: `위스키 업계는 끊임없이 진화하고 있습니다. '마이크로블렌딩의 시대: 소규모 배치가 만드는 큰 변화'는 최근 가장 주목받는 변화 중 하나입니다. 전통을 존중하면서도 혁신을 추구하는 증류소들의 노력이 새로운 트렌드를 만들어내고 있습니다.
 
 ## 대량 생산의 시대를 넘어서

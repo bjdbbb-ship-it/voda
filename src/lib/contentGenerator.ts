@@ -1,9 +1,8 @@
 // AI 기반 위스키 콘텐츠 생성기
 // 독창적인 위스키 기사를 자동으로 생성
 
-import { Article } from './data';
+import { Article, articles, whiskies } from './data';
 import { getRandomTopic, TopicTemplate, topicTemplates } from './topicTemplates';
-import { whiskies } from './data';
 
 // 기사 생성 설정
 interface ArticleGenerationConfig {
@@ -246,6 +245,16 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         finalConfig.style === 'witty' ? 'master-of-malt' : null;
 
     const articleDate = finalConfig.customDate || new Date().toISOString().split('T')[0];
+
+    // [New] 중복 생성 방지: 이미 해당 날짜의 기사가 있는지 확인
+    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-'));
+    if (isDuplicate && !finalConfig.customDate) {
+        console.log(`[Skip] ${articleDate} 일자의 기사가 이미 존재합니다. 생성을 건너뜁니다.`);
+        // Note: In an automated script, we might want to throw or return null
+        // For simplicity in this function, we'll return a special 'null' like object or let the caller handle it
+        throw new Error(`ALREADY_EXISTS: ${articleDate}`);
+    }
+
     const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
 
     const article: Article = {

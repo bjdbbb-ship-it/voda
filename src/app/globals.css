@@ -10,8 +10,8 @@
   /* Light Mode */
   --background: #F5F5DC;
   /* Soft Cream */
-  --foreground: #3E2723;
-  /* Deep Oak for text */
+  --foreground: #2D1B16;
+  /* Darker Oak for better readability */
 
   --muted: #E6E6D8;
   --muted-foreground: #5D4037;
@@ -22,13 +22,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Mode */
-    --background: #1A120B;
-    /* Darker Oak/Black mixture */
+    --background: #0F0906;
+    /* Deeper, rich dark chocolate/black */
     --foreground: #F5F5DC;
     /* Soft Cream for text */
 
     --muted: #2D1B16;
-    --muted-foreground: #A1887F;
+    --muted-foreground: #D7CCC8;
+    /* Lighter muted text for better contrast in dark mode */
 
     --border: #3E2723;
   }
@@ -54,4 +55,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  /* Enhanced line height for readability */
+  letter-spacing: -0.01em;
+  /* Subtle premium feel */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography improvements for various text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1.5rem;
 }

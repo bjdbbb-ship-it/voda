@@ -94,7 +94,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                         </div>
 
                         {/* Article Content - Preserving original line breaks and basic formatting */}
-                        <div className="prose prose-lg prose-headings:font-serif prose-headings:text-primary text-muted-foreground max-w-none whitespace-pre-wrap">
+                        <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary dark:prose-invert text-foreground/90 max-w-none whitespace-pre-wrap leading-relaxed tracking-tight">
                             {article.content}
                         </div>
 
