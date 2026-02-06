@@ -49,16 +49,24 @@ export default function ValueAssessmentPage() {
         fetchRates();
     }, []);
 
-    // Daily Unlock System: Unlocks 10 new items every day since launch (Jan 28, 2026)
-    const getDailyUnlocked = () => {
-        const launchDate = new Date("2026-01-28").getTime();
-        const today = new Date().getTime();
-        const daysPassed = Math.floor((today - launchDate) / (1000 * 60 * 60 * 24));
-        const numToUnlock = (daysPassed + 1) * 10;
-        return whiskyPool.slice(0, numToUnlock) as Whisky[];
+    // Dynamic Update System: Shows whiskies added today
+    const getDailyUpdated = () => {
+        const todayStr = new Date().toISOString().split('T')[0];
+        // 1. 오늘 날짜로 등록된 위스키 필터링
+        const todayAdded = whiskies.filter(w => w.availableDate === todayStr);
+
+        // 2. 만약 오늘 추가된 게 없다면 최신순으로 10개 보여주기 (백업 로직)
+        if (todayAdded.length === 0) {
+            return [...whiskies]
+                .filter(w => w.availableDate)
+                .sort((a, b) => new Date(b.availableDate!).getTime() - new Date(a.availableDate!).getTime())
+                .slice(0, 10);
+        }
+
+        return todayAdded;
     };
 
-    const dailyUnlocked = getDailyUnlocked();
+    const dailyUnlocked = getDailyUpdated();
 
     // Use the utility to ensure no duplicates when merging
     const combinedDatabase: Whisky[] = [...whiskies];

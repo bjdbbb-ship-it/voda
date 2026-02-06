@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "generate:article": "tsx scripts/generateDailyArticle.js",
+    "generate:whiskies": "tsx scripts/generateDailyWhiskies.js",
     "generate:deploy": "tsx scripts/generateDailyArticle.js --push"
   },
   "dependencies": {
