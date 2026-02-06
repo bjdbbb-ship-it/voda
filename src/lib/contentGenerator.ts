@@ -250,9 +250,7 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-'));
     if (isDuplicate && !finalConfig.customDate) {
         console.log(`[Skip] ${articleDate} 일자의 기사가 이미 존재합니다. 생성을 건너뜁니다.`);
-        // Note: In an automated script, we might want to throw or return null
-        // For simplicity in this function, we'll return a special 'null' like object or let the caller handle it
-        throw new Error(`ALREADY_EXISTS: ${articleDate}`);
+        return null as any; // 타입 호환성을 위해 null 반환
     }
 
     const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();

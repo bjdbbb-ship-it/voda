@@ -30,6 +30,12 @@ async function main() {
         console.log('📝 AI가 최신 위스키 매거진 주제를 분석하여 독창적인 기사를 작성 중입니다...');
         const newArticle = await generateDailyArticle();
 
+        if (!newArticle) {
+            console.log('\nℹ️ 오늘자 기사가 이미 존재하여 추가 작업을 수행하지 않습니다.');
+            console.log('🎉 완료! (건너뜀)');
+            return;
+        }
+
         console.log(`\n✅ 기사 생성 완료!`);
         console.log(`   제목: ${newArticle.title}`);
         console.log(`   카테고리: ${newArticle.category}`);
