@@ -45,6 +45,9 @@ async function main() {
         // data.ts 업데이트
         let dataContent = fs.readFileSync(dataPath, 'utf-8');
 
+        // [Fix] 기존 데이터의 잘못된 쉼표(,,) 정리
+        dataContent = dataContent.replace(/,\s*,/g, ',');
+
         // whiskies 배열 찾기
         const whiskiesRegex = /export const whiskies: Whisky\[\] = \[([\s\S]*?)\];/;
         const match = dataContent.match(whiskiesRegex);
@@ -77,7 +80,13 @@ async function main() {
     }`;
         });
 
-        const updatedWhiskies = `export const whiskies: Whisky[] = [${match[1].trim()},
+        // 기존 배열 끝에 새 위스키 추가 (중복 쉼표 방지 로직)
+        let existingWhiskies = match[1].trim();
+        if (existingWhiskies.endsWith(',')) {
+            existingWhiskies = existingWhiskies.slice(0, -1).trim();
+        }
+
+        const updatedWhiskies = `export const whiskies: Whisky[] = [${existingWhiskies},
 ${newWhiskiesStrings.join(',\n')}
 ];`;
 

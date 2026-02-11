@@ -3,6 +3,7 @@
 
 import { Article, articles, whiskies } from './data';
 import { getRandomTopic, TopicTemplate, topicTemplates } from './topicTemplates';
+import { getNextCategory, generateTopicFromTrends, generateArticleContent as generateAIContent } from './trendResearcher';
 
 // 기사 생성 설정
 interface ArticleGenerationConfig {
@@ -222,25 +223,39 @@ function getPriceRangeKorean(range: string): string {
 export async function generateDailyArticle(config: Partial<ArticleGenerationConfig> = {}): Promise<Article> {
     const finalConfig = { ...defaultConfig, ...config };
 
-    // 1. 주제 선택 (스타일에 따라 필터링)
-    let topic: TopicTemplate;
-    if (finalConfig.style === 'podcast') {
-        const podcastTopics = topicTemplates.filter((t: TopicTemplate) => t.category === "팟캐스트" || t.category === "인터뷰");
-        topic = podcastTopics[Math.floor(Math.random() * podcastTopics.length)];
-    } else if (finalConfig.style === 'witty') {
-        const wittyTopics = topicTemplates.filter((t: TopicTemplate) => t.category === "리뷰" || t.category === "뉴스");
-        topic = wittyTopics[Math.floor(Math.random() * wittyTopics.length)];
-    } else {
-        topic = getRandomTopic();
-    }
+    console.log('🚀 AI 기반 일일 위스키 기사 생성 시작...');
 
-    // 2. 관련 위스키 선택
+    // 1. 카테고리 선택 (순환)
+    const category = getNextCategory();
+    console.log(`📂 선택된 카테고리: ${category}`);
+
+    // 2. AI를 활용한 독창적인 주제 생성
+    console.log('🤖 AI가 최신 위스키 트렌드를 분석하여 독창적인 주제를 생성 중...');
+    const topicData = await generateTopicFromTrends(category);
+
+    const topic: TopicTemplate = {
+        category: category,
+        title: topicData.title,
+        subtitle: topicData.subtitle,
+        keywords: topicData.keywords,
+        targetAudience: 'all'
+    };
+
+    console.log(`✨ 생성된 주제: ${topic.title}`);
+
+    // 3. 관련 위스키 선택
     const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
 
-    // 3. 콘텐츠 생성
-    const content = generateArticleContent(topic, selectedWhiskies);
+    // 4. AI를 활용한 풍성한 본문 생성
+    console.log('📝 AI가 풍성한 기사 본문을 작성 중...');
+    const content = await generateAIContent(
+        topic.title,
+        topic.subtitle,
+        topic.category,
+        topic.keywords
+    );
 
-    // 4. 기사 객체 생성
+    // 5. 기사 객체 생성
     const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
         finalConfig.style === 'witty' ? 'master-of-malt' : null;
 
@@ -249,7 +264,7 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     // [New] 중복 생성 방지: 이미 해당 날짜의 기사가 있는지 확인
     const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-'));
     if (isDuplicate && !finalConfig.customDate) {
-        console.log(`[Skip] ${articleDate} 일자의 기사가 이미 존재합니다. 생성을 건너뜁니다.`);
+        console.log(`⏭️  ${articleDate} 일자의 기사가 이미 존재합니다. 생성을 건너뜠니다.`);
         return null as any; // 타입 호환성을 위해 null 반환
     }
 

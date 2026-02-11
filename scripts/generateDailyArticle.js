@@ -46,6 +46,9 @@ async function main() {
         const dataFilePath = path.join(process.cwd(), 'src', 'lib', 'data.ts');
         let dataContent = fs.readFileSync(dataFilePath, 'utf-8');
 
+        // [Fix] 기존 데이터의 잘못된 쉼표(,,) 정리
+        dataContent = dataContent.replace(/,\s*,/g, ',');
+
         // 기존 articles 배열 찾기
         const articlesMatch = dataContent.match(/export const articles: Article\[\] = \[([\s\S]*?)\];/);
 
@@ -67,8 +70,12 @@ async function main() {
         tags: ${JSON.stringify(newArticle.tags)},
     }`;
 
-        // 기존 배열 끝에 새 기사 추가
-        const existingArticles = articlesMatch[1];
+        // 기존 배열 끝에 새 기사 추가 (중복 쉼표 방지 로직)
+        let existingArticles = articlesMatch[1].trim();
+        if (existingArticles.endsWith(',')) {
+            existingArticles = existingArticles.slice(0, -1).trim();
+        }
+
         const updatedArticles = `export const articles: Article[] = [${existingArticles},
 ${newArticleString}
 ];`;
