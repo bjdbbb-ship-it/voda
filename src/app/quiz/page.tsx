@@ -303,7 +303,7 @@ export default function QuizPage() {
                                             <h3 className="font-serif text-xl text-white font-bold mb-3">{whisky.name}</h3>
                                             <p className="text-white/60 text-sm mb-4 line-clamp-3">{whisky.description}</p>
                                             <div className="flex flex-wrap gap-2">
-                                                {whisky.tags.map(tag => (
+                                                {(whisky.tags || []).map((tag: string) => (
                                                     <span key={tag} className="text-xs px-2 py-1 bg-white/10 rounded text-white/80">
                                                         #{tag}
                                                     </span>

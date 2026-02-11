@@ -78,12 +78,12 @@ export default function ValueAssessmentPage() {
 
     const localWhiskies = combinedDatabase.filter(w =>
         w.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        w.tags?.some(t => t.toLowerCase().includes(searchTerm.toLowerCase()))
+        w.tags?.some((t: string) => t.toLowerCase().includes(searchTerm.toLowerCase()))
     );
 
     const globalResults = globalWhiskies.filter(w =>
         w.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        w.tags?.some(t => t.toLowerCase().includes(searchTerm.toLowerCase()))
+        w.tags?.some((t: string) => t.toLowerCase().includes(searchTerm.toLowerCase()))
     ).filter(gw => !localWhiskies.some(lw => isSameWhisky(lw.name, gw.name || ""))); // Enhanced duplicate removal
 
     const allWhiskies = showGlobal ? [...localWhiskies, ...globalResults] : localWhiskies;

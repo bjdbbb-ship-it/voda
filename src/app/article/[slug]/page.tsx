@@ -125,7 +125,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                             <div className="bg-muted/30 p-6 rounded-lg border border-border">
                                 <h4 className="font-serif text-xl font-bold text-primary mb-6">관련 토픽</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {article.tags.map(tag => (
+                                    {/* Check if tags exist before mapping */}
+                                    {(article.tags || []).map((tag: string) => (
                                         <span key={tag} className="px-3 py-1 bg-background border border-border rounded-full text-xs uppercase tracking-wider text-muted-foreground hover:border-secondary hover:text-primary cursor-pointer transition-colors">
                                             {tag}
                                         </span>
