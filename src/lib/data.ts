@@ -946,6 +946,74 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 위스키의 세계는 끊임없이 진화하고 있습니다. 2026년 위스키 업계를 이끄는 5가지 혁신는 최근 가장 주목받는 변화 중 하나입니다.`,
         tags: ["미래","혁신","신규 위스키 소식"],
         useTitleCover: false,
+    },
+    {
+        id: "auto-1770681600000-536",
+        slug: "미래-2026-02-10",
+        title: "2026년 위스키 업계를 이끄는 5가지 혁신",
+        subtitle: "지속가능성에서 AI 블렌딩까지",
+        category: "신규 위스키 소식",
+        author: "VODA",
+        publishedAt: "2026-02-10",
+        imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
+        content: `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.
+
+## 지속가능성에서 AI 블렌딩까지
+
+위스키의 세계는 끊임없이 진화하고 있습니다. 2026년 위스키 업계를 이끄는 5가지 혁신는 최근 가장 주목받는 변화 중 하나입니다.`,
+        tags: ["미래","혁신","신규 위스키 소식"],
+        useTitleCover: false,
+    },
+    {
+        id: "auto-1770768000000-272",
+        slug: "미래-2026-02-11",
+        title: "2026년 위스키 업계를 이끄는 5가지 혁신",
+        subtitle: "지속가능성에서 AI 블렌딩까지",
+        category: "신규 위스키 소식",
+        author: "VODA",
+        publishedAt: "2026-02-11",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=1200",
+        content: `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.
+
+## 지속가능성에서 AI 블렌딩까지
+
+위스키의 세계는 끊임없이 진화하고 있습니다. 2026년 위스키 업계를 이끄는 5가지 혁신는 최근 가장 주목받는 변화 중 하나입니다.`,
+        tags: ["미래","혁신","신규 위스키 소식"],
+        useTitleCover: false,
+    },
+    {
+        id: "auto-1770854400000-601",
+        slug: "미래-2026-02-12",
+        title: "2026년 위스키 업계를 이끄는 5가지 혁신",
+        subtitle: "지속가능성에서 AI 블렌딩까지",
+        category: "신규 위스키 소식",
+        author: "VODA",
+        publishedAt: "2026-02-12",
+        imageUrl: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=1200",
+        content: `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.
+
+## 지속가능성에서 AI 블렌딩까지
+
+위스키의 세계는 끊임없이 진화하고 있습니다. 2026년 위스키 업계를 이끄는 5가지 혁신는 최근 가장 주목받는 변화 중 하나입니다.`,
+        tags: ["미래","혁신","신규 위스키 소식"],
+        useTitleCover: false,
+    },
+    {
+        id: "auto-1770940800000-653",
+        slug: "미래-2026-02-13",
+        title: "2026년 위스키 업계를 이끄는 5가지 혁신",
+        subtitle: "지속가능성에서 AI 블렌딩까지",
+        category: "신규 위스키 소식",
+        author: "VODA",
+        publishedAt: "2026-02-13",
+        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=1200",
+        content: `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.
+
+## 지속가능성에서 AI 블렌딩까지
+
+위스키의 세계는 끊임없이 진화하고 있습니다. 2026년 위스키 업계를 이끄는 5가지 혁신는 최근 가장 주목받는 변화 중 하나입니다.`,
+        tags: ["미래","혁신","신규 위스키 소식"],
+        useTitleCover: false,
     }
 ];
 

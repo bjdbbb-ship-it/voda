@@ -8,6 +8,7 @@ export interface TopicTemplate {
     keywords: string[];
     targetAudience: 'beginner' | 'intermediate' | 'expert' | 'all';
     fullContent?: string; // 풍성한 본문 내용 (옵션)
+    customDate?: string; // 특정 날짜 (YYYY-MM-DD)
 }
 
 export const topicTemplates: TopicTemplate[] = [

@@ -14,6 +14,23 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
+// [Manual .env loader] tsx가 .env.local을 제대로 로드하지 못할 경우를 대비
+function loadEnvLocal() {
+    const envPath = path.join(process.cwd(), '.env.local');
+    if (fs.existsSync(envPath)) {
+        const envContent = fs.readFileSync(envPath, 'utf-8');
+        envContent.split('\n').forEach(line => {
+            const [key, value] = line.split('=');
+            if (key && value) {
+                process.env[key.trim()] = value.trim().replace(/^['"]|['"]$/g, '');
+            }
+        });
+        console.log('✅ .env.local loaded manually.');
+    }
+}
+
+loadEnvLocal();
+
 async function main() {
     try {
         console.log('🚀 일일 위스키 기사 생성 시작...\n');
@@ -26,9 +43,13 @@ async function main() {
             throw new Error(`generateDailyArticle is not a function (type: ${typeof generateDailyArticle})`);
         }
 
+        // 명령행 인자 파싱 (--date=YYYY-MM-DD)
+        const dateArg = process.argv.find(arg => arg.startsWith('--date='));
+        const customDate = dateArg ? dateArg.split('=')[1] : null;
+
         // 새 기사 생성 (Whiskymag, American Whiskey Mag 등 다양한 소스 반영)
-        console.log('📝 AI가 최신 위스키 매거진 주제를 분석하여 독창적인 기사를 작성 중입니다...');
-        const newArticle = await generateDailyArticle();
+        console.log(`📝 AI가 ${customDate || '오늘'}자 주제를 분석하여 독창적인 기사를 작성 중입니다...`);
+        const newArticle = await generateDailyArticle({ customDate });
 
         if (!newArticle) {
             console.log('\nℹ️ 오늘자 기사가 이미 존재하여 추가 작업을 수행하지 않습니다.');

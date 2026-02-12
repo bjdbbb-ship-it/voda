@@ -80,11 +80,11 @@ function generateArticleContent(topic: TopicTemplate, selectedWhiskies: typeof w
     // 여기서는 템플릿 기반으로 생성
     // 실제로는 AI API를 호출하여 더 풍부한 콘텐츠 생성 가능
 
-    const todayStr = new Date().toISOString().split('T')[0];
-    const existingArticle = articles.find(a => a.publishedAt === todayStr);
+    const articleDate = topic.customDate || new Date().toISOString().split('T')[0];
+    const existingArticle = articles.find(a => a.publishedAt === articleDate);
 
     if (existingArticle) {
-        console.log(`ℹ️ ${todayStr}일자 기사가 이미 존재합니다.`);
+        console.log(`ℹ️ ${articleDate}일자 기사가 이미 존재합니다.`);
         return ""; // null 대신 빈 문자열 반환으로 타입 에러 해소
     }
 

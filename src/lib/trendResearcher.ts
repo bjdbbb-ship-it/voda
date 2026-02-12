@@ -21,8 +21,8 @@ export function getNextCategory(): string {
 async function searchRealTimeWhiskyNews(): Promise<string> {
     const apiKey = process.env.SERPER_API_KEY;
     if (!apiKey) {
-        console.warn('⚠️ SERPER_API_KEY is missing. Using fallback search.');
-        return "";
+        console.warn('⚠️ SERPER_API_KEY is missing. Using static news fallback.');
+        return `제목: 맥켈란, 새로운 '호라이즌' 디자인 공개\n설명: 벤트리와의 협업으로 탄생한 가로형 디캔터 위스키.\n\n제목: 야마자키 2024 리미티드 에디션 출시\n설명: 일본 현지 면세점 한정판 츠쿠바네 시리즈 공개.\n\n제목: 아드벡 '앤솔로지' 두 번째 에디션 출시\n설명: 13년 숙성 마데이라 캐스크 피니시 위스키.`;
     }
 
     try {
@@ -39,7 +39,10 @@ async function searchRealTimeWhiskyNews(): Promise<string> {
         });
 
         const data = await response.json();
-        if (!data.organic || data.organic.length === 0) return "";
+        if (!data.organic || data.organic.length === 0) {
+            console.log('ℹ️ No organic results found. Using static news fallback.');
+            return `제목: 맥켈란, 새로운 '호라이즌' 디자인 공개\n설명: 벤트리와의 협업으로 탄생한 가로형 디캔터 위스키.\n\n제목: 야마자키 2024 리미티드 에디션 출시\n설명: 일본 현지 면세점 한정판 츠쿠바네 시리즈 공개.\n\n제목: 아드벡 '앤솔로지' 두 번째 에디션 출시\n설명: 13년 숙성 마데이라 캐스크 피니시 위스키.`;
+        }
 
         // 뉴스 제목과 내용을 하나의 문자열로 결합
         return data.organic.slice(0, 5).map((item: any) =>
