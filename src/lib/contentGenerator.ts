@@ -85,7 +85,7 @@ function generateArticleContent(topic: TopicTemplate, selectedWhiskies: typeof w
 
     if (existingArticle) {
         console.log(`ℹ️ ${todayStr}일자 기사가 이미 존재합니다.`);
-        return null;
+        return ""; // null 대신 빈 문자열 반환으로 타입 에러 해소
     }
 
     const intro = generateIntroduction(topic);
