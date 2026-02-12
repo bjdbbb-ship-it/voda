@@ -15,11 +15,19 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
             className={`group block overflow-hidden border border-transparent hover:border-border/50 transition-all duration-300 ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
         >
             <div className={`relative w-full overflow-hidden bg-muted ${featured ? 'aspect-[4/3] md:aspect-video' : 'aspect-[4/3]'}`}>
-                <div className="absolute inset-0 flex items-center justify-center bg-primary/10 p-6 text-center transition-transform duration-700 group-hover:scale-105">
-                    <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary break-keep leading-snug">
-                        {article.title}
-                    </h3>
-                </div>
+                {!article.useTitleCover ? (
+                    <ArticleImage
+                        src={article.imageUrl}
+                        alt={article.title}
+                        className="transition-transform duration-700 group-hover:scale-105"
+                    />
+                ) : (
+                    <div className="absolute inset-0 flex items-center justify-center bg-primary/10 p-6 text-center transition-transform duration-700 group-hover:scale-105">
+                        <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary break-keep leading-snug">
+                            {article.title}
+                        </h3>
+                    </div>
+                )}
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
 
                 <div className="absolute top-4 right-4 bg-white/90 dark:bg-black/90 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">

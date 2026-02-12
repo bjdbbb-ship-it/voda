@@ -5,17 +5,57 @@ import { Article } from "./data";
 
 const CATEGORIES = [
     "트렌드", "추천", "역사", "칵테일", "페어링",
-    "지역탐방", "입문", "컬렉팅", "리뷰", "뉴스"
+    "지역탐방", "입문", "컬렉팅", "리뷰", "뉴스", "신규 위스키 소식"
 ];
 
-let lastCategoryIndex = -1;
+let lastCategoryIndex = 9; // Temporarily set to 9 to test "신규 위스키 소식" (index 10) next
 
 export function getNextCategory(): string {
     lastCategoryIndex = (lastCategoryIndex + 1) % CATEGORIES.length;
     return CATEGORIES[lastCategoryIndex];
 }
 
-async function searchWhiskyTrends(category: string): Promise<string> {
+/**
+ * Serper API를 사용한 실시간 위스키 소식 검색
+ */
+async function searchRealTimeWhiskyNews(): Promise<string> {
+    const apiKey = process.env.SERPER_API_KEY;
+    if (!apiKey) {
+        console.warn('⚠️ SERPER_API_KEY is missing. Using fallback search.');
+        return "";
+    }
+
+    try {
+        const today = new Date().toISOString().split('T')[0];
+        const query = `new whisky release news ${today}`;
+
+        const response = await fetch('https://google.serper.dev/search', {
+            method: 'POST',
+            headers: {
+                'X-API-KEY': apiKey,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ q: query, gl: 'kr', hl: 'ko' })
+        });
+
+        const data = await response.json();
+        if (!data.organic || data.organic.length === 0) return "";
+
+        // 뉴스 제목과 내용을 하나의 문자열로 결합
+        return data.organic.slice(0, 5).map((item: any) =>
+            `제목: ${item.title}\n설명: ${item.snippet}\n링크: ${item.link}`
+        ).join('\n\n');
+    } catch (error) {
+        console.error('❌ 실시간 검색 실패:', error);
+        return "";
+    }
+}
+
+export async function searchWhiskyTrends(category: string): Promise<string> {
+    if (category === "신규 위스키 소식") {
+        return await searchRealTimeWhiskyNews();
+    }
+
     const searchQueries = {
         "트렌드": "latest whisky trends 2026 innovations",
         "추천": "best whisky recommendations new releases",

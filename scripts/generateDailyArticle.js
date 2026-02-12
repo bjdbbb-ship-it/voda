@@ -68,6 +68,7 @@ async function main() {
         imageUrl: "${newArticle.imageUrl}",
         content: \`${newArticle.content.replace(/`/g, '\\`')}\`,
         tags: ${JSON.stringify(newArticle.tags)},
+        useTitleCover: ${newArticle.useTitleCover},
     }`;
 
         // 기존 배열 끝에 새 기사 추가 (중복 쉼표 방지 로직)
@@ -100,7 +101,8 @@ ${newArticleString}
                 if (process.env.GITHUB_ACTIONS !== 'true') {
                     // 로컬 환경에서의 푸시
                     execSync('git add src/lib/data.ts');
-                    execSync(`git commit -m "🤖 Add daily whisky article [${new Date().toISOString().split('T')[0]}]"`);
+                    const today = new Date().toISOString().split('T')[0];
+                    execSync(`git commit -m "🤖 Add daily whisky article [${today}]"`);
                     execSync('git push');
                     console.log('✅ 성공적으로 푸시되었습니다! 잠시 후 배포가 완료됩니다.');
                 } else {

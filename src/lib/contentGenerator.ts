@@ -80,6 +80,14 @@ function generateArticleContent(topic: TopicTemplate, selectedWhiskies: typeof w
     // 여기서는 템플릿 기반으로 생성
     // 실제로는 AI API를 호출하여 더 풍부한 콘텐츠 생성 가능
 
+    const todayStr = new Date().toISOString().split('T')[0];
+    const existingArticle = articles.find(a => a.publishedAt === todayStr);
+
+    if (existingArticle) {
+        console.log(`ℹ️ ${todayStr}일자 기사가 이미 존재합니다.`);
+        return null;
+    }
+
     const intro = generateIntroduction(topic);
     const body = generateBody(topic, selectedWhiskies);
     const conclusion = generateConclusion(topic);
@@ -230,7 +238,15 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     console.log(`📂 선택된 카테고리: ${category}`);
 
     // 2. AI를 활용한 독창적인 주제 생성
-    console.log('🤖 AI가 최신 위스키 트렌드를 분석하여 독창적인 주제를 생성 중...');
+    console.log('🤖 AI가 최신 위스키 트렌드(또는 실시간 뉴스)를 분석하여 독창적인 주제를 생성 중...');
+    const trendResults = await searchWhiskyTrends(category);
+
+    // [New] 신규 위스키 소식 카테고리인데 검색 결과가 없으면 생성 건너뜀
+    if (category === "신규 위스키 소식" && (!trendResults || trendResults.trim() === "")) {
+        console.log(`ℹ️ 오늘자 신규 위스키 소식이 검색되지 않았습니다. 생성을 건너뜁니다.`);
+        return null as any;
+    }
+
     const topicData = await generateTopicFromTrends(category);
 
     const topic: TopicTemplate = {
@@ -248,12 +264,18 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
 
     // 4. AI를 활용한 풍성한 본문 생성
     console.log('📝 AI가 풍성한 기사 본문을 작성 중...');
+    // 트렌드 결과(뉴스 검색 결과 포함)를 본문에 전달하거나 활용할 수 있음
     const content = await generateAIContent(
         topic.title,
         topic.subtitle,
         topic.category,
         topic.keywords
     );
+
+    // [New] 뉴스 카테고리인 경우 제목 아래에 뉴스 출처 정보를 추가하거나 AI가 요약하도록 유도
+    const finalContent = category === "신규 위스키 소식"
+        ? `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.\n\n${content}`
+        : content;
 
     // 5. 기사 객체 생성
     const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
@@ -262,10 +284,10 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const articleDate = finalConfig.customDate || new Date().toISOString().split('T')[0];
 
     // [New] 중복 생성 방지: 이미 해당 날짜의 기사가 있는지 확인
-    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-'));
+    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-') && a.category === category);
     if (isDuplicate && !finalConfig.customDate) {
-        console.log(`⏭️  ${articleDate} 일자의 기사가 이미 존재합니다. 생성을 건너뜠니다.`);
-        return null as any; // 타입 호환성을 위해 null 반환
+        console.log(`⏭️  ${articleDate} 일자의 '${category}' 기사가 이미 존재합니다. 생성을 건너뜠니다.`);
+        return null as any;
     }
 
     const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
@@ -279,13 +301,16 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         author: "VODA",
         publishedAt: articleDate,
         imageUrl: getImageForCategory(topic.category, topic.keywords),
-        content: content,
+        content: finalContent,
         tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
-        useTitleCover: true
+        useTitleCover: category === "신규 위스키 소식" ? false : true // 뉴스 소식은 이미지를 사용함
     };
 
     return article;
 }
+
+// 헬퍼 함수 추가 (또는 기존 trendResearcher에서 가져오기)
+import { searchWhiskyTrends } from './trendResearcher';
 
 import { getRandomImageForKeywords } from './imagePool';
 
