@@ -25,9 +25,15 @@ export default function Home() {
               당신의 취향에 맞는 최고의 위스키를 찾아보세요.<br className="hidden md:block" />
               완벽한 한 잔을 위한 여정이 여기서 시작됩니다.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center">
               <a href="/quiz" className="px-8 py-4 bg-secondary text-primary font-bold text-lg rounded hover:bg-white transition-colors duration-300">
                 취향 분석 시작하기
+              </a>
+              <a href="/value" className="px-8 py-4 bg-secondary/20 border border-secondary text-secondary font-bold text-lg rounded hover:bg-secondary/30 transition-colors duration-300">
+                가치 판단
+              </a>
+              <a href="https://vodabar.lovable.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-secondary/20 border border-secondary text-secondary font-bold text-lg rounded hover:bg-secondary/30 transition-colors duration-300">
+                테이스팅 노트 작성
               </a>
               <a href="#magazine" className="px-8 py-4 border border-secondary text-secondary font-medium text-lg rounded hover:bg-secondary/10 transition-colors duration-300">
                 매거진 읽기
