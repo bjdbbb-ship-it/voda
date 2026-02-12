@@ -57,7 +57,7 @@ export default function Home() {
               <div className="w-24 h-1 bg-secondary mx-auto"></div>
             </div>
 
-            <ArticleGrid articles={publishedArticles} />
+            <ArticleGrid articles={publishedArticles} hideImage={true} />
 
             <div className="mt-16 text-center">
               <Link
