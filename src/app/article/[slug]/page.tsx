@@ -28,20 +28,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     return (
         <article className="min-h-screen bg-background">
             {/* Hero Header */}
-            <div className="relative h-[60vh] w-full">
-                <ArticleImage
-                    src={article.imageUrl}
-                    alt={article.title}
-                    priority
-                />
-                <div className="absolute inset-0 bg-black/40" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            {/* Hero Header - Text Based */}
+            <div className="relative h-[50vh] w-full bg-primary text-secondary flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-black/10" />
 
-                <div className="absolute top-24 left-0 w-full px-4">
+                {/* Decorative background elements */}
+                <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+
+                <div className="absolute top-24 left-0 w-full px-4 z-10">
                     <div className="container mx-auto">
                         <Link
                             href="/"
-                            className="inline-flex items-center gap-2 text-white/90 hover:text-secondary transition-colors"
+                            className="inline-flex items-center gap-2 text-secondary/80 hover:text-white transition-colors"
                         >
                             <ArrowLeft className="w-5 h-5" />
                             <span className="uppercase tracking-widest text-sm font-medium">매거진으로 돌아가기</span>
@@ -49,19 +48,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 w-full px-4 pb-12">
-                    <div className="container mx-auto">
-                        <div className="max-w-3xl">
-                            <span className="inline-block px-3 py-1 mb-6 border border-secondary/50 rounded-full text-secondary text-sm uppercase tracking-widest bg-black/30 backdrop-blur-sm">
-                                {article.category}
-                            </span>
-                            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                                {article.title}
-                            </h1>
-                            <p className="text-xl text-white/90 font-light max-w-2xl leading-relaxed">
-                                {article.subtitle}
-                            </p>
-                        </div>
+                <div className="container mx-auto px-4 z-10 text-center">
+                    <div className="max-w-4xl mx-auto">
+                        <span className="inline-block px-3 py-1 mb-6 border border-secondary/30 rounded-full text-secondary text-sm uppercase tracking-widest bg-white/5 backdrop-blur-sm">
+                            {article.category}
+                        </span>
+                        <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight break-keep">
+                            {article.title}
+                        </h1>
+                        <p className="text-xl md:text-2xl text-white/80 font-light max-w-3xl mx-auto leading-relaxed">
+                            {article.subtitle}
+                        </p>
                     </div>
                 </div>
             </div>

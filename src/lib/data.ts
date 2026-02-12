@@ -39,6 +39,7 @@ export interface Article {
     imageUrl: string;
     content: string;
     tags?: string[];
+    useTitleCover?: boolean;
 }
 
 
@@ -867,7 +868,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
     {
         id: "auto-1770768000000-587",
         slug: "news-2026-02-11",
-        title: "위스키 업계 이번 주 하이라이트",
+        title: "위스키 업계 하이라이트",
         subtitle: "놓치면 안 될 최신 소식 총정리",
         category: "뉴스",
         author: "VODA",
@@ -896,6 +897,7 @@ GreatDrams의 설립자 Greg Dillon은 이렇게 조언합니다. "소비자들�
 
 건배! 🥃`,
         tags: ["news", "update", "industry", "announcement", "latest", "뉴스"],
+        useTitleCover: true,
     },
     {
         id: "auto-1770854400000-473",

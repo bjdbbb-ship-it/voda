@@ -280,7 +280,8 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         publishedAt: articleDate,
         imageUrl: getImageForCategory(topic.category, topic.keywords),
         content: content,
-        tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])]
+        tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
+        useTitleCover: true
     };
 
     return article;
