@@ -233,8 +233,8 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
 
     console.log('🚀 AI 기반 일일 위스키 기사 생성 시작...');
 
-    // 1. 카테고리 선택 (순환)
-    const category = getNextCategory();
+    // 1. 카테고리는 항상 "신규 위스키 소식"으로 고정
+    const category = "신규 위스키 소식";
     console.log(`📂 선택된 카테고리: ${category}`);
 
     // 2. AI를 활용한 독창적인 주제 생성
@@ -264,7 +264,6 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
 
     // 4. AI를 활용한 풍성한 본문 생성
     console.log('📝 AI가 풍성한 기사 본문을 작성 중...');
-    // 트렌드 결과(뉴스 검색 결과 포함)를 본문에 전달하거나 활용할 수 있음
     const content = await generateAIContent(
         topic.title,
         topic.subtitle,
@@ -272,7 +271,13 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         topic.keywords
     );
 
-    // [New] 뉴스 카테고리인 경우 제목 아래에 뉴스 출처 정보를 추가하거나 AI가 요약하도록 유도
+    // AI 생성 실패 시 (fallback만 반환된 경우 등) 중단 로직 추가
+    if (!content || content.length < 200) {
+        console.warn('⚠️ AI가 충분한 분량의 기사를 생성하지 못했습니다. 작업을 중단합니다.');
+        return null as any;
+    }
+
+    // [New] 뉴스 카테고리인 경우 제목 아래에 뉴스 출처 정보를 추가
     const finalContent = category === "신규 위스키 소식"
         ? `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.\n\n${content}`
         : content;
@@ -281,12 +286,16 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
         finalConfig.style === 'witty' ? 'master-of-malt' : null;
 
-    const articleDate = finalConfig.customDate || new Date().toISOString().split('T')[0];
+    // 타임존 보정 (KST)
+    const now = new Date();
+    const kstOffset = 9 * 60 * 60 * 1000;
+    const kstDate = new Date(now.getTime() + kstOffset);
+    const articleDate = finalConfig.customDate || kstDate.toISOString().split('T')[0];
 
     // [New] 중복 생성 방지: 이미 해당 날짜의 기사가 있는지 확인
-    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.id.startsWith('auto-') && a.category === category);
+    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.category === category);
     if (isDuplicate && !finalConfig.customDate) {
-        console.log(`⏭️  ${articleDate} 일자의 '${category}' 기사가 이미 존재합니다. 생성을 건너뜠니다.`);
+        console.log(`⏭️  ${articleDate} 일자의 '${category}' 기사가 이미 존재합니다. 생성을 건너뜁니다.`);
         return null as any;
     }
 

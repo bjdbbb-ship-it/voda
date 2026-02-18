@@ -26,7 +26,10 @@ async function searchRealTimeWhiskyNews(): Promise<string> {
     }
 
     try {
-        const today = new Date().toISOString().split('T')[0];
+        const now = new Date();
+        const kstOffset = 9 * 60 * 60 * 1000;
+        const kstDate = new Date(now.getTime() + kstOffset);
+        const today = kstDate.toISOString().split('T')[0];
         const query = `new whisky release news ${today}`;
 
         const response = await fetch('https://google.serper.dev/search', {
@@ -72,16 +75,17 @@ export async function searchWhiskyTrends(category: string): Promise<string> {
         "뉴스": "whisky industry news latest announcements"
     };
     const query = searchQueries[category as keyof typeof searchQueries] || "whisky news";
-    return `최근 위스키 업계 주요 트렌드 (${category}): 지속 가능한 생산, 비전통적 캐스크 피니싱, 크래프트 증류소 성장, AI 블렌팅 기술.`;
+    return `최근 위스키 업계 주요 트렌드 (${category}): 지속 가능한 생산, 비전통적 캐스크 피니싱, 크래프트 증류소 성장, AI 블렌딩 기술.`;
 }
 
 /**
- * Native Fetch를 사용한 Gemini API 호출 헬퍼
- */
+* Native Fetch를 사용한 Gemini API 호출 헬퍼
+*/
 async function callGeminiAPI(prompt: string): Promise<string> {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
 
+    // 할당량 문제 완화를 위해 안정성을 우선하여 gemini-2.0-flash 모델 사용
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

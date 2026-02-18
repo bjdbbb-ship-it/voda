@@ -25,19 +25,65 @@ export default function Home() {
               당신의 취향에 맞는 최고의 위스키를 찾아보세요.<br className="hidden md:block" />
               완벽한 한 잔을 위한 여정이 여기서 시작됩니다.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a href="/quiz" className="px-8 py-4 bg-secondary text-primary font-bold text-lg rounded hover:bg-white transition-colors duration-300">
-                취향 분석 시작하기
-              </a>
-              <a href="/value" className="px-8 py-4 bg-secondary/20 border border-secondary text-secondary font-bold text-lg rounded hover:bg-secondary/30 transition-colors duration-300">
-                가치 판단
-              </a>
-              <a href="https://vodabar.lovable.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-secondary/20 border border-secondary text-secondary font-bold text-lg rounded hover:bg-secondary/30 transition-colors duration-300">
-                테이스팅 노트 작성
-              </a>
-              <a href="#magazine" className="px-8 py-4 border border-secondary text-secondary font-medium text-lg rounded hover:bg-secondary/10 transition-colors duration-300">
-                매거진 읽기
-              </a>
+            {/* Grid Layout for Better Organization */}
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* 취향 분석 */}
+                <a
+                  href="/quiz"
+                  className="group relative px-8 py-6 bg-secondary text-primary font-bold text-lg rounded-lg hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <div className="text-center">
+                    <div className="font-bold text-xl mb-2">취향 분석</div>
+                    <p className="text-sm font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
+                  </div>
+                </a>
+
+                {/* 가치 판단 */}
+                <a
+                  href="/value"
+                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <div className="text-center">
+                    <div className="font-bold text-xl mb-2">가치 판단</div>
+                    <p className="text-sm font-normal text-secondary/70">위스키 가격 평가하기</p>
+                  </div>
+                </a>
+
+                {/* 테이스팅 노트 */}
+                <a
+                  href="https://vodabar.lovable.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <div className="text-center">
+                    <div className="font-bold text-xl mb-2">테이스팅 노트</div>
+                    <p className="text-sm font-normal text-secondary/70">나만의 시음 기록 작성</p>
+                  </div>
+                </a>
+
+                {/* 신규 위스키 소식 */}
+                <a
+                  href="/news"
+                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <div className="text-center">
+                    <div className="font-bold text-xl mb-2">신규 위스키 소식</div>
+                    <p className="text-sm font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
+                  </div>
+                </a>
+              </div>
+
+              {/* 매거진 읽기 버튼 - 별도로 강조 */}
+              <div className="mt-6">
+                <a
+                  href="#magazine"
+                  className="block w-full px-8 py-4 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/10 transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <div className="font-bold text-xl">매거진 읽기</div>
+                </a>
+              </div>
             </div>
           </div>
 
