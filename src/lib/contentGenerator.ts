@@ -30,9 +30,9 @@ function selectRelevantWhiskies(topic: TopicTemplate, count: number = 3) {
 
     // 키워드에 맞는 위스키 필터링
     let relevant = whiskies.filter(w => {
-        const tags = w.tags.join(' ').toLowerCase();
-        const desc = w.description.toLowerCase();
-        const name = w.name.toLowerCase();
+        const tags = (w.tags || []).join(' ').toLowerCase();
+        const desc = (w.description || '').toLowerCase();
+        const name = (w.name || '').toLowerCase();
 
         // 피트 관련
         if (keywords.includes('peat') || keywords.includes('smoky')) {

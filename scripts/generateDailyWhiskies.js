@@ -17,16 +17,30 @@ async function main() {
         const poolDataPath = path.join(process.cwd(), 'src/lib/whisky-pool.ts');
 
         // Dynamic imports for TS files using tsx
-        const { whiskies } = await import('../src/lib/data.ts');
-        const { globalWhiskies } = await import('../src/lib/global-data.ts');
-        const { whiskyPool } = await import('../src/lib/whisky-pool.ts');
+        console.log('📦 데이터 모듈 로드 중...');
+        const dataMod = await import('../src/lib/data.ts');
+        const whiskies = dataMod.whiskies || (dataMod.default && dataMod.default.whiskies);
+
+        const globalDataMod = await import('../src/lib/global-data.ts');
+        const globalWhiskies = globalDataMod.globalWhiskies || (globalDataMod.default && globalDataMod.default.globalWhiskies);
+
+        const poolDataMod = await import('../src/lib/whisky-pool.ts');
+        const whiskyPool = poolDataMod.whiskyPool || (poolDataMod.default && poolDataMod.default.whiskyPool);
+
+        if (!whiskies) {
+            console.log('Data module keys:', Object.keys(dataMod));
+            console.error('❌ whiskies가 undefined입니다!');
+            process.exit(1);
+        }
 
         const existingNames = new Set(whiskies.map(w => w.name.toLowerCase()));
+        const existingIds = new Set(whiskies.map(w => w.id));
 
         // 후보군 합치기 및 중복 제거
         const candidates = [...whiskyPool, ...globalWhiskies].filter(w => {
-            if (!w || !w.name) return false;
-            return !existingNames.has(w.name.toLowerCase());
+            if (!w || !w.name || !w.id) return false;
+            // 이름 또는 ID가 이미 존재하면 제외
+            return !existingNames.has(w.name.toLowerCase()) && !existingIds.has(w.id);
         });
 
         if (candidates.length === 0) {

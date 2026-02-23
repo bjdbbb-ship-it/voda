@@ -1,4 +1,4 @@
-import { Whisky } from "./data";
+import { Whisky } from "./data.ts";
 
 export const globalWhiskies: Whisky[] = [
     {

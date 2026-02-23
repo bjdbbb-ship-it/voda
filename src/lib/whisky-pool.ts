@@ -1,4 +1,4 @@
-import { Whisky } from "./data";
+import { Whisky } from "./data.ts";
 
 export const whiskyPool: Partial<Whisky>[] = [
     // p6(Aberlour A'bunadh), p8(The Balvenie 14 Caribbean Cask), 
