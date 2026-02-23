@@ -59,7 +59,8 @@ export const articles: Article[] = [
 이곳에서 당신만의 위스키 취향을 발견하고, 전 세계의 다양한 위스키 소식을 접해보세요.
 
 매일 새로운 위스키 정보와 기사가 업데이트됩니다.`,
-        tags: ["공지", "위스키", "VODA"]
+        tags: ["공지","위스키","VODA"],
+        useTitleCover: true
     }
 ];
 

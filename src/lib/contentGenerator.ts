@@ -292,10 +292,14 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const kstDate = new Date(now.getTime() + kstOffset);
     const articleDate = finalConfig.customDate || kstDate.toISOString().split('T')[0];
 
-    // [New] 중복 생성 방지: 이미 해당 날짜의 기사가 있는지 확인
-    const isDuplicate = articles.some((a: Article) => a.publishedAt === articleDate && a.category === category);
+    // [New] 중복 생성 방지: 이미 해당 날짜의 기사 또는 동일한 제목의 기사가 있는지 확인
+    const isDuplicate = articles.some((a: Article) =>
+        (a.publishedAt === articleDate && a.category === category) ||
+        (a.title === topic.title)
+    );
+
     if (isDuplicate && !finalConfig.customDate) {
-        console.log(`⏭️  ${articleDate} 일자의 '${category}' 기사가 이미 존재합니다. 생성을 건너뜁니다.`);
+        console.log(`⏭️  이미 '${topic.title}' 제목의 기사가 존재하거나 ${articleDate} 일자의 '${category}' 기사가 있습니다. 생성을 건너뜁니다.`);
         return null as any;
     }
 
