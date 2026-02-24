@@ -228,63 +228,13 @@ function getPriceRangeKorean(range: string): string {
 /**
  * 완전한 기사 생성
  */
+// 매거진 전용 카테고리 목록 (신규 위스키 소식 제외)
+const MAGAZINE_CATEGORIES = ["트렌드", "추천", "역사", "칵테일", "페어링", "지역탐방", "입문", "컬렉팅", "리뷰"];
+
 export async function generateDailyArticle(config: Partial<ArticleGenerationConfig> = {}): Promise<Article> {
     const finalConfig = { ...defaultConfig, ...config };
 
-    console.log('🚀 AI 기반 일일 위스키 기사 생성 시작...');
-
-    // 1. 카테고리는 항상 "신규 위스키 소식"으로 고정
-    const category = "신규 위스키 소식";
-    console.log(`📂 선택된 카테고리: ${category}`);
-
-    // 2. AI를 활용한 독창적인 주제 생성
-    console.log('🤖 AI가 최신 위스키 트렌드(또는 실시간 뉴스)를 분석하여 독창적인 주제를 생성 중...');
-    const trendResults = await searchWhiskyTrends(category);
-
-    // [New] 신규 위스키 소식 카테고리인데 검색 결과가 없으면 생성 건너뜀
-    if (category === "신규 위스키 소식" && (!trendResults || trendResults.trim() === "")) {
-        console.log(`ℹ️ 오늘자 신규 위스키 소식이 검색되지 않았습니다. 생성을 건너뜁니다.`);
-        return null as any;
-    }
-
-    const topicData = await generateTopicFromTrends(category);
-
-    const topic: TopicTemplate = {
-        category: category,
-        title: topicData.title,
-        subtitle: topicData.subtitle,
-        keywords: topicData.keywords,
-        targetAudience: 'all'
-    };
-
-    console.log(`✨ 생성된 주제: ${topic.title}`);
-
-    // 3. 관련 위스키 선택
-    const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
-
-    // 4. AI를 활용한 풍성한 본문 생성
-    console.log('📝 AI가 풍성한 기사 본문을 작성 중...');
-    const content = await generateAIContent(
-        topic.title,
-        topic.subtitle,
-        topic.category,
-        topic.keywords
-    );
-
-    // AI 생성 실패 시 (fallback만 반환된 경우 등) 중단 로직 추가
-    if (!content || content.length < 200) {
-        console.warn('⚠️ AI가 충분한 분량의 기사를 생성하지 못했습니다. 작업을 중단합니다.');
-        return null as any;
-    }
-
-    // [New] 뉴스 카테고리인 경우 제목 아래에 뉴스 출처 정보를 추가
-    const finalContent = category === "신규 위스키 소식"
-        ? `> **실시간 뉴스 요약**: 아래 내용은 공개된 웹 검색 결과를 바탕으로 AI가 재구성했습니다.\n\n${content}`
-        : content;
-
-    // 5. 기사 객체 생성
-    const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
-        finalConfig.style === 'witty' ? 'master-of-malt' : null;
+    console.log('🚀 AI 기반 매거진 기사 생성 시작...');
 
     // 타임존 보정 (KST)
     const now = new Date();
@@ -292,31 +242,79 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const kstDate = new Date(now.getTime() + kstOffset);
     const articleDate = finalConfig.customDate || kstDate.toISOString().split('T')[0];
 
-    // [New] 중복 생성 방지: 이미 해당 날짜의 기사 또는 동일한 제목의 기사가 있는지 확인
-    const isDuplicate = articles.some((a: Article) =>
-        (a.publishedAt === articleDate && a.category === category) ||
-        (a.title === topic.title)
+    // 1. 오늘 날짜에 이미 매거진 기사가 있으면 스킵
+    const todayMagazineExists = articles.some((a: Article) =>
+        a.publishedAt === articleDate && a.category !== "신규 위스키 소식"
+    );
+    if (todayMagazineExists && !finalConfig.customDate) {
+        console.log(`⏭️  ${articleDate} 날짜의 매거진 기사가 이미 존재합니다. 건너뜁니다.`);
+        return null as any;
+    }
+
+    // 2. 카테고리 랜덤 선택 (신규 위스키 소식 제외)
+    const category = MAGAZINE_CATEGORIES[Math.floor(Math.random() * MAGAZINE_CATEGORIES.length)];
+    console.log(`📂 선택된 카테고리: ${category}`);
+
+    // 3. topicTemplates에서 해당 카테고리 관련 템플릿 찾기 (AI 시드용)
+    const matchingTemplate = topicTemplates.find(t => t.category === category) || topicTemplates[0];
+    const seedContent = matchingTemplate.fullContent || '';
+
+    // 4. AI로 주제 생성
+    console.log('🤖 AI가 위스키 트렌드를 분석하여 독창적인 주제를 생성 중...');
+    const topicData = await generateTopicFromTrends(category);
+
+    const topic: TopicTemplate = {
+        category,
+        title: topicData.title,
+        subtitle: topicData.subtitle,
+        keywords: topicData.keywords,
+        targetAudience: 'all',
+        fullContent: seedContent
+    };
+
+    console.log(`✨ 생성된 주제: ${topic.title}`);
+
+    // 5. 관련 위스키 선택
+    const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
+
+    // 6. AI 본문 생성 (풍성한 매거진 스타일)
+    console.log('📝 AI가 풍성한 매거진 기사 본문을 작성 중...');
+    const content = await generateAIContent(
+        topic.title,
+        topic.subtitle,
+        topic.category,
+        topic.keywords,
+        seedContent
     );
 
-    if (isDuplicate && !finalConfig.customDate) {
-        console.log(`⏭️  이미 '${topic.title}' 제목의 기사가 존재하거나 ${articleDate} 일자의 '${category}' 기사가 있습니다. 생성을 건너뜁니다.`);
+    if (!content || content.length < 300) {
+        console.warn('⚠️ AI가 충분한 분량의 기사를 생성하지 못했습니다. 작업을 중단합니다.');
+        return null as any;
+    }
+
+    // 7. 중복 제목 체크
+    const isDuplicate = articles.some((a: Article) => a.title === topic.title);
+    if (isDuplicate) {
+        console.log(`⏭️  이미 '${topic.title}' 제목의 기사가 존재합니다. 건너뜁니다.`);
         return null as any;
     }
 
     const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
+    const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
+        finalConfig.style === 'witty' ? 'master-of-malt' : null;
 
     const article: Article = {
-        id: `auto-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
-        slug: `${(topic.keywords[0] || 'article').replace(/\s+/g, '-')}-${articleDate}`,
+        id: `magazine-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
+        slug: `${(topicData.keywords[0] || 'article').replace(/\s+/g, '-')}-${articleDate}`,
         title: topic.title,
         subtitle: topic.subtitle,
         category: topic.category,
         author: "VODA",
         publishedAt: articleDate,
         imageUrl: getImageForCategory(topic.category, topic.keywords),
-        content: finalContent,
+        content,
         tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
-        useTitleCover: category === "신규 위스키 소식" ? false : true // 뉴스 소식은 이미지를 사용함
+        useTitleCover: true
     };
 
     return article;

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "generate:article": "tsx scripts/generateDailyArticle.js",
     "generate:whiskies": "tsx scripts/generateDailyWhiskies.js",
+    "generate:news": "tsx scripts/generateNewsArticle.js",
     "generate:deploy": "tsx scripts/generateDailyArticle.js --push"
   },
   "dependencies": {

@@ -1,0 +1,55 @@
+name: Daily Magazine Article
+
+# 매일 KST 오전 9시 (UTC 00:00)에 매거진 기사 1개 + 위스키 10개 업데이트
+on:
+  schedule:
+    - cron: '0 0 * * *'  # KST 오전 9시 (UTC 00:00)
+  workflow_dispatch:  # 수동 실행도 가능
+
+jobs:
+  generate-magazine:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate daily magazine article
+        run: npm run generate:article
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Update daily whiskies (10개 가치판단 갱신)
+        run: npm run generate:whiskies
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/lib/data.ts src/lib/global-data.ts src/lib/whisky-pool.ts
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily magazine article & whisky update [$(date +'%Y-%m-%d')]" && git pull --rebase origin main && git push)
+
+      - name: Notify success
+        if: success()
+        run: echo "Magazine article and whisky update completed!"
+
+      - name: Notify failure
+        if: failure()
+        run: |
+          echo "FAILED: Magazine article generation error!"
+          exit 1

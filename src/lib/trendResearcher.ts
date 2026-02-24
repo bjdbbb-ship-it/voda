@@ -124,7 +124,8 @@ export async function generateArticleContent(
     title: string,
     subtitle: string,
     category: string,
-    keywords: string[]
+    keywords: string[],
+    seedContent?: string
 ): Promise<string> {
     try {
         let prompt: string;
@@ -144,7 +145,22 @@ export async function generateArticleContent(
 4. 건배 멘트로 마무리
 5. 독자에게 친근하고 전문적인 어조로 작성`;
         } else {
-            prompt = `당신은 위스키 매거진 'VODA'의 시니어 라이터입니다. 기사 제목: ${title}, 부제목: ${subtitle}, 키워드: ${keywords.join(', ')}. 전문적이고 풍성한 한국어 위스키 기사 본문을 작성해주세요. 1,500자 이상, 마크다운 형식으로 작성하고 '마치며' 부분에 건배 인사를 포함하세요.`;
+            const seedSection = seedContent
+                ? `\n\n참고할 콘텐츠 스타일 및 방향 (이를 바탕으로 더 풍성하게 확장하세요):\n${seedContent}`
+                : '';
+            prompt = `당신은 위스키 매거진 'VODA'의 시니어 에디터입니다.
+기사 제목: ${title}
+부제목: ${subtitle}
+카테고리: ${category}
+키워드: ${keywords.join(', ')}
+${seedSection}
+
+아래 조건을 반드시 지켜 전문적인 한국어 위스키 매거진 기사를 작성해주세요:
+1. 2,000자 이상, 마크다운 형식으로 작성
+2. 도입부, 전문 지식 섹션(최소 2개), 추천 또는 팁, 마치며 섹션 포함
+3. 독자가 실제로 배울 수 있는 깊이 있는 내용 포함
+4. '마치며'에서 건배 멘트로 마무리
+5. 친근하면서도 전문적인 매거진 어조로 작성`;
         }
 
         const content = await callGeminiAPI(prompt);

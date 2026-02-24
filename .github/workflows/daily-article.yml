@@ -1,10 +1,11 @@
-name: Generate Daily Whisky Article
+name: "[DEPRECATED] Generate Daily Whisky Article"
 
-# 매일 자정(한국 시간 오전 9시)에 자동으로 새 기사 생성
+# 이 워크플로우는 daily-magazine.yml 과 daily-news.yml 로 분리되었습니다.
+# 스케줄은 비활성화하고 수동 실행만 허용합니다.
 on:
-  schedule:
-    - cron: '0 0,12 * * *'  # 한국 시간 오전 9시(00:00 UTC) 및 오후 9시(12:00 UTC)
-  workflow_dispatch:  # 수동 실행도 가능
+  # schedule:
+  #   - cron: '0 0,12 * * *'  # 비활성화됨
+  workflow_dispatch:  # 수동 실행 (레거시 호환용)
 
 jobs:
   generate-content:
