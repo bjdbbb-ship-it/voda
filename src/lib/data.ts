@@ -635,6 +635,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-29"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p2",
@@ -650,6 +655,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-29"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p3",
@@ -665,6 +675,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-29"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p4",
@@ -680,6 +695,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-30"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p5",
@@ -695,6 +715,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-30"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p7",
@@ -710,6 +735,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-31"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p9",
@@ -725,6 +755,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-31"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p10",
@@ -740,6 +775,11 @@ export const whiskies: Whisky[] = [
         },
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
         "availableDate": "2026-01-31"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p12",
@@ -755,6 +795,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-01",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p13",
@@ -770,6 +815,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-01",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p14",
@@ -785,6 +835,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-01",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p15",
@@ -800,6 +855,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-02",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p17",
@@ -815,6 +875,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-02",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p18",
@@ -830,6 +895,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-01-29",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p19",
@@ -845,6 +915,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-01-29",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p20",
@@ -860,6 +935,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-01-30",
         "imageUrl": "https://images.unsplash.com/photo-1596300300958-f9468087799e?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p21",
@@ -875,6 +955,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-01-30",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p22",
@@ -890,6 +975,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-03",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p23",
@@ -905,6 +995,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-03",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p24",
@@ -920,6 +1015,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-03",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p25",
@@ -935,6 +1035,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-03",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p26",
@@ -950,6 +1055,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-04",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p27",
@@ -965,6 +1075,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-04",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p28",
@@ -980,6 +1095,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-04",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p29",
@@ -995,6 +1115,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-04",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p30",
@@ -1010,6 +1135,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-05",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p31",
@@ -1025,6 +1155,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-05",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p33",
@@ -1040,6 +1175,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-05",
         "imageUrl": "https://images.unsplash.com/photo-1582260661131-4191c94d03e2?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p34",
@@ -1055,6 +1195,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-06",
         "imageUrl": "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p35",
@@ -1070,6 +1215,11 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-06",
         "imageUrl": "https://images.unsplash.com/photo-1516919549054-e08258825f8e?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     },
     {
         "id": "p36",
@@ -1085,5 +1235,10 @@ export const whiskies: Whisky[] = [
         },
         "availableDate": "2026-02-06",
         "imageUrl": "https://images.unsplash.com/photo-1585863264426-17b83ec50f38?auto=format&fit=crop&q=80&w=800"
+    ,
+        "priceRange": "mid",
+        "flavorProfile": { "peat": 0, "sweet": 5, "fruit": 5, "spice": 5, "body": 5 },
+        "tags": ["신규"],
+        "description": "새롭게 추가된 위스키입니다."
     }
 ];
