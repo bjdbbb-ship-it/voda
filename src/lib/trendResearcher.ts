@@ -47,9 +47,9 @@ async function searchRealTimeWhiskyNews(): Promise<string> {
             return `제목: 맥켈란, 새로운 '호라이즌' 디자인 공개\n설명: 벤트리와의 협업으로 탄생한 가로형 디캔터 위스키.\n\n제목: 야마자키 2024 리미티드 에디션 출시\n설명: 일본 현지 면세점 한정판 츠쿠바네 시리즈 공개.\n\n제목: 아드벡 '앤솔로지' 두 번째 에디션 출시\n설명: 13년 숙성 마데이라 캐스크 피니시 위스키.`;
         }
 
-        // 뉴스 제목과 내용을 하나의 문자열로 결합
-        return data.organic.slice(0, 5).map((item: any) =>
-            `제목: ${item.title}\n설명: ${item.snippet}\n링크: ${item.link}`
+        // 뉴스 제목과 내용을 하나의 문자열로 결합 (링크 포함)
+        return data.organic.slice(0, 5).map((item: any, index: number) =>
+            `[뉴스 ${index + 1}]\n제목: ${item.title}\n내용 요약: ${item.snippet}\n출처 링크: ${item.link}`
         ).join('\n\n');
     } catch (error) {
         console.error('❌ 실시간 검색 실패:', error);
@@ -127,7 +127,25 @@ export async function generateArticleContent(
     keywords: string[]
 ): Promise<string> {
     try {
-        const prompt = `당신은 위스키 매거진 'VODA'의 시니어 라이터입니다. 기사 제목: ${title}, 부제목: ${subtitle}, 키워드: ${keywords.join(', ')}. 전문적이고 풍성한 한국어 위스키 기사 본문을 작성해주세요. 1,500자 이상, 마크다운 형식으로 작성하고 '마치며' 부분에 건배 인사를 포함하세요.`;
+        let prompt: string;
+
+        if (category === "신규 위스키 소식") {
+            prompt = `당신은 위스키 매거진 'VODA'의 시니어 라이터입니다.
+기사 제목: ${title}
+부제목: ${subtitle}
+키워드: ${keywords.join(', ')}
+
+아래 조건을 반드시 지켜 전문적인 한국어 위스키 뉴스 기사를 작성해주세요:
+1. 1,500자 이상, 마크다운 형식으로 작성
+2. ## 소식 요약, ## 상세 내용, ## 위스키 업계에 미치는 영향, ## 마치며 섹션 포함
+3. '마치며' 섹션 맨 끝에는 반드시 아래 형식으로 출처 링크를 표기하세요:
+   ---
+   **📎 참고 자료**: [출처명](URL) 형식
+4. 건배 멘트로 마무리
+5. 독자에게 친근하고 전문적인 어조로 작성`;
+        } else {
+            prompt = `당신은 위스키 매거진 'VODA'의 시니어 라이터입니다. 기사 제목: ${title}, 부제목: ${subtitle}, 키워드: ${keywords.join(', ')}. 전문적이고 풍성한 한국어 위스키 기사 본문을 작성해주세요. 1,500자 이상, 마크다운 형식으로 작성하고 '마치며' 부분에 건배 인사를 포함하세요.`;
+        }
 
         const content = await callGeminiAPI(prompt);
         console.log('✅ AI 기반 본문 생성 완료:', content.length, '자');

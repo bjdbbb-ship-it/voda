@@ -64,4 +64,4 @@ export const articles: Article[] = [
     }
 ];
 
-export const whiskies: Whisky[] = []; // 일단 빈 배열로 유지하거나 기존 데이터에서 추출 시도 가능
+export { globalWhiskies as whiskies } from './global-data';
