@@ -25,28 +25,28 @@ export default function Home() {
               당신의 취향에 맞는 최고의 위스키를 찾아보세요.<br className="hidden md:block" />
               완벽한 한 잔을 위한 여정이 여기서 시작됩니다.
             </p>
-            {/* Grid Layout for Better Organization */}
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Compact Grid Layout for Better Balance */}
+            <div className="max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {/* 취향 분석 */}
                 <a
                   href="/quiz"
-                  className="group relative px-8 py-5 bg-secondary text-primary font-bold text-lg rounded-lg hover:bg-white transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-6 py-3 bg-secondary text-primary font-bold rounded-lg hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-lg mb-1">취향 분석</div>
-                    <p className="text-xs font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
+                    <div className="font-bold text-base mb-0.5">취향 분석</div>
+                    <p className="text-[10px] font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
                   </div>
                 </a>
 
                 {/* 가치 판단 */}
                 <a
                   href="/value"
-                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-lg mb-1">가치 판단</div>
-                    <p className="text-xs font-normal text-secondary/70">위스키 가격 평가하기</p>
+                    <div className="font-bold text-base mb-0.5">가치 판단</div>
+                    <p className="text-[10px] font-normal text-secondary/70">위스키 가격 평가하기</p>
                   </div>
                 </a>
 
@@ -55,31 +55,31 @@ export default function Home() {
                   href="https://vodabar.lovable.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-lg mb-1">테이스팅 노트</div>
-                    <p className="text-xs font-normal text-secondary/70">나만의 시음 기록 작성</p>
+                    <div className="font-bold text-base mb-0.5">테이스팅 노트</div>
+                    <p className="text-[10px] font-normal text-secondary/70">나만의 시음 기록 작성</p>
                   </div>
                 </a>
 
                 {/* 신규 위스키 소식 */}
                 <a
                   href="/news"
-                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-lg mb-1">신규 위스키 소식</div>
-                    <p className="text-xs font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
+                    <div className="font-bold text-base mb-0.5">신규 위스키 소식</div>
+                    <p className="text-[10px] font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
                   </div>
                 </a>
               </div>
 
               {/* 매거진 읽기 버튼 - 별도로 강조 */}
-              <div className="mt-4">
+              <div className="mt-3">
                 <a
                   href="#magazine"
-                  className="block w-full px-8 py-3 bg-primary border border-secondary/30 text-secondary font-medium text-base rounded-lg hover:bg-white/5 transition-all duration-300 text-center shadow-lg transform hover:-translate-y-1"
+                  className="block w-full px-6 py-2 bg-primary border border-secondary/30 text-secondary font-medium text-sm rounded-lg hover:bg-white/5 transition-all duration-300 text-center shadow-md transform hover:-translate-y-0.5"
                 >
                   매거진 읽기
                 </a>
