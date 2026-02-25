@@ -8,6 +8,12 @@ const CATEGORIES = [
     "지역탐방", "입문", "컬렉팅", "리뷰", "뉴스", "신규 위스키 소식"
 ];
 
+const PREMIUM_SOURCES = [
+    "whiskymag.com",
+    "whiskeybon.com",
+    "thewhiskeywash.com"
+];
+
 let lastCategoryIndex = 9; // Temporarily set to 9 to test "신규 위스키 소식" (index 10) next
 
 export function getNextCategory(): string {
@@ -16,7 +22,46 @@ export function getNextCategory(): string {
 }
 
 /**
- * Serper API를 사용한 실시간 위스키 소식 검색
+ * Serper API를 사용한 특정 사이트 기반 위스키 기사 검색
+ */
+async function searchPremiumWhiskyArticle(): Promise<{ content: string; sourceUrl: string }> {
+    const apiKey = process.env.SERPER_API_KEY;
+    if (!apiKey) throw new Error('SERPER_API_KEY is missing');
+
+    const randomSource = PREMIUM_SOURCES[Math.floor(Math.random() * PREMIUM_SOURCES.length)];
+    const query = `site:${randomSource} whisky`;
+
+    try {
+        const response = await fetch('https://google.serper.dev/search', {
+            method: 'POST',
+            headers: {
+                'X-API-KEY': apiKey,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ q: query, num: 10 })
+        });
+
+        const data = await response.json();
+        if (!data.organic || data.organic.length === 0) {
+            throw new Error(`No results found for ${randomSource}`);
+        }
+
+        // 무작위로 검색 결과 중 하나 선택
+        const randomIndex = Math.floor(Math.random() * Math.min(data.organic.length, 5));
+        const item = data.organic[randomIndex];
+
+        return {
+            content: `원문 제목: ${item.title}\n요약: ${item.snippet}`,
+            sourceUrl: item.link
+        };
+    } catch (error) {
+        console.error('❌ 프리미엄 기사 검색 실패:', error);
+        throw error;
+    }
+}
+
+/**
+ * Serper API를 사용한 실시간 위스키 소식 검색 (기존 로직 유지)
  */
 async function searchRealTimeWhiskyNews(): Promise<string> {
     const apiKey = process.env.SERPER_API_KEY;
@@ -104,23 +149,33 @@ export async function generateTopicFromTrends(category: string): Promise<{
     title: string;
     subtitle: string;
     keywords: string[];
+    sourceUrl?: string;
+    originalContent?: string;
 }> {
     try {
-        const trendData = await searchWhiskyTrends(category);
-        const prompt = `당신은 세계적인 위스키 전문 매거진 'VODA'의 편집장입니다. 
-다음 트렌드 데이터를 바탕으로 독자들의 시선을 사로잡을 만한 매력적이고 전문적인 기사 주제를 제안해주세요.
+        let trendData = "";
+        let sourceUrl = "";
 
-카테고리: ${category}
-최신 트렌드/데이터: ${trendData}
+        // 특정 전문 사이트 재구성 모드 (사용자 요청 반영)
+        const premiumArticle = await searchPremiumWhiskyArticle();
+        trendData = premiumArticle.content;
+        sourceUrl = premiumArticle.sourceUrl;
+
+        const prompt = `당신은 세계적인 위스키 전문 매거진 'VODA'의 편집장입니다. 
+다음은 해외 위스키 전문 사이트의 최신 기사 정보입니다. 이를 바탕으로 한국 독자들에게 매력적으로 다가갈 수 있는 기사 주제를 생성해주세요.
+
+원문 소스 정보: ${trendData}
+원문 링크: ${sourceUrl}
 
 [필수 지침]
-1. 제목(title)에 절대 '오늘의 뉴스', '2/26 소식', '2026-02-26' 처럼 날짜나 요일을 포함하지 마십시오.
-2. 제목은 Master of Malt나 Whisky Advocate 같은 프리미엄 매거진 스타일로 작성하십시오. (예: "셰리 캐스크의 숨겨진 과학", "독립 병입자의 세계: 왜 그들은 특별한가?")
-3. 부제(subtitle)는 본문의 내용을 기대하게 만드는 세련된 문장으로 작성하십시오.
+1. 단순 번역이 아닌, 'VODA'만의 관점으로 재해석한 제목(title)을 만드십시오.
+2. 제목에 절대 날짜나 요일을 포함하지 마십시오.
+3. 부제(subtitle)는 원문의 핵심을 찌르면서도 세련된 한국어 문장으로 작성하십시오.
+4. 카테고리는 가급적 '${category}'의 성격을 유지하되, 원문 내용이 더 적합한 카테고리가 있다면 그에 맞춰 주제를 잡으십시오.
 
 한국어 JSON 형식으로 응답하십시오: 
 { 
-  "title": "날짜가 없는 매력적인 제목", 
+  "title": "매력적인 재구성 제목", 
   "subtitle": "흥미로운 부제", 
   "keywords": ["핵심키워드1", "핵심키워드2", "핵심키워드3"] 
 }`;
@@ -129,10 +184,11 @@ export async function generateTopicFromTrends(category: string): Promise<{
         const jsonMatch = responseText.match(/\{[\s\S]*\}/);
         if (!jsonMatch) throw new Error('Invalid JSON');
 
-        return JSON.parse(jsonMatch[0]);
+        const result = JSON.parse(jsonMatch[0]);
+        return { ...result, sourceUrl, originalContent: trendData };
     } catch (error) {
         console.error('❌ AI 주제 생성 실패:', error);
-        return generateFallbackTopic(category);
+        return { ...generateFallbackTopic(category), sourceUrl: "", originalContent: "" };
     }
 }
 
@@ -141,12 +197,36 @@ export async function generateArticleContent(
     subtitle: string,
     category: string,
     keywords: string[],
-    seedContent?: string
+    seedContent?: string,
+    sourceUrl?: string,
+    originalContent?: string
 ): Promise<string> {
     try {
         let prompt: string;
 
-        if (category === "신규 위스키 소식") {
+        if (sourceUrl && originalContent) {
+            prompt = `당신은 위스키 매거진 'VODA'의 수석 에디터입니다. 
+아래의 해외 전문 기사 요약본을 바탕으로, VODA만의 깊이 있고 독창적인 한글 위스키 기사를 작성해주세요.
+
+[원문 정보]
+출처: ${sourceUrl}
+내용 요약: ${originalContent}
+
+[기사 가이드라인]
+제목: ${title}
+부제목: ${subtitle}
+키워드: ${keywords.join(', ')}
+
+[작성 조건]
+1. 절대 단순 번역을 하지 마십시오. 정보를 바탕으로 당신만의 위스키 철학과 전문 지식을 담아 '재구성(Reconstruction)'하십시오.
+2. 분량은 1,800자 이상의 마크다운 형식으로 작성하십시오.
+3. 도입부 - 깊이 있는 본문(최소 3개 섹션) - 전문가의 조언 - 마치며 섹션으로 구성하십시오.
+4. 위스키 용어는 전문가답게 사용하며, 독자들에게 품격 있게 전달하십시오.
+5. '마치며' 섹션 끝부분에는 반드시 다음과 같이 출처를 명시하십시오:
+   ---
+   **📎 원문 출처**: [기사 제목](${sourceUrl})
+6. 마지막은 품격 있는 건배 멘트로 마무리하십시오.`;
+        } else if (category === "신규 위스키 소식") {
             prompt = `당신은 위스키 매거진 'VODA'의 시니어 라이터입니다.
 기사 제목: ${title}
 부제목: ${subtitle}

@@ -301,7 +301,9 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
             topic.subtitle,
             topic.category,
             topic.keywords,
-            seedContent
+            seedContent,
+            topicData.sourceUrl,
+            topicData.originalContent
         );
 
         if (!content || content.length < 500) {
@@ -324,7 +326,8 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
             imageUrl: getImageForCategory(topic.category, topic.keywords),
             content,
             tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
-            useTitleCover: true
+            useTitleCover: true,
+            sourceUrl: topicData.sourceUrl
         };
 
         break; // 성공적으로 생성되었으므로 루프 탈출

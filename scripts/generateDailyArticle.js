@@ -90,6 +90,7 @@ async function main() {
         content: \`${newArticle.content.replace(/`/g, '\\`')}\`,
         tags: ${JSON.stringify(newArticle.tags)},
         useTitleCover: ${newArticle.useTitleCover},
+        sourceUrl: "${newArticle.sourceUrl || ''}",
     }`;
 
         // 기존 배열 끝에 새 기사 추가 (중복 쉼표 방지 로직)

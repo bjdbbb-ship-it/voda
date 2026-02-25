@@ -40,6 +40,7 @@ export interface Article {
     content: string;
     tags?: string[];
     useTitleCover?: boolean;
+    sourceUrl?: string;
 }
 
 export const articles: Article[] = [
