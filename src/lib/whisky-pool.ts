@@ -1,4 +1,4 @@
-import { Whisky } from "./data";
+import { Whisky } from "./types";
 
 export const whiskyPool: Partial<Whisky>[] = [
     // p6(Aberlour A'bunadh), p8(The Balvenie 14 Caribbean Cask), 
@@ -11,7 +11,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 9, sweet: 4, fruit: 6, spice: 7, body: 8 },
         description: "아일라 위스키의 정수를 담은 스페셜 릴리즈로, 강력한 스모키함과 정교한 시트러스 풍미가 완벽한 조화를 이룹니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9685_source_1761907260.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["아일라", "스페셜릴리즈", "스모크"]
     },
@@ -21,7 +21,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 10, sweet: 5, fruit: 4, spice: 8, body: 9 },
         description: "소용돌이치는 듯한 강렬한 피트 향과 다크 초콜렛, 스파이시한 풍미가 어우러진 깊고 묵직한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68170_source_1770627759.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["아일라", "피트몬스터", "강렬한"]
     },
@@ -31,7 +31,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 10, sweet: 3, fruit: 4, spice: 6, body: 8 },
         description: "작은 캐스크를 사용하여 숙성 속도를 높임으로써 더 깊은 오크 풍미와 라프로익 특유의 강렬한 피트 연기를 극대화했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/9256_source_1761906663.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["아일라", "피트", "오크"]
     },
@@ -41,7 +41,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 6, sweet: 7, fruit: 6, spice: 5, body: 7 },
         description: "셰리 캐스크 피니시를 통해 얻은 달콤한 초콜릿 향과 아일라 특유의 은은한 연기 향이 아름답게 균형을 이룹니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18099_source_1761912662.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["아일라", "셰리", "밸런스"]
     },
@@ -51,7 +51,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 7, sweet: 5, fruit: 7, spice: 5, body: 6 },
         description: "'새벽'이라는 뜻의 가볍고 상쾌한 스타일로, 섬세한 연기 향과 레몬 같은 시트러스함이 어우러진 우아한 아일라 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "brown" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/74930_source_1770726052.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["아일라", "우아한", "연은은한피트"]
     },
@@ -63,7 +63,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 8, spice: 6, body: 8 },
         description: "셰리 몬스터의 귀환으로 알려진 이 제품은 풍부한 다크 과일과 초콜릿, 견과류의 복합적인 조화가 일품입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "brown" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9099_source_1758883760.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["셰리몬스터", "풍부한", "스페이사이드"]
     },
@@ -73,7 +73,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 4, body: 7 },
         description: "섬세하고 부드러운 고숙성 하이랜드 몰트로, 꽃향기와 바닐라, 그리고 실크처럼 매끄러운 질감을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/32958_source_1766962850.jpg?compression=lossy",
         availableDate: "2026-02-26",
         tags: ["부드러운", "플로럴", "하이랜드"]
     },
@@ -83,7 +83,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 8, spice: 7, body: 9 },
         description: "6가지 다른 캐스크에서 숙성된 원액을 블렌딩하여 베리, 향신료, 와인의 복합적인 풍미가 겹겹이 쌓인 럭셔리한 경험을 선사합니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0099/0045/8042/products/Studio_Project-2022-05-25T130746.479.jpg?v=1653509284",
         availableDate: "2026-02-26",
         tags: ["럭셔리", "멀티캐스크", "복합미"]
     },
@@ -96,7 +96,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "일본 위스키의 자존심이라 불리는 명작으로, 깊은 셰리 풍미와 정교한 산달우드 향이 어우러진 극강의 밸런스를 보여줍니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24686/18955/2712__93022.1763242255.jpg?compression=lossy",
         tags: ["일본위스키", "럭셔리", "밸런스"]
     },
     {
@@ -106,7 +106,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "일본의 숲 속 증류소에서 탄생한 위스키로, 상쾌한 허브 향과 은은한 연기 향이 숲의 맑은 정취를 느끼게 합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24951/19197/Hakushu-18Yr-Bottle-solo__04959.1763139659.jpg?compression=lossy",
         tags: ["일본위스키", "숲의향기", "상쾌한"]
     },
 
@@ -118,7 +118,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "전설적인 밴 윙클 가문의 버번 프로젝트로, 풍부한 카라멜과 오크 풍미가 일품인 수집가들의 로망입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/29325_source_1758883039.jpg?compression=lossy",
         tags: ["버번", "희귀", "희소가치"]
     },
     {
@@ -128,7 +128,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "세계 최정상급 버번 위스키로, 믿을 수 없을 만큼 깊고 복합적인 오크와 바닐라, 스파이스의 정수를 보여주는 전설적인 병입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/23473_source_1758882751.jpg?compression=lossy",
         tags: ["버번", "전설적인", "울트라프리미엄"]
     },
     {
@@ -138,7 +138,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "켄터키 버번의 전통을 계승한 스몰 배치로, 부드러운 카라멜과 호밀의 스파이시함이 조화로운 클래식 버번입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/64148_source_1759399269.jpg?compression=lossy",
         tags: ["버번", "스몰배치", "전통적인"]
     },
 
@@ -150,7 +150,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "피트함과 올로로소 셰리 캐스크의 달콤함이 만나 강렬하면서도 과일향이 풍부한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "brown" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://drinkhacker.com/wp-content/uploads/2020/06/PortCharlotte_OLC01.png",
         tags: ["아일라", "헤비피티드", "셰리"]
     },
     {
@@ -160,7 +160,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "세계에서 가장 강력한 피트 수치를 자랑하면서도, 그 속에 숨겨진 섬세한 곡물의 달콤함과 바닐라 향이 놀라운 반전을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/37811_source_1758884925.jpg?compression=lossy",
         tags: ["아일라", "슈퍼헤비피티드", "복합미"]
     },
     {
@@ -170,7 +170,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "전통적인 생산 방식을 고집하는 스프링뱅크의 핵심 라인업으로, 셰리 캐스크의 풍성함과 특유의 기름진 질감이 조화롭습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1596300300958-f9468087799e?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31500_source_1763550039.jpg?compression=lossy",
         tags: ["캠벨타운", "수제위스키", "셰리"]
     },
     {
@@ -180,7 +180,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "스프링뱅크 증류소에서 생산하는 강력한 피트 위스키로, 묵직한 연기 향과 해안의 짠맛이 느껴지는 남성적인 캐릭터를 가집니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/34081_source_1769785292.jpg?compression=lossy",
         tags: ["캠벨타운", "피티드", "강렬한"]
     },
     {
@@ -190,7 +190,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "캠벨타운의 새로운 강자로, 라이트한 피트와 시트러스, 소금 기운이 어우러진 현대적인 캠벨타운 스타일을 보여줍니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59640_source_1762963836.jpg?compression=lossy",
         tags: ["캠벨타운", "모던", "은은한피트"]
     },
     {
@@ -200,7 +200,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "고숙성 셰리 위스키의 기준석과 같은 존재로, 커피, 다크 초콜릿, 잘 익은 과일의 풍미가 웅장하게 펼쳐집니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33300_source_1759914650.jpg?compression=lossy",
         tags: ["스페이사이드", "셰리", "고숙성"]
     },
     {
@@ -210,7 +210,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "피트를 전혀 사용하지 않고 천천히 건조시킨 보리로 빚어낸 위스키로, 순수한 셰리 오크의 달콤함과 시나몬의 따뜻함을 전합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33044_source_1770985254.jpg?compression=lossy",
         tags: ["하이랜드", "논피티드", "셰리"]
     },
     {
@@ -220,7 +220,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "셰리 숙성 위스키의 왕으로 불리며, 말린 과일과 생강, 바닐라의 풍미가 예술적인 조화를 이루는 명작입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31675_source_1761926476.jpg?compression=lossy",
         tags: ["스페이사이드", "아이코닉", "셰리"]
     },
     {
@@ -230,7 +230,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "탈리스커 특유의 후추향과 소금 기운에 고숙성에서 오는 풍부한 과일향과 시트러스함이 더해진 완성도 높은 드람입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/30762_source_1768875690.jpg?compression=lossy",
         tags: ["스카이섬", "수상작", "복합미"]
     },
     {
@@ -240,7 +240,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "향기로운 연기 향과 달콤한 헤더 꿀의 조화가 정점에 달한 하일랜드 파크의 정수와 같은 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/14161/9504/65860_alt2__54612.1758585664.jpg?compression=lossy",
         tags: ["오크니", "꿀", "스모크"]
     },
     {
@@ -250,7 +250,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "초콜릿 몰트를 사용하여 구운 커피와 다크 초콜릿의 혁신적인 풍미를 창조해낸 프리미엄 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "opaque" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/32985_source_1770998452.jpg?compression=lossy",
         tags: ["하이랜드", "초콜릿몰트", "혁신"]
     },
     {
@@ -260,7 +260,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "리필과 셰리 캐스크의 원액을 작은 오크통에서 매링하여 더 농축된 풍미와 부드러운 해안의 느낌을 강조했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/23368_source_1771086060.jpg?compression=lossy",
         tags: ["하이랜드", "해안가", "스몰캐스크"]
     },
     {
@@ -270,7 +270,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "예술적인 병 디자인만큼이나 화려하고 플로럴한 향과 잘 익은 배의 풍미가 일품인 럭셔리 블렌드입니다.",
         visualProfile: { bottleShape: "ceramic", liquidColor: "amber", glassColor: "opaque" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/66962_source_1761567638.jpg?compression=lossy",
         tags: ["럭셔리", "패션", "부드러운"]
     },
     {
@@ -280,7 +280,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "시바스 리갈 역사상 최초의 블렌디드 몰트로, 5가지 상징적인 싱글 몰트를 섞어 풍부한 복합성을 극대화했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/18654_source_1758883408.jpg?compression=lossy",
         tags: ["블렌디드몰트", "프리미엄", "풍부한"]
     },
     {
@@ -290,7 +290,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "독립 병입자의 창의성이 돋보이는 블렌드로, 여러 증류소의 피트 원액을 섞어 말 그대로 괴물 같은 강렬한 스모키함을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1582260661131-4191c94d03e2?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/33495_source_1771512043.jpg?compression=lossy",
         tags: ["블렌디드몰트", "스모크", "피트몬스터"]
     },
     {
@@ -300,7 +300,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "석탄 직화 증류 방식을 고집하는 요이치 증류소의 특징인 묵직한 바디감과 섬세한 연기 향이 돋보이는 일본 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://img.thewhiskyexchange.com/540/japan_yoi21.jpg",
         tags: ["일본위스키", "석탄증류", "풍부한"]
     },
     {
@@ -310,7 +310,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "와인 캐스크 숙성을 통해 폭발적인 열대 과일 향과 다크 초콜릿, 바닐라의 풍미를 담아낸 대만의 세계적인 명작입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1516919549054-e08258825f8e?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/26884_source_1758883117.jpg?compression=lossy",
         tags: ["대만위스키", "수상작", "와인캐스크"]
     },
     {
@@ -320,7 +320,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "인도의 열대 기후에서 숙성되어 풍미가 매우 진하며, 셰리 캐스크의 견과류와 과일 향이 강력하게 느껴지는 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
         availableDate: "2026-02-26",
-        imageUrl: "https://images.unsplash.com/photo-1585863264426-17b83ec50f38?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18579_source_1758882785.jpg?compression=lossy",
         tags: ["인도위스키", "열대숙성", "셰리"]
     },
     // --- 2026 February New Releases ---
@@ -331,7 +331,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 4, body: 7 },
         description: "2026년 2월의 위스키로 선정된 히비키 하모니의 최신 에디션으로, 일본 위스키 특유의 정교한 블렌딩과 화사한 꽃향기, 잘 익은 과일의 풍미가 예술적인 조화를 이룹니다.",
         tags: ["일본위스키", "산토리", "수상작"],
-        imageUrl: "https://images.unsplash.com/photo-1590089415225-404efbae196a?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/1728_f2e10b26ccdf4e36866d211d4ff19667.jpg?v=638832569158400000",
         availableDate: "2026-02-27"
     },
     {
@@ -340,7 +340,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 7, sweet: 5, fruit: 5, spice: 8, body: 8 },
         description: "스코티시 오크 싱글 캐스크 숙성을 통해 정통적인 스카이 섬의 피트함에 강력하고 거친 오크 향이 더해진 희소성 높은 싱글 몰트입니다.",
         tags: ["스카이섬", "싱글캐스크", "스코티시오크"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3696_02cf991887174fe0a8f3492f0b7e1fef.jpg?v=639032077938300000",
         availableDate: "2026-02-27"
     },
     {
@@ -349,7 +349,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 6, sweet: 7, fruit: 5, spice: 7, body: 9 },
         description: "하일랜드 파크의 새로운 캐스크 스트랭스 시리즈의 첫 번째 출시작으로, 오크니 제도의 헤더 꿀 향과 강력한 피트 연기가 물을 타지 않은 원액 그대로 전달됩니다.",
         tags: ["캐스크스트랭스", "꿀", "스모크"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3697_7085f9b5f1e1452b9c36f3ceee43e6e5.jpg?v=639039216557600000",
         availableDate: "2026-02-27"
     },
     {
@@ -358,7 +358,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 7, fruit: 8, spice: 5, body: 6 },
         description: "로클리 증류소의 첫 번째 연산 표기 제품으로, 직접 재배한 보리만을 사용하여 만든 로우랜드 스타일 특유의 신선하고 과일향 풍부한 캐릭터를 자랑합니다.",
         tags: ["싱글에스테이트", "로우랜드", "신선한"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/65478_source_1771086061.jpg?compression=lossy",
         availableDate: "2026-02-27"
     },
     {
@@ -367,7 +367,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 6, spice: 4, body: 8 },
         description: "30년 숙성 스트래스클라이드 그레인 원액을 포함한 컴파스 박스의 전설적인 그레인 위스키 시리즈로, 벨벳 같은 부드러움과 달콤한 바닐라, 코코넛의 풍미가 압권입니다.",
         tags: ["그레인위스키", "럭셔리", "부드러운"],
-        imageUrl: "https://images.unsplash.com/photo-1582260661131-4191c94d03e2?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/75046_source_1771851668.jpg?compression=lossy",
         availableDate: "2026-02-28"
     },
     {
@@ -376,7 +376,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 10, sweet: 4, fruit: 5, spice: 9, body: 10 },
         description: "아드벡 커미티 멤버를 위해 한정 출시된 10년 숙성 캐스크 스트랭스 버전으로, 전형적인 아드벡의 연기 폭탄 뒤에 숨겨진 강력한 향신료의 힘을 느낄 수 있습니다.",
         tags: ["커미티릴리즈", "캐스크스트랭스", "아일라"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://img.thewhiskyexchange.com/540/abgob.10yov4.jpg",
         availableDate: "2026-02-28"
     },
     {
@@ -385,7 +385,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 6, fruit: 4, spice: 10, body: 9 },
         description: "11년 11개월 숙성된 고숙성 라이 위스키로, 60.2도의 높은 도수에서 뿜어져 나오는 강력한 호밀의 스파이스와 오크의 대담함을 가감 없이 보여줍니다.",
         tags: ["배럴프루프", "라이위스키", "대담한"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://dewinespot.co/cdn/shop/files/ElijahCraigBarrelProofRyeBatchA126_1024x1024_33505925-9db1-4482-aa30-3f12805da1a5.jpg?v=1771455498&width=1214",
         availableDate: "2026-02-28"
     },
     {
@@ -394,7 +394,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 10, fruit: 4, spice: 6, body: 8 },
         description: "메이플 나무 스파이럴을 사용하여 숙성한 독특한 공법의 버번으로, 풍부한 단풍나무 시럽의 달콤함과 버번 특유의 옥수수 단맛이 조화로운 디저트 같은 위스키입니다.",
         tags: ["메이플피니시", "버번", "달콤한"],
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://seelbachs.com/cdn/shop/files/13thColonyDistillery113BourbonFinishedWithMapleWoodSpirals.jpg?format=webp&height=1200&v=1771515787",
         availableDate: "2026-03-01"
     },
     {
@@ -403,7 +403,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 10, fruit: 9, spice: 7, body: 9 },
         description: "올로로소, 페드로 히메네즈, 모스카텔 셰리 캐스크를 모두 사용한 트리플 셰리 숙성작으로, 다크 과일의 풍성함과 견과류의 고소함이 폭발적으로 느껴집니다.",
         tags: ["트리플셰리", "대만위스키", "풍부한"],
-        imageUrl: "https://images.unsplash.com/photo-1516919549054-e08258825f8e?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://mma.prnewswire.com/media/2861672/260115_Kavalan_Golden_Steed___Peonies.jpg?p=facebook",
         availableDate: "2026-03-01"
     },
     {
@@ -412,7 +412,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 8, body: 8 },
         description: "인도에서 생산된 프리미엄 싱글 몰트로, 세 가지 캐스크 숙성을 통해 인도 위스키 특유의 열대 과일 향과 스파이시한 피니시를 세련되게 변주한 제품입니다.",
         tags: ["인도위스키", "트리플캐스크", "이국적인"],
-        imageUrl: "https://images.unsplash.com/photo-1585863264426-17b83ec50f38?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://thewhiskeywash.com/wp-content/uploads/2025/06/featured-image-1751029426.webp",
         availableDate: "2026-03-01"
     },
 ];

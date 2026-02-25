@@ -1,4 +1,4 @@
-import { Whisky } from "./data";
+import { Whisky } from "./types";
 
 /**
  * 위스키 이름을 비교하기 좋게 정규화합니다.
