@@ -31,22 +31,22 @@ export default function Home() {
                 {/* 취향 분석 */}
                 <a
                   href="/quiz"
-                  className="group relative px-8 py-6 bg-secondary text-primary font-bold text-lg rounded-lg hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-8 py-5 bg-secondary text-primary font-bold text-lg rounded-lg hover:bg-white transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-xl mb-2">취향 분석</div>
-                    <p className="text-sm font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
+                    <div className="font-bold text-lg mb-1">취향 분석</div>
+                    <p className="text-xs font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
                   </div>
                 </a>
 
                 {/* 가치 판단 */}
                 <a
                   href="/value"
-                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-xl mb-2">가치 판단</div>
-                    <p className="text-sm font-normal text-secondary/70">위스키 가격 평가하기</p>
+                    <div className="font-bold text-lg mb-1">가치 판단</div>
+                    <p className="text-xs font-normal text-secondary/70">위스키 가격 평가하기</p>
                   </div>
                 </a>
 
@@ -55,33 +55,33 @@ export default function Home() {
                   href="https://vodabar.lovable.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-xl mb-2">테이스팅 노트</div>
-                    <p className="text-sm font-normal text-secondary/70">나만의 시음 기록 작성</p>
+                    <div className="font-bold text-lg mb-1">테이스팅 노트</div>
+                    <p className="text-xs font-normal text-secondary/70">나만의 시음 기록 작성</p>
                   </div>
                 </a>
 
                 {/* 신규 위스키 소식 */}
                 <a
                   href="/news"
-                  className="group relative px-8 py-6 bg-secondary/20 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group relative px-8 py-5 bg-secondary/10 border border-secondary/50 text-secondary font-bold text-lg rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-xl mb-2">신규 위스키 소식</div>
-                    <p className="text-sm font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
+                    <div className="font-bold text-lg mb-1">신규 위스키 소식</div>
+                    <p className="text-xs font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
                   </div>
                 </a>
               </div>
 
               {/* 매거진 읽기 버튼 - 별도로 강조 */}
-              <div className="mt-6">
+              <div className="mt-4">
                 <a
                   href="#magazine"
-                  className="block w-full px-8 py-4 border-2 border-secondary text-secondary font-bold text-lg rounded-lg hover:bg-secondary/10 transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="block w-full px-8 py-3 bg-primary border border-secondary/30 text-secondary font-medium text-base rounded-lg hover:bg-white/5 transition-all duration-300 text-center shadow-lg transform hover:-translate-y-1"
                 >
-                  <div className="font-bold text-xl">매거진 읽기</div>
+                  매거진 읽기
                 </a>
               </div>
             </div>
@@ -103,7 +103,8 @@ export default function Home() {
               <div className="w-24 h-1 bg-secondary mx-auto"></div>
             </div>
 
-            <ArticleGrid articles={publishedArticles} hideImage={true} />
+            <ArticleGrid articles={publishedArticles} />
+
 
             <div className="mt-16 text-center">
               <Link

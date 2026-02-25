@@ -70,8 +70,8 @@ async function main() {
         // [Fix] 기존 데이터의 잘못된 쉼표(,,) 정리
         dataContent = dataContent.replace(/,\s*,/g, ',');
 
-        // 기존 articles 배열 찾기
-        const articlesMatch = dataContent.match(/export const articles: Article\[\] = \[([\s\S]*?)\];/);
+        // 기존 articles 배열 찾기 (공백 및 타입 선언 방식의 변동에 유연하게 대응)
+        const articlesMatch = dataContent.match(/export const articles(?::\s*Article\[\])?\s*=\s*\[([\s\S]*?)\];/);
 
         if (!articlesMatch) {
             throw new Error('articles 배열을 찾을 수 없습니다.');
@@ -104,7 +104,7 @@ ${newArticleString}
 
         // data.ts 업데이트
         dataContent = dataContent.replace(
-            /export const articles: Article\[\] = \[[\s\S]*?\];/,
+            /export const articles(?::\s*Article\[\])?\s*=\s*\[[\s\S]*?\];/,
             updatedArticles
         );
 
