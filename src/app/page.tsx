@@ -25,28 +25,28 @@ export default function Home() {
               당신의 취향에 맞는 최고의 위스키를 찾아보세요.<br className="hidden md:block" />
               완벽한 한 잔을 위한 여정이 여기서 시작됩니다.
             </p>
-            {/* Compact Grid Layout for Better Balance */}
-            <div className="max-w-2xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {/* Compact Flex Layout for Better Balance */}
+            <div className="max-w-3xl mx-auto flex flex-col items-center">
+              <div className="flex flex-wrap justify-center gap-3 mb-4">
                 {/* 취향 분석 */}
                 <a
                   href="/quiz"
-                  className="group relative px-6 py-3 bg-secondary text-primary font-bold rounded-lg hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  className="group relative px-5 py-2 bg-secondary text-primary font-bold rounded-full hover:bg-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-base mb-0.5">취향 분석</div>
-                    <p className="text-[10px] font-normal text-primary/70">나에게 맞는 위스키 찾기</p>
+                    <span className="text-sm">취향 분석</span>
+                    <span className="ml-2 text-[10px] font-normal text-primary/70 hidden sm:inline-block border-l border-primary/20 pl-2">나에게 맞는 위스키 찾기</span>
                   </div>
                 </a>
 
                 {/* 가치 판단 */}
                 <a
                   href="/value"
-                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  className="group relative px-5 py-2 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-full hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-base mb-0.5">가치 판단</div>
-                    <p className="text-[10px] font-normal text-secondary/70">위스키 가격 평가하기</p>
+                    <span className="text-sm">가치 판단</span>
+                    <span className="ml-2 text-[10px] font-normal text-secondary/70 hidden sm:inline-block border-l border-secondary/20 pl-2">위스키 가격 평가하기</span>
                   </div>
                 </a>
 
@@ -55,33 +55,36 @@ export default function Home() {
                   href="https://vodabar.lovable.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  className="group relative px-5 py-2 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-full hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-base mb-0.5">테이스팅 노트</div>
-                    <p className="text-[10px] font-normal text-secondary/70">나만의 시음 기록 작성</p>
+                    <span className="text-sm">테이스팅 노트</span>
+                    <span className="ml-2 text-[10px] font-normal text-secondary/70 hidden sm:inline-block border-l border-secondary/20 pl-2">시음 기록 작성</span>
                   </div>
                 </a>
 
                 {/* 신규 위스키 소식 */}
                 <a
                   href="/news"
-                  className="group relative px-6 py-3 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-lg hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  className="group relative px-5 py-2 bg-secondary/10 border border-secondary/50 text-secondary font-bold rounded-full hover:bg-secondary/20 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-base mb-0.5">신규 위스키 소식</div>
-                    <p className="text-[10px] font-normal text-secondary/70">최신 위스키 뉴스 확인</p>
+                    <span className="text-sm">위스키 뉴스</span>
+                    <span className="ml-2 text-[10px] font-normal text-secondary/70 hidden sm:inline-block border-l border-secondary/20 pl-2">최신 소식 확인</span>
                   </div>
                 </a>
               </div>
 
-              {/* 매거진 읽기 버튼 - 별도로 강조 */}
-              <div className="mt-3">
+              {/* 매거진 읽기 버튼 - 정교한 스타일링 */}
+              <div>
                 <a
                   href="#magazine"
-                  className="block w-full px-6 py-2 bg-primary border border-secondary/30 text-secondary font-medium text-sm rounded-lg hover:bg-white/5 transition-all duration-300 text-center shadow-md transform hover:-translate-y-0.5"
+                  className="inline-flex items-center px-8 py-2.5 bg-secondary text-primary font-bold text-sm rounded-full hover:bg-white transition-all duration-300 shadow-lg transform hover:-translate-y-0.5"
                 >
-                  매거진 읽기
+                  매거진 아카이브 읽기
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </a>
               </div>
             </div>

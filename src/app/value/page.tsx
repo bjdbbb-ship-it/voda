@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Search, TrendingUp, DollarSign, Euro, Sparkles, Globe, ShieldCheck, Calendar, Zap } from "lucide-react";
 import { whiskies, Whisky } from "@/lib/data";
-import { globalWhiskies } from "@/lib/global-data";
-import { whiskyPool } from "@/lib/whisky-pool";
 import { isSameWhisky } from "@/lib/whisky-utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -21,6 +19,16 @@ export default function ValueAssessmentPage() {
     const [isAISearching, setIsAISearching] = useState(false);
     const [showGlobal, setShowGlobal] = useState(false);
     const [exRates, setExRates] = useState(DEFAULT_EX_RATES);
+    const [expandedWhiskies, setExpandedWhiskies] = useState<Set<string>>(new Set());
+
+    const toggleExpand = (id: string) => {
+        setExpandedWhiskies(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) next.delete(id);
+            else next.add(id);
+            return next;
+        });
+    };
 
     // Fetch real-time exchange rates
     useEffect(() => {
@@ -69,24 +77,12 @@ export default function ValueAssessmentPage() {
     const dailyUnlocked = getDailyUpdated();
 
     // Use the utility to ensure no duplicates when merging
-    const combinedDatabase: Whisky[] = [...whiskies];
-    dailyUnlocked.forEach(du => {
-        if (!combinedDatabase.some(lw => isSameWhisky(lw.name, du.name || ""))) {
-            combinedDatabase.push(du as Whisky);
-        }
-    });
-
-    const localWhiskies = combinedDatabase.filter(w =>
+    const localWhiskies = whiskies.filter(w =>
         w.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         w.tags?.some((t: string) => t.toLowerCase().includes(searchTerm.toLowerCase()))
     );
 
-    const globalResults = globalWhiskies.filter(w =>
-        w.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        w.tags?.some((t: string) => t.toLowerCase().includes(searchTerm.toLowerCase()))
-    ).filter(gw => !localWhiskies.some(lw => isSameWhisky(lw.name, gw.name || ""))); // Enhanced duplicate removal
-
-    const allWhiskies = showGlobal ? [...localWhiskies, ...globalResults] : localWhiskies;
+    const allWhiskies = localWhiskies;
 
     const handleSearch = (val: string) => {
         setSearchTerm(val);
@@ -289,9 +285,26 @@ export default function ValueAssessmentPage() {
                                             <h3 className="font-serif text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors line-clamp-1">
                                                 {whisky.name}
                                             </h3>
-                                            <p className="text-sm text-muted-foreground mb-8 leading-relaxed line-clamp-2 h-10">
-                                                {whisky.description || `${whisky.name}은(는) ${whisky.region} 지역을 대표하는 정교한 ${whisky.type} 위스키입니다.`}
-                                            </p>
+                                            <div className="relative mb-8">
+                                                <p className={cn(
+                                                    "text-sm text-muted-foreground leading-relaxed transition-all duration-300",
+                                                    expandedWhiskies.has(whisky.id) ? "" : "line-clamp-2 h-10"
+                                                )}>
+                                                    {whisky.description || `${whisky.name}은(는) ${whisky.region} 지역을 대표하는 정교한 ${whisky.type} 위스키입니다.`}
+                                                </p>
+                                                {whisky.description && whisky.description.length > 50 && (
+                                                    <button
+                                                        onClick={() => toggleExpand(whisky.id)}
+                                                        className="mt-2 text-[10px] font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1 group/btn"
+                                                    >
+                                                        {expandedWhiskies.has(whisky.id) ? (
+                                                            <>접기 <TrendingUp className="w-3 h-3 rotate-180" /></>
+                                                        ) : (
+                                                            <>더 보기 <TrendingUp className="w-3 h-3" /></>
+                                                        )}
+                                                    </button>
+                                                )}
+                                            </div>
 
                                             <div className="flex items-center justify-between border-t border-border pt-6">
                                                 <div>

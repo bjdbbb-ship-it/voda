@@ -33,60 +33,102 @@ async function callGeminiAPI(prompt) {
     return data.candidates[0].content.parts[0].text;
 }
 
-async function translateDescription(text) {
-    if (!text || text.match(/[가-힣]/)) return text; // 이미 한글이 포함되어 있으면 스킵
+async function translateField(field, text) {
+    if (!text || text.match(/[가-힣]/)) return text;
 
-    const prompt = `당신은 위스키 전문가입니다. 다음 위스키 설명을 한국어 전문 위스키 매거진 스타일로 번역해주세요. 
-자연스럽고 품격 있는 문체로 작성하십시오.
+    let roleDescription = '위스키 전문가';
+    let styleDescription = '한국어 전문 위스키 매거진 스타일';
 
-번역할 텍스트: "${text}"
+    if (field === 'tags') {
+        styleDescription = '짧고 간결한 한국어 태그(키워드) 스타일';
+    }
 
-응답 형식: 번역된 한국어 텍스트만 출력하세요.`;
+    const prompt = `당신은 ${roleDescription}입니다. 다음 위스키의 ${field} 정보를 ${styleDescription}로 번역해주세요.
+자연스럽고 전문적인 용어를 사용하십시오.
+
+번역할 ${field}: "${text}"
+
+응답 형식: 번역된 한국어 텍스트만 출력하세요. (태그의 경우 콤마로 구분하지 말고 하나씩만 번역)`;
 
     try {
         const translated = await callGeminiAPI(prompt);
         return translated.trim().replace(/^"|"$/g, '');
     } catch (error) {
-        console.error('❌ 번역 실패:', error.message);
+        console.error(`❌ ${field} 번역 실패:`, error.message);
         return text;
     }
 }
 
 async function processFile(filePath) {
     console.log(`\n📄 파일 처리 중: ${path.basename(filePath)}`);
-    const content = fs.readFileSync(filePath, 'utf-8');
+    let content = fs.readFileSync(filePath, 'utf-8');
 
-    // 정규식을 사용하여 description: "..." 부분을 찾아 번역
-    // 주의: 단순 치환은 위험할 수 있으므로 조심스럽게 처리
-    const descRegex = /description:\s*"([^"]+)"/g;
-    let match;
-    let newContent = content;
-    const descriptions = [];
+    const fieldsToTranslate = [
+        { name: 'description', regex: /description:\s*"([^"]+)"/g },
+        { name: 'type', regex: /type:\s*"([^"]+)"/g },
+        { name: 'region', regex: /region:\s*"([^"]+)"/g }
+    ];
 
-    while ((match = descRegex.exec(content)) !== null) {
-        descriptions.push(match[1]);
-    }
+    for (const field of fieldsToTranslate) {
+        console.log(`🔍 ${field.name} 필드 검색 중...`);
+        let match;
+        const matches = [];
+        const regex = new RegExp(field.regex); // Reset regex state
 
-    console.log(`🔍 총 ${descriptions.length}개의 설명을 발견했습니다.`);
-
-    for (const desc of descriptions) {
-        if (desc.match(/[가-힣]/)) continue;
-
-        console.log(`🔄 번역 중: ${desc.substring(0, 30)}...`);
-        const translated = await translateDescription(desc);
-
-        if (translated !== desc) {
-            // 특수문자 이스케이프 처리
-            const escapedDesc = desc.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const replaceRegex = new RegExp(`description:\\s*"${escapedDesc}"`, 'g');
-            newContent = newContent.replace(replaceRegex, `description: "${translated}"`);
-            console.log(`✅ 번역 완료: ${translated.substring(0, 30)}...`);
+        while ((match = regex.exec(content)) !== null) {
+            matches.push(match[1]);
         }
-        // 할당량 관리를 위해 2초 대기
-        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        for (const val of [...new Set(matches)]) {
+            if (val.match(/[가-힣]/)) continue;
+
+            console.log(`🔄 ${field.name} 번역 중: ${val}`);
+            const translated = await translateField(field.name, val);
+
+            if (translated !== val) {
+                const escapedVal = val.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const replaceRegex = new RegExp(`${field.name}:\\s*"${escapedVal}"`, 'g');
+                content = content.replace(replaceRegex, `${field.name}: "${translated}"`);
+                console.log(`✅ 완료: ${translated}`);
+            }
+            await new Promise(resolve => setTimeout(resolve, 1000));
+        }
     }
 
-    fs.writeFileSync(filePath, newContent, 'utf-8');
+    // tags 번역 (배열 처리)
+    console.log(`🔍 tags 필드 검색 중...`);
+    const tagsRegex = /tags:\s*\[([^\]]+)\]/g;
+    let match;
+    const allTagsSegments = [];
+    while ((match = tagsRegex.exec(content)) !== null) {
+        allTagsSegments.push(match[1]);
+    }
+
+    for (const segment of [...new Set(allTagsSegments)]) {
+        const individualTags = segment.split(',').map(t => t.trim().replace(/^["']|["']$/g, ''));
+        let newSegment = segment;
+
+        for (const tag of individualTags) {
+            if (!tag || tag.match(/[가-힣]/)) continue;
+
+            console.log(`🔄 tag 번역 중: ${tag}`);
+            const translated = await translateField('tags', tag);
+
+            if (translated !== tag) {
+                const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const itemRegex = new RegExp(`(["'])${escapedTag}(["'])`, 'g');
+                newSegment = newSegment.replace(itemRegex, `$1${translated}$2`);
+            }
+        }
+
+        if (newSegment !== segment) {
+            const escapedSegment = segment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const segmentRegex = new RegExp(`tags:\\s*\\[${escapedSegment}\\]`, 'g');
+            content = content.replace(segmentRegex, `tags: [${newSegment}]`);
+        }
+    }
+
+    fs.writeFileSync(filePath, content, 'utf-8');
     console.log(`💾 ${path.basename(filePath)} 저장 완료.`);
 }
 
@@ -102,7 +144,7 @@ async function main() {
             await processFile(file);
         }
     }
-    console.log('\n✨ 모든 데이터 한글화 완료!');
+    console.log('\n✨ 모든 데이터 한글화 고도화 완료!');
 }
 
 main();

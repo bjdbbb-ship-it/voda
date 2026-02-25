@@ -66,4 +66,16 @@ export const articles: Article[] = [
 ];
 
 
-export { globalWhiskies as whiskies } from './global-data';
+import { globalWhiskies } from './global-data';
+import { whiskyPool } from './whisky-pool';
+
+// 데이터 소스 통합 및 중복 제거
+const combinedWhiskies = [...globalWhiskies];
+
+(whiskyPool as Whisky[]).forEach(wp => {
+    if (!combinedWhiskies.some(gw => gw.name.toLowerCase() === wp.name.toLowerCase())) {
+        combinedWhiskies.push(wp);
+    }
+});
+
+export const whiskies = combinedWhiskies;
