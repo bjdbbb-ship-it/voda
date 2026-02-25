@@ -107,7 +107,23 @@ export async function generateTopicFromTrends(category: string): Promise<{
 }> {
     try {
         const trendData = await searchWhiskyTrends(category);
-        const prompt = `당신은 위스키 매거진 'VODA'의 수석 에디터입니다. 카테고리: ${category}, 트렌드: ${trendData}. 한국어 JSON 형식으로 기사 주제를 하나 제안해주세요: { "title": "제목", "subtitle": "부제", "keywords": ["키워드1", "키워드2"] }`;
+        const prompt = `당신은 세계적인 위스키 전문 매거진 'VODA'의 편집장입니다. 
+다음 트렌드 데이터를 바탕으로 독자들의 시선을 사로잡을 만한 매력적이고 전문적인 기사 주제를 제안해주세요.
+
+카테고리: ${category}
+최신 트렌드/데이터: ${trendData}
+
+[필수 지침]
+1. 제목(title)에 절대 '오늘의 뉴스', '2/26 소식', '2026-02-26' 처럼 날짜나 요일을 포함하지 마십시오.
+2. 제목은 Master of Malt나 Whisky Advocate 같은 프리미엄 매거진 스타일로 작성하십시오. (예: "셰리 캐스크의 숨겨진 과학", "독립 병입자의 세계: 왜 그들은 특별한가?")
+3. 부제(subtitle)는 본문의 내용을 기대하게 만드는 세련된 문장으로 작성하십시오.
+
+한국어 JSON 형식으로 응답하십시오: 
+{ 
+  "title": "날짜가 없는 매력적인 제목", 
+  "subtitle": "흥미로운 부제", 
+  "keywords": ["핵심키워드1", "핵심키워드2", "핵심키워드3"] 
+}`;
 
         const responseText = await callGeminiAPI(prompt);
         const jsonMatch = responseText.match(/\{[\s\S]*\}/);
@@ -174,8 +190,10 @@ ${seedSection}
 
 function generateFallbackTopic(category: string) {
     const fallback = {
-        "트렌드": { title: "2026년 위스키 업계를 이끄는 5가지 혁신", subtitle: "지속가능성에서 AI 블렌딩까지", keywords: ["미래", "혁신"] }
-        // ... (필요 시 복사)
+        "트렌드": { title: "위스키 업계를 변화시키는 혁신적 기술들", subtitle: "지속가능성에서 AI 블렌딩까지", keywords: ["미래", "혁신", "기술"] },
+        "추천": { title: "지금 당장 경험해야 할 싱글 몰트 큐레이션", subtitle: "전문가들이 선별한 이달의 위스키", keywords: ["추천", "싱글몰트", "큐레이션"] },
+        "역사": { title: "증류소의 영혼: 위스키의 기원을 찾아서", subtitle: "수세기를 이어온 전통의 기록", keywords: ["역사", "전통", "증류소"] },
+        "리뷰": { title: "명작과 범작 사이: 심층 테이스팅 리포트", subtitle: "VODA가 전하는 가감 없는 솔직 리뷰", keywords: ["리뷰", "테이스팅", "분석"] }
     };
     return (fallback as any)[category] || fallback["트렌드"];
 }

@@ -242,7 +242,7 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
     const kstDate = new Date(now.getTime() + kstOffset);
     const articleDate = finalConfig.customDate || kstDate.toISOString().split('T')[0];
 
-    // 1. 오늘 날짜에 이미 매거진 기사가 있으면 스킵
+    // 1. 오늘 날짜에 이미 매거진 기사가 있으면 스킵 (강제 생성이 아닌 경우)
     const todayMagazineExists = articles.some((a: Article) =>
         a.publishedAt === articleDate && a.category !== "신규 위스키 소식"
     );
@@ -251,71 +251,89 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
         return null as any;
     }
 
-    // 2. 카테고리 랜덤 선택 (신규 위스키 소식 제외)
-    const category = MAGAZINE_CATEGORIES[Math.floor(Math.random() * MAGAZINE_CATEGORIES.length)];
-    console.log(`📂 선택된 카테고리: ${category}`);
+    const MAX_RETRIES = 3;
+    let article: Article | null = null;
 
-    // 3. topicTemplates에서 해당 카테고리 관련 템플릿 찾기 (AI 시드용)
-    const matchingTemplate = topicTemplates.find(t => t.category === category) || topicTemplates[0];
-    const seedContent = matchingTemplate.fullContent || '';
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+        console.log(`\n🔄 기사 생성 시도 중 (${attempt}/${MAX_RETRIES})...`);
 
-    // 4. AI로 주제 생성
-    console.log('🤖 AI가 위스키 트렌드를 분석하여 독창적인 주제를 생성 중...');
-    const topicData = await generateTopicFromTrends(category);
+        // 2. 카테고리 랜덤 선택 (매 시도마다 새로운 카테고리 권장)
+        const category = MAGAZINE_CATEGORIES[Math.floor(Math.random() * MAGAZINE_CATEGORIES.length)];
+        console.log(`📂 선택된 카테고리: ${category}`);
 
-    const topic: TopicTemplate = {
-        category,
-        title: topicData.title,
-        subtitle: topicData.subtitle,
-        keywords: topicData.keywords,
-        targetAudience: 'all',
-        fullContent: seedContent
-    };
+        // 3. AI로 주제 생성
+        console.log('🤖 AI가 위스키 트렌드를 분석하여 독창적인 주제를 생성 중...');
+        const topicData = await generateTopicFromTrends(category);
 
-    console.log(`✨ 생성된 주제: ${topic.title}`);
+        // 4. 중복 제목 체크 (공백 제거 후 대소문자 무시)
+        const normalizedNewTitle = topicData.title.trim().replace(/\s+/g, ' ');
+        const isDuplicate = articles.some((a: Article) =>
+            a.title.trim().replace(/\s+/g, ' ') === normalizedNewTitle
+        );
 
-    // 5. 관련 위스키 선택
-    const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
+        if (isDuplicate) {
+            console.warn(`⚠️ 중복된 제목 발견: '${topicData.title}'. 다른 주제로 재시도합니다.`);
+            continue; // 다음 루프로 이동하여 재시도
+        }
 
-    // 6. AI 본문 생성 (풍성한 매거진 스타일)
-    console.log('📝 AI가 풍성한 매거진 기사 본문을 작성 중...');
-    const content = await generateAIContent(
-        topic.title,
-        topic.subtitle,
-        topic.category,
-        topic.keywords,
-        seedContent
-    );
+        // 5. 주제 준비
+        const matchingTemplate = topicTemplates.find(t => t.category === category) || topicTemplates[0];
+        const seedContent = matchingTemplate.fullContent || '';
 
-    if (!content || content.length < 300) {
-        console.warn('⚠️ AI가 충분한 분량의 기사를 생성하지 못했습니다. 작업을 중단합니다.');
-        return null as any;
+        const topic: TopicTemplate = {
+            category,
+            title: topicData.title,
+            subtitle: topicData.subtitle,
+            keywords: topicData.keywords,
+            targetAudience: 'all',
+            fullContent: seedContent
+        };
+
+        console.log(`✨ 생성된 주제: ${topic.title}`);
+
+        // 6. 관련 위스키 선택
+        const selectedWhiskies = selectRelevantWhiskies(topic, finalConfig.whiskeyCount);
+
+        // 7. AI 본문 생성 (풍성한 매거진 스타일)
+        console.log('📝 AI가 풍성한 매거진 기사 본문을 작성 중...');
+        const content = await generateAIContent(
+            topic.title,
+            topic.subtitle,
+            topic.category,
+            topic.keywords,
+            seedContent
+        );
+
+        if (!content || content.length < 500) {
+            console.warn('⚠️ AI가 충분한 분량의 기사를 생성하지 못했습니다. 재시도합니다.');
+            continue;
+        }
+
+        const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
+        const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
+            finalConfig.style === 'witty' ? 'master-of-malt' : null;
+
+        article = {
+            id: `magazine-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
+            slug: `${(topicData.keywords[0] || 'article').replace(/\s+/g, '-').toLowerCase()}-${articleTimestamp}`,
+            title: topic.title,
+            subtitle: topic.subtitle,
+            category: topic.category,
+            author: "VODA",
+            publishedAt: articleDate,
+            imageUrl: getImageForCategory(topic.category, topic.keywords),
+            content,
+            tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
+            useTitleCover: true
+        };
+
+        break; // 성공적으로 생성되었으므로 루프 탈출
     }
 
-    // 7. 중복 제목 체크
-    const isDuplicate = articles.some((a: Article) => a.title === topic.title);
-    if (isDuplicate) {
-        console.log(`⏭️  이미 '${topic.title}' 제목의 기사가 존재합니다. 건너뜁니다.`);
+    if (!article) {
+        console.error(`❌ ${MAX_RETRIES}회 시도 후에도 적절한 기사를 생성하지 못했습니다.`);
         return null as any;
     }
-
-    const articleTimestamp = finalConfig.customDate ? new Date(finalConfig.customDate).getTime() : Date.now();
-    const styleTag = finalConfig.style === 'podcast' ? 'whiskycast' :
-        finalConfig.style === 'witty' ? 'master-of-malt' : null;
-
-    const article: Article = {
-        id: `magazine-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
-        slug: `${(topicData.keywords[0] || 'article').replace(/\s+/g, '-')}-${articleDate}`,
-        title: topic.title,
-        subtitle: topic.subtitle,
-        category: topic.category,
-        author: "VODA",
-        publishedAt: articleDate,
-        imageUrl: getImageForCategory(topic.category, topic.keywords),
-        content,
-        tags: [...topic.keywords, topic.category, ...(styleTag ? [styleTag] : [])],
-        useTitleCover: true
-    };
 
     return article;
 }
