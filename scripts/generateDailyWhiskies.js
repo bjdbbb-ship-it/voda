@@ -39,8 +39,13 @@ async function main() {
         const poolDataMod = await import('../src/lib/whisky-pool.ts');
         const globalDataMod = await import('../src/lib/global-data.ts');
 
-        const whiskyPool = poolDataMod.whiskyPool || [];
-        const globalWhiskies = globalDataMod.globalWhiskies || [];
+        // [Fix] ESM/CJS 호환성을 위한 데이터 접근 로직 개선
+        const whiskyPool = poolDataMod.whiskyPool ||
+            (poolDataMod.default && poolDataMod.default.whiskyPool) ||
+            poolDataMod.default || [];
+        const globalWhiskies = globalDataMod.globalWhiskies ||
+            (globalDataMod.default && globalDataMod.default.globalWhiskies) ||
+            globalDataMod.default || [];
 
         // 전체 후보군 합치기 (중복 ID 제거)
         const seen = new Set();

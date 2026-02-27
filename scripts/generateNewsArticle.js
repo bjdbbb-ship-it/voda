@@ -128,7 +128,7 @@ ${newsText}
 6. 마지막은 품격 있는 건배 멘트로 마무리하십시오.`;
 
     const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`,
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -150,14 +150,26 @@ function updateDataFile(article) {
     const dataPath = path.join(process.cwd(), 'src/lib/data.ts');
     let content = fs.readFileSync(dataPath, 'utf-8');
 
-    // articles 배열 찾기
-    const match = content.match(/export const articles: Article\[\] = \[\n/);
+    // articles 배열 시작 지점 찾기 (더 유연하게)
+    const match = content.match(/export const articles: Article\[\] = \[/);
     if (!match) throw new Error('articles 배열을 찾을 수 없습니다.');
 
-    // 새 기사를 배열 맨 앞에 추가
-    const newArticleStr = `  {\n    id: ${article.id},\n    title: "${article.title.replace(/"/g, '\\"')}",\n    subtitle: "${article.subtitle.replace(/"/g, '\\"')}",\n    content: \`${article.content.replace(/`/g, '\\`')}\`,\n    category: "${article.category}",\n    date: "${article.date}",\n    author: "${article.author}",\n    image: "${article.image}",\n    keywords: ${JSON.stringify(article.keywords)}\n  },\n`;
+    // 새 기사를 배열 맨 앞에 추가 (Article 타입에 맞게 필드명 수정)
+    const newArticleStr = `    {
+        id: "news-${article.id}",
+        slug: "news-${article.id}",
+        title: "${article.title.replace(/"/g, '\\"')}",
+        subtitle: "${article.subtitle.replace(/"/g, '\\"')}",
+        category: "${article.category}",
+        author: "${article.author}",
+        publishedAt: "${article.publishedAt}",
+        imageUrl: "${article.imageUrl}",
+        content: \`${article.content.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`,
+        tags: ${JSON.stringify(article.tags)},
+        useTitleCover: true
+    },\n`;
 
-    content = content.replace(/export const articles: Article\[\] = \[\n/, `export const articles: Article[] = [\n${newArticleStr}`);
+    content = content.replace(/export const articles: Article\[\] = \[/, `export const articles: Article[] = [\n${newArticleStr}`);
 
     fs.writeFileSync(dataPath, content, 'utf-8');
     console.log(`✅ data.ts 업데이트 완료: ${article.title}`);
@@ -193,10 +205,10 @@ async function main() {
             subtitle: `${whiskyNews.length}개의 주요 위스키 브랜드 신제품 및 한정판 발표 요약`,
             content: content,
             category: "신규 위스키 소식",
-            date: today,
+            publishedAt: today,
             author: "VODA AI 에디터",
-            image: "https://images.unsplash.com/photo-1527281405159-02071370b98f?q=80&w=2000&auto=format&fit=crop",
-            keywords: ["신제품", "출시", "한정판", "글로벌뉴스", "위스키소식"]
+            imageUrl: "https://images.unsplash.com/photo-1527281405159-02071370b98f?q=80&w=2000&auto=format&fit=crop",
+            tags: ["신제품", "출시", "한정판", "글로벌뉴스", "위스키소식"]
         };
 
         if (isDryRun) {
