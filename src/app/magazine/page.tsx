@@ -11,7 +11,7 @@ export default function MagazinePage() {
     // [Fix] 타임존 이슈 해결: 현재 날짜(KST)를 YYYY-MM-DD 형식으로 가져와 문자열 비교
     const todayStr = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
     const allPublishedArticles = articles
-        .filter((article) => article.publishedAt <= todayStr)
+        .filter((article) => article.publishedAt <= todayStr && article.category !== "위스키 소식")
         .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
     return (

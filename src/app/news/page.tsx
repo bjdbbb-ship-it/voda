@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NewsPage() {
     // "신규 위스키 소식" 카테고리의 기사만 필터링
     const newsArticles = articles
-        .filter((article) => article.category === "신규 위스키 소식")
+        .filter((article) => article.category === "위스키 소식")
         .filter((article) => new Date(article.publishedAt) <= new Date())
         .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 

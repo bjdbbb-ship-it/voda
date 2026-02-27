@@ -204,7 +204,7 @@ async function main() {
             title: `[글로벌 뉴스] ${today} 신규 위스키 출시 소식`,
             subtitle: `${whiskyNews.length}개의 주요 위스키 브랜드 신제품 및 한정판 발표 요약`,
             content: content,
-            category: "신규 위스키 소식",
+            category: "위스키 소식",
             publishedAt: today,
             author: "VODA AI 에디터",
             imageUrl: "https://images.unsplash.com/photo-1527281405159-02071370b98f?q=80&w=2000&auto=format&fit=crop",

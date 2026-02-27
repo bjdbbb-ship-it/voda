@@ -42,7 +42,7 @@ export function ArticleCard({ article, featured = false, hideImage = false }: Ar
                 <div className="flex items-center gap-2 mb-3">
                     <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold tracking-widest uppercase border ${article.category === "리뷰" ? "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-800" :
                         article.category === "팟캐스트" || article.category === "인터뷰" ? "bg-indigo-100 text-indigo-800 border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-800" :
-                            article.category === "뉴스" || article.category === "신규 위스키 소식" ? "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800" :
+                            article.category === "뉴스" || article.category === "위스키 소식" ? "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800" :
                                 "text-secondary border-transparent"
                         }`}>
                         {['팟캐스트', '인터뷰'].includes(article.category) && "🎙️ "}{article.category}
