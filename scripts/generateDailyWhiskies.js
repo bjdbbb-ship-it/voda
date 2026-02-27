@@ -56,13 +56,16 @@ async function main() {
             process.exit(1);
         }
 
-        // 이미 오늘 날짜로 표시된 위스키는 우선순위에서 제외
-        const notToday = allCandidates.filter(w => w.availableDate !== today);
-        const pool = notToday.length >= 10 ? notToday : allCandidates;
+        // 업데이트 순서 결정: availableDate가 가장 오래되었거나 없는 순으로 정렬
+        // (이를 통해 전체 위스키가 한 번씩 돌아가며 노출되는 순환 구조 형성)
+        const sorted = [...allCandidates].sort((a, b) => {
+            const dateA = a.availableDate || '0000-00-00';
+            const dateB = b.availableDate || '0000-00-00';
+            return dateA.localeCompare(dateB);
+        });
 
-        // 무작위로 10개 선택
-        const shuffled = [...pool].sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 10);
+        // 상위 10개 선택
+        const selected = sorted.slice(0, 10);
 
         console.log(`📝 오늘(${today}) 선정된 위스키 10종:`);
         selected.forEach((w, i) => console.log(`   ${i + 1}. ${w.name}`));

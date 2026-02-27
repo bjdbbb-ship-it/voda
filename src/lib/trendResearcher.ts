@@ -130,8 +130,9 @@ async function callGeminiAPI(prompt: string): Promise<string> {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
 
-    // 할당량 문제 완화를 위해 안정성을 우선하여 gemini-2.0-flash 모델 사용
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    // [Fix] 할당량 문제 해결을 위해 작동이 확인된 gemini-flash-latest 모델 사용
+    const model = "models/gemini-flash-latest";
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/${model}:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -140,7 +141,14 @@ async function callGeminiAPI(prompt: string): Promise<string> {
     });
 
     const data = await response.json();
-    if (data.error) throw new Error(data.error.message);
+    if (data.error) {
+        console.error(`❌ Gemini API Error (${model}):`, data.error.message);
+        throw new Error(data.error.message);
+    }
+
+    if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
+        throw new Error('No content generated from Gemini API');
+    }
 
     return data.candidates[0].content.parts[0].text;
 }

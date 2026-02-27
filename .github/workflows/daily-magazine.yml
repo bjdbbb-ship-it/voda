@@ -27,10 +27,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate daily magazine article
+      - name: Generate daily magazine article (매거진 기사 생성)
         run: npm run generate:article
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+
+      - name: Generate daily news article (실시간 뉴스 생성)
+        run: npm run generate:news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
 
       - name: Update daily whiskies (10개 가치판단 갱신)
         run: npm run generate:whiskies
