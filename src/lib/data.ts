@@ -2,34 +2,34 @@ export * from './types';
 import { Whisky, Article } from './types';
 
 export const articles: Article[] = [{
-        id: "1",
-        slug: "whisky-magazine-voda-launch",
-        title: "위스키 매거진 VODA에 오신 것을 환영합니다",
-        subtitle: "취향의 발견, 위스키의 모든 것",
-        category: "공지사항",
-        author: "VODA",
-        publishedAt: "2026-02-23",
-        imageUrl: "https://images.unsplash.com/photo-1527281473222-79366a5b8b73?auto=format&fit=crop&q=80&w=800",
-        content: `
+    id: "1",
+    slug: "whisky-magazine-voda-launch",
+    title: "위스키 매거진 VODA에 오신 것을 환영합니다",
+    subtitle: "취향의 발견, 위스키의 모든 것",
+    category: "공지사항",
+    author: "VODA",
+    publishedAt: "2026-02-23",
+    imageUrl: "https://images.unsplash.com/photo-1527281473222-79366a5b8b73?auto=format&fit=crop&q=80&w=800",
+    content: `
 ## 환영합니다!
 
 위스키 매거진 VODA가 정식 서비스를 시작했습니다. 
 이곳에서 당신만의 위스키 취향을 발견하고, 전 세계의 다양한 위스키 소식을 접해보세요.
 
 매일 새로운 위스키 정보와 기사가 업데이트됩니다.`,
-        tags: ["공지", "위스키", "VODA"],
-        useTitleCover: true
-    },
-    {
-        id: "magazine-1772212273113-698",
-        slug: "위스키-믹솔로지-1772212273113",
-        title: "언테임드 스피릿: 한 잔의 칵테일에 담긴 글로벌 위스키의 본질",
-        subtitle: "전 세계 증류소가 주목하는 최신 테이스팅 노트와 믹솔로지가 만났을 때 생겨나는 미학적 변주",
-        category: "칵테일",
-        author: "VODA",
-        publishedAt: "2026-02-28",
-        imageUrl: "https://images.unsplash.com/photo-1629853381467-f3775432420f?auto=format&fit=crop&q=80&w=1200",
-        content: `# 언테임드 스피릿: 한 잔의 칵테일에 담긴 글로벌 위스키의 본질
+    tags: ["공지", "위스키", "VODA"],
+    useTitleCover: true
+},
+{
+    id: "magazine-1772212273113-698",
+    slug: "whisky-mixology-trend-2026",
+    title: "언테임드 스피릿: 한 잔의 칵테일에 담긴 글로벌 위스키의 본질",
+    subtitle: "전 세계 증류소가 주목하는 최신 테이스팅 노트와 믹솔로지가 만났을 때 생겨나는 미학적 변주",
+    category: "칵테일",
+    author: "VODA",
+    publishedAt: "2026-02-28",
+    imageUrl: "https://images.unsplash.com/photo-1629853381467-f3775432420f?auto=format&fit=crop&q=80&w=1200",
+    content: `# 언테임드 스피릿: 한 잔의 칵테일에 담긴 글로벌 위스키의 본질
 ## 전 세계 증류소가 주목하는 최신 테이스팅 노트와 믹솔로지가 만났을 때 생겨나는 미학적 변주
 
 ---
@@ -88,10 +88,10 @@ export const articles: Article[] = [{
 **📎 원문 출처**: [Whisky Magazine | Home of Whisky News and Tastings](https://www.whiskymag.com/)
 
 **Slàinte Mhath! (당신의 건강을 위하여!)**`,
-        tags: ["위스키 믹솔로지","싱글 몰트 트렌드","마스터 블렌더","글로벌 테이스팅","칵테일"],
-        useTitleCover: true,
-        sourceUrl: "https://www.whiskymag.com/",
-    }
+    tags: ["위스키 믹솔로지", "싱글 몰트 트렌드", "마스터 블렌더", "글로벌 테이스팅", "칵테일"],
+    useTitleCover: true,
+    sourceUrl: "https://www.whiskymag.com/",
+}
 ];
 
 

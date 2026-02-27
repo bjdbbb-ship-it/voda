@@ -21,7 +21,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     const article = articles.find((a) => a.slug === slug);
 
     // Filter by publish date - hide if not yet published
-    if (!article || new Date(article.publishedAt) > new Date()) {
+    // [Fix] 타임존 이슈 해결: 현재 날짜(KST)와 비교
+    const todayStr = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
+    if (!article || article.publishedAt > todayStr) {
         notFound();
     }
 

@@ -317,7 +317,7 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
 
         article = {
             id: `magazine-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
-            slug: `${(topicData.keywords[0] || 'article').replace(/\s+/g, '-').toLowerCase()}-${articleTimestamp}`,
+            slug: `article-${articleTimestamp}-${Math.floor(Math.random() * 1000)}`,
             title: topic.title,
             subtitle: topic.subtitle,
             category: topic.category,

@@ -4,8 +4,10 @@ import Link from "next/link";
 
 export default function Home() {
   // Sort articles by date (descending) and filter future posts
+  // [Fix] 타임존 이슈 해결: 현재 날짜(KST)를 YYYY-MM-DD 형식으로 가져와 문자열 비교
+  const todayStr = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
   const publishedArticles = articles
-    .filter((article) => new Date(article.publishedAt) <= new Date())
+    .filter((article) => article.publishedAt <= todayStr)
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, 16); // 표시 개수 제한
 
