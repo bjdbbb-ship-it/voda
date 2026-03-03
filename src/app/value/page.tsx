@@ -20,9 +20,19 @@ export default function ValueAssessmentPage() {
     const [showGlobal, setShowGlobal] = useState(false);
     const [exRates, setExRates] = useState(DEFAULT_EX_RATES);
     const [expandedWhiskies, setExpandedWhiskies] = useState<Set<string>>(new Set());
+    const [expandedNames, setExpandedNames] = useState<Set<string>>(new Set());
 
     const toggleExpand = (id: string) => {
         setExpandedWhiskies(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) next.delete(id);
+            else next.add(id);
+            return next;
+        });
+    };
+
+    const toggleNameExpand = (id: string) => {
+        setExpandedNames(prev => {
             const next = new Set(prev);
             if (next.has(id)) next.delete(id);
             else next.add(id);
@@ -282,9 +292,25 @@ export default function ValueAssessmentPage() {
                                                 <span className="text-xs text-secondary font-bold uppercase tracking-widest">{whisky.region}</span>
                                                 <ShieldCheck className="w-4 h-4 text-secondary/50" />
                                             </div>
-                                            <h3 className="font-serif text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors line-clamp-1">
-                                                {whisky.name}
-                                            </h3>
+                                            <div className="relative mb-4 group/name">
+                                                <h3
+                                                    onClick={() => toggleNameExpand(whisky.id)}
+                                                    className={cn(
+                                                        "font-serif text-2xl font-bold text-primary group-hover:text-secondary transition-colors cursor-pointer",
+                                                        expandedNames.has(whisky.id) ? "" : "line-clamp-1"
+                                                    )}
+                                                >
+                                                    {whisky.name}
+                                                </h3>
+                                                {whisky.name.length > 25 && (
+                                                    <button
+                                                        onClick={() => toggleNameExpand(whisky.id)}
+                                                        className="text-[10px] text-secondary/60 hover:text-secondary font-bold mt-1 transition-colors"
+                                                    >
+                                                        {expandedNames.has(whisky.id) ? "이름 접기" : "이름 전체 보기"}
+                                                    </button>
+                                                )}
+                                            </div>
                                             <div className="relative mb-8">
                                                 <p className={cn(
                                                     "text-sm text-muted-foreground leading-relaxed transition-all duration-300",

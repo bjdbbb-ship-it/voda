@@ -67,6 +67,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "masterofmalt.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.masterofmalt.com",
+      },
     ],
   },
 };
