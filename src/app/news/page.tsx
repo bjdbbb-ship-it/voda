@@ -6,7 +6,7 @@ export default function NewsPage() {
     // 타임존 이슈 해결: 현재 날짜(KST)를 YYYY-MM-DD 형식으로 가져와 문자열 비교
     const todayStr = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
     const newsArticles = articles
-        .filter((article) => article.category === "위스키 소식")
+        .filter((article) => article.category === "신규 위스키 소식")
         .filter((article) => article.publishedAt <= todayStr)
         .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 

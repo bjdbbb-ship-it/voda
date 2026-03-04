@@ -105,7 +105,7 @@ function filterWhiskyNews(results) {
 /**
  * Gemini API로 뉴스 기사 본문 생성 (원문 충실 번역)
  */
-async function generateNewsContent(newsItems, today, retries = 3) {
+async function generateNewsContent(newsItems, today) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY 없음');
 
@@ -127,33 +127,42 @@ ${newsText}
 5. 분량: 1,500자 이상으로 풍성하게 작성하십시오. (원문의 정보를 최대한 상세히 한글로 풀어쓰세요)
 6. 마지막은 품격 있는 건배 멘트로 마무리하십시오.`;
 
-    for (let i = 0; i < retries; i++) {
+    const model = "gemini-1.5-flash";
+    const MAX_RETRIES = 5;
+    const INITIAL_DELAY = 2000;
+
+    for (let i = 0; i < MAX_RETRIES; i++) {
         try {
-            const response = await fetch(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`,
-                {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: prompt }] }]
-                    })
-                }
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: prompt }] }],
+                    generationConfig: {
+                        temperature: 0.7,
+                        maxOutputTokens: 8192,
+                    }
+                })
+            }
             );
 
             const data = await response.json();
             if (data.error) {
-                if (data.error.message.includes('high demand') && i < retries - 1) {
-                    console.log(`⚠️ Gemini API 부하 발생. 재시도 중... (${i + 1}/${retries})`);
-                    await new Promise(resolve => setTimeout(resolve, 5000));
+                if ((data.error.code === 429 || data.error.message.includes('high demand') || data.error.message.includes('quota')) && i < MAX_RETRIES - 1) {
+                    const delayMs = INITIAL_DELAY * Math.pow(2, i);
+                    console.warn(`⚠️ Gemini API 부하 발생(Attempt ${i + 1}). ${delayMs}ms 후 재시도...`);
+                    await new Promise(resolve => setTimeout(resolve, delayMs));
                     continue;
                 }
                 throw new Error(data.error.message);
             }
             return data.candidates[0].content.parts[0].text;
         } catch (err) {
-            if (i === retries - 1) throw err;
-            console.log(`⚠️ 재시도 중... (${i + 1}/${retries})`);
-            await new Promise(resolve => setTimeout(resolve, 5000));
+            if (i === MAX_RETRIES - 1) throw err;
+            const delayMs = INITIAL_DELAY * Math.pow(2, i);
+            console.warn(`⚠️ 에러 발생(Attempt ${i + 1}): ${err.message}. ${delayMs}ms 후 재시도...`);
+            await new Promise(resolve => setTimeout(resolve, delayMs));
         }
     }
 }

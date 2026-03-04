@@ -636,4 +636,95 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-03-04",
         tags: ["Speyside","RumFinish","Balvenie"]
     },
+
+    // --- AI Generated New Releases ---
+    { 
+        id: "nw-1772610218814-2", name: "Aberargie Single Malt / 아베라기 싱글 몰트", type: "싱글 몰트", region: "로우랜드", 
+        basePrice: 78, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":6,"fruit":7,"spice":5,"body":6},
+        description: "2026년 주목받는 신생 증류소의 첫 정규 릴리즈로, 보리의 순수한 풍미와 깨끗한 질감이 돋보입니다. 부드러운 과일 향과 함께 견과류의 고소함이 긴 여운을 남기는 로우랜드 스타일입니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["신생증류소","로우랜드","아베라기"]
+    },
+
+    { 
+        id: "nw-1772610218814-3", name: "Oxford Rye Whisky / 옥스퍼드 라이 위스키", type: "라이 위스키", region: "잉글랜드", 
+        basePrice: 85, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":5,"fruit":4,"spice":8,"body":7},
+        description: "고대 품종의 호밀을 사용하여 복합적인 향신료와 호밀 특유의 알싸한 맛을 강조한 위스키입니다. 바닐라와 구운 빵의 풍미가 층층이 쌓여 깊고 진한 바디감을 선사합니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["라이위스키","잉글랜드","옥스퍼드"]
+    },
+
+    { 
+        id: "nw-1772610218814-4", name: "Adelphi Glen Elgin 12 Year Old / 아델피 글렌 엘긴 12년", type: "싱글 몰트", region: "스페이사이드", 
+        basePrice: 115, currency: "USD", priceRange: "premium",
+        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":3,"body":6},
+        description: "독립 병입자 아델피가 엄선한 캐스크로, 글렌 엘긴 특유의 화사한 과일 향이 극대화되었습니다. 꿀과 잘 익은 사과의 달콤함이 입안을 부드럽게 감싸며 우아한 마무리를 보여줍니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["독립병입","스페이사이드","아델피"]
+    },
+
+    { 
+        id: "nw-1772610218814-5", name: "Adelphi Linkwood 13 Year Old / 아델피 링크우드 13년", type: "싱글 몰트", region: "스페이사이드", 
+        basePrice: 125, currency: "USD", priceRange: "premium",
+        flavorProfile: {"peat":0,"sweet":7,"fruit":9,"spice":2,"body":5},
+        description: "신선한 꽃향기와 풀 내음이 어우러진 우아한 스타일의 위스키로 링크우드 증류소의 정수를 담았습니다. 가벼운 바디감 속에 숨겨진 복숭아와 살구의 섬세한 풍미가 매력적입니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["독립병입","꽃향기","링크우드"]
+    },
+
+    { 
+        id: "nw-1772610218814-6", name: "Adelphi Teaninich 14 Year Old / 아델피 티니닉 14년", type: "싱글 몰트", region: "하이랜드", 
+        basePrice: 135, currency: "USD", priceRange: "premium",
+        flavorProfile: {"peat":0,"sweet":6,"fruit":6,"spice":6,"body":7},
+        description: "하이랜드의 강인한 캐릭터를 담고 있으며, 허브와 향신료의 복합적인 풍미가 돋보이는 제품입니다. 오크통에서 오는 바닐라와 약간의 왁시한 질감이 특징인 고숙련 병입 제품입니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["하이랜드","왁시","티니닉"]
+    },
+
+    { 
+        id: "nw-1772610218814-7", name: "Luss Distillery Single Malt / 러스 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드", 
+        basePrice: 82, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":2,"sweet":6,"fruit":7,"spice":4,"body":6},
+        description: "로몬드 호수 인근의 새로운 증류소에서 생산된 위스키로, 깨끗하고 청량한 과일 향이 일품입니다. 미세한 피트감이 가미되어 복합적인 풍미와 함께 신선한 여운을 선사합니다.",
+        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        availableDate: "2026-03-04",
+        tags: ["신생증류소","하이랜드","러스"]
+    },
+
+    { 
+        id: "nw-1772610218814-8", name: "Lerwick Distillery Single Malt / 러윅 증류소 싱글 몰트", type: "싱글 몰트", region: "아일랜드", 
+        basePrice: 98, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":5,"sweet":4,"fruit":5,"spice":6,"body":7},
+        description: "셰틀랜드 제도의 거친 해안가에서 숙성되어 짭조름한 바다 내음과 해초의 풍미가 특징입니다. 강렬한 향신료와 함께 스모키한 마무리가 인상적인 북단 증류소의 야심작입니다.",
+        imageUrl: "https://static.whiskybase.com/storage/whiskies/2/6/3474/473010-big.jpg",
+        availableDate: "2026-03-04",
+        tags: ["셰틀랜드","해안가위스키","러윅"]
+    },
+
+    { 
+        id: "nw-1772610218814-9", name: "Struie Distillery Single Malt / 스트루이 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드", 
+        basePrice: 88, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":1,"sweet":7,"fruit":6,"spice":5,"body":6},
+        description: "전통적인 하이랜드 스타일을 현대적으로 재해석하여 매우 부드러운 질감을 자랑하는 위스키입니다. 카라멜과 구운 견과류의 풍미가 조화롭게 어우러져 누구나 즐기기 좋습니다.",
+        imageUrl: "https://www.masterofmalt.com/api/blog-image?url=https%3A%2F%2Fwww.masterofmalt.com%2Fblog%2Fwp-content%2Fuploads%2F2026%2F01%2FStruie-Distillery-1024x576.jpg",
+        availableDate: "2026-03-04",
+        tags: ["하이랜드","부드러운","스트루이"]
+    },
+
+    { 
+        id: "nw-1772610218814-10", name: "Adelphi Miltonduff 11 Year Old / 아델피 밀턴더프 11년", type: "싱글 몰트", region: "스페이사이드", 
+        basePrice: 108, currency: "USD", priceRange: "premium",
+        flavorProfile: {"peat":0,"sweet":8,"fruit":7,"spice":4,"body":7},
+        description: "풍부한 몰트의 단맛과 함께 크리미한 질감이 돋보이는 스페이사이드의 숨은 보석 같은 위스키입니다. 밀크 초콜릿과 오렌지 껍질의 풍미가 겹겹이 쌓여 긴 여운을 남깁니다.",
+        imageUrl: "https://static.whiskybase.com/storage/whiskies/2/3/7807/430134-big.jpg",
+        availableDate: "2026-03-04",
+        tags: ["스페이사이드","크리미","밀턴더프"]
+    },
 ];

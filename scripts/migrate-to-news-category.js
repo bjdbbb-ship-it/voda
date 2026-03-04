@@ -17,14 +17,14 @@ async function main() {
         const dataFilePath = path.join(process.cwd(), 'src', 'lib', 'data.ts');
         let dataContent = fs.readFileSync(dataFilePath, 'utf-8');
 
-        // 자동 생성 기사 패턴 찾기 (id: "auto-"로 시작)
-        const autoArticlePattern = /\{\s*id:\s*"auto-[^}]+\}/gs;
+        // "위스키 소식" 카테고리를 가진 모든 기사 패턴 찾기
+        const articlePattern = /\{\s*id:\s*"[^"]+",[\s\S]*?category:\s*"위스키 소식"[\s\S]*?\}/gs;
 
         let changeCount = 0;
         let unchangedCount = 0;
 
-        // 각 자동 생성 기사를 찾아서 카테고리 변경
-        dataContent = dataContent.replace(autoArticlePattern, (match) => {
+        // 각 기사를 찾아서 카테고리 변경
+        dataContent = dataContent.replace(articlePattern, (match) => {
             // 이미 "신규 위스키 소식" 카테고리인지 확인
             if (match.includes('category: "신규 위스키 소식"')) {
                 unchangedCount++;

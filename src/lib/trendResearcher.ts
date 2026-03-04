@@ -130,27 +130,59 @@ async function callGeminiAPI(prompt: string): Promise<string> {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
 
-    // [Fix] 할당량 문제 해결을 위해 작동이 확인된 gemini-flash-latest 모델 사용
-    const model = "models/gemini-flash-latest";
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/${model}:generateContent?key=${apiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }]
-        })
-    });
+    const model = "gemini-1.5-flash";
+    const MAX_RETRIES = 5;
+    const INITIAL_DELAY = 2000;
 
-    const data = await response.json();
-    if (data.error) {
-        console.error(`❌ Gemini API Error (${model}):`, data.error.message);
-        throw new Error(data.error.message);
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+        try {
+            const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: prompt }] }],
+                    generationConfig: {
+                        temperature: 0.7,
+                        topP: 0.95,
+                        topK: 40,
+                        maxOutputTokens: 8192,
+                    }
+                })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                const errorMessage = errorData.error?.message || response.statusText;
+
+                if (response.status === 429 || errorMessage.includes('quota') || errorMessage.includes('high demand')) {
+                    const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
+                    console.warn(`⚠️ Gemini API 429/Quota (Attempt ${attempt}/${MAX_RETRIES}). Retrying in ${delayMs}ms...`);
+                    await new Promise(resolve => setTimeout(resolve, delayMs));
+                    continue;
+                }
+                throw new Error(`Gemini API HTTP Error: ${response.status} ${errorMessage}`);
+            }
+
+            const data = await response.json();
+
+            if (data.error) {
+                throw new Error(data.error.message);
+            }
+
+            if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
+                throw new Error('No content generated from Gemini API');
+            }
+
+            return data.candidates[0].content.parts[0].text;
+        } catch (error: any) {
+            if (attempt === MAX_RETRIES) throw error;
+            const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
+            console.warn(`⚠️ Gemini API Connection Error (Attempt ${attempt}/${MAX_RETRIES}): ${error.message}. Retrying in ${delayMs}ms...`);
+            await new Promise(resolve => setTimeout(resolve, delayMs));
+        }
     }
-
-    if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
-        throw new Error('No content generated from Gemini API');
-    }
-
-    return data.candidates[0].content.parts[0].text;
+    throw new Error('Failed to call Gemini API after multiple retries');
 }
 
 export async function generateTopicFromTrends(category: string): Promise<{
