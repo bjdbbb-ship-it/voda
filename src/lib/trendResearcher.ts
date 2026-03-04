@@ -120,6 +120,27 @@ export async function searchWhiskyTrends(category: string): Promise<string> {
         "뉴스": "whisky industry news latest announcements"
     };
     const query = searchQueries[category as keyof typeof searchQueries] || "whisky news";
+
+    const apiKey = process.env.SERPER_API_KEY;
+    if (apiKey) {
+        try {
+            const response = await fetch('https://google.serper.dev/search', {
+                method: 'POST',
+                headers: {
+                    'X-API-KEY': apiKey,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ q: query, num: 5 })
+            });
+            const data = await response.json();
+            if (data.organic && data.organic.length > 0) {
+                return data.organic.map((item: any) => `${item.title}: ${item.snippet}`).join('\n');
+            }
+        } catch (error) {
+            console.warn('⚠️ 검색 실패, 기본값 사용:', error);
+        }
+    }
+
     return `최근 위스키 업계 주요 트렌드 (${category}): 지속 가능한 생산, 비전통적 캐스크 피니싱, 크래프트 증류소 성장, AI 블렌딩 기술.`;
 }
 
@@ -130,13 +151,13 @@ async function callGeminiAPI(prompt: string): Promise<string> {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
 
-    const model = "gemini-1.5-flash";
+    const model = "gemini-flash-latest";
     const MAX_RETRIES = 5;
-    const INITIAL_DELAY = 2000;
+    const INITIAL_DELAY = 5000;
 
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
         try {
-            const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
             const response = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

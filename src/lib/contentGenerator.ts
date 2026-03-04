@@ -244,7 +244,8 @@ export async function generateDailyArticle(config: Partial<ArticleGenerationConf
 
     // 1. 오늘 날짜에 이미 매거진 기사가 있으면 스킵 (강제 생성이 아닌 경우)
     const todayMagazineExists = articles.some((a: Article) =>
-        a.publishedAt === articleDate && a.category !== "신규 위스키 소식"
+        a.publishedAt === articleDate &&
+        MAGAZINE_CATEGORIES.includes(a.category)
     );
     if (todayMagazineExists && !finalConfig.customDate) {
         console.log(`⏭️  ${articleDate} 날짜의 매거진 기사가 이미 존재합니다. 건너뜁니다.`);

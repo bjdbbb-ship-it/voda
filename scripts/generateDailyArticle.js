@@ -35,7 +35,7 @@ async function main() {
     try {
         console.log('🚀 일일 위스키 기사 생성 시작...\n');
 
-        // contentGenerator 모듈 동적 import
+        // contentGenerator 모듈 동적 import (종속성 해결을 위해 tsx가 필요함)
         const module = await import('../src/lib/contentGenerator.ts');
         const generateDailyArticle = module.generateDailyArticle || (module.default && module.default.generateDailyArticle);
 
