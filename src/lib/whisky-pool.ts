@@ -55,7 +55,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-02-26",
         tags: ["아일라", "우아한", "연은은한피트"]
     },
-
     // --- Speyside / Highland (Sherry/Sweet) ---
     {
         id: "p7", name: "GlenDronach 15 Year Old Revival", type: "싱글 몰트", region: "하이랜드",
@@ -87,7 +86,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-02-26",
         tags: ["럭셔리", "멀티캐스크", "복합미"]
     },
-
     // --- Japanese (Faceted/Elegant) ---
     {
         id: "p12", name: "Yamazaki 18 Year Old", type: "싱글 몰트", region: "일본",
@@ -109,7 +107,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24951/19197/Hakushu-18Yr-Bottle-solo__04959.1763139659.jpg?compression=lossy",
         tags: ["일본위스키", "숲의향기", "상쾌한"]
     },
-
     // --- Bourbon (Square/Stout) ---
     {
         id: "p14", name: "Old Rip Van Winkle 10 Year", type: "버번", region: "미국 켄터키",
@@ -141,7 +138,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/64148_source_1759399269.jpg?compression=lossy",
         tags: ["버번", "스몰배치", "전통적인"]
     },
-
     // --- More Varieties ---
     {
         id: "p18", name: "Port Charlotte OLC:01", type: "싱글 몰트", region: "아일라",
@@ -415,17 +411,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         imageUrl: "https://thewhiskeywash.com/wp-content/uploads/2025/06/featured-image-1751029426.webp",
         availableDate: "2026-03-01"
     },
-
-    // --- AI Generated New Releases ---
-    { 
-        id: "n1772524072392-1", name: "Compass Box Hedonism 2026 / 컴파스 박스 헤도니즘 2026", type: "Blended Grain", region: "Scotland", 
-        basePrice: 420, currency: "USD", priceRange: "luxury",
-        flavorProfile: {"peat":0,"sweet":9,"fruit":7,"spice":3,"body":6},
-        description: "크리에이티브 디렉터 안젤라 도라지오의 지휘 아래 탄생한 헤도니즘 2026 릴리즈는 역대 가장 오래된 그레인 원액들을 블렌딩하여 경이로운 부드러움을 선사합니다. 바닐라 빈, 구운 코코넛, 그리고 섬세한 파티세리의 향연이 미각을 사로잡으며, 그레인 위스키가 도달할 수 있는 우아함의 정점을 보여줍니다.",
-        imageUrl: "https://www.masterofmalt.com/whiskies/compass-box/compass-box-hedonism-2026-whisky.jpg",
-        availableDate: "2026-03-03",
-        tags: ["Limited Edition","Grain Whisky","Compass Box"]
-    },
     { 
         id: "n1772524072392-2", name: "Kilchoman Loch Gorm (2025 Release) / 킬호만 록 곰 (2025 릴리즈)", type: "Single Malt", region: "Islay", 
         basePrice: 115, currency: "USD", priceRange: "premium",
@@ -507,17 +492,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-03-03",
         tags: ["Unpeated Islay","B Corp","Bruichladdich"]
     },
-
-    // --- AI Generated New Releases ---
-    { 
-        id: "n1772524837659-1", name: "Compass Box Hedonism 2026 / 컴파스 박스 헤도니즘 2026", type: "Blended Grain Scotch Whisky", region: "Scotland", 
-        basePrice: 160, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":9,"fruit":7,"spice":3,"body":6},
-        description: "그레인 위스키의 우아함을 재정의한 컴파스 박스의 상징적 릴리스입니다. 2026년 버전은 46% ABV로 병입되었으며, 부드러운 바닐라 오크와 구운 코코넛, 그리고 섬세한 시트러스 풍미가 층층이 쌓여 있습니다. 내추럴 컬러와 비냉각 여과를 통해 원액 본연의 질감을 극대화한 것이 특징입니다.",
-        imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2026/02/Compass-Box_Hedonism-2026-Bottles.jpg",
-        availableDate: "2026-03-03",
-        tags: ["Blended Grain","Limited Release","Compass Box"]
-    },
     { 
         id: "n1772524837659-2", name: "Kilchoman Loch Gorm 2025 / 킬호만 로흐 곰 2025", type: "Single Malt", region: "Islay", 
         basePrice: 115, currency: "USD", priceRange: "mid",
@@ -564,15 +538,6 @@ export const whiskyPool: Partial<Whisky>[] = [
         tags: ["Lowland","Farm Distillery","Lochlea"]
     },
     { 
-        id: "n1772524837659-7", name: "The Lakes Whiskymaker's Reserve No.7 / 더 레이크스 위스키메이커스 리저브 No.7", type: "Single Malt", region: "England", 
-        basePrice: 110, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":7,"spice":8,"body":8},
-        description: "잉글랜드 위스키의 예술성을 상징하는 리저브 시리즈의 일곱 번째 작품입니다. 스페인 올로로소, PX, 그리고 레드 와인 캐스크를 사용하여 대담하고 강렬한 풍미를 구현했습니다. 다크 초콜릿, 구운 오렌지 껍질, 그리고 진한 당밀의 여운이 압권입니다.",
-        imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2025/03/The-Lakes-Whiskymakers-Reserve-No.7-1024x683.jpg",
-        availableDate: "2026-03-03",
-        tags: ["English Whisky","Sherry Influenced","The Lakes"]
-    },
-    { 
         id: "n1772524837659-8", name: "Glenfarclas 105 Cask Strength / 글렌파클라스 105 캐스크 스트렝스", type: "Single Malt", region: "Speyside", 
         basePrice: 90, currency: "USD", priceRange: "mid",
         flavorProfile: {"peat":0,"sweet":8,"fruit":7,"spice":9,"body":9},
@@ -590,13 +555,85 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-03-03",
         tags: ["Highland","Craft Distillery","Ardnamurchan"]
     },
+
+    // --- AI Generated New Releases ---
     { 
-        id: "n1772524837659-10", name: "Springbank 15 Year Old / 스프링뱅크 15년", type: "Single Malt", region: "Campbeltown", 
-        basePrice: 220, currency: "USD", priceRange: "luxury",
-        flavorProfile: {"peat":5,"sweet":7,"fruit":8,"spice":6,"body":9},
-        description: "캠벨타운의 살아있는 전설, 스프링뱅크 15년입니다. 100% 쉐리 캐스크 숙성을 통해 얻은 짙은 색상과 풍미는 건포도, 무화과, 그리고 특유의 펑키(Funky)한 유질감을 제공합니다. 수작업 전통을 고수하는 생산 방식이 빚어낸 복합미는 타의 추종을 불허합니다.",
-        imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/54002_source_1762970452.jpg?compression=lossy",
-        availableDate: "2026-03-03",
-        tags: ["Campbeltown","Handcrafted","Springbank"]
+        id: "n1772608606377-3", name: "Tamdhu 12 Year Old / 탐두 12년", type: "Single Malt Scotch Whisky", region: "Speyside", 
+        basePrice: 65, currency: "USD", priceRange: "budget",
+        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":5,"body":6},
+        description: "100% 최상급 올로로소 쉐리 캐스크에서만 숙성된 스페이사이드의 숨은 보석입니다. 신선한 시나몬과 구운 견과류, 풍부한 베리류의 풍미가 층층이 쌓여 있으며, 쉐리 위스키 입문자와 애호가 모두를 만족시킬 수 있는 직관적인 달콤함을 선사합니다.",
+        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/tamdhu/tamdhu-12-year-old-whisky.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Speyside","OlorosoSherry","Tamdhu"]
+    },
+
+    { 
+        id: "n1772608606377-4", name: "Seaweed & Aeons & Digging & Fire 10 Year Old / 씨위드 & 이언즈 & 디깅 & 파이어 10년", type: "Single Malt Scotch Whisky", region: "Islay", 
+        basePrice: 55, currency: "USD", priceRange: "budget",
+        flavorProfile: {"peat":9,"sweet":5,"fruit":4,"spice":6,"body":7},
+        description: "아일라 섬의 강렬한 피트 풍미를 현대적인 감각으로 재해석한 위스키입니다. 이름처럼 바닷바람의 짠맛과 짙은 연기 향이 특징이며, 25%의 원액을 쉐리 캐스크에서 숙성하여 거친 피트 뒤에 숨겨진 달콤한 반전을 제공합니다.",
+        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/atom-brands/seaweed-and-aeons-and-digging-and-fire-10-year-old-whisky.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Islay","Peated","IndieBottler"]
+    },
+
+    { 
+        id: "n1772608606377-5", name: "Arran Bodega Sherry Cask / 아란 보데가 쉐리 캐스크", type: "Single Malt Scotch Whisky", region: "Islands", 
+        basePrice: 80, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":8,"fruit":9,"spice":6,"body":8},
+        description: "아란 증류소의 과일 향이 가득한 원액을 퍼스트 필 쉐리 호그스헤드에서 풀 숙성한 제품입니다. 55.8%의 높은 도수임에도 불구하고 무화과, 건포도, 체리의 농축된 풍미가 부드럽게 펼쳐지며 압도적인 구조감을 자랑합니다.",
+        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/arran/arran-bodega-sherry-cask-whisky.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Islands","CaskStrength","Arran"]
+    },
+
+    { 
+        id: "n1772608606377-6", name: "Redbreast Lustau Edition / 레드브레스트 루스토 에디션", type: "Single Pot Still Whiskey", region: "Ireland", 
+        basePrice: 85, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":7,"body":9},
+        description: "아일랜드의 전통적인 싱글 팟 스틸 위스키와 유명 쉐리 하우스인 'Bodegas Lustau'의 협업으로 탄생했습니다. 크리미한 질감과 함께 말린 과일, 구운 아몬드의 고소함이 특징이며, 일반적인 위스키보다 한층 깊은 복합미를 제공합니다.",
+        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/redbreast/redbreast-lustau-edition-whiskey.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Ireland","PotStill","Redbreast"]
+    },
+
+    { 
+        id: "n1772608606377-7", name: "Mortlach 12 Year Old / 모틀락 12년", type: "Single Malt Scotch Whisky", region: "Speyside", 
+        basePrice: 75, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":6,"fruit":7,"spice":7,"body":9},
+        description: "'더 위 위치(The Wee Witchie)'라는 별칭으로 유명한 모틀락의 상징적인 엔트리 모델입니다. 2.81회 증류법을 통해 얻어진 묵직하고 고기 같은(Meaty) 육중한 바디감이 일품이며, 설탕에 절인 과일과 스파이시한 피니시가 훌륭합니다.",
+        imageUrl: "https://img.thewhiskyexchange.com/900/speyside_mor2.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Speyside","Meaty","Mortlach"]
+    },
+
+    { 
+        id: "n1772608606377-8", name: "Glendronach 12 Year Old / 글렌드로낙 12년", type: "Single Malt Scotch Whisky", region: "Highland", 
+        basePrice: 70, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":9,"fruit":8,"spice":5,"body":7},
+        description: "하이랜드 쉐리 위스키의 정석으로 불리는 제품입니다. 페드로 히메네즈와 올로로소 쉐리 캐스크의 정교한 조합을 통해 메이플 시럽, 자두, 오렌지 껍질의 풍부한 맛을 구현해냈으며, 입안을 감싸는 벨벳 같은 부드러움이 매력적입니다.",
+        imageUrl: "https://img.thewhiskyexchange.com/900/highland_gle46.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Highland","SherryMonster","Glendronach"]
+    },
+
+    { 
+        id: "n1772608606377-9", name: "Bunnahabhain 12 Year Old / 부나하벤 12년", type: "Single Malt Scotch Whisky", region: "Islay", 
+        basePrice: 68, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":2,"sweet":7,"fruit":7,"spice":5,"body":8},
+        description: "피트하지 않은 아일라 위스키의 진수를 보여줍니다. 해안가의 짠맛과 달콤한 쉐리, 신선한 견과류의 향이 어우러져 독특한 프로필을 형성하며, 냉각 여과를 하지 않아 풍부한 유질감과 깊은 풍미를 고스란히 간직하고 있습니다.",
+        imageUrl: "https://img.thewhiskyexchange.com/900/islay_bun1.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Islay","Unpeated","Bunnahabhain"]
+    },
+
+    { 
+        id: "n1772608606377-10", name: "The Balvenie 14 Year Old Caribbean Cask / 발베니 14년 캐리비안 캐스크", type: "Single Malt Scotch Whisky", region: "Speyside", 
+        basePrice: 105, currency: "USD", priceRange: "mid",
+        flavorProfile: {"peat":0,"sweet":9,"fruit":8,"spice":4,"body":7},
+        description: "전통적인 오크통에서 숙성된 원액을 직접 엄선한 럼 캐스크에서 피니시하여 이국적인 매력을 더했습니다. 발베니 특유의 꿀맛에 열대 과일의 화사함과 토피 사탕의 달콤함이 더해져 매우 부드럽고 긴 여운을 선사합니다.",
+        imageUrl: "https://img.thewhiskyexchange.com/900/speyside_bal4.jpg",
+        availableDate: "2026-03-04",
+        tags: ["Speyside","RumFinish","Balvenie"]
     },
 ];
