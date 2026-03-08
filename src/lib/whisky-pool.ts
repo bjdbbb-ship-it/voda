@@ -411,320 +411,320 @@ export const whiskyPool: Partial<Whisky>[] = [
         imageUrl: "https://thewhiskeywash.com/wp-content/uploads/2025/06/featured-image-1751029426.webp",
         availableDate: "2026-03-01"
     },
-    { 
-        id: "n1772524072392-2", name: "Kilchoman Loch Gorm (2025 Release) / 킬호만 록 곰 (2025 릴리즈)", type: "Single Malt", region: "Islay", 
+    {
+        id: "n1772524072392-2", name: "Kilchoman Loch Gorm (2025 Release) / 킬호만 록 곰 (2025 릴리즈)", type: "Single Malt", region: "Islay",
         basePrice: 115, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":9,"sweet":7,"fruit":6,"spice":5,"body":8},
+        flavorProfile: { "peat": 9, "sweet": 7, "fruit": 6, "spice": 5, "body": 8 },
         description: "올로로소 셰리 버트에서 숙성된 킬호만의 연례 리미티드 에디션입니다. 이슬레이 특유의 강렬한 피트 연기와 셰리 캐스크가 선사하는 짙은 건과일, 다크 초콜릿의 풍미가 완벽한 대조를 이룹니다. 해수면의 짠 내음과 달콤한 향신료의 여운이 길게 이어지는 명작입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_kil15.jpg",
         availableDate: "2026-03-03",
-        tags: ["Sherry Cask","Peated","Kilchoman"]
+        tags: ["Sherry Cask", "Peated", "Kilchoman"]
     },
-    { 
-        id: "n1772524072392-3", name: "Adelphi Benrinnes 14 Year Old / 아델피 벤리네스 14년", type: "Single Malt", region: "Speyside", 
+    {
+        id: "n1772524072392-3", name: "Adelphi Benrinnes 14 Year Old / 아델피 벤리네스 14년", type: "Single Malt", region: "Speyside",
         basePrice: 125, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":6,"fruit":8,"spice":4,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 6, "fruit": 8, "spice": 4, "body": 7 },
         description: "독립 병입자의 명가 아델피가 엄선한 벤리네스 14년은 이 증류소 특유의 묵직하고 고기 같은(meaty) 질감을 잘 보존하고 있습니다. 잘 익은 사과와 서양배의 과실향에 구운 아몬드의 고소함이 더해져 복합적인 구조감을 자랑합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/brn_ade12.jpg",
         availableDate: "2026-03-03",
-        tags: ["Independent Bottler","Speyside","Adelphi"]
+        tags: ["Independent Bottler", "Speyside", "Adelphi"]
     },
-    { 
-        id: "n1772524072392-4", name: "Lochlea Our Barley / 로클리 아워 발리", type: "Single Malt", region: "Lowlands", 
+    {
+        id: "n1772524072392-4", name: "Lochlea Our Barley / 로클리 아워 발리", type: "Single Malt", region: "Lowlands",
         basePrice: 65, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":7,"spice":4,"body":5},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 7, "spice": 4, "body": 5 },
         description: "로버트 번스의 생가에서 직접 재배한 보리로 빚어낸 로클리의 코어 레인지입니다. 퍼스트 필 버번, STR, 셰리 캐스크를 조합하여 신선한 배, 자른 풀, 밀크 초콜릿의 노트를 겹겹이 쌓아 올렸습니다. 로우랜드 위스키의 새로운 미래를 보여주는 산뜻한 퍼포먼스가 인상적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/low_loc1.jpg",
         availableDate: "2026-03-03",
-        tags: ["Farm Distillery","Lowland","Lochlea"]
+        tags: ["Farm Distillery", "Lowland", "Lochlea"]
     },
-    { 
-        id: "n1772524072392-5", name: "The Lakes Whiskymaker's Reserve No.7 / 더 레이크스 위스키메이커스 리저브 No.7", type: "Single Malt", region: "England", 
+    {
+        id: "n1772524072392-5", name: "The Lakes Whiskymaker's Reserve No.7 / 더 레이크스 위스키메이커스 리저브 No.7", type: "Single Malt", region: "England",
         basePrice: 110, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":6,"body":9},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 6, "body": 9 },
         description: "잉글랜드의 떠오르는 강자 더 레이크스 증류소의 시그니처 시리즈입니다. 셰리 캐스크 숙성에 집중한 이 제품은 농축된 당밀, 무화과, 오렌지 껍질의 풍미를 폭발적으로 전달합니다. 입안을 가득 채우는 풀 바디의 질감과 벨벳 같은 부드러움이 특징입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/eng_lak20.jpg",
         availableDate: "2026-03-03",
-        tags: ["English Whisky","Sherry Led","The Lakes"]
+        tags: ["English Whisky", "Sherry Led", "The Lakes"]
     },
-    { 
-        id: "n1772524072392-6", name: "Adelphi Caol Ila 12 Year Old / 아델피 쿠일라 12년", type: "Single Malt", region: "Islay", 
+    {
+        id: "n1772524072392-6", name: "Adelphi Caol Ila 12 Year Old / 아델피 쿠일라 12년", type: "Single Malt", region: "Islay",
         basePrice: 130, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":8,"sweet":4,"fruit":5,"spice":6,"body":6},
+        flavorProfile: { "peat": 8, "sweet": 4, "fruit": 5, "spice": 6, "body": 6 },
         description: "쿠일라 특유의 선명한 피트와 해수면의 짠맛을 아델피의 감각으로 재해석했습니다. 레몬 껍질의 시트러스함과 모닥불의 연기 향이 조화롭게 어우러지며, 냉각 여과를 거치지 않아 원액 그대로의 순수한 힘을 느낄 수 있습니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_cao106.jpg",
         availableDate: "2026-03-03",
-        tags: ["Cask Strength","Peated","Adelphi"]
+        tags: ["Cask Strength", "Peated", "Adelphi"]
     },
-    { 
-        id: "n1772524072392-7", name: "Arran 10 Year Old / 아란 10년", type: "Single Malt", region: "Islands", 
+    {
+        id: "n1772524072392-7", name: "Arran 10 Year Old / 아란 10년", type: "Single Malt", region: "Islands",
         basePrice: 55, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":8,"spice":4,"body":5},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 8, "spice": 4, "body": 5 },
         description: "아란 증류소의 정체성을 가장 잘 나타내는 클래식 싱글 몰트입니다. 신선한 시트러스 열대 과일의 향과 뒤따라오는 달콤한 바닐라, 비스킷의 풍미가 균형을 이룹니다. 인위적인 색소를 넣지 않은 자연 그대로의 황금빛과 산뜻한 끝맛이 매력적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isl_arr1.jpg",
         availableDate: "2026-03-03",
-        tags: ["Natural Colour","Island Malt","Arran"]
+        tags: ["Natural Colour", "Island Malt", "Arran"]
     },
-    { 
-        id: "n1772524072392-8", name: "Glenfarclas 15 Year Old / 글렌파클라스 15년", type: "Single Malt", region: "Speyside", 
+    {
+        id: "n1772524072392-8", name: "Glenfarclas 15 Year Old / 글렌파클라스 15년", type: "Single Malt", region: "Speyside",
         basePrice: 95, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":1,"sweet":8,"fruit":9,"spice":5,"body":8},
+        flavorProfile: { "peat": 1, "sweet": 8, "fruit": 9, "spice": 5, "body": 8 },
         description: "46%의 도수로 병입되어 글렌파클라스 셰리 캐스크의 진수를 보여줍니다. 말린 과일의 달콤함과 견과류, 버터스카치의 복합적인 풍미가 층층이 쌓여 있으며, 특히 풍부한 질감과 긴 피니시가 클래식한 셰리 몰트의 정석을 제시합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/brd_gfc5.jpg",
         availableDate: "2026-03-03",
-        tags: ["Family Owned","Sherry Oak","Glenfarclas"]
+        tags: ["Family Owned", "Sherry Oak", "Glenfarclas"]
     },
-    { 
-        id: "n1772524072392-9", name: "Springbank 10 Year Old / 스프링뱅크 10년", type: "Single Malt", region: "Campbeltown", 
+    {
+        id: "n1772524072392-9", name: "Springbank 10 Year Old / 스프링뱅크 10년", type: "Single Malt", region: "Campbeltown",
         basePrice: 90, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":4,"sweet":6,"fruit":6,"spice":7,"body":8},
+        flavorProfile: { "peat": 4, "sweet": 6, "fruit": 6, "spice": 7, "body": 8 },
         description: "캠벨타운의 전통을 잇는 스프링뱅크의 핵심 제품입니다. 미묘한 피트와 해안가의 짠맛, 그리고 오일감이 느껴지는 독특한 질감이 특징입니다. 배와 바닐라의 풍미 뒤에 숨은 복합적인 향신료의 노트가 매 모금마다 새로운 즐거움을 줍니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/cmp_spr1.jpg",
         availableDate: "2026-03-03",
-        tags: ["Traditional","Campbeltown","Springbank"]
+        tags: ["Traditional", "Campbeltown", "Springbank"]
     },
-    { 
-        id: "n1772524072392-10", name: "Bruichladdich The Classic Laddie / 브룩라디 더 클래식 라디", type: "Single Malt", region: "Islay", 
+    {
+        id: "n1772524072392-10", name: "Bruichladdich The Classic Laddie / 브룩라디 더 클래식 라디", type: "Single Malt", region: "Islay",
         basePrice: 75, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":8,"spice":3,"body":6},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 8, "spice": 3, "body": 6 },
         description: "피트를 사용하지 않은 이슬레이 몰트의 반전 매력을 보여줍니다. 100% 스코틀랜드산 보리를 사용하여 꽃향기와 신선한 사과, 잘 익은 보리의 순수한 달콤함을 담아냈습니다. 마스터 디스틸러의 장인 정신이 느껴지는 깨끗하고 선명한 풍미가 돋보입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_bru1.jpg",
         availableDate: "2026-03-03",
-        tags: ["Unpeated Islay","B Corp","Bruichladdich"]
+        tags: ["Unpeated Islay", "B Corp", "Bruichladdich"]
     },
-    { 
-        id: "n1772524837659-2", name: "Kilchoman Loch Gorm 2025 / 킬호만 로흐 곰 2025", type: "Single Malt", region: "Islay", 
+    {
+        id: "n1772524837659-2", name: "Kilchoman Loch Gorm 2025 / 킬호만 로흐 곰 2025", type: "Single Malt", region: "Islay",
         basePrice: 115, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":9,"sweet":7,"fruit":6,"spice":6,"body":8},
+        flavorProfile: { "peat": 9, "sweet": 7, "fruit": 6, "spice": 6, "body": 8 },
         description: "올로로소 쉐리 캐스크에서 전 기간 숙성된 킬호만의 연간 한정판입니다. 아일라 특유의 강력한 피트 스모크와 쉐리 오크의 진한 건과일, 다크 초콜릿 풍미가 완벽한 대조를 이룹니다. 해조류의 짠맛과 달콤한 향신료의 여운이 길게 이어지는 명작입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/islay_kil120.jpg",
         availableDate: "2026-03-03",
-        tags: ["Islay","Sherry Cask","Kilchoman"]
+        tags: ["Islay", "Sherry Cask", "Kilchoman"]
     },
-    { 
-        id: "n1772524837659-3", name: "GlenAllachie 15 Year Old / 글렌알라키 15년", type: "Single Malt", region: "Speyside", 
+    {
+        id: "n1772524837659-3", name: "GlenAllachie 15 Year Old / 글렌알라키 15년", type: "Single Malt", region: "Speyside",
         basePrice: 105, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":7,"body":8},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 7, "body": 8 },
         description: "마스터 디스틸러 빌리 워커의 철학이 담긴 쉐리 폭탄 위스키입니다. 페드로 히메네즈와 올로로소 쉐리 펀천 및 버트에서 숙성되어 압도적인 깊이감을 자랑합니다. 시나몬, 정향의 스파이스와 함께 꿀에 절인 건포도, 무화과의 풍부한 맛이 입안을 가득 채웁니다.",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/60644_source_1772106650.jpg?compression=lossy",
         availableDate: "2026-03-03",
-        tags: ["Speyside","Sherry Bomb","GlenAllachie"]
+        tags: ["Speyside", "Sherry Bomb", "GlenAllachie"]
     },
-    { 
-        id: "n1772524837659-4", name: "Redbreast 12 Year Old Cask Strength / 레드브레스트 12년 캐스크 스트렝스", type: "Single Pot Still", region: "Ireland", 
+    {
+        id: "n1772524837659-4", name: "Redbreast 12 Year Old Cask Strength / 레드브레스트 12년 캐스크 스트렝스", type: "Single Pot Still", region: "Ireland",
         basePrice: 125, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":9,"spice":8,"body":9},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 9, "spice": 8, "body": 9 },
         description: "아이리시 위스키의 정수라 불리는 싱글 포트 스틸 위스키로, 물을 섞지 않은 강력한 힘을 보여줍니다. 열대 과일의 화사함과 함께 구운 견과류, 풍부한 크림의 질감이 일품입니다. 숙성된 쉐리 캐스크에서 오는 깊은 스파이스가 복합적인 구조감을 완성합니다.",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/69917_source_1767366643.jpg?compression=lossy",
         availableDate: "2026-03-03",
-        tags: ["Irish","Cask Strength","Redbreast"]
+        tags: ["Irish", "Cask Strength", "Redbreast"]
     },
-    { 
-        id: "n1772524837659-5", name: "Adelphi Breath of the Isles 2025 / 아델피 브레스 오브 디 아일즈 2025", type: "Single Malt", region: "Islands", 
+    {
+        id: "n1772524837659-5", name: "Adelphi Breath of the Isles 2025 / 아델피 브레스 오브 디 아일즈 2025", type: "Single Malt", region: "Islands",
         basePrice: 145, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":6,"sweet":5,"fruit":6,"spice":7,"body":7},
+        flavorProfile: { "peat": 6, "sweet": 5, "fruit": 6, "spice": 7, "body": 7 },
         description: "독립 병입자 아델피가 선별한 아일랜드 제도의 신비로운 풍미를 담았습니다. 갯내음 섞인 해안가의 피트 향과 야생화의 꿀맛이 조화로우며, 후추 같은 알싸함이 특징입니다. 특정 증류소를 밝히지 않아 상상력을 자극하는 최고급 싱글 몰트입니다.",
         imageUrl: "https://cdn.masterofmalt.com/whiskies/p-64532/adelphi/breath-of-the-isles-whisky.jpg",
         availableDate: "2026-03-03",
-        tags: ["Independent Bottler","Peated","Adelphi"]
+        tags: ["Independent Bottler", "Peated", "Adelphi"]
     },
-    { 
-        id: "n1772524837659-6", name: "Lochlea 5 Year Old / 로클리 5년", type: "Single Malt", region: "Lowlands", 
+    {
+        id: "n1772524837659-6", name: "Lochlea 5 Year Old / 로클리 5년", type: "Single Malt", region: "Lowlands",
         basePrice: 75, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":8,"spice":4,"body":5},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 8, "spice": 4, "body": 5 },
         description: "로우랜드의 새로운 강자로 떠오르는 로클리 증류소의 5주년 기념 릴리스입니다. 직접 재배한 보리를 사용하여 곡물 본연의 고소함과 신선한 사과, 배의 아로마가 돋보입니다. 짧은 숙성 기간에도 불구하고 놀라운 복합미와 부드러운 목넘김을 제공합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/540/lolob.05yo.jpg",
         availableDate: "2026-03-03",
-        tags: ["Lowland","Farm Distillery","Lochlea"]
+        tags: ["Lowland", "Farm Distillery", "Lochlea"]
     },
-    { 
-        id: "n1772524837659-8", name: "Glenfarclas 105 Cask Strength / 글렌파클라스 105 캐스크 스트렝스", type: "Single Malt", region: "Speyside", 
+    {
+        id: "n1772524837659-8", name: "Glenfarclas 105 Cask Strength / 글렌파클라스 105 캐스크 스트렝스", type: "Single Malt", region: "Speyside",
         basePrice: 90, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":7,"spice":9,"body":9},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 7, "spice": 9, "body": 9 },
         description: "60% ABV의 강력한 도수로 즐기는 클래식 스페이사이드 쉐리 위스키입니다. 글렌파클라스 가문의 자부심이 담긴 이 위스키는 사과와 배의 신선함 뒤에 숨겨진 묵직한 오크향과 스파이시한 피니시가 매력적입니다. 물 한 방울을 떨어뜨리면 숨겨진 달콤함이 피어납니다.",
         imageUrl: "https://cdn.masterofmalt.com/whiskies/p-2023/glenfarclas/glenfarclas-105-whisky.jpg",
         availableDate: "2026-03-03",
-        tags: ["Speyside","High Proof","Glenfarclas"]
+        tags: ["Speyside", "High Proof", "Glenfarclas"]
     },
-    { 
-        id: "n1772524837659-9", name: "Ardnamurchan AD/04.22:02 / 아드나머칸 AD/04.22:02", type: "Single Malt", region: "Highlands", 
+    {
+        id: "n1772524837659-9", name: "Ardnamurchan AD/04.22:02 / 아드나머칸 AD/04.22:02", type: "Single Malt", region: "Highlands",
         basePrice: 85, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":4,"sweet":6,"fruit":7,"spice":5,"body":7},
+        flavorProfile: { "peat": 4, "sweet": 6, "fruit": 7, "spice": 5, "body": 7 },
         description: "지속 가능성을 추구하는 아드나머칸 증류소의 현대적 명작입니다. 피트와 논피트 원액을 정교하게 블렌딩하여 해안가의 바위, 바닷물, 모닥불 연기 같은 원초적인 풍미와 오렌지 오일의 상큼함을 동시에 담아냈습니다. 매우 깨끗하면서도 긴 여운을 남깁니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/high_ard2.jpg",
         availableDate: "2026-03-03",
-        tags: ["Highland","Craft Distillery","Ardnamurchan"]
+        tags: ["Highland", "Craft Distillery", "Ardnamurchan"]
     },
 
     // --- AI Generated New Releases ---
-    { 
-        id: "n1772608606377-3", name: "Tamdhu 12 Year Old / 탐두 12년", type: "Single Malt Scotch Whisky", region: "Speyside", 
+    {
+        id: "n1772608606377-3", name: "Tamdhu 12 Year Old / 탐두 12년", type: "Single Malt Scotch Whisky", region: "Speyside",
         basePrice: 65, currency: "USD", priceRange: "budget",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":5,"body":6},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 5, "body": 6 },
         description: "100% 최상급 올로로소 쉐리 캐스크에서만 숙성된 스페이사이드의 숨은 보석입니다. 신선한 시나몬과 구운 견과류, 풍부한 베리류의 풍미가 층층이 쌓여 있으며, 쉐리 위스키 입문자와 애호가 모두를 만족시킬 수 있는 직관적인 달콤함을 선사합니다.",
         imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/tamdhu/tamdhu-12-year-old-whisky.jpg",
         availableDate: "2026-03-04",
-        tags: ["Speyside","OlorosoSherry","Tamdhu"]
+        tags: ["Speyside", "OlorosoSherry", "Tamdhu"]
     },
 
-    { 
-        id: "n1772608606377-4", name: "Seaweed & Aeons & Digging & Fire 10 Year Old / 씨위드 & 이언즈 & 디깅 & 파이어 10년", type: "Single Malt Scotch Whisky", region: "Islay", 
+    {
+        id: "n1772608606377-4", name: "Seaweed & Aeons & Digging & Fire 10 Year Old / 씨위드 & 이언즈 & 디깅 & 파이어 10년", type: "Single Malt Scotch Whisky", region: "Islay",
         basePrice: 55, currency: "USD", priceRange: "budget",
-        flavorProfile: {"peat":9,"sweet":5,"fruit":4,"spice":6,"body":7},
+        flavorProfile: { "peat": 9, "sweet": 5, "fruit": 4, "spice": 6, "body": 7 },
         description: "아일라 섬의 강렬한 피트 풍미를 현대적인 감각으로 재해석한 위스키입니다. 이름처럼 바닷바람의 짠맛과 짙은 연기 향이 특징이며, 25%의 원액을 쉐리 캐스크에서 숙성하여 거친 피트 뒤에 숨겨진 달콤한 반전을 제공합니다.",
         imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/atom-brands/seaweed-and-aeons-and-digging-and-fire-10-year-old-whisky.jpg",
         availableDate: "2026-03-04",
-        tags: ["Islay","Peated","IndieBottler"]
+        tags: ["Islay", "Peated", "IndieBottler"]
     },
 
-    { 
-        id: "n1772608606377-5", name: "Arran Bodega Sherry Cask / 아란 보데가 쉐리 캐스크", type: "Single Malt Scotch Whisky", region: "Islands", 
+    {
+        id: "n1772608606377-5", name: "Arran Bodega Sherry Cask / 아란 보데가 쉐리 캐스크", type: "Single Malt Scotch Whisky", region: "Islands",
         basePrice: 80, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":9,"spice":6,"body":8},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 9, "spice": 6, "body": 8 },
         description: "아란 증류소의 과일 향이 가득한 원액을 퍼스트 필 쉐리 호그스헤드에서 풀 숙성한 제품입니다. 55.8%의 높은 도수임에도 불구하고 무화과, 건포도, 체리의 농축된 풍미가 부드럽게 펼쳐지며 압도적인 구조감을 자랑합니다.",
         imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/arran/arran-bodega-sherry-cask-whisky.jpg",
         availableDate: "2026-03-04",
-        tags: ["Islands","CaskStrength","Arran"]
+        tags: ["Islands", "CaskStrength", "Arran"]
     },
 
-    { 
-        id: "n1772608606377-6", name: "Redbreast Lustau Edition / 레드브레스트 루스토 에디션", type: "Single Pot Still Whiskey", region: "Ireland", 
+    {
+        id: "n1772608606377-6", name: "Redbreast Lustau Edition / 레드브레스트 루스토 에디션", type: "Single Pot Still Whiskey", region: "Ireland",
         basePrice: 85, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":7,"body":9},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 7, "body": 9 },
         description: "아일랜드의 전통적인 싱글 팟 스틸 위스키와 유명 쉐리 하우스인 'Bodegas Lustau'의 협업으로 탄생했습니다. 크리미한 질감과 함께 말린 과일, 구운 아몬드의 고소함이 특징이며, 일반적인 위스키보다 한층 깊은 복합미를 제공합니다.",
         imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/redbreast/redbreast-lustau-edition-whiskey.jpg",
         availableDate: "2026-03-04",
-        tags: ["Ireland","PotStill","Redbreast"]
+        tags: ["Ireland", "PotStill", "Redbreast"]
     },
 
-    { 
-        id: "n1772608606377-7", name: "Mortlach 12 Year Old / 모틀락 12년", type: "Single Malt Scotch Whisky", region: "Speyside", 
+    {
+        id: "n1772608606377-7", name: "Mortlach 12 Year Old / 모틀락 12년", type: "Single Malt Scotch Whisky", region: "Speyside",
         basePrice: 75, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":6,"fruit":7,"spice":7,"body":9},
+        flavorProfile: { "peat": 0, "sweet": 6, "fruit": 7, "spice": 7, "body": 9 },
         description: "'더 위 위치(The Wee Witchie)'라는 별칭으로 유명한 모틀락의 상징적인 엔트리 모델입니다. 2.81회 증류법을 통해 얻어진 묵직하고 고기 같은(Meaty) 육중한 바디감이 일품이며, 설탕에 절인 과일과 스파이시한 피니시가 훌륭합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/speyside_mor2.jpg",
         availableDate: "2026-03-04",
-        tags: ["Speyside","Meaty","Mortlach"]
+        tags: ["Speyside", "Meaty", "Mortlach"]
     },
 
-    { 
-        id: "n1772608606377-8", name: "Glendronach 12 Year Old / 글렌드로낙 12년", type: "Single Malt Scotch Whisky", region: "Highland", 
+    {
+        id: "n1772608606377-8", name: "Glendronach 12 Year Old / 글렌드로낙 12년", type: "Single Malt Scotch Whisky", region: "Highland",
         basePrice: 70, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":9,"fruit":8,"spice":5,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 9, "fruit": 8, "spice": 5, "body": 7 },
         description: "하이랜드 쉐리 위스키의 정석으로 불리는 제품입니다. 페드로 히메네즈와 올로로소 쉐리 캐스크의 정교한 조합을 통해 메이플 시럽, 자두, 오렌지 껍질의 풍부한 맛을 구현해냈으며, 입안을 감싸는 벨벳 같은 부드러움이 매력적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/highland_gle46.jpg",
         availableDate: "2026-03-04",
-        tags: ["Highland","SherryMonster","Glendronach"]
+        tags: ["Highland", "SherryMonster", "Glendronach"]
     },
 
-    { 
-        id: "n1772608606377-9", name: "Bunnahabhain 12 Year Old / 부나하벤 12년", type: "Single Malt Scotch Whisky", region: "Islay", 
+    {
+        id: "n1772608606377-9", name: "Bunnahabhain 12 Year Old / 부나하벤 12년", type: "Single Malt Scotch Whisky", region: "Islay",
         basePrice: 68, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":2,"sweet":7,"fruit":7,"spice":5,"body":8},
+        flavorProfile: { "peat": 2, "sweet": 7, "fruit": 7, "spice": 5, "body": 8 },
         description: "피트하지 않은 아일라 위스키의 진수를 보여줍니다. 해안가의 짠맛과 달콤한 쉐리, 신선한 견과류의 향이 어우러져 독특한 프로필을 형성하며, 냉각 여과를 하지 않아 풍부한 유질감과 깊은 풍미를 고스란히 간직하고 있습니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/islay_bun1.jpg",
         availableDate: "2026-03-04",
-        tags: ["Islay","Unpeated","Bunnahabhain"]
+        tags: ["Islay", "Unpeated", "Bunnahabhain"]
     },
 
-    { 
-        id: "n1772608606377-10", name: "The Balvenie 14 Year Old Caribbean Cask / 발베니 14년 캐리비안 캐스크", type: "Single Malt Scotch Whisky", region: "Speyside", 
+    {
+        id: "n1772608606377-10", name: "The Balvenie 14 Year Old Caribbean Cask / 발베니 14년 캐리비안 캐스크", type: "Single Malt Scotch Whisky", region: "Speyside",
         basePrice: 105, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":9,"fruit":8,"spice":4,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 9, "fruit": 8, "spice": 4, "body": 7 },
         description: "전통적인 오크통에서 숙성된 원액을 직접 엄선한 럼 캐스크에서 피니시하여 이국적인 매력을 더했습니다. 발베니 특유의 꿀맛에 열대 과일의 화사함과 토피 사탕의 달콤함이 더해져 매우 부드럽고 긴 여운을 선사합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/speyside_bal4.jpg",
         availableDate: "2026-03-04",
-        tags: ["Speyside","RumFinish","Balvenie"]
+        tags: ["Speyside", "RumFinish", "Balvenie"]
     },
 
     // --- AI Generated New Releases ---
-    { 
-        id: "nw-1772610218814-2", name: "Aberargie Single Malt / 아베라기 싱글 몰트", type: "싱글 몰트", region: "로우랜드", 
+    {
+        id: "nw-1772610218814-2", name: "Aberargie Single Malt / 아베라기 싱글 몰트", type: "싱글 몰트", region: "로우랜드",
         basePrice: 78, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":6,"fruit":7,"spice":5,"body":6},
+        flavorProfile: { "peat": 0, "sweet": 6, "fruit": 7, "spice": 5, "body": 6 },
         description: "2026년 주목받는 신생 증류소의 첫 정규 릴리즈로, 보리의 순수한 풍미와 깨끗한 질감이 돋보입니다. 부드러운 과일 향과 함께 견과류의 고소함이 긴 여운을 남기는 로우랜드 스타일입니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://img.thewhiskyexchange.com/900/aberargie-86886.jpg",
         availableDate: "2026-03-04",
-        tags: ["신생증류소","로우랜드","아베라기"]
+        tags: ["신생증류소", "로우랜드", "아베라기"]
     },
 
-    { 
-        id: "nw-1772610218814-3", name: "Oxford Rye Whisky / 옥스퍼드 라이 위스키", type: "라이 위스키", region: "잉글랜드", 
+    {
+        id: "nw-1772610218814-3", name: "Oxford Rye Whisky / 옥스퍼드 라이 위스키", type: "라이 위스키", region: "잉글랜드",
         basePrice: 85, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":0,"sweet":5,"fruit":4,"spice":8,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 5, "fruit": 4, "spice": 8, "body": 7 },
         description: "고대 품종의 호밀을 사용하여 복합적인 향신료와 호밀 특유의 알싸한 맛을 강조한 위스키입니다. 바닐라와 구운 빵의 풍미가 층층이 쌓여 깊고 진한 바디감을 선사합니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-108970/the-oxford-artisan-distillery/the-oxford-artisan-distillery-rye-whisky-batch-1-whisky.jpg?ss=2.0",
         availableDate: "2026-03-04",
-        tags: ["라이위스키","잉글랜드","옥스퍼드"]
+        tags: ["라이위스키", "잉글랜드", "옥스퍼드"]
     },
 
-    { 
-        id: "nw-1772610218814-4", name: "Adelphi Glen Elgin 12 Year Old / 아델피 글렌 엘긴 12년", type: "싱글 몰트", region: "스페이사이드", 
+    {
+        id: "nw-1772610218814-4", name: "Adelphi Glen Elgin 12 Year Old / 아델피 글렌 엘긴 12년", type: "싱글 몰트", region: "스페이사이드",
         basePrice: 115, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":8,"spice":3,"body":6},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 3, "body": 6 },
         description: "독립 병입자 아델피가 엄선한 캐스크로, 글렌 엘긴 특유의 화사한 과일 향이 극대화되었습니다. 꿀과 잘 익은 사과의 달콤함이 입안을 부드럽게 감싸며 우아한 마무리를 보여줍니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-128859/glen-elgin/glen-elgin-12-year-old-laudale-batch-4-whisky.jpg?ss=2.0",
         availableDate: "2026-03-04",
-        tags: ["독립병입","스페이사이드","아델피"]
+        tags: ["독립병입", "스페이사이드", "아델피"]
     },
 
-    { 
-        id: "nw-1772610218814-5", name: "Adelphi Linkwood 13 Year Old / 아델피 링크우드 13년", type: "싱글 몰트", region: "스페이사이드", 
+    {
+        id: "nw-1772610218814-5", name: "Adelphi Linkwood 13 Year Old / 아델피 링크우드 13년", type: "싱글 몰트", region: "스페이사이드",
         basePrice: 125, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":7,"fruit":9,"spice":2,"body":5},
+        flavorProfile: { "peat": 0, "sweet": 7, "fruit": 9, "spice": 2, "body": 5 },
         description: "신선한 꽃향기와 풀 내음이 어우러진 우아한 스타일의 위스키로 링크우드 증류소의 정수를 담았습니다. 가벼운 바디감 속에 숨겨진 복숭아와 살구의 섬세한 풍미가 매력적입니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-111003/linkwood/linkwood-13-year-old-2008-cask-805189-adelphi-whisky.jpg?ss=2.0",
         availableDate: "2026-03-04",
-        tags: ["독립병입","꽃향기","링크우드"]
+        tags: ["독립병입", "꽃향기", "링크우드"]
     },
 
-    { 
-        id: "nw-1772610218814-6", name: "Adelphi Teaninich 14 Year Old / 아델피 티니닉 14년", type: "싱글 몰트", region: "하이랜드", 
+    {
+        id: "nw-1772610218814-6", name: "Adelphi Teaninich 14 Year Old / 아델피 티니닉 14년", type: "싱글 몰트", region: "하이랜드",
         basePrice: 135, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":6,"fruit":6,"spice":6,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 6, "fruit": 6, "spice": 6, "body": 7 },
         description: "하이랜드의 강인한 캐릭터를 담고 있으며, 허브와 향신료의 복합적인 풍미가 돋보이는 제품입니다. 오크통에서 오는 바닐라와 약간의 왁시한 질감이 특징인 고숙련 병입 제품입니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://img.thewhiskyexchange.com/900/teanob.10yo.jpg",
         availableDate: "2026-03-04",
-        tags: ["하이랜드","왁시","티니닉"]
+        tags: ["하이랜드", "왁시", "티니닉"]
     },
 
-    { 
-        id: "nw-1772610218814-7", name: "Luss Distillery Single Malt / 러스 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드", 
+    {
+        id: "nw-1772610218814-7", name: "Luss Distillery Single Malt / 러스 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드",
         basePrice: 82, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":2,"sweet":6,"fruit":7,"spice":4,"body":6},
+        flavorProfile: { "peat": 2, "sweet": 6, "fruit": 7, "spice": 4, "body": 6 },
         description: "로몬드 호수 인근의 새로운 증류소에서 생산된 위스키로, 깨끗하고 청량한 과일 향이 일품입니다. 미세한 피트감이 가미되어 복합적인 풍미와 함께 신선한 여운을 선사합니다.",
-        imageUrl: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-21223/loch-lomond/loch-lomond-12-year-old-whisky.jpg?ss=2.0",
         availableDate: "2026-03-04",
-        tags: ["신생증류소","하이랜드","러스"]
+        tags: ["신생증류소", "하이랜드", "러스"]
     },
 
-    { 
-        id: "nw-1772610218814-8", name: "Lerwick Distillery Single Malt / 러윅 증류소 싱글 몰트", type: "싱글 몰트", region: "아일랜드", 
+    {
+        id: "nw-1772610218814-8", name: "Lerwick Distillery Single Malt / 러윅 증류소 싱글 몰트", type: "싱글 몰트", region: "아일랜드",
         basePrice: 98, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":5,"sweet":4,"fruit":5,"spice":6,"body":7},
+        flavorProfile: { "peat": 5, "sweet": 4, "fruit": 5, "spice": 6, "body": 7 },
         description: "셰틀랜드 제도의 거친 해안가에서 숙성되어 짭조름한 바다 내음과 해초의 풍미가 특징입니다. 강렬한 향신료와 함께 스모키한 마무리가 인상적인 북단 증류소의 야심작입니다.",
         imageUrl: "https://static.whiskybase.com/storage/whiskies/2/6/3474/473010-big.jpg",
         availableDate: "2026-03-04",
-        tags: ["셰틀랜드","해안가위스키","러윅"]
+        tags: ["셰틀랜드", "해안가위스키", "러윅"]
     },
 
-    { 
-        id: "nw-1772610218814-9", name: "Struie Distillery Single Malt / 스트루이 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드", 
+    {
+        id: "nw-1772610218814-9", name: "Struie Distillery Single Malt / 스트루이 증류소 싱글 몰트", type: "싱글 몰트", region: "하이랜드",
         basePrice: 88, currency: "USD", priceRange: "mid",
-        flavorProfile: {"peat":1,"sweet":7,"fruit":6,"spice":5,"body":6},
+        flavorProfile: { "peat": 1, "sweet": 7, "fruit": 6, "spice": 5, "body": 6 },
         description: "전통적인 하이랜드 스타일을 현대적으로 재해석하여 매우 부드러운 질감을 자랑하는 위스키입니다. 카라멜과 구운 견과류의 풍미가 조화롭게 어우러져 누구나 즐기기 좋습니다.",
-        imageUrl: "https://www.masterofmalt.com/api/blog-image?url=https%3A%2F%2Fwww.masterofmalt.com%2Fblog%2Fwp-content%2Fuploads%2F2026%2F01%2FStruie-Distillery-1024x576.jpg",
+        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-116668/thompson-bros/thompson-bros-struie-2021-whisky.jpg?ss=2.0",
         availableDate: "2026-03-04",
-        tags: ["하이랜드","부드러운","스트루이"]
+        tags: ["하이랜드", "부드러운", "스트루이"]
     },
 
-    { 
-        id: "nw-1772610218814-10", name: "Adelphi Miltonduff 11 Year Old / 아델피 밀턴더프 11년", type: "싱글 몰트", region: "스페이사이드", 
+    {
+        id: "nw-1772610218814-10", name: "Adelphi Miltonduff 11 Year Old / 아델피 밀턴더프 11년", type: "싱글 몰트", region: "스페이사이드",
         basePrice: 108, currency: "USD", priceRange: "premium",
-        flavorProfile: {"peat":0,"sweet":8,"fruit":7,"spice":4,"body":7},
+        flavorProfile: { "peat": 0, "sweet": 8, "fruit": 7, "spice": 4, "body": 7 },
         description: "풍부한 몰트의 단맛과 함께 크리미한 질감이 돋보이는 스페이사이드의 숨은 보석 같은 위스키입니다. 밀크 초콜릿과 오렌지 껍질의 풍미가 겹겹이 쌓여 긴 여운을 남깁니다.",
         imageUrl: "https://static.whiskybase.com/storage/whiskies/2/3/7807/430134-big.jpg",
         availableDate: "2026-03-04",
-        tags: ["스페이사이드","크리미","밀턴더프"]
+        tags: ["스페이사이드", "크리미", "밀턴더프"]
     },
 ];
