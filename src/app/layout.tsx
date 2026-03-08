@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   keywords: ["위스키", "위스키 추천", "싱글몰트", "버번", "위스키 매거진", "WhiskyVoda"],
 };
 
+import { Tracker } from "../components/analytics/Tracker";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
+        <Tracker />
         <Header />
         {children}
       </body>
