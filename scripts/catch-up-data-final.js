@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function catchUp() {
-    process.env.GEMINI_API_KEY = "AIzaSyC0FuMOgWuHi1jWDJVqsOHo6LARqLgpy9o";
+    process.env.GEMINI_API_KEY = "AIzaSyD7mtQq9O0Q7NVRkitCN4L3CWAQYH1yM-8";
     console.log('🔄 안전한 데이터 복구 시작 (2026-02-08 ~ 2026-02-12)\n');
 
     const dates = [

@@ -19,8 +19,13 @@ function loadEnvLocal() {
 
 loadEnvLocal();
 
-// KST 오늘 날짜 계산
+// 명령행 인자 파싱 (--date=YYYY-MM-DD)
+const dateArg = process.argv.find(arg => arg.startsWith('--date='));
+const customDate = dateArg ? dateArg.split('=')[1] : null;
+
+// KST 오늘 날짜 계산 (또는 커스텀 날짜)
 function getKSTDate() {
+    if (customDate) return customDate;
     const now = new Date();
     const kstOffset = 9 * 60 * 60 * 1000;
     const kstDate = new Date(now.getTime() + kstOffset);
@@ -127,13 +132,13 @@ ${newsText}
 5. 분량: 1,500자 이상으로 풍성하게 작성하십시오. (원문의 정보를 최대한 상세히 한글로 풀어쓰세요)
 6. 마지막은 품격 있는 건배 멘트로 마무리하십시오.`;
 
-    const model = "gemini-1.5-flash";
+    const model = "gemini-flash-latest";
     const MAX_RETRIES = 5;
     const INITIAL_DELAY = 2000;
 
     for (let i = 0; i < MAX_RETRIES; i++) {
         try {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
             const response = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -224,7 +229,7 @@ async function main() {
         const content = await generateNewsContent(whiskyNews, today);
 
         const newArticle = {
-            id: Date.now(),
+            id: customDate ? `${customDate}-${Math.floor(Math.random() * 1000)}` : Date.now(),
             title: `[글로벌 뉴스] ${today} 신규 위스키 출시 소식`,
             subtitle: `${whiskyNews.length}개의 주요 위스키 브랜드 신제품 및 한정판 발표 요약`,
             content: content,

@@ -727,4 +727,94 @@ export const whiskyPool: Partial<Whisky>[] = [
         availableDate: "2026-03-04",
         tags: ["스페이사이드", "크리미", "밀턴더프"]
     },
+    {
+        id: "nw-1773215127-1", name: "Glen Scotia Campbeltown Malts Festival 2026 Release (7 Year Old) / 글렌 스코시아 캠벨타운 몰트 페스티벌 2026 (7년)", type: "싱글 몰트", region: "캠벨타운",
+        basePrice: 75, currency: "USD", priceRange: "mid",
+        flavorProfile: { peat: 7, sweet: 6, fruit: 7, spice: 5, body: 7 },
+        description: "2026 캠벨타운 몰트 페스티벌을 위해 출시된 7년 숙성 피티드 싱글 몰트 위스키입니다. 루비 포트 캐스크에서 피니시를 거쳐 풍부한 과일 풍미와 스모키함이 조화를 이룹니다.",
+        imageUrl: "https://www.masterofmalt.com/whiskies/glen-scotia/glen-scotia-campbeltown-malts-festival-2026-release-whisky/",
+        availableDate: "2026-03-11",
+        tags: ["캠벨타운", "몰트페스티벌", "피티드"]
+    },
+    {
+        id: "nw-1773215127-2", name: "Midleton Very Rare 2026 Vintage Release / 미들턴 베리 레어 2026 빈티지", type: "블렌디드 아이리시", region: "아일랜드",
+        basePrice: 280, currency: "USD", priceRange: "luxury",
+        flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 9 },
+        description: "아이리시 위스키의 정점으로 불리는 미들턴 베리 레어의 2026년 빈티지입니다. 최상급 팟 스틸과 그레인 위스키의 블렌딩으로 실크처럼 부드러운 질감을 선사합니다.",
+        imageUrl: "https://www.midletonveryrare.com/en-EN/midleton-very-rare-vintage-2026",
+        availableDate: "2026-03-11",
+        tags: ["아이리시", "빈티지", "럭셔리"]
+    },
+    {
+        id: "nw-1773215127-3", name: "Compass Box Hedonism 2026 / 컴퍼스 박스 헤도니즘 2026", type: "블렌디드 그레인", region: "스코틀랜드",
+        basePrice: 165, currency: "USD", priceRange: "premium",
+        flavorProfile: { peat: 0, sweet: 9, fruit: 6, spice: 4, body: 8 },
+        description: "컴퍼스 박스의 상징적인 그레인 위스키 블렌드 '헤도니즘'의 2026년 한정판입니다. 바닐라와 시트러스의 부드러움이 강조된 벨벳 같은 미감을 자랑합니다.",
+        imageUrl: "https://www.compassboxwhisky.com/hedonism-2026",
+        availableDate: "2026-03-11",
+        tags: ["그레인위스키", "한정판", "부드러운"]
+    },
+    {
+        id: "nw-1773215127-4", name: "Douglas Laing Scallywag 18 Year Old (2026 Edition) / 더글라스 랭 스캘리왜그 18년 (2026)", type: "블렌디드 몰트", region: "스페이사이드",
+        basePrice: 110, currency: "USD", priceRange: "premium",
+        flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 8 },
+        description: "스페이사이드 몰트를 블렌딩한 18년 숙성 2026년 에디션입니다. 셰리 숙성에서 오는 다크 초콜릿과 오렌지 필, 토스트한 호두의 깊은 풍미가 일품입니다.",
+        imageUrl: "https://www.douglaslaing.com/scallywag-18yo",
+        availableDate: "2026-03-11",
+        tags: ["스페이사이드", "셰리숙성", "고숙성"]
+    },
+    {
+        id: "nw-1773215127-5", name: "Teeling Wonders of Wood Series 4: Virgin Carpathian Oak / 틸링 원더즈 오브 우드 4: 카르파티아 오크", type: "싱글 팟 스틸", region: "아일랜드",
+        basePrice: 90, currency: "USD", priceRange: "mid",
+        flavorProfile: { peat: 0, sweet: 7, fruit: 7, spice: 7, body: 7 },
+        description: "틸링의 'Wonders of Wood' 네 번째 시리즈로, 희귀한 카르파티아 오크에서 숙성되었습니다. 로즈워터와 샌달우드의 독특한 향이 매력적인 아이리시 위스키입니다.",
+        imageUrl: "https://teelingwhiskey.com/wonders-of-wood-carpathian-oak",
+        availableDate: "2026-03-11",
+        tags: ["아이리시", "유니크오크", "틸링"]
+    },
+    {
+        id: "nw-1773215127-6", name: "Barrell Black Label 18 Year Whiskey / 배럴 블랙 라벨 18년", type: "블렌디드 위스키", region: "미국 & 캐나다",
+        basePrice: 150, currency: "USD", priceRange: "premium",
+        flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 7, body: 9 },
+        description: "18년 숙성된 켄터키 버번과 캐나디안 위스키를 블렌딩하여 카베르네 소비뇽과 소테른 캐스크에서 피니시한 복합적인 위스키입니다.",
+        imageUrl: "https://www.barrellbourbon.com/black-label-18",
+        availableDate: "2026-03-11",
+        tags: ["블렌디드", "고숙성", "와인피니시"]
+    },
+    {
+        id: "nw-1773215127-7", name: "Three Ridings English Single Malt (Inaugural Release) / 쓰리 라이딩스 잉글리시 싱글 몰트", type: "싱글 몰트", region: "잉글랜드",
+        basePrice: 650, currency: "USD", priceRange: "luxury",
+        flavorProfile: { peat: 0, sweet: 7, fruit: 7, spice: 5, body: 6 },
+        description: "잉글랜드 요크셔 지역의 Ellers Farm 증류소 첫 번째 정식 릴리즈입니다. 지역의 특색을 담은 역사적인 첫 번째 빈티지로 소장 가치가 높습니다.",
+        imageUrl: "https://www.ellersfarmdistillery.com/three-ridings",
+        availableDate: "2026-03-11",
+        tags: ["잉글랜드위스키", "첫출시", "희귀"]
+    },
+    {
+        id: "nw-1773215127-8", name: "Maker's Mark Wood Finishing Series: The Stewards Release / 메이커스 마크 우드 피니싱 시리즈 2026", type: "버번", region: "미국 켄터키",
+        basePrice: 75, currency: "USD", priceRange: "mid",
+        flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 8, body: 8 },
+        description: "메이커스 마크의 2026년 우드 피니싱 시리즈입니다. 고유의 스테이브 피니싱 공법을 통해 배럴 스트렝스의 진하고 묵직한 버번 맛을 선사합니다.",
+        imageUrl: "https://www.makersmark.com/wood-finishing-series-2026",
+        availableDate: "2026-03-11",
+        tags: ["버번", "메이커스마크", "우드피니싱"]
+    },
+    {
+        id: "nw-1773215127-9", name: "Poli Conclave Single Malt Whisky / 폴리 콘클라베 싱글 몰트", type: "싱글 몰트", region: "이탈리아",
+        basePrice: 55, currency: "USD", priceRange: "mid",
+        flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 4, body: 6 },
+        description: "이탈리아 베네토 지역의 폴리 증류소에서 생산된 5년 숙성 싱글 몰트입니다. 피티드와 언피티드 몰트가 조화롭게 어우러진 신선한 풍미가 특징입니다.",
+        imageUrl: "https://www.poligrappa.com/conclave",
+        availableDate: "2026-03-11",
+        tags: ["이탈리아위스키", "신생증류소", "싱글몰트"]
+    },
+    {
+        id: "nw-1773215127-10", name: "Green River Wheated Full Proof Bourbon / 그린 리버 위티드 풀 프루프 버번", type: "버번", region: "미국 켄터키",
+        basePrice: 50, currency: "USD", priceRange: "mid",
+        flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 6, body: 9 },
+        description: "2026년 초 출시된 가성비 최고의 버번입니다. 밀 함량이 높은 매시빌로 부드러우면서도 109.3 풀 프루프의 강력한 타격감을 보여줍니다.",
+        imageUrl: "https://www.greenriverdistilling.com/wheated-full-proof",
+        availableDate: "2026-03-11",
+        tags: ["버번", "가성비", "풀프루프"]
+    }
 ];

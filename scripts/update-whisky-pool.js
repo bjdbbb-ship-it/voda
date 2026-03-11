@@ -127,8 +127,11 @@ async function main() {
         const existingNamesNormalized = existingFullNames.map(normalizeName);
         console.log(`📊 현재 풀에 ${existingFullNames.length}개의 위스키가 있습니다. (중복 방지 준비 완료)`);
 
-        const today = new Date();
-        const monthYear = today.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+        const dateArg = process.argv.find(arg => arg.startsWith('--date='));
+        const targetDateStr = dateArg ? dateArg.split('=')[1] : new Date().toISOString().split('T')[0];
+        const targetDate = new Date(targetDateStr);
+
+        const monthYear = targetDate.toLocaleString('en-US', { month: 'long', year: 'numeric' });
         const searchQuery = `latest whisky releases ${monthYear} site:masterofmalt.com OR site:thewhiskyexchange.com OR site:whiskybase.com`;
         const searchResults = await callSerperAPI(searchQuery);
 
@@ -225,7 +228,7 @@ ${images.map((img, i) => `${i + 1}. ${img.imageUrl}`).join('\n')}
         flavorProfile: ${JSON.stringify(w.flavorProfile)},
         description: "${w.description}",
         imageUrl: "${w.imageUrl || 'https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=800'}",
-        availableDate: "${new Date().toISOString().split('T')[0]}",
+        availableDate: "${targetDateStr}",
         tags: ${JSON.stringify(w.tags)}
     },\n`;
         }

@@ -148,62 +148,77 @@ export async function searchWhiskyTrends(category: string): Promise<string> {
 * Native Fetch를 사용한 Gemini API 호출 헬퍼
 */
 async function callGeminiAPI(prompt: string): Promise<string> {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) throw new Error('GEMINI_API_KEY is missing');
+    const primaryKey = process.env.GEMINI_API_KEY;
+    const fallbackKey = process.env.GEMINI_API_KEY_FALLBACK;
+    
+    if (!primaryKey) throw new Error('GEMINI_API_KEY is missing');
 
     const model = "gemini-flash-latest";
-    const MAX_RETRIES = 5;
+    const MAX_RETRIES = 3;
     const INITIAL_DELAY = 5000;
 
-    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-        try {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: prompt }] }],
-                    generationConfig: {
-                        temperature: 0.7,
-                        topP: 0.95,
-                        topK: 40,
-                        maxOutputTokens: 8192,
+    // 시도할 키 목록 (기본 키 우선, 백업 키가 있으면 추가)
+    const apiKeys = fallbackKey ? [primaryKey, fallbackKey] : [primaryKey];
+
+    for (const apiKey of apiKeys) {
+        console.log(`🔑 Using API Key: ${apiKey.substring(0, 10)}... (isFallback: ${apiKey === fallbackKey})`);
+        
+        for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+            try {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                        generationConfig: {
+                            temperature: 0.7,
+                            topP: 0.95,
+                            topK: 40,
+                            maxOutputTokens: 8192,
+                        }
+                    })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    const errorMessage = errorData.error?.message || response.statusText;
+
+                    // 429 (Quota) 혹은 기타 일시적 오류의 경우 개별 키에 대해 재시도
+                    if (response.status === 429 || errorMessage.includes('quota') || errorMessage.includes('high demand')) {
+                        const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
+                        console.warn(`⚠️ Gemini API 429/Quota (Key: ${apiKey.substring(0, 6)}, Attempt ${attempt}/${MAX_RETRIES}). Retrying in ${delayMs}ms...`);
+                        await new Promise(resolve => setTimeout(resolve, delayMs));
+                        continue;
                     }
-                })
-            });
-
-            if (!response.ok) {
-                const errorData = await response.json().catch(() => ({}));
-                const errorMessage = errorData.error?.message || response.statusText;
-
-                if (response.status === 429 || errorMessage.includes('quota') || errorMessage.includes('high demand')) {
-                    const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
-                    console.warn(`⚠️ Gemini API 429/Quota (Attempt ${attempt}/${MAX_RETRIES}). Retrying in ${delayMs}ms...`);
-                    await new Promise(resolve => setTimeout(resolve, delayMs));
-                    continue;
+                    
+                    // 다른 에러(예: 400, 403 등)는 해당 키 실패로 보고 다음 키로 넘어감
+                    console.error(`❌ Key Failure (${apiKey.substring(0, 6)}): ${response.status} ${errorMessage}`);
+                    break; 
                 }
-                throw new Error(`Gemini API HTTP Error: ${response.status} ${errorMessage}`);
+
+                const data = await response.json();
+                if (data.error) throw new Error(data.error.message);
+                if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
+                    throw new Error('No content generated from Gemini API');
+                }
+
+                return data.candidates[0].content.parts[0].text;
+            } catch (error: any) {
+                console.warn(`⚠️ Connection Error (Key: ${apiKey.substring(0, 6)}, Attempt ${attempt}/${MAX_RETRIES}): ${error.message}`);
+                if (attempt === MAX_RETRIES) break; // 이번 키 시도 종료
+                
+                const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
+                await new Promise(resolve => setTimeout(resolve, delayMs));
             }
-
-            const data = await response.json();
-
-            if (data.error) {
-                throw new Error(data.error.message);
-            }
-
-            if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
-                throw new Error('No content generated from Gemini API');
-            }
-
-            return data.candidates[0].content.parts[0].text;
-        } catch (error: any) {
-            if (attempt === MAX_RETRIES) throw error;
-            const delayMs = INITIAL_DELAY * Math.pow(2, attempt - 1);
-            console.warn(`⚠️ Gemini API Connection Error (Attempt ${attempt}/${MAX_RETRIES}): ${error.message}. Retrying in ${delayMs}ms...`);
-            await new Promise(resolve => setTimeout(resolve, delayMs));
+        }
+        
+        if (apiKeys.length > 1 && apiKey === primaryKey) {
+            console.log('🔄 Primary API Key failed. Switching to fallback key...');
         }
     }
-    throw new Error('Failed to call Gemini API after multiple retries');
+    
+    throw new Error('Failed to call Gemini API after trying all available keys');
 }
 
 export async function generateTopicFromTrends(category: string): Promise<{

@@ -6,7 +6,7 @@ const path = require('path');
 async function fixOneByOne() {
     try {
         console.log('🩹 고정밀 기사 복구 작업 시작 (순차 실행)...\n');
-        process.env.GEMINI_API_KEY = "AIzaSyC0FuMOgWuHi1jWDJVqsOHo6LARqLgpy9o";
+        process.env.GEMINI_API_KEY = "AIzaSyD7mtQq9O0Q7NVRkitCN4L3CWAQYH1yM-8";
 
         const dataFilePath = path.join(process.cwd(), 'src', 'lib', 'data.ts');
 

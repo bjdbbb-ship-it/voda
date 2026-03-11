@@ -12,7 +12,7 @@ async function main() {
         console.log('🔄 대규모 데이터 복구 프로젝트 시작 (2/2 ~ 2/12)...\n');
 
         // [임시] 환경 변수 설정 문제 해결을 위한 직접 지정
-        process.env.GEMINI_API_KEY = "AIzaSyC0FuMOgWuHi1jWDJVqsOHo6LARqLgpy9o";
+        process.env.GEMINI_API_KEY = "AIzaSyD7mtQq9O0Q7NVRkitCN4L3CWAQYH1yM-8";
 
         if (!process.env.GEMINI_API_KEY) {
             console.error('❌ GEMINI_API_KEY가 설정되지 않았습니다.');

@@ -13,7 +13,7 @@ async function fixDuplicateArticles() {
         console.log('🩹 중복 기사 본문 수술 시작...\n');
 
         // [임시] API 키 직접 지정
-        process.env.GEMINI_API_KEY = "AIzaSyC0FuMOgWuHi1jWDJVqsOHo6LARqLgpy9o";
+        process.env.GEMINI_API_KEY = "AIzaSyD7mtQq9O0Q7NVRkitCN4L3CWAQYH1yM-8";
 
         const dataFilePath = path.join(process.cwd(), 'src', 'lib', 'data.ts');
 

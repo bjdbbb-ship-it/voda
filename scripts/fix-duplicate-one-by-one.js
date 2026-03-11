@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function fixOneByOne() {
-    const apiKey = 'AIzaSyC0FuMOgWuHi1jWDJVqsOHo6LARqLgpy9o';
+    const API_KEY = "AIzaSyD7mtQq9O0Q7NVRkitCN4L3CWAQYH1yM-8";
     const dataFilePath = path.join(process.cwd(), 'src', 'lib', 'data.ts');
 
     console.log('🚀 기사 일대일 복구 작업 고도화 버전 시작...');
