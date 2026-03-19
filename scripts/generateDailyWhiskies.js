@@ -30,10 +30,16 @@ async function main() {
     try {
         console.log('🥃 데일리 위스키 가치판단 업데이트 시작...\n');
 
-        // KST 오늘 날짜
-        const now = new Date();
-        const kstOffset = 9 * 60 * 60 * 1000;
-        const today = new Date(now.getTime() + kstOffset).toISOString().split('T')[0];
+        // KST 오늘 날짜 또는 커스텀 날짜
+        const dateArg = process.argv.find(arg => arg.startsWith('--date='));
+        let today;
+        if (dateArg) {
+            today = dateArg.split('=')[1];
+        } else {
+            const now = new Date();
+            const kstOffset = 9 * 60 * 60 * 1000;
+            today = new Date(now.getTime() + kstOffset).toISOString().split('T')[0];
+        }
 
         // 모듈 로드
         const poolDataMod = await import('../src/lib/whisky-pool.ts');

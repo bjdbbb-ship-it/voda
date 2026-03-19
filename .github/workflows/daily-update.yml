@@ -1,13 +1,13 @@
-name: Daily Magazine Article
+name: Daily Auto Update All Categories
 
-# 매일 KST 오전 9시 (UTC 00:00)에 매거진 기사 1개 + 위스키 10개 업데이트
+# 매일 KST 기준 자정 넘기고 정오(낮 12:00) 쯤 실행되도록 세팅 (UTC 03:00)
 on:
   schedule:
-    - cron: '0 0 * * *'  # KST 오전 9시 (UTC 00:00)
-  workflow_dispatch:  # 수동 실행도 가능
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
-  generate-magazine:
+  generate-all:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -27,36 +27,42 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate daily magazine article (매거진 기사 생성)
+      - name: Generate daily whiskies (가치판단 데이터 10건)
+        run: npm run generate:whiskies
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Sleep to prevent Rate Limit (15s)
+        run: sleep 15
+
+      - name: Generate daily magazine article (매거진)
         run: npm run generate:article
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
 
-      - name: Generate daily news article (실시간 뉴스 생성)
+      - name: Sleep to prevent Rate Limit (15s)
+        run: sleep 15
+
+      - name: Generate daily news article (트렌드 뉴스 검색 및 번역)
         run: npm run generate:news
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-
-      - name: Update daily whiskies (10개 가치판단 갱신)
-        run: npm run generate:whiskies
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/lib/data.ts src/lib/global-data.ts src/lib/whisky-pool.ts
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily magazine article & whisky update [$(date +'%Y-%m-%d')]" && git pull --rebase origin main && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Auto daily update: whiskies, magazine & news [$(date +'%Y-%m-%d')]" && git pull --rebase origin main && git push)
 
       - name: Notify success
         if: success()
-        run: echo "Magazine article and whisky update completed!"
+        run: echo "🎉 All categories successfully updated!"
 
       - name: Notify failure
         if: failure()
         run: |
-          echo "FAILED: Magazine article generation error!"
+          echo "❌ FAILED: Auto update pipeline error!"
           exit 1

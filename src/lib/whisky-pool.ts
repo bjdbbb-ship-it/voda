@@ -524,7 +524,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 145, currency: "USD", priceRange: "premium",
         flavorProfile: { "peat": 6, "sweet": 5, "fruit": 6, "spice": 7, "body": 7 },
         description: "독립 병입자 아델피가 선별한 아일랜드 제도의 신비로운 풍미를 담았습니다. 갯내음 섞인 해안가의 피트 향과 야생화의 꿀맛이 조화로우며, 후추 같은 알싸함이 특징입니다. 특정 증류소를 밝히지 않아 상상력을 자극하는 최고급 싱글 몰트입니다.",
-        imageUrl: "https://cdn.masterofmalt.com/whiskies/p-64532/adelphi/breath-of-the-isles-whisky.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1516550893885-7935ab0c6ad9?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-03",
         tags: ["Independent Bottler", "Peated", "Adelphi"]
     },
@@ -542,7 +542,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 90, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 7, "spice": 9, "body": 9 },
         description: "60% ABV의 강력한 도수로 즐기는 클래식 스페이사이드 쉐리 위스키입니다. 글렌파클라스 가문의 자부심이 담긴 이 위스키는 사과와 배의 신선함 뒤에 숨겨진 묵직한 오크향과 스파이시한 피니시가 매력적입니다. 물 한 방울을 떨어뜨리면 숨겨진 달콤함이 피어납니다.",
-        imageUrl: "https://cdn.masterofmalt.com/whiskies/p-2023/glenfarclas/glenfarclas-105-whisky.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-03",
         tags: ["Speyside", "High Proof", "Glenfarclas"]
     },
@@ -562,7 +562,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 65, currency: "USD", priceRange: "budget",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 5, "body": 6 },
         description: "100% 최상급 올로로소 쉐리 캐스크에서만 숙성된 스페이사이드의 숨은 보석입니다. 신선한 시나몬과 구운 견과류, 풍부한 베리류의 풍미가 층층이 쌓여 있으며, 쉐리 위스키 입문자와 애호가 모두를 만족시킬 수 있는 직관적인 달콤함을 선사합니다.",
-        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/tamdhu/tamdhu-12-year-old-whisky.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["Speyside", "OlorosoSherry", "Tamdhu"]
     },
@@ -572,7 +572,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 55, currency: "USD", priceRange: "budget",
         flavorProfile: { "peat": 9, "sweet": 5, "fruit": 4, "spice": 6, "body": 7 },
         description: "아일라 섬의 강렬한 피트 풍미를 현대적인 감각으로 재해석한 위스키입니다. 이름처럼 바닷바람의 짠맛과 짙은 연기 향이 특징이며, 25%의 원액을 쉐리 캐스크에서 숙성하여 거친 피트 뒤에 숨겨진 달콤한 반전을 제공합니다.",
-        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/atom-brands/seaweed-and-aeons-and-digging-and-fire-10-year-old-whisky.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1596377478065-22e382d6101f?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["Islay", "Peated", "IndieBottler"]
     },
@@ -582,7 +582,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 80, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 9, "spice": 6, "body": 8 },
         description: "아란 증류소의 과일 향이 가득한 원액을 퍼스트 필 쉐리 호그스헤드에서 풀 숙성한 제품입니다. 55.8%의 높은 도수임에도 불구하고 무화과, 건포도, 체리의 농축된 풍미가 부드럽게 펼쳐지며 압도적인 구조감을 자랑합니다.",
-        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/arran/arran-bodega-sherry-cask-whisky.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["Islands", "CaskStrength", "Arran"]
     },
@@ -592,7 +592,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 85, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 7, "body": 9 },
         description: "아일랜드의 전통적인 싱글 팟 스틸 위스키와 유명 쉐리 하우스인 'Bodegas Lustau'의 협업으로 탄생했습니다. 크리미한 질감과 함께 말린 과일, 구운 아몬드의 고소함이 특징이며, 일반적인 위스키보다 한층 깊은 복합미를 제공합니다.",
-        imageUrl: "https://cdn2.masterofmalt.com/whiskies/p-2813/redbreast/redbreast-lustau-edition-whiskey.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1574626003470-87f5b2d7085a?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["Ireland", "PotStill", "Redbreast"]
     },
@@ -653,7 +653,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 85, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 0, "sweet": 5, "fruit": 4, "spice": 8, "body": 7 },
         description: "고대 품종의 호밀을 사용하여 복합적인 향신료와 호밀 특유의 알싸한 맛을 강조한 위스키입니다. 바닐라와 구운 빵의 풍미가 층층이 쌓여 깊고 진한 바디감을 선사합니다.",
-        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-108970/the-oxford-artisan-distillery/the-oxford-artisan-distillery-rye-whisky-batch-1-whisky.jpg?ss=2.0",
+        imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["라이위스키", "잉글랜드", "옥스퍼드"]
     },
@@ -663,7 +663,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 115, currency: "USD", priceRange: "premium",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 3, "body": 6 },
         description: "독립 병입자 아델피가 엄선한 캐스크로, 글렌 엘긴 특유의 화사한 과일 향이 극대화되었습니다. 꿀과 잘 익은 사과의 달콤함이 입안을 부드럽게 감싸며 우아한 마무리를 보여줍니다.",
-        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-128859/glen-elgin/glen-elgin-12-year-old-laudale-batch-4-whisky.jpg?ss=2.0",
+        imageUrl: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["독립병입", "스페이사이드", "아델피"]
     },
@@ -673,7 +673,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 125, currency: "USD", priceRange: "premium",
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 9, "spice": 2, "body": 5 },
         description: "신선한 꽃향기와 풀 내음이 어우러진 우아한 스타일의 위스키로 링크우드 증류소의 정수를 담았습니다. 가벼운 바디감 속에 숨겨진 복숭아와 살구의 섬세한 풍미가 매력적입니다.",
-        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-111003/linkwood/linkwood-13-year-old-2008-cask-805189-adelphi-whisky.jpg?ss=2.0",
+        imageUrl: "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["독립병입", "꽃향기", "링크우드"]
     },
@@ -693,7 +693,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 82, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 2, "sweet": 6, "fruit": 7, "spice": 4, "body": 6 },
         description: "로몬드 호수 인근의 새로운 증류소에서 생산된 위스키로, 깨끗하고 청량한 과일 향이 일품입니다. 미세한 피트감이 가미되어 복합적인 풍미와 함께 신선한 여운을 선사합니다.",
-        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-21223/loch-lomond/loch-lomond-12-year-old-whisky.jpg?ss=2.0",
+        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["신생증류소", "하이랜드", "러스"]
     },
@@ -713,7 +713,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 88, currency: "USD", priceRange: "mid",
         flavorProfile: { "peat": 1, "sweet": 7, "fruit": 6, "spice": 5, "body": 6 },
         description: "전통적인 하이랜드 스타일을 현대적으로 재해석하여 매우 부드러운 질감을 자랑하는 위스키입니다. 카라멜과 구운 견과류의 풍미가 조화롭게 어우러져 누구나 즐기기 좋습니다.",
-        imageUrl: "https://cdn1.masterofmalt.com/whiskies/p-116668/thompson-bros/thompson-bros-struie-2021-whisky.jpg?ss=2.0",
+        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-04",
         tags: ["하이랜드", "부드러운", "스트루이"]
     },
@@ -732,7 +732,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 75, currency: "USD", priceRange: "mid",
         flavorProfile: { peat: 7, sweet: 6, fruit: 7, spice: 5, body: 7 },
         description: "2026 캠벨타운 몰트 페스티벌을 위해 출시된 7년 숙성 피티드 싱글 몰트 위스키입니다. 루비 포트 캐스크에서 피니시를 거쳐 풍부한 과일 풍미와 스모키함이 조화를 이룹니다.",
-        imageUrl: "https://www.masterofmalt.com/whiskies/glen-scotia/glen-scotia-campbeltown-malts-festival-2026-release-whisky/",
+        imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["캠벨타운", "몰트페스티벌", "피티드"]
     },
@@ -741,7 +741,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 280, currency: "USD", priceRange: "luxury",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 9 },
         description: "아이리시 위스키의 정점으로 불리는 미들턴 베리 레어의 2026년 빈티지입니다. 최상급 팟 스틸과 그레인 위스키의 블렌딩으로 실크처럼 부드러운 질감을 선사합니다.",
-        imageUrl: "https://www.midletonveryrare.com/en-EN/midleton-very-rare-vintage-2026",
+        imageUrl: "https://images.unsplash.com/photo-1568213816046-0ee1c4295581?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["아이리시", "빈티지", "럭셔리"]
     },
@@ -750,7 +750,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 165, currency: "USD", priceRange: "premium",
         flavorProfile: { peat: 0, sweet: 9, fruit: 6, spice: 4, body: 8 },
         description: "컴퍼스 박스의 상징적인 그레인 위스키 블렌드 '헤도니즘'의 2026년 한정판입니다. 바닐라와 시트러스의 부드러움이 강조된 벨벳 같은 미감을 자랑합니다.",
-        imageUrl: "https://www.compassboxwhisky.com/hedonism-2026",
+        imageUrl: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["그레인위스키", "한정판", "부드러운"]
     },
@@ -759,7 +759,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 110, currency: "USD", priceRange: "premium",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 8 },
         description: "스페이사이드 몰트를 블렌딩한 18년 숙성 2026년 에디션입니다. 셰리 숙성에서 오는 다크 초콜릿과 오렌지 필, 토스트한 호두의 깊은 풍미가 일품입니다.",
-        imageUrl: "https://www.douglaslaing.com/scallywag-18yo",
+        imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["스페이사이드", "셰리숙성", "고숙성"]
     },
@@ -777,7 +777,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 150, currency: "USD", priceRange: "premium",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 7, body: 9 },
         description: "18년 숙성된 켄터키 버번과 캐나디안 위스키를 블렌딩하여 카베르네 소비뇽과 소테른 캐스크에서 피니시한 복합적인 위스키입니다.",
-        imageUrl: "https://www.barrellbourbon.com/black-label-18",
+        imageUrl: "https://images.unsplash.com/photo-1516550893885-7935ab0c6ad9?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["블렌디드", "고숙성", "와인피니시"]
     },
@@ -786,7 +786,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 650, currency: "USD", priceRange: "luxury",
         flavorProfile: { peat: 0, sweet: 7, fruit: 7, spice: 5, body: 6 },
         description: "잉글랜드 요크셔 지역의 Ellers Farm 증류소 첫 번째 정식 릴리즈입니다. 지역의 특색을 담은 역사적인 첫 번째 빈티지로 소장 가치가 높습니다.",
-        imageUrl: "https://www.ellersfarmdistillery.com/three-ridings",
+        imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["잉글랜드위스키", "첫출시", "희귀"]
     },
@@ -795,7 +795,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 75, currency: "USD", priceRange: "mid",
         flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 8, body: 8 },
         description: "메이커스 마크의 2026년 우드 피니싱 시리즈입니다. 고유의 스테이브 피니싱 공법을 통해 배럴 스트렝스의 진하고 묵직한 버번 맛을 선사합니다.",
-        imageUrl: "https://www.makersmark.com/wood-finishing-series-2026",
+        imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["버번", "메이커스마크", "우드피니싱"]
     },
@@ -804,7 +804,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 55, currency: "USD", priceRange: "mid",
         flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 4, body: 6 },
         description: "이탈리아 베네토 지역의 폴리 증류소에서 생산된 5년 숙성 싱글 몰트입니다. 피티드와 언피티드 몰트가 조화롭게 어우러진 신선한 풍미가 특징입니다.",
-        imageUrl: "https://www.poligrappa.com/conclave",
+        imageUrl: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["이탈리아위스키", "신생증류소", "싱글몰트"]
     },
@@ -813,7 +813,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         basePrice: 50, currency: "USD", priceRange: "mid",
         flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 6, body: 9 },
         description: "2026년 초 출시된 가성비 최고의 버번입니다. 밀 함량이 높은 매시빌로 부드러우면서도 109.3 풀 프루프의 강력한 타격감을 보여줍니다.",
-        imageUrl: "https://www.greenriverdistilling.com/wheated-full-proof",
+        imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1200",
         availableDate: "2026-03-11",
         tags: ["버번", "가성비", "풀프루프"]
     }
