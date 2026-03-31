@@ -26,7 +26,7 @@ export const globalWhiskies: Whisky[] = [
         description: "대만의 고온 다습한 기후에서 빠르게 숙성되어 망고, 배, 코코넛 등 강렬한 열대 과일의 풍미를 폭발적으로 뿜어냅니다.",
         tags: ["열대과일", "아열대", "카발란"],
         imageUrl: "https://www.bswliquor.com/cdn/shop/files/KavalanClassic-700.png?v=1753126249&width=416",
-        availableDate: "2026-03-22"
+        availableDate: "2026-03-31"
     },
     {
         id: "g21", name: "Jameson Irish Whiskey", type: "블렌디드", region: "아일랜드",
@@ -35,7 +35,7 @@ export const globalWhiskies: Whisky[] = [
         description: "전 세계적으로 가장 사랑받는 아이리시 위스키로, 세 번의 증류를 통해 극강의 부드러움과 편안한 접근성을 자랑합니다.",
         tags: ["부드러운", "라이트", "제임슨"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/31144_source_1770982890.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-03-31"
     },
     {
         id: "g26", name: "Bruichladdich Classic Laddie", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -44,7 +44,7 @@ export const globalWhiskies: Whisky[] = [
         description: "피트를 사용하지 않은 아일라 몰트로, 보리의 순수함과 해안의 영향이 집중되어 꽃향기와 민트향이 감도는 신선한 프로필을 보여줍니다.",
         tags: ["논피티드", "아일라", "브룩라디"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/21642_source_1768680666.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-03-31"
     },
     {
         id: "g27", name: "Aberlour 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 스페이사이드",
