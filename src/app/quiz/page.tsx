@@ -104,6 +104,46 @@ export default function QuizPage() {
     const [answers, setAnswers] = useState<Record<number, any>>({});
     const [isCompleted, setIsCompleted] = useState(false);
     const [recommendations, setRecommendations] = useState<Whisky[]>([]);
+    const [persona, setPersona] = useState({ id: "", title: "", description: "", icon: "🥃" });
+
+    const personas = [
+        {
+            id: "peat_monster",
+            title: "피트 몬스터 사냥꾼",
+            description: "강렬한 연기 향과 거친 바다의 내음을 즐기는 당신은 진정한 모험가입니다. 소독약 같은 독특한 향마저 풍미로 즐길 줄 아는 전문가의 취향을 가지셨군요.",
+            icon: "🔥"
+        },
+        {
+            id: "sherry_romantic",
+            title: "우아한 셰리 로맨티스트",
+            description: "달콤한 건과일과 초콜릿, 웅장한 오크의 풍미를 사랑하는 당신. 마치 고급스러운 서재에서 클래식을 듣는 듯한 깊고 풍부한 맛을 선호하시네요.",
+            icon: "🍷"
+        },
+        {
+            id: "bourbon_lover",
+            title: "활기찬 버번 미식가",
+            description: "바닐라와 카라멜의 직관적인 달콤함, 그리고 옥수수의 고소함을 즐기는 당신. 화려하고 타격감 있는 위스키와 함께하는 에너제틱한 시간을 선호하시네요.",
+            icon: "🌽"
+        },
+        {
+            id: "minimalist",
+            title: "깔끔한 실크 미니멀리스트",
+            description: "자극적이지 않고 부드러운 목넘김, 섬세한 꽃향기를 선호하시네요. 은은하게 퍼지는 여운을 즐기며 위스키 본연의 순수함을 탐구하는 스타일입니다.",
+            icon: "🌸"
+        },
+        {
+            id: "fruit_explorer",
+            title: "싱그러운 과일 탐험가",
+            description: "상큼한 시트러스와 달콤한 열대과일 향을 좋아하는 당신. 위스키에서 느껴지는 다채로운 과실의 향연을 즐기며 기분 전환을 하는 스타일이시군요.",
+            icon: "🍎"
+        },
+        {
+            id: "balanced_philosopher",
+            title: "완벽한 조화의 철학자",
+            description: "어느 한쪽으로 치우치지 않는 밸런스를 중요하게 생각하시네요. 피트, 단맛, 과일향이 오케스트라처럼 조화를 이루는 완성도 높은 위스키를 찾고 계십니다.",
+            icon: "⚖️"
+        }
+    ];
 
     const handleOptionSelect = (value: any) => {
         setAnswers({ ...answers, [currentStep]: value });
@@ -121,59 +161,83 @@ export default function QuizPage() {
             vibe: answers[6] // Q7 (Region hint)
         };
 
-        // 2. Advanced Scoring Algorithm
+        // 2. Determine Persona
+        let detectedPersona = personas[5]; // Default: Balanced
+        if (userProfile.peat >= 8) detectedPersona = personas[0];
+        else if (userProfile.sweet >= 8 && userProfile.body >= 7) detectedPersona = personas[1];
+        else if (userProfile.sweet >= 7 && (userProfile.vibe === "Kentucky" || userProfile.body >= 8)) detectedPersona = personas[2];
+        else if (userProfile.body <= 4 && userProfile.peat <= 2) detectedPersona = personas[3];
+        else if (userProfile.fruit >= 8) detectedPersona = personas[4];
+        
+        setPersona(detectedPersona);
+
+        // 3. Advanced Scoring Algorithm
         const scoredWhiskies = whiskies.map((whisky) => {
             let score = 0;
 
             // --- Flavor Matching (Higher is better) ---
-            // We use squared difference to penalize large mismatches more than small ones
-
             // PEAT is the most polarising factor - Double weight and check for deal-breakers
             const peatDiff = Math.abs(whisky.flavorProfile.peat - userProfile.peat);
-            if (userProfile.peat <= 1 && whisky.flavorProfile.peat >= 7) score -= 100; // Deal-breaker: Hates peat but whisky is a peat bomb
-            if (userProfile.peat >= 8 && whisky.flavorProfile.peat <= 2) score -= 50;  // Loves peat but whisky is unpeated
-            score += (100 - (peatDiff * peatDiff)) * 2;
+            if (userProfile.peat <= 1 && whisky.flavorProfile.peat >= 7) score -= 200; // Deal-breaker: Hates peat but whisky is a peat bomb
+            if (userProfile.peat >= 8 && whisky.flavorProfile.peat <= 2) score -= 100;  // Loves peat but whisky is unpeated
+            score += (100 - (peatDiff * peatDiff)) * 2.5;
 
-            // Other flavor notes (Weight: 1x)
+            // Other flavor notes
             const sweetDiff = Math.abs(whisky.flavorProfile.sweet - userProfile.sweet);
-            score += (100 - (sweetDiff * sweetDiff));
+            score += (100 - (sweetDiff * sweetDiff)) * 1.5;
 
             const fruitDiff = Math.abs(whisky.flavorProfile.fruit - userProfile.fruit);
-            score += (100 - (fruitDiff * fruitDiff));
+            score += (100 - (fruitDiff * fruitDiff)) * 1.2;
 
             const spiceDiff = Math.abs(whisky.flavorProfile.spice - userProfile.spice);
-            score += (100 - (spiceDiff * spiceDiff));
+            score += (100 - (spiceDiff * spiceDiff)) * 1.0;
 
             const bodyDiff = Math.abs(whisky.flavorProfile.body - userProfile.body);
-            score += (100 - (bodyDiff * bodyDiff));
+            score += (100 - (bodyDiff * bodyDiff)) * 1.3;
+
+            // --- Popularity & Reputation Boost (NEW) ---
+            // Give a boost to well-known whiskies (up to 200 points)
+            if (whisky.popularity) {
+                score += (whisky.popularity / 100) * 150;
+            }
+            
+            if (whisky.rating) {
+                score += (whisky.rating - 3) * 50; // Boost for high ratings (3.5 = +25, 5.0 = +100)
+            }
 
             // --- Context Matching ---
-
-            // Price Bonus (High relevance)
+            // Price Bonus
             if (whisky.priceRange === userProfile.priceRange) {
-                score += 150;
+                score += 200;
             } else {
-                // Approximate matches get small bonus
                 const orders = ['budget', 'mid', 'premium', 'luxury'];
                 const dist = Math.abs(orders.indexOf(whisky.priceRange) - orders.indexOf(userProfile.priceRange));
-                if (dist === 1) score += 50;
+                if (dist === 1) score += 80;
             }
 
             // Region/Vibe Bonus
             if (userProfile.vibe && (whisky.region.toLowerCase().includes(userProfile.vibe.toLowerCase()) ||
                 whisky.type.toLowerCase().includes(userProfile.vibe.toLowerCase()))) {
-                score += 100;
+                score += 120;
             }
 
-            // Diversity Factor: Add a tiny bit of randomness to avoid same results every time for similar profiles
-            score += Math.random() * 5;
+            // Tags match (extra points for matching interests)
+            const matchedTags = (whisky.tags || []).filter(tag => 
+                (userProfile.peat >= 7 && tag.includes("피트")) ||
+                (userProfile.sweet >= 7 && tag.includes("셰리")) ||
+                (userProfile.vibe === "Kentucky" && tag.includes("버번"))
+            );
+            score += matchedTags.length * 30;
+
+            // Small randomness to keep results fresh
+            score += Math.random() * 10;
 
             return { ...whisky, score };
         });
 
-        // 3. Sort and Take Top 10 (Diverse Results)
-        const top10 = scoredWhiskies.sort((a, b) => b.score - a.score).slice(0, 10);
-        setRecommendations(top10);
+        // 4. Sort and Take Top 10
+        const top10 = scoredWhiskies.sort((a, b) => b.score - (a.score || 0)).slice(0, 10);
+        setRecommendations(top10 as Whisky[]);
     };
 
     const handleNext = () => {
@@ -190,6 +254,17 @@ export default function QuizPage() {
         setAnswers({});
         setIsCompleted(false);
         setRecommendations([]);
+    };
+
+    const getMatchReason = (whisky: Whisky) => {
+        const reasons = [];
+        if (whisky.flavorProfile.peat >= 7 && persona.id === "peat_monster") reasons.push("당신이 갈구하던 강력한 피트 스모크의 정점입니다.");
+        if (whisky.flavorProfile.sweet >= 7) reasons.push("셰리 캐스크가 선사하는 깊은 달콤함이 당신의 취향과 일치합니다.");
+        if (whisky.flavorProfile.fruit >= 7) reasons.push("입 안 가득 퍼지는 풍부한 과실향이 기분 좋은 만족감을 줍니다.");
+        if (whisky.flavorProfile.body >= 7) reasons.push("묵직하고 깊은 바디감이 당신이 선호하는 무게감과 완벽히 맞닿아 있습니다.");
+        if (whisky.popularity && whisky.popularity >= 90) reasons.push("전 세계적으로 검증된 가장 대중적이고 아이코닉한 선택입니다.");
+        
+        return reasons.length > 0 ? reasons[0] : "고객님의 세밀한 취향 프로필을 가장 완벽하게 반영하는 위스키입니다.";
     };
 
     return (
@@ -275,43 +350,97 @@ export default function QuizPage() {
                             animate={{ opacity: 1, scale: 1 }}
                             className="text-center w-full"
                         >
-                            <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/20 text-secondary">
-                                <Check className="w-8 h-8" />
+                            {/* Persona Section */}
+                            <div className="mb-12 p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm max-w-3xl mx-auto relative overflow-hidden">
+                                <div className="absolute top-0 right-0 p-8 opacity-10 text-8xl grayscale">
+                                    {persona.icon}
+                                </div>
+                                <div className="relative z-10 text-center">
+                                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-secondary/20 text-secondary mb-6 text-4xl">
+                                        {persona.icon}
+                                    </div>
+                                    <div className="text-secondary text-sm uppercase tracking-[0.3em] mb-2 font-bold">당신의 위스키 페르소나</div>
+                                    <h2 className="font-serif text-4xl md:text-5xl text-white font-bold mb-6">
+                                        {persona.title}
+                                    </h2>
+                                    <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto">
+                                        {persona.description}
+                                    </p>
+                                </div>
                             </div>
-                            <h2 className="font-serif text-4xl text-white font-bold mb-4">
-                                분석 완료
-                            </h2>
-                            <p className="text-white/70 text-lg mb-12 max-w-md mx-auto">
-                                고객님의 취향에 가장 잘 어울리는 10가지 위스키를 선정했습니다.
-                            </p>
 
-                            {/* Recommendations Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 text-left">
-                                {recommendations.map((whisky, index) => (
-                                    <div key={whisky.id} className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-secondary/50 transition-colors group">
-                                        <div className="aspect-[4/3] relative bg-white/10">
-                                            <WhiskyImage
-                                                whisky={whisky}
-                                                className="group-hover:scale-105 transition-transform duration-500"
-                                            />
-                                            <div className="absolute top-3 right-3 bg-secondary text-primary font-bold text-sm px-3 py-1 rounded-full shadow-lg">
-                                                #{index + 1} Best Match
+                            {/* Top Match Hero */}
+                            {recommendations.length > 0 && (
+                                <div className="mb-16 text-left max-w-5xl mx-auto">
+                                    <h3 className="text-white/40 text-sm uppercase tracking-widest mb-6 px-4">오늘의 완벽한 드람</h3>
+                                    <div className="bg-white/10 rounded-3xl overflow-hidden border border-secondary/30 flex flex-col md:flex-row shadow-2xl">
+                                        <div className="md:w-1/2 aspect-square md:aspect-auto relative bg-white/5">
+                                            <WhiskyImage whisky={recommendations[0]} className="object-cover" />
+                                            <div className="absolute top-6 left-6 bg-secondary text-primary font-bold px-4 py-2 rounded-full text-sm">
+                                                100% MATCH
                                             </div>
                                         </div>
-                                        <div className="p-6">
-                                            <div className="text-secondary text-xs uppercase tracking-widest mb-2 font-bold">{whisky.type} • {whisky.region}</div>
-                                            <h3 className="font-serif text-xl text-white font-bold mb-3">{whisky.name}</h3>
-                                            <p className="text-white/60 text-sm mb-4 line-clamp-3">{whisky.description}</p>
+                                        <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-primary to-primary/80">
+                                            <div className="text-secondary font-bold text-sm mb-2 uppercase tracking-wider">
+                                                {recommendations[0].type} • {recommendations[0].region}
+                                            </div>
+                                            <h4 className="font-serif text-3xl md:text-4xl text-white font-bold mb-6">
+                                                {recommendations[0].name}
+                                            </h4>
+                                            
+                                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10 mb-8">
+                                                <div className="text-white/40 text-xs uppercase tracking-tighter mb-2">왜 당신과 잘 맞을까요?</div>
+                                                <p className="text-secondary text-lg font-medium leading-snug">
+                                                    "{getMatchReason(recommendations[0])}"
+                                                </p>
+                                            </div>
+
+                                            <p className="text-white/60 mb-8 leading-relaxed">
+                                                {recommendations[0].description}
+                                            </p>
+
                                             <div className="flex flex-wrap gap-2">
-                                                {(whisky.tags || []).map((tag: string) => (
-                                                    <span key={tag} className="text-xs px-2 py-1 bg-white/10 rounded text-white/80">
+                                                {(recommendations[0].tags || []).map((tag: string) => (
+                                                    <span key={tag} className="text-xs px-3 py-1.5 bg-white/10 rounded-full text-white/80 border border-white/5">
                                                         #{tag}
                                                     </span>
                                                 ))}
                                             </div>
                                         </div>
                                     </div>
-                                ))}
+                                </div>
+                            )}
+
+                            {/* Other Recommendations Grid */}
+                            <div className="max-w-5xl mx-auto text-left">
+                                <h3 className="text-white/40 text-sm uppercase tracking-widest mb-8 px-4">당신을 위한 또 다른 선택지들</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                                    {recommendations.slice(1).map((whisky, index) => (
+                                        <div key={whisky.id} className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-secondary/50 transition-all duration-300 group hover:-translate-y-1">
+                                            <div className="aspect-[4/3] relative bg-white/10">
+                                                <WhiskyImage
+                                                    whisky={whisky}
+                                                    className="group-hover:scale-105 transition-transform duration-700"
+                                                />
+                                                <div className="absolute top-3 left-3 bg-white/10 backdrop-blur-md text-white/80 text-[10px] font-bold px-2 py-1 rounded">
+                                                    MATCH #{index + 2}
+                                                </div>
+                                            </div>
+                                            <div className="p-6">
+                                                <div className="text-secondary/70 text-[10px] uppercase tracking-widest mb-2 font-bold">{whisky.type}</div>
+                                                <h3 className="font-serif text-lg text-white font-bold mb-3 line-clamp-1">{whisky.name}</h3>
+                                                <p className="text-white/50 text-xs mb-4 line-clamp-2 leading-relaxed">{whisky.description}</p>
+                                                <div className="flex flex-wrap gap-1">
+                                                    {(whisky.tags || []).slice(0, 3).map((tag: string) => (
+                                                        <span key={tag} className="text-[9px] px-2 py-0.5 bg-white/5 rounded text-white/50">
+                                                            #{tag}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
                             <div className="flex justify-center gap-4">

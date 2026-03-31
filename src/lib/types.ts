@@ -27,6 +27,8 @@ export interface Whisky {
     description: string;
     visualProfile?: VisualProfile;
     availableDate?: string;
+    popularity?: number; // 0-100 rating of how well-known it is
+    rating?: number; // 1-5 average rating
 }
 
 export interface Article {

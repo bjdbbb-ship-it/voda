@@ -13,7 +13,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9685_source_1761907260.jpg?compression=lossy",
         availableDate: "2026-03-24",
-        tags: ["아일라", "스페셜릴리즈", "스모크"]
+        tags: ["아일라", "스페셜릴리즈", "스모크"],
+        popularity: 88,
+        rating: 4.7
     },
     {
         id: "p2", name: "Ardbeg Corryvreckan", type: "싱글 몰트", region: "아일라",
@@ -23,7 +25,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68170_source_1770627759.jpg?compression=lossy",
         availableDate: "2026-03-24",
-        tags: ["아일라", "피트몬스터", "강렬한"]
+        tags: ["아일라", "피트몬스터", "강렬한"],
+        popularity: 85,
+        rating: 4.8
     },
     {
         id: "p3", name: "Laphroaig Quarter Cask", type: "싱글 몰트", region: "아일라",
@@ -95,7 +99,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-03-25",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24686/18955/2712__93022.1763242255.jpg?compression=lossy",
-        tags: ["일본위스키", "럭셔리", "밸런스"]
+        tags: ["일본위스키", "럭셔리", "밸런스"],
+        popularity: 97,
+        rating: 4.9
     },
     {
         id: "p13", name: "Hakushu 18 Year Old", type: "싱글 몰트", region: "일본",
@@ -105,7 +111,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
         availableDate: "2026-03-25",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24951/19197/Hakushu-18Yr-Bottle-solo__04959.1763139659.jpg?compression=lossy",
-        tags: ["일본위스키", "숲의향기", "상쾌한"]
+        tags: ["일본위스키", "숲의향기", "상쾌한"],
+        popularity: 95,
+        rating: 4.8
     },
     // --- Bourbon (Square/Stout) ---
     {
@@ -126,7 +134,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-03-25",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/23473_source_1758882751.jpg?compression=lossy",
-        tags: ["버번", "전설적인", "울트라프리미엄"]
+        tags: ["버번", "전설적인", "울트라프리미엄"],
+        popularity: 99,
+        rating: 5.0
     },
     {
         id: "p17", name: "E.H. Taylor Small Batch", type: "버번", region: "미국 켄터키",
@@ -217,7 +227,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         availableDate: "2026-03-26",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31675_source_1761926476.jpg?compression=lossy",
-        tags: ["스페이사이드", "아이코닉", "셰리"]
+        tags: ["스페이사이드", "아이코닉", "셰리"],
+        popularity: 98,
+        rating: 4.8
     },
     {
         id: "p26", name: "Talisker 18 Year Old", type: "싱글 몰트", region: "아일랜드",
@@ -267,7 +279,9 @@ export const whiskyPool: Partial<Whisky>[] = [
         visualProfile: { bottleShape: "ceramic", liquidColor: "amber", glassColor: "opaque" },
         availableDate: "2026-03-26",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/66962_source_1761567638.jpg?compression=lossy",
-        tags: ["럭셔리", "패션", "부드러운"]
+        tags: ["럭셔리", "패션", "부드러운"],
+        popularity: 96,
+        rating: 4.7
     },
     {
         id: "p31", name: "Chivas Regal Ultis", type: "블렌디드 몰트", region: "스코틀랜드",
