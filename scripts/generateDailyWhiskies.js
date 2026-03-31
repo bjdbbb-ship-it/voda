@@ -90,7 +90,7 @@ async function main() {
             const escapedId = whisky.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             // availableDate 필드가 있는 경우 업데이트
             const withDate = new RegExp(
-                `(id:\\s*"${escapedId}"[^}]*?availableDate:\\s*")[^"]*(")`
+                `(id:\\s*"${escapedId}"[\\s\\S]*?availableDate:\\s*")[^"]*(")`
             );
             if (withDate.test(fileContent)) {
                 fileContent = fileContent.replace(withDate, `$1${today}$2`);
@@ -111,7 +111,7 @@ async function main() {
         for (const whisky of selected) {
             const escapedId = whisky.id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const withDate = new RegExp(
-                `(id:\\s*"${escapedId}"[^}]*?availableDate:\\s*")[^"]*(")`
+                `(id:\\s*"${escapedId}"[\\s\\S]*?availableDate:\\s*")[^"]*(")`
             );
             if (withDate.test(poolContent)) {
                 poolContent = poolContent.replace(withDate, `$1${today}$2`);
