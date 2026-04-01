@@ -53,7 +53,7 @@ export const globalWhiskies: Whisky[] = [
         description: "버번 캐스크와 셰리 캐스크에서 각각 숙성 후 매링되어 과일 향과 스파이시함이 완벽하게 균형을 이루는 클래식 스페이사이드 몰트입니다.",
         tags: ["더블캐스크", "부드러운", "아벨라워"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/31086_source_1771000845.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g28", name: "Glenmorangie 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 하이랜드",
@@ -62,7 +62,7 @@ export const globalWhiskies: Whisky[] = [
         description: "'The Original'로 알려진 이 위스키는 섬세한 꽃향기와 시트러스 노트로 하이랜드 몰트의 표준을 제시합니다.",
         tags: ["플로럴", "시트러스", "글렌모란지"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59636_source_1769621474.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g32", name: "Glenfarclas 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 스페이사이드",
@@ -71,7 +71,7 @@ export const globalWhiskies: Whisky[] = [
         description: "가족 경영 증류소에서 탄생한 셰리 오크의 걸작으로, 다크 과일과 향신료의 풍미가 입안 가득 풍성하게 펼쳐집니다.",
         tags: ["셰리", "패밀리", "글렌파클라스"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/55737_source_1769508693.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g36", name: "Nikka Coffey Grain", type: "그레인 위스키", region: "일본",
@@ -80,7 +80,7 @@ export const globalWhiskies: Whisky[] = [
         description: "코피 스틸에서 증류된 독특한 일본 그레인 위스키로, 바닐라 향과 함께 버번과 유사한 달콤하고 부드러운 풍미를 제공합니다.",
         tags: ["달콤한", "버번스타일", "니카"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/29642_source_1771623048.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g39", name: "Knob Creek 9 Year", type: "버번", region: "미국 켄터키",
@@ -89,7 +89,7 @@ export const globalWhiskies: Whisky[] = [
         description: "금주법 이전 스타일을 계승한 버번으로, 높은 호밀 함량과 긴 숙성 기간을 통해 강렬하고 대담한 오크와 스파이스 풍미를 선사합니다.",
         tags: ["풀바디", "오크", "놉크릭", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31280_source_1771582251.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g40", name: "Wild Turkey 101", type: "버번", region: "미국 켄터키",
@@ -98,7 +98,7 @@ export const globalWhiskies: Whisky[] = [
         description: "강력한 스파이스와 풍부한 카라멜 노트로 유명한 상징적인 고도수 버번으로, 니트나 칵테일 모두에 완벽합니다.",
         tags: ["스파이시", "고도수", "와일드터키", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31288_source_1770985848.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g41", name: "Maker's Mark", type: "버번", region: "미국 켄터키",
@@ -107,7 +107,7 @@ export const globalWhiskies: Whisky[] = [
         description: "호밀 대신 겨울 밀을 사용하여 일반적인 버번보다 훨씬 부드럽고 달콤한 풍미를 지닌 프리미엄 위티드 버번입니다.",
         tags: ["위티드", "부드러운", "메이커스마크", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31271_source_1770811280.jpg?compression=lossy",
-        availableDate: "2026-03-22"
+        availableDate: "2026-04-01"
     },
     {
         id: "g43", name: "Jack Daniel's No. 7", type: "테네시 위스키", region: "미국 테네시",
@@ -116,7 +116,7 @@ export const globalWhiskies: Whisky[] = [
         description: "전 세계 판매 1위 위스키로, 숯 여과 과정을 거쳐 메이플과 바나나 향이 감도는 독특하고 부드러운 캐릭터를 완성했습니다.",
         tags: ["아이코닉", "차콜", "잭다니엘"],
         imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2019/06/JD2.jpg",
-        availableDate: "2026-03-23"
+        availableDate: "2026-04-01"
     },
     {
         id: "g45", name: "Tullamore D.E.W.", type: "블렌디드", region: "아일랜드",
@@ -125,7 +125,7 @@ export const globalWhiskies: Whisky[] = [
         description: "세 가지 원액을 블렌딩한 전설적인 아이리시 위스키로, 풋사과 향과 함께 부드러운 복합미를 제공합니다.",
         tags: ["트리플디스틸드", "부드러운", "툴라모어"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31167_source_1771259474.jpg?compression=lossy",
-        availableDate: "2026-03-23"
+        availableDate: "2026-04-01"
     },
     {
         id: "g47", name: "Teeling Small Batch", type: "블렌디드", region: "아일랜드",
@@ -134,7 +134,7 @@ export const globalWhiskies: Whisky[] = [
         description: "럼 캐스크에서 피니시하여 열대 과일의 달콤함과 바닐라 향이 한 층 더해진 혁신적인 스타일의 아이리시 블렌드입니다.",
         tags: ["럼캐스크", "달콤한", "틸링"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/39264_source_1771226467.jpg?compression=lossy",
-        availableDate: "2026-03-23"
+        availableDate: "2026-04-01"
     },
     {
         id: "g52", name: "Arran 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아란섬",
