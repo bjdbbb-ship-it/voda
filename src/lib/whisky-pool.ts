@@ -12,7 +12,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "아일라 위스키의 정수를 담은 스페셜 릴리즈로, 강력한 스모키함과 정교한 시트러스 풍미가 완벽한 조화를 이룹니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9685_source_1761907260.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-02",
         tags: ["아일라", "스페셜릴리즈", "스모크"],
         popularity: 88,
         rating: 4.7
