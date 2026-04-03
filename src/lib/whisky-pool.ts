@@ -24,7 +24,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "소용돌이치는 듯한 강렬한 피트 향과 다크 초콜렛, 스파이시한 풍미가 어우러진 깊고 묵직한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68170_source_1770627759.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["아일라", "피트몬스터", "강렬한"],
         popularity: 85,
         rating: 4.8
@@ -36,7 +36,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "작은 캐스크를 사용하여 숙성 속도를 높임으로써 더 깊은 오크 풍미와 라프로익 특유의 강렬한 피트 연기를 극대화했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/9256_source_1761906663.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["아일라", "피트", "오크"]
     },
     {
@@ -46,7 +46,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "셰리 캐스크 피니시를 통해 얻은 달콤한 초콜릿 향과 아일라 특유의 은은한 연기 향이 아름답게 균형을 이룹니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18099_source_1761912662.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["아일라", "셰리", "밸런스"]
     },
     {
@@ -56,7 +56,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "'새벽'이라는 뜻의 가볍고 상쾌한 스타일로, 섬세한 연기 향과 레몬 같은 시트러스함이 어우러진 우아한 아일라 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "brown" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/74930_source_1770726052.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["아일라", "우아한", "연은은한피트"]
     },
     // --- Speyside / Highland (Sherry/Sweet) ---
@@ -67,7 +67,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "셰리 몬스터의 귀환으로 알려진 이 제품은 풍부한 다크 과일과 초콜릿, 견과류의 복합적인 조화가 일품입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "brown" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9099_source_1758883760.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["셰리몬스터", "풍부한", "스페이사이드"]
     },
     {
@@ -77,7 +77,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "섬세하고 부드러운 고숙성 하이랜드 몰트로, 꽃향기와 바닐라, 그리고 실크처럼 매끄러운 질감을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/32958_source_1766962850.jpg?compression=lossy",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["부드러운", "플로럴", "하이랜드"]
     },
     {
@@ -87,7 +87,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         description: "6가지 다른 캐스크에서 숙성된 원액을 블렌딩하여 베리, 향신료, 와인의 복합적인 풍미가 겹겹이 쌓인 럭셔리한 경험을 선사합니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
         imageUrl: "https://cdn.shopify.com/s/files/1/0099/0045/8042/products/Studio_Project-2022-05-25T130746.479.jpg?v=1653509284",
-        availableDate: "2026-03-24",
+        availableDate: "2026-04-03",
         tags: ["럭셔리", "멀티캐스크", "복합미"]
     },
     // --- Japanese (Faceted/Elegant) ---
@@ -97,7 +97,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 1, sweet: 8, fruit: 8, spice: 6, body: 9 },
         description: "일본 위스키의 자존심이라 불리는 명작으로, 깊은 셰리 풍미와 정교한 산달우드 향이 어우러진 극강의 밸런스를 보여줍니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-03",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24686/18955/2712__93022.1763242255.jpg?compression=lossy",
         tags: ["일본위스키", "럭셔리", "밸런스"],
         popularity: 97,
@@ -109,7 +109,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 5, body: 8 },
         description: "일본의 숲 속 증류소에서 탄생한 위스키로, 상쾌한 허브 향과 은은한 연기 향이 숲의 맑은 정취를 느끼게 합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-03",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/24951/19197/Hakushu-18Yr-Bottle-solo__04959.1763139659.jpg?compression=lossy",
         tags: ["일본위스키", "숲의향기", "상쾌한"],
         popularity: 95,
@@ -122,7 +122,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 7, body: 8 },
         description: "전설적인 밴 윙클 가문의 버번 프로젝트로, 풍부한 카라멜과 오크 풍미가 일품인 수집가들의 로망입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-03",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/29325_source_1758883039.jpg?compression=lossy",
         tags: ["버번", "희귀", "희소가치"]
     },
