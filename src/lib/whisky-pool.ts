@@ -132,7 +132,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 6, spice: 8, body: 10 },
         description: "세계 최정상급 버번 위스키로, 믿을 수 없을 만큼 깊고 복합적인 오크와 바닐라, 스파이스의 정수를 보여주는 전설적인 병입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/23473_source_1758882751.jpg?compression=lossy",
         tags: ["버번", "전설적인", "울트라프리미엄"],
         popularity: 99,
@@ -144,7 +144,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 7, body: 7 },
         description: "켄터키 버번의 전통을 계승한 스몰 배치로, 부드러운 카라멜과 호밀의 스파이시함이 조화로운 클래식 버번입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/64148_source_1759399269.jpg?compression=lossy",
         tags: ["버번", "스몰배치", "전통적인"]
     },
@@ -155,7 +155,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 9, sweet: 7, fruit: 8, spice: 6, body: 8 },
         description: "피트함과 올로로소 셰리 캐스크의 달콤함이 만나 강렬하면서도 과일향이 풍부한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "brown" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://drinkhacker.com/wp-content/uploads/2020/06/PortCharlotte_OLC01.png",
         tags: ["아일라", "헤비피티드", "셰리"]
     },
@@ -165,7 +165,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 10, sweet: 5, fruit: 6, spice: 7, body: 9 },
         description: "세계에서 가장 강력한 피트 수치를 자랑하면서도, 그 속에 숨겨진 섬세한 곡물의 달콤함과 바닐라 향이 놀라운 반전을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/37811_source_1758884925.jpg?compression=lossy",
         tags: ["아일라", "슈퍼헤비피티드", "복합미"]
     },
@@ -175,7 +175,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 4, sweet: 7, fruit: 6, spice: 6, body: 8 },
         description: "전통적인 생산 방식을 고집하는 스프링뱅크의 핵심 라인업으로, 셰리 캐스크의 풍성함과 특유의 기름진 질감이 조화롭습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31500_source_1763550039.jpg?compression=lossy",
         tags: ["캠벨타운", "수제위스키", "셰리"]
     },
@@ -185,7 +185,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 8, sweet: 4, fruit: 5, spice: 7, body: 8 },
         description: "스프링뱅크 증류소에서 생산하는 강력한 피트 위스키로, 묵직한 연기 향과 해안의 짠맛이 느껴지는 남성적인 캐릭터를 가집니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/34081_source_1769785292.jpg?compression=lossy",
         tags: ["캠벨타운", "피티드", "강렬한"]
     },
@@ -195,7 +195,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 5, body: 6 },
         description: "캠벨타운의 새로운 강자로, 라이트한 피트와 시트러스, 소금 기운이 어우러진 현대적인 캠벨타운 스타일을 보여줍니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        availableDate: "2026-03-25",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59640_source_1762963836.jpg?compression=lossy",
         tags: ["캠벨타운", "모던", "은은한피트"]
     },
@@ -205,7 +205,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 8, spice: 7, body: 9 },
         description: "고숙성 셰리 위스키의 기준석과 같은 존재로, 커피, 다크 초콜릿, 잘 익은 과일의 풍미가 웅장하게 펼쳐집니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33300_source_1759914650.jpg?compression=lossy",
         tags: ["스페이사이드", "셰리", "고숙성"]
     },
@@ -215,7 +215,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 7, spice: 6, body: 8 },
         description: "피트를 전혀 사용하지 않고 천천히 건조시킨 보리로 빚어낸 위스키로, 순수한 셰리 오크의 달콤함과 시나몬의 따뜻함을 전합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33044_source_1770985254.jpg?compression=lossy",
         tags: ["하이랜드", "논피티드", "셰리"]
     },
@@ -225,7 +225,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 8 },
         description: "셰리 숙성 위스키의 왕으로 불리며, 말린 과일과 생강, 바닐라의 풍미가 예술적인 조화를 이루는 명작입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-04",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31675_source_1761926476.jpg?compression=lossy",
         tags: ["스페이사이드", "아이코닉", "셰리"],
         popularity: 98,
