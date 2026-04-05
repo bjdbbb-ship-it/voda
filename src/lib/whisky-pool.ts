@@ -237,7 +237,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 6, sweet: 5, fruit: 7, spice: 8, body: 8 },
         description: "탈리스커 특유의 후추향과 소금 기운에 고숙성에서 오는 풍부한 과일향과 시트러스함이 더해진 완성도 높은 드람입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/30762_source_1768875690.jpg?compression=lossy",
         tags: ["스카이섬", "수상작", "복합미"]
     },
@@ -247,7 +247,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 5, sweet: 8, fruit: 7, spice: 6, body: 8 },
         description: "향기로운 연기 향과 달콤한 헤더 꿀의 조화가 정점에 달한 하일랜드 파크의 정수와 같은 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/14161/9504/65860_alt2__54612.1758585664.jpg?compression=lossy",
         tags: ["오크니", "꿀", "스모크"]
     },
@@ -257,7 +257,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 6, spice: 7, body: 9 },
         description: "초콜릿 몰트를 사용하여 구운 커피와 다크 초콜릿의 혁신적인 풍미를 창조해낸 프리미엄 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "opaque" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/32985_source_1770998452.jpg?compression=lossy",
         tags: ["하이랜드", "초콜릿몰트", "혁신"]
     },
@@ -267,7 +267,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 4, sweet: 7, fruit: 6, spice: 5, body: 7 },
         description: "리필과 셰리 캐스크의 원액을 작은 오크통에서 매링하여 더 농축된 풍미와 부드러운 해안의 느낌을 강조했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/23368_source_1771086060.jpg?compression=lossy",
         tags: ["하이랜드", "해안가", "스몰캐스크"]
     },
@@ -277,7 +277,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 1, sweet: 8, fruit: 8, spice: 4, body: 8 },
         description: "예술적인 병 디자인만큼이나 화려하고 플로럴한 향과 잘 익은 배의 풍미가 일품인 럭셔리 블렌드입니다.",
         visualProfile: { bottleShape: "ceramic", liquidColor: "amber", glassColor: "opaque" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/66962_source_1761567638.jpg?compression=lossy",
         tags: ["럭셔리", "패션", "부드러운"],
         popularity: 96,
@@ -289,7 +289,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 8 },
         description: "시바스 리갈 역사상 최초의 블렌디드 몰트로, 5가지 상징적인 싱글 몰트를 섞어 풍부한 복합성을 극대화했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/18654_source_1758883408.jpg?compression=lossy",
         tags: ["블렌디드몰트", "프리미엄", "풍부한"]
     },
@@ -299,7 +299,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 10, sweet: 4, fruit: 5, spice: 6, body: 7 },
         description: "독립 병입자의 창의성이 돋보이는 블렌드로, 여러 증류소의 피트 원액을 섞어 말 그대로 괴물 같은 강렬한 스모키함을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "straw", glassColor: "clear" },
-        availableDate: "2026-03-26",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/33495_source_1771512043.jpg?compression=lossy",
         tags: ["블렌디드몰트", "스모크", "피트몬스터"]
     },
@@ -309,7 +309,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 5, sweet: 6, fruit: 6, spice: 5, body: 8 },
         description: "석탄 직화 증류 방식을 고집하는 요이치 증류소의 특징인 묵직한 바디감과 섬세한 연기 향이 돋보이는 일본 위스키입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-        availableDate: "2026-03-27",
+        availableDate: "2026-04-05",
         imageUrl: "https://img.thewhiskyexchange.com/540/japan_yoi1.jpg",
         tags: ["일본위스키", "석탄증류", "풍부한"]
     },
@@ -319,7 +319,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 9, spice: 7, body: 9 },
         description: "와인 캐스크 숙성을 통해 폭발적인 열대 과일 향과 다크 초콜릿, 바닐라의 풍미를 담아낸 대만의 세계적인 명작입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-        availableDate: "2026-03-27",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/26884_source_1758883117.jpg?compression=lossy",
         tags: ["대만위스키", "수상작", "와인캐스크"]
     },
@@ -329,7 +329,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { peat: 0, sweet: 9, fruit: 7, spice: 7, body: 8 },
         description: "인도의 열대 기후에서 숙성되어 풍미가 매우 진하며, 셰리 캐스크의 견과류와 과일 향이 강력하게 느껴지는 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-        availableDate: "2026-03-27",
+        availableDate: "2026-04-05",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18579_source_1758882785.jpg?compression=lossy",
         tags: ["인도위스키", "열대숙성", "셰리"]
     },
