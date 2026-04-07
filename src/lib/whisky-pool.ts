@@ -431,7 +431,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 9, "sweet": 7, "fruit": 6, "spice": 5, "body": 8 },
         description: "올로로소 셰리 버트에서 숙성된 킬호만의 연례 리미티드 에디션입니다. 이슬레이 특유의 강렬한 피트 연기와 셰리 캐스크가 선사하는 짙은 건과일, 다크 초콜릿의 풍미가 완벽한 대조를 이룹니다. 해수면의 짠 내음과 달콤한 향신료의 여운이 길게 이어지는 명작입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_kil15.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Sherry Cask", "Peated", "Kilchoman"]
     },
     {
@@ -440,7 +440,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 0, "sweet": 6, "fruit": 8, "spice": 4, "body": 7 },
         description: "독립 병입자의 명가 아델피가 엄선한 벤리네스 14년은 이 증류소 특유의 묵직하고 고기 같은(meaty) 질감을 잘 보존하고 있습니다. 잘 익은 사과와 서양배의 과실향에 구운 아몬드의 고소함이 더해져 복합적인 구조감을 자랑합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/brn_ade12.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Independent Bottler", "Speyside", "Adelphi"]
     },
     {
@@ -449,7 +449,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 7, "spice": 4, "body": 5 },
         description: "로버트 번스의 생가에서 직접 재배한 보리로 빚어낸 로클리의 코어 레인지입니다. 퍼스트 필 버번, STR, 셰리 캐스크를 조합하여 신선한 배, 자른 풀, 밀크 초콜릿의 노트를 겹겹이 쌓아 올렸습니다. 로우랜드 위스키의 새로운 미래를 보여주는 산뜻한 퍼포먼스가 인상적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/low_loc1.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Farm Distillery", "Lowland", "Lochlea"]
     },
     {
@@ -458,7 +458,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 6, "body": 9 },
         description: "잉글랜드의 떠오르는 강자 더 레이크스 증류소의 시그니처 시리즈입니다. 셰리 캐스크 숙성에 집중한 이 제품은 농축된 당밀, 무화과, 오렌지 껍질의 풍미를 폭발적으로 전달합니다. 입안을 가득 채우는 풀 바디의 질감과 벨벳 같은 부드러움이 특징입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/eng_lak20.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["English Whisky", "Sherry Led", "The Lakes"]
     },
     {
@@ -467,7 +467,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 8, "sweet": 4, "fruit": 5, "spice": 6, "body": 6 },
         description: "쿠일라 특유의 선명한 피트와 해수면의 짠맛을 아델피의 감각으로 재해석했습니다. 레몬 껍질의 시트러스함과 모닥불의 연기 향이 조화롭게 어우러지며, 냉각 여과를 거치지 않아 원액 그대로의 순수한 힘을 느낄 수 있습니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_cao106.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Cask Strength", "Peated", "Adelphi"]
     },
     {
@@ -476,7 +476,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 8, "spice": 4, "body": 5 },
         description: "아란 증류소의 정체성을 가장 잘 나타내는 클래식 싱글 몰트입니다. 신선한 시트러스 열대 과일의 향과 뒤따라오는 달콤한 바닐라, 비스킷의 풍미가 균형을 이룹니다. 인위적인 색소를 넣지 않은 자연 그대로의 황금빛과 산뜻한 끝맛이 매력적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isl_arr1.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Natural Colour", "Island Malt", "Arran"]
     },
     {
@@ -485,7 +485,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 1, "sweet": 8, "fruit": 9, "spice": 5, "body": 8 },
         description: "46%의 도수로 병입되어 글렌파클라스 셰리 캐스크의 진수를 보여줍니다. 말린 과일의 달콤함과 견과류, 버터스카치의 복합적인 풍미가 층층이 쌓여 있으며, 특히 풍부한 질감과 긴 피니시가 클래식한 셰리 몰트의 정석을 제시합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/brd_gfc5.jpg",
-        availableDate: "2026-03-28",
+        availableDate: "2026-04-07",
         tags: ["Family Owned", "Sherry Oak", "Glenfarclas"]
     },
     {
@@ -494,7 +494,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 4, "sweet": 6, "fruit": 6, "spice": 7, "body": 8 },
         description: "캠벨타운의 전통을 잇는 스프링뱅크의 핵심 제품입니다. 미묘한 피트와 해안가의 짠맛, 그리고 오일감이 느껴지는 독특한 질감이 특징입니다. 배와 바닐라의 풍미 뒤에 숨은 복합적인 향신료의 노트가 매 모금마다 새로운 즐거움을 줍니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/cmp_spr1.jpg",
-        availableDate: "2026-03-29",
+        availableDate: "2026-04-07",
         tags: ["Traditional", "Campbeltown", "Springbank"]
     },
     {
@@ -503,7 +503,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 8, "spice": 3, "body": 6 },
         description: "피트를 사용하지 않은 이슬레이 몰트의 반전 매력을 보여줍니다. 100% 스코틀랜드산 보리를 사용하여 꽃향기와 신선한 사과, 잘 익은 보리의 순수한 달콤함을 담아냈습니다. 마스터 디스틸러의 장인 정신이 느껴지는 깨끗하고 선명한 풍미가 돋보입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_bru1.jpg",
-        availableDate: "2026-03-29",
+        availableDate: "2026-04-07",
         tags: ["Unpeated Islay", "B Corp", "Bruichladdich"]
     },
     {
@@ -512,7 +512,7 @@ export const whiskyPool: Partial<Whisky>[] = [
         flavorProfile: { "peat": 9, "sweet": 7, "fruit": 6, "spice": 6, "body": 8 },
         description: "올로로소 쉐리 캐스크에서 전 기간 숙성된 킬호만의 연간 한정판입니다. 아일라 특유의 강력한 피트 스모크와 쉐리 오크의 진한 건과일, 다크 초콜릿 풍미가 완벽한 대조를 이룹니다. 해조류의 짠맛과 달콤한 향신료의 여운이 길게 이어지는 명작입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/islay_kil120.jpg",
-        availableDate: "2026-03-29",
+        availableDate: "2026-04-07",
         tags: ["Islay", "Sherry Cask", "Kilchoman"]
     },
     {
