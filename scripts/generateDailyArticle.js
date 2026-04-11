@@ -91,7 +91,7 @@ async function main() {
         author: "${newArticle.author}",
         publishedAt: "${newArticle.publishedAt}",
         imageUrl: "${newArticle.imageUrl}",
-        content: \`${newArticle.content.replace(/`/g, '\\`')}\`,
+        content: ${JSON.stringify(newArticle.content)},
         tags: ${JSON.stringify(newArticle.tags)},
         useTitleCover: ${newArticle.useTitleCover},
         sourceUrl: "${newArticle.sourceUrl || ''}",

@@ -193,7 +193,7 @@ function updateDataFile(article) {
         author: "${article.author}",
         publishedAt: "${article.publishedAt}",
         imageUrl: "${article.imageUrl}",
-        content: \`${article.content.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`,
+        content: ${JSON.stringify(article.content)},
         tags: ${JSON.stringify(article.tags)},
         useTitleCover: true
     },\n`;
@@ -210,6 +210,14 @@ async function main() {
 
     try {
         const today = getKSTDate();
+
+        // 0. 이미 오늘자 뉴스가 존재하면 스킵
+        const dataPath = path.join(process.cwd(), 'src/lib/data.ts');
+        const dataContent = fs.readFileSync(dataPath, 'utf-8');
+        if (dataContent.includes(`publishedAt: "${today}"`) && dataContent.includes(`category: "위스키 소식"`)) {
+            console.log(`\n⏭️  ${today} 날짜의 뉴스 기사가 이미 존재합니다. 건너뜁니다.`);
+            return;
+        }
 
         // 1. 뉴스 검색
         const allResults = await searchWhiskyNews();
