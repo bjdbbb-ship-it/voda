@@ -53,7 +53,7 @@ export const globalWhiskies: Whisky[] = [
         description: "버번 캐스크와 셰리 캐스크에서 각각 숙성 후 매링되어 과일 향과 스파이시함이 완벽하게 균형을 이루는 클래식 스페이사이드 몰트입니다.",
         tags: ["더블캐스크", "부드러운", "아벨라워"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/31086_source_1771000845.jpg?compression=lossy",
-        availableDate: "2026-04-01"
+        availableDate: "2026-04-11"
     },
     {
         id: "g28", name: "Glenmorangie 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 하이랜드",
@@ -62,7 +62,7 @@ export const globalWhiskies: Whisky[] = [
         description: "'The Original'로 알려진 이 위스키는 섬세한 꽃향기와 시트러스 노트로 하이랜드 몰트의 표준을 제시합니다.",
         tags: ["플로럴", "시트러스", "글렌모란지"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59636_source_1769621474.jpg?compression=lossy",
-        availableDate: "2026-04-01"
+        availableDate: "2026-04-11"
     },
     {
         id: "g32", name: "Glenfarclas 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 스페이사이드",
@@ -71,7 +71,7 @@ export const globalWhiskies: Whisky[] = [
         description: "가족 경영 증류소에서 탄생한 셰리 오크의 걸작으로, 다크 과일과 향신료의 풍미가 입안 가득 풍성하게 펼쳐집니다.",
         tags: ["셰리", "패밀리", "글렌파클라스"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/55737_source_1769508693.jpg?compression=lossy",
-        availableDate: "2026-04-01"
+        availableDate: "2026-04-11"
     },
     {
         id: "g36", name: "Nikka Coffey Grain", type: "그레인 위스키", region: "일본",
