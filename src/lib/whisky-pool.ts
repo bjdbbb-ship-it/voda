@@ -319,7 +319,7 @@ availableDate: "2026-04-13",
         flavorProfile: { peat: 0, sweet: 9, fruit: 9, spice: 7, body: 9 },
         description: "와인 캐스크 숙성을 통해 폭발적인 열대 과일 향과 다크 초콜릿, 바닐라의 풍미를 담아낸 대만의 세계적인 명작입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
-availableDate: "2026-04-10",
+availableDate: "2026-04-14",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/26884_source_1758883117.jpg?compression=lossy",
         tags: ["대만위스키", "수상작", "와인캐스크"]
     },
@@ -329,7 +329,7 @@ availableDate: "2026-04-10",
         flavorProfile: { peat: 0, sweet: 9, fruit: 7, spice: 7, body: 8 },
         description: "인도의 열대 기후에서 숙성되어 풍미가 매우 진하며, 셰리 캐스크의 견과류와 과일 향이 강력하게 느껴지는 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-availableDate: "2026-04-10",
+availableDate: "2026-04-14",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18579_source_1758882785.jpg?compression=lossy",
         tags: ["인도위스키", "열대숙성", "셰리"]
     },
@@ -342,7 +342,7 @@ availableDate: "2026-04-10",
         description: "2026년 2월의 위스키로 선정된 히비키 하모니의 최신 에디션으로, 일본 위스키 특유의 정교한 블렌딩과 화사한 꽃향기, 잘 익은 과일의 풍미가 예술적인 조화를 이룹니다.",
         tags: ["일본위스키", "산토리", "수상작"],
         imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/1728_f2e10b26ccdf4e36866d211d4ff19667.jpg?v=638832569158400000",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-2", name: "Torabhaig 2018 Scottish Oak Single Cask", type: "싱글 몰트", region: "스코틀랜드 스카이섬",
@@ -351,7 +351,7 @@ availableDate: "2026-04-10"
         description: "스코티시 오크 싱글 캐스크 숙성을 통해 정통적인 스카이 섬의 피트함에 강력하고 거친 오크 향이 더해진 희소성 높은 싱글 몰트입니다.",
         tags: ["스카이섬", "싱글캐스크", "스코티시오크"],
         imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3696_02cf991887174fe0a8f3492f0b7e1fef.jpg?v=639032077938300000",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-3", name: "Highland Park Heather Cask Strength", type: "싱글 몰트", region: "스코틀랜드 아일랜드",
@@ -360,7 +360,7 @@ availableDate: "2026-04-10"
         description: "하일랜드 파크의 새로운 캐스크 스트랭스 시리즈의 첫 번째 출시작으로, 오크니 제도의 헤더 꿀 향과 강력한 피트 연기가 물을 타지 않은 원액 그대로 전달됩니다.",
         tags: ["캐스크스트랭스", "꿀", "스모크"],
         imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3697_7085f9b5f1e1452b9c36f3ceee43e6e5.jpg?v=639039216557600000",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-4", name: "Lochlea 7 Year Old Single Estate", type: "싱글 몰트", region: "스코틀랜드 로우랜드",
@@ -369,7 +369,7 @@ availableDate: "2026-04-10"
         description: "로클리 증류소의 첫 번째 연산 표기 제품으로, 직접 재배한 보리만을 사용하여 만든 로우랜드 스타일 특유의 신선하고 과일향 풍부한 캐릭터를 자랑합니다.",
         tags: ["싱글에스테이트", "로우랜드", "신선한"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/65478_source_1771086061.jpg?compression=lossy",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-5", name: "Compass Box Hedonism 2026", type: "블렌디드 그레인", region: "스코틀랜드",
@@ -378,7 +378,7 @@ availableDate: "2026-04-10"
         description: "30년 숙성 스트래스클라이드 그레인 원액을 포함한 컴파스 박스의 전설적인 그레인 위스키 시리즈로, 벨벳 같은 부드러움과 달콤한 바닐라, 코코넛의 풍미가 압권입니다.",
         tags: ["그레인위스키", "럭셔리", "부드러운"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/75046_source_1771851668.jpg?compression=lossy",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-6", name: "Ardbeg 10 Year Old Cask Strength (Committee 릴리즈)", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -387,7 +387,7 @@ availableDate: "2026-04-10"
         description: "아드벡 커미티 멤버를 위해 한정 출시된 10년 숙성 캐스크 스트랭스 버전으로, 전형적인 아드벡의 연기 폭탄 뒤에 숨겨진 강력한 향신료의 힘을 느낄 수 있습니다.",
         tags: ["커미티릴리즈", "캐스크스트랭스", "아일라"],
         imageUrl: "https://img.thewhiskyexchange.com/540/abgob.10yov4.jpg",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-7", name: "Elijah Craig Barrel Proof Rye Batch A126", type: "라이 위스키", region: "미국 켄터키",
@@ -396,7 +396,7 @@ availableDate: "2026-04-10"
         description: "11년 11개월 숙성된 고숙성 라이 위스키로, 60.2도의 높은 도수에서 뿜어져 나오는 강력한 호밀의 스파이스와 오크의 대담함을 가감 없이 보여줍니다.",
         tags: ["배럴프루프", "라이위스키", "대담한"],
         imageUrl: "https://dewinespot.co/cdn/shop/files/ElijahCraigBarrelProofRyeBatchA126_1024x1024_33505925-9db1-4482-aa30-3f12805da1a5.jpg?v=1771455498&width=1214",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-8", name: "13th Colony 113 Maple Bourbon", type: "버번", region: "미국 조지아",
@@ -405,7 +405,7 @@ availableDate: "2026-04-10"
         description: "메이플 나무 스파이럴을 사용하여 숙성한 독특한 공법의 버번으로, 풍부한 단풍나무 시럽의 달콤함과 버번 특유의 옥수수 단맛이 조화로운 디저트 같은 위스키입니다.",
         tags: ["메이플피니시", "버번", "달콤한"],
         imageUrl: "https://seelbachs.com/cdn/shop/files/13thColonyDistillery113BourbonFinishedWithMapleWoodSpirals.jpg?format=webp&height=1200&v=1771515787",
-availableDate: "2026-04-10"
+availableDate: "2026-04-14"
     },
     {
         id: "n2602-9", name: "Kavalan Triple Sherry Cask (Golden Steed)", type: "싱글 몰트", region: "대만",
