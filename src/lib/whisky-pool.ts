@@ -414,7 +414,7 @@ availableDate: "2026-04-14"
         description: "올로로소, 페드로 히메네즈, 모스카텔 셰리 캐스크를 모두 사용한 트리플 셰리 숙성작으로, 다크 과일의 풍성함과 견과류의 고소함이 폭발적으로 느껴집니다.",
         tags: ["트리플셰리", "대만위스키", "풍부한"],
         imageUrl: "https://mma.prnewswire.com/media/2861672/260115_Kavalan_Golden_Steed___Peonies.jpg?p=facebook",
-availableDate: "2026-04-10"
+availableDate: "2026-04-15"
     },
     {
         id: "n2602-10", name: "Godawan Triple Cask (Indian Single Malt)", type: "싱글 몰트", region: "인도",
@@ -423,7 +423,7 @@ availableDate: "2026-04-10"
         description: "인도에서 생산된 프리미엄 싱글 몰트로, 세 가지 캐스크 숙성을 통해 인도 위스키 특유의 열대 과일 향과 스파이시한 피니시를 세련되게 변주한 제품입니다.",
         tags: ["인도위스키", "트리플캐스크", "이국적인"],
         imageUrl: "https://thewhiskeywash.com/wp-content/uploads/2025/06/featured-image-1751029426.webp",
-availableDate: "2026-04-10"
+availableDate: "2026-04-15"
     },
     {
         id: "n1772524072392-2", name: "Kilchoman Loch Gorm (2025 Release) / 킬호만 록 곰 (2025 릴리즈)", type: "Single Malt", region: "Islay",
@@ -458,7 +458,7 @@ availableDate: "2026-04-11",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 6, "body": 9 },
         description: "잉글랜드의 떠오르는 강자 더 레이크스 증류소의 시그니처 시리즈입니다. 셰리 캐스크 숙성에 집중한 이 제품은 농축된 당밀, 무화과, 오렌지 껍질의 풍미를 폭발적으로 전달합니다. 입안을 가득 채우는 풀 바디의 질감과 벨벳 같은 부드러움이 특징입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/eng_lak20.jpg",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["English Whisky", "Sherry Led", "The Lakes"]
     },
     {
@@ -621,7 +621,7 @@ availableDate: "2026-04-11",
         flavorProfile: { "peat": 0, "sweet": 9, "fruit": 8, "spice": 5, "body": 7 },
         description: "하이랜드 쉐리 위스키의 정석으로 불리는 제품입니다. 페드로 히메네즈와 올로로소 쉐리 캐스크의 정교한 조합을 통해 메이플 시럽, 자두, 오렌지 껍질의 풍부한 맛을 구현해냈으며, 입안을 감싸는 벨벳 같은 부드러움이 매력적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/highland_gle46.jpg",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["Highland", "SherryMonster", "Glendronach"]
     },
     {
@@ -630,7 +630,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 2, "sweet": 7, "fruit": 7, "spice": 5, "body": 8 },
         description: "피트하지 않은 아일라 위스키의 진수를 보여줍니다. 해안가의 짠맛과 달콤한 쉐리, 신선한 견과류의 향이 어우러져 독특한 프로필을 형성하며, 냉각 여과를 하지 않아 풍부한 유질감과 깊은 풍미를 고스란히 간직하고 있습니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/islay_bun1.jpg",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["Islay", "Unpeated", "Bunnahabhain"]
     },
     {
@@ -639,7 +639,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 0, "sweet": 9, "fruit": 8, "spice": 4, "body": 7 },
         description: "전통적인 오크통에서 숙성된 원액을 직접 엄선한 럼 캐스크에서 피니시하여 이국적인 매력을 더했습니다. 발베니 특유의 꿀맛에 열대 과일의 화사함과 토피 사탕의 달콤함이 더해져 매우 부드럽고 긴 여운을 선사합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/speyside_bal4.jpg",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["Speyside", "RumFinish", "Balvenie"]
     },
     // --- AI Generated New Releases ---
@@ -649,7 +649,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 0, "sweet": 6, "fruit": 7, "spice": 5, "body": 6 },
         description: "2026년 주목받는 신생 증류소의 첫 정규 릴리즈로, 보리의 순수한 풍미와 깨끗한 질감이 돋보입니다. 부드러운 과일 향과 함께 견과류의 고소함이 긴 여운을 남기는 로우랜드 스타일입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/aberargie-86886.jpg",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["신생증류소", "로우랜드", "아베라기"]
     },
     {
@@ -658,7 +658,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 0, "sweet": 5, "fruit": 4, "spice": 8, "body": 7 },
         description: "고대 품종의 호밀을 사용하여 복합적인 향신료와 호밀 특유의 알싸한 맛을 강조한 위스키입니다. 바닐라와 구운 빵의 풍미가 층층이 쌓여 깊고 진한 바디감을 선사합니다.",
         imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["라이위스키", "잉글랜드", "옥스퍼드"]
     },
     {
@@ -667,7 +667,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 3, "body": 6 },
         description: "독립 병입자 아델피가 엄선한 캐스크로, 글렌 엘긴 특유의 화사한 과일 향이 극대화되었습니다. 꿀과 잘 익은 사과의 달콤함이 입안을 부드럽게 감싸며 우아한 마무리를 보여줍니다.",
         imageUrl: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-10",
+availableDate: "2026-04-15",
         tags: ["독립병입", "스페이사이드", "아델피"]
     },
     {
@@ -676,7 +676,7 @@ availableDate: "2026-04-10",
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 9, "spice": 2, "body": 5 },
         description: "신선한 꽃향기와 풀 내음이 어우러진 우아한 스타일의 위스키로 링크우드 증류소의 정수를 담았습니다. 가벼운 바디감 속에 숨겨진 복숭아와 살구의 섬세한 풍미가 매력적입니다.",
         imageUrl: "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-10",
+        availableDate: "2026-04-15",
         tags: ["독립병입", "꽃향기", "링크우드"]
     },
     {
