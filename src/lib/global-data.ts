@@ -8,7 +8,7 @@ export const globalWhiskies: Whisky[] = [
         description: "블렌딩 예술의 정점으로 불리며, 꿀, 부드러운 연기 향, 그리고 말린 과일의 풍미가 겹겹이 쌓인 극강의 부드러움을 선사합니다.",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59416_source_1768236031.jpg?compression=lossy",
         tags: ["럭셔리", "희귀", "조니워커", "블루"],
-availableDate: "2026-04-11"
+availableDate: "2026-04-16"
     },
     {
         id: "g31", name: "Springbank 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 캠벨타운",
@@ -17,7 +17,7 @@ availableDate: "2026-04-11"
         description: "캠벨타운 특유의 독특한 캐릭터를 지닌 컬트 클래식 위스키로, 해안의 소금기, 오일리한 질감, 그리고 은은한 피트 향이 특징입니다.",
         tags: ["크래프트", "컴플렉스", "스프링뱅크"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/41962_source_1762937430.jpg?compression=lossy",
-availableDate: "2026-04-11"
+availableDate: "2026-04-16"
     },
     {
         id: "g48", name: "Kavalan Classic", type: "싱글 몰트", region: "대만",
@@ -26,7 +26,7 @@ availableDate: "2026-04-11"
         description: "대만의 고온 다습한 기후에서 빠르게 숙성되어 망고, 배, 코코넛 등 강렬한 열대 과일의 풍미를 폭발적으로 뿜어냅니다.",
         tags: ["열대과일", "아열대", "카발란"],
         imageUrl: "https://www.bswliquor.com/cdn/shop/files/KavalanClassic-700.png?v=1753126249&width=416",
-availableDate: "2026-04-11"
+availableDate: "2026-04-16"
     },
     {
         id: "g21", name: "Jameson Irish Whiskey", type: "블렌디드", region: "아일랜드",
