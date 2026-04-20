@@ -175,7 +175,7 @@ availableDate: "2026-04-20",
         flavorProfile: { peat: 4, sweet: 7, fruit: 6, spice: 6, body: 8 },
         description: "전통적인 생산 방식을 고집하는 스프링뱅크의 핵심 라인업으로, 셰리 캐스크의 풍성함과 특유의 기름진 질감이 조화롭습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "clear" },
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31500_source_1763550039.jpg?compression=lossy",
         tags: ["캠벨타운", "수제위스키", "셰리"]
     },
@@ -185,7 +185,7 @@ availableDate: "2026-04-15",
         flavorProfile: { peat: 8, sweet: 4, fruit: 5, spice: 7, body: 8 },
         description: "스프링뱅크 증류소에서 생산하는 강력한 피트 위스키로, 묵직한 연기 향과 해안의 짠맛이 느껴지는 남성적인 캐릭터를 가집니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/34081_source_1769785292.jpg?compression=lossy",
         tags: ["캠벨타운", "피티드", "강렬한"]
     },
@@ -195,7 +195,7 @@ availableDate: "2026-04-15",
         flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 5, body: 6 },
         description: "캠벨타운의 새로운 강자로, 라이트한 피트와 시트러스, 소금 기운이 어우러진 현대적인 캠벨타운 스타일을 보여줍니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59640_source_1762963836.jpg?compression=lossy",
         tags: ["캠벨타운", "모던", "은은한피트"]
     },
@@ -205,7 +205,7 @@ availableDate: "2026-04-15",
         flavorProfile: { peat: 0, sweet: 9, fruit: 8, spice: 7, body: 9 },
         description: "고숙성 셰리 위스키의 기준석과 같은 존재로, 커피, 다크 초콜릿, 잘 익은 과일의 풍미가 웅장하게 펼쳐집니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33300_source_1759914650.jpg?compression=lossy",
         tags: ["스페이사이드", "셰리", "고숙성"]
     },
@@ -414,7 +414,7 @@ availableDate: "2026-04-19"
         description: "올로로소, 페드로 히메네즈, 모스카텔 셰리 캐스크를 모두 사용한 트리플 셰리 숙성작으로, 다크 과일의 풍성함과 견과류의 고소함이 폭발적으로 느껴집니다.",
         tags: ["트리플셰리", "대만위스키", "풍부한"],
         imageUrl: "https://mma.prnewswire.com/media/2861672/260115_Kavalan_Golden_Steed___Peonies.jpg?p=facebook",
-availableDate: "2026-04-15"
+availableDate: "2026-04-20"
     },
     {
         id: "n2602-10", name: "Godawan Triple Cask (Indian Single Malt)", type: "싱글 몰트", region: "인도",
@@ -423,7 +423,7 @@ availableDate: "2026-04-15"
         description: "인도에서 생산된 프리미엄 싱글 몰트로, 세 가지 캐스크 숙성을 통해 인도 위스키 특유의 열대 과일 향과 스파이시한 피니시를 세련되게 변주한 제품입니다.",
         tags: ["인도위스키", "트리플캐스크", "이국적인"],
         imageUrl: "https://thewhiskeywash.com/wp-content/uploads/2025/06/featured-image-1751029426.webp",
-availableDate: "2026-04-15"
+availableDate: "2026-04-20"
     },
     {
         id: "n1772524072392-2", name: "Kilchoman Loch Gorm (2025 Release) / 킬호만 록 곰 (2025 릴리즈)", type: "Single Malt", region: "Islay",
@@ -431,7 +431,7 @@ availableDate: "2026-04-15"
         flavorProfile: { "peat": 9, "sweet": 7, "fruit": 6, "spice": 5, "body": 8 },
         description: "올로로소 셰리 버트에서 숙성된 킬호만의 연례 리미티드 에디션입니다. 이슬레이 특유의 강렬한 피트 연기와 셰리 캐스크가 선사하는 짙은 건과일, 다크 초콜릿의 풍미가 완벽한 대조를 이룹니다. 해수면의 짠 내음과 달콤한 향신료의 여운이 길게 이어지는 명작입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/isly_kil15.jpg",
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         tags: ["Sherry Cask", "Peated", "Kilchoman"]
     },
     {
@@ -440,7 +440,7 @@ availableDate: "2026-04-15",
         flavorProfile: { "peat": 0, "sweet": 6, "fruit": 8, "spice": 4, "body": 7 },
         description: "독립 병입자의 명가 아델피가 엄선한 벤리네스 14년은 이 증류소 특유의 묵직하고 고기 같은(meaty) 질감을 잘 보존하고 있습니다. 잘 익은 사과와 서양배의 과실향에 구운 아몬드의 고소함이 더해져 복합적인 구조감을 자랑합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/brn_ade12.jpg",
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         tags: ["Independent Bottler", "Speyside", "Adelphi"]
     },
     {
@@ -449,7 +449,7 @@ availableDate: "2026-04-15",
         flavorProfile: { "peat": 0, "sweet": 7, "fruit": 7, "spice": 4, "body": 5 },
         description: "로버트 번스의 생가에서 직접 재배한 보리로 빚어낸 로클리의 코어 레인지입니다. 퍼스트 필 버번, STR, 셰리 캐스크를 조합하여 신선한 배, 자른 풀, 밀크 초콜릿의 노트를 겹겹이 쌓아 올렸습니다. 로우랜드 위스키의 새로운 미래를 보여주는 산뜻한 퍼포먼스가 인상적입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/low_loc1.jpg",
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         tags: ["Farm Distillery", "Lowland", "Lochlea"]
     },
     {
@@ -458,7 +458,7 @@ availableDate: "2026-04-15",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 6, "body": 9 },
         description: "잉글랜드의 떠오르는 강자 더 레이크스 증류소의 시그니처 시리즈입니다. 셰리 캐스크 숙성에 집중한 이 제품은 농축된 당밀, 무화과, 오렌지 껍질의 풍미를 폭발적으로 전달합니다. 입안을 가득 채우는 풀 바디의 질감과 벨벳 같은 부드러움이 특징입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/eng_lak20.jpg",
-availableDate: "2026-04-15",
+availableDate: "2026-04-20",
         tags: ["English Whisky", "Sherry Led", "The Lakes"]
     },
     {
