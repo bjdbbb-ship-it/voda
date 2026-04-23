@@ -35,7 +35,7 @@ availableDate: "2026-04-21"
         description: "전 세계적으로 가장 사랑받는 아이리시 위스키로, 세 번의 증류를 통해 극강의 부드러움과 편안한 접근성을 자랑합니다.",
         tags: ["부드러운", "라이트", "제임슨"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/31144_source_1770982890.jpg?compression=lossy",
-availableDate: "2026-04-17"
+availableDate: "2026-04-23"
     },
     {
         id: "g26", name: "Bruichladdich Classic Laddie", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -44,7 +44,7 @@ availableDate: "2026-04-17"
         description: "피트를 사용하지 않은 아일라 몰트로, 보리의 순수함과 해안의 영향이 집중되어 꽃향기와 민트향이 감도는 신선한 프로필을 보여줍니다.",
         tags: ["논피티드", "아일라", "브룩라디"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/21642_source_1768680666.jpg?compression=lossy",
-availableDate: "2026-04-17"
+availableDate: "2026-04-23"
     },
     {
         id: "g27", name: "Aberlour 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 스페이사이드",
@@ -53,7 +53,7 @@ availableDate: "2026-04-17"
         description: "버번 캐스크와 셰리 캐스크에서 각각 숙성 후 매링되어 과일 향과 스파이시함이 완벽하게 균형을 이루는 클래식 스페이사이드 몰트입니다.",
         tags: ["더블캐스크", "부드러운", "아벨라워"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/31086_source_1771000845.jpg?compression=lossy",
-        availableDate: "2026-04-17"
+        availableDate: "2026-04-23"
     },
     {
         id: "g28", name: "Glenmorangie 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 하이랜드",

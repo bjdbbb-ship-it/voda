@@ -685,7 +685,7 @@ availableDate: "2026-04-21",
         flavorProfile: { "peat": 0, "sweet": 6, "fruit": 6, "spice": 6, "body": 7 },
         description: "하이랜드의 강인한 캐릭터를 담고 있으며, 허브와 향신료의 복합적인 풍미가 돋보이는 제품입니다. 오크통에서 오는 바닐라와 약간의 왁시한 질감이 특징인 고숙련 병입 제품입니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/teanob.10yo.jpg",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["하이랜드", "왁시", "티니닉"]
     },
     {
@@ -694,7 +694,7 @@ availableDate: "2026-04-21",
         flavorProfile: { "peat": 2, "sweet": 6, "fruit": 7, "spice": 4, "body": 6 },
         description: "로몬드 호수 인근의 새로운 증류소에서 생산된 위스키로, 깨끗하고 청량한 과일 향이 일품입니다. 미세한 피트감이 가미되어 복합적인 풍미와 함께 신선한 여운을 선사합니다.",
         imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["신생증류소", "하이랜드", "러스"]
     },
     {
@@ -703,7 +703,7 @@ availableDate: "2026-04-21",
         flavorProfile: { "peat": 5, "sweet": 4, "fruit": 5, "spice": 6, "body": 7 },
         description: "셰틀랜드 제도의 거친 해안가에서 숙성되어 짭조름한 바다 내음과 해초의 풍미가 특징입니다. 강렬한 향신료와 함께 스모키한 마무리가 인상적인 북단 증류소의 야심작입니다.",
         imageUrl: "https://static.whiskybase.com/storage/whiskies/2/6/3474/473010-big.jpg",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["셰틀랜드", "해안가위스키", "러윅"]
     },
     {
@@ -712,7 +712,7 @@ availableDate: "2026-04-21",
         flavorProfile: { "peat": 1, "sweet": 7, "fruit": 6, "spice": 5, "body": 6 },
         description: "전통적인 하이랜드 스타일을 현대적으로 재해석하여 매우 부드러운 질감을 자랑하는 위스키입니다. 카라멜과 구운 견과류의 풍미가 조화롭게 어우러져 누구나 즐기기 좋습니다.",
         imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["하이랜드", "부드러운", "스트루이"]
     },
     {
@@ -721,7 +721,7 @@ availableDate: "2026-04-21",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 7, "spice": 4, "body": 7 },
         description: "풍부한 몰트의 단맛과 함께 크리미한 질감이 돋보이는 스페이사이드의 숨은 보석 같은 위스키입니다. 밀크 초콜릿과 오렌지 껍질의 풍미가 겹겹이 쌓여 긴 여운을 남깁니다.",
         imageUrl: "https://static.whiskybase.com/storage/whiskies/2/3/7807/430134-big.jpg",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["스페이사이드", "크리미", "밀턴더프"]
     },
     {
@@ -730,7 +730,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 7, sweet: 6, fruit: 7, spice: 5, body: 7 },
         description: "2026 캠벨타운 몰트 페스티벌을 위해 출시된 7년 숙성 피티드 싱글 몰트 위스키입니다. 루비 포트 캐스크에서 피니시를 거쳐 풍부한 과일 풍미와 스모키함이 조화를 이룹니다.",
         imageUrl: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["캠벨타운", "몰트페스티벌", "피티드"]
     },
     {
@@ -739,7 +739,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 9 },
         description: "아이리시 위스키의 정점으로 불리는 미들턴 베리 레어의 2026년 빈티지입니다. 최상급 팟 스틸과 그레인 위스키의 블렌딩으로 실크처럼 부드러운 질감을 선사합니다.",
         imageUrl: "https://images.unsplash.com/photo-1568213816046-0ee1c4295581?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-16",
+        availableDate: "2026-04-23",
         tags: ["아이리시", "빈티지", "럭셔리"]
     },
     {
