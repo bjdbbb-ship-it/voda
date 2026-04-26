@@ -24,7 +24,7 @@ availableDate: "2026-04-19",
         description: "소용돌이치는 듯한 강렬한 피트 향과 다크 초콜렛, 스파이시한 풍미가 어우러진 깊고 묵직한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68170_source_1770627759.jpg?compression=lossy",
-availableDate: "2026-04-18",
+availableDate: "2026-04-26",
         tags: ["아일라", "피트몬스터", "강렬한"],
         popularity: 85,
         rating: 4.8
@@ -36,7 +36,7 @@ availableDate: "2026-04-18",
         description: "작은 캐스크를 사용하여 숙성 속도를 높임으로써 더 깊은 오크 풍미와 라프로익 특유의 강렬한 피트 연기를 극대화했습니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "green" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/256w/attribute_rule_images/9256_source_1761906663.jpg?compression=lossy",
-availableDate: "2026-04-18",
+availableDate: "2026-04-26",
         tags: ["아일라", "피트", "오크"]
     },
     {
@@ -46,7 +46,7 @@ availableDate: "2026-04-18",
         description: "셰리 캐스크 피니시를 통해 얻은 달콤한 초콜릿 향과 아일라 특유의 은은한 연기 향이 아름답게 균형을 이룹니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "clear" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/18099_source_1761912662.jpg?compression=lossy",
-availableDate: "2026-04-18",
+availableDate: "2026-04-26",
         tags: ["아일라", "셰리", "밸런스"]
     },
     {
