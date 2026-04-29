@@ -144,7 +144,7 @@ availableDate: "2026-04-28",
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 7, body: 7 },
         description: "켄터키 버번의 전통을 계승한 스몰 배치로, 부드러운 카라멜과 호밀의 스파이시함이 조화로운 클래식 버번입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
-availableDate: "2026-04-20",
+availableDate: "2026-04-29",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/64148_source_1759399269.jpg?compression=lossy",
         tags: ["버번", "스몰배치", "전통적인"]
     },
@@ -155,7 +155,7 @@ availableDate: "2026-04-20",
         flavorProfile: { peat: 9, sweet: 7, fruit: 8, spice: 6, body: 8 },
         description: "피트함과 올로로소 셰리 캐스크의 달콤함이 만나 강렬하면서도 과일향이 풍부한 아일라 싱글 몰트입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "amber", glassColor: "brown" },
-availableDate: "2026-04-20",
+availableDate: "2026-04-29",
         imageUrl: "https://drinkhacker.com/wp-content/uploads/2020/06/PortCharlotte_OLC01.png",
         tags: ["아일라", "헤비피티드", "셰리"]
     },
@@ -165,7 +165,7 @@ availableDate: "2026-04-20",
         flavorProfile: { peat: 10, sweet: 5, fruit: 6, spice: 7, body: 9 },
         description: "세계에서 가장 강력한 피트 수치를 자랑하면서도, 그 속에 숨겨진 섬세한 곡물의 달콤함과 바닐라 향이 놀라운 반전을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "brown" },
-availableDate: "2026-04-20",
+availableDate: "2026-04-29",
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/37811_source_1758884925.jpg?compression=lossy",
         tags: ["아일라", "슈퍼헤비피티드", "복합미"]
     },
@@ -351,7 +351,7 @@ availableDate: "2026-04-28"
         description: "스코티시 오크 싱글 캐스크 숙성을 통해 정통적인 스카이 섬의 피트함에 강력하고 거친 오크 향이 더해진 희소성 높은 싱글 몰트입니다.",
         tags: ["스카이섬", "싱글캐스크", "스코티시오크"],
         imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3696_02cf991887174fe0a8f3492f0b7e1fef.jpg?v=639032077938300000",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-3", name: "Highland Park Heather Cask Strength", type: "싱글 몰트", region: "스코틀랜드 아일랜드",
@@ -360,7 +360,7 @@ availableDate: "2026-04-19"
         description: "하일랜드 파크의 새로운 캐스크 스트랭스 시리즈의 첫 번째 출시작으로, 오크니 제도의 헤더 꿀 향과 강력한 피트 연기가 물을 타지 않은 원액 그대로 전달됩니다.",
         tags: ["캐스크스트랭스", "꿀", "스모크"],
         imageUrl: "https://www.thewhiskyexchange.com/media/rtwe/uploads/featurecore/panels/3697_7085f9b5f1e1452b9c36f3ceee43e6e5.jpg?v=639039216557600000",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-4", name: "Lochlea 7 Year Old Single Estate", type: "싱글 몰트", region: "스코틀랜드 로우랜드",
@@ -369,7 +369,7 @@ availableDate: "2026-04-19"
         description: "로클리 증류소의 첫 번째 연산 표기 제품으로, 직접 재배한 보리만을 사용하여 만든 로우랜드 스타일 특유의 신선하고 과일향 풍부한 캐릭터를 자랑합니다.",
         tags: ["싱글에스테이트", "로우랜드", "신선한"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/65478_source_1771086061.jpg?compression=lossy",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-5", name: "Compass Box Hedonism 2026", type: "블렌디드 그레인", region: "스코틀랜드",
@@ -378,7 +378,7 @@ availableDate: "2026-04-19"
         description: "30년 숙성 스트래스클라이드 그레인 원액을 포함한 컴파스 박스의 전설적인 그레인 위스키 시리즈로, 벨벳 같은 부드러움과 달콤한 바닐라, 코코넛의 풍미가 압권입니다.",
         tags: ["그레인위스키", "럭셔리", "부드러운"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/75046_source_1771851668.jpg?compression=lossy",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-6", name: "Ardbeg 10 Year Old Cask Strength (Committee 릴리즈)", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -387,7 +387,7 @@ availableDate: "2026-04-19"
         description: "아드벡 커미티 멤버를 위해 한정 출시된 10년 숙성 캐스크 스트랭스 버전으로, 전형적인 아드벡의 연기 폭탄 뒤에 숨겨진 강력한 향신료의 힘을 느낄 수 있습니다.",
         tags: ["커미티릴리즈", "캐스크스트랭스", "아일라"],
         imageUrl: "https://img.thewhiskyexchange.com/540/abgob.10yov4.jpg",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-7", name: "Elijah Craig Barrel Proof Rye Batch A126", type: "라이 위스키", region: "미국 켄터키",
@@ -396,7 +396,7 @@ availableDate: "2026-04-19"
         description: "11년 11개월 숙성된 고숙성 라이 위스키로, 60.2도의 높은 도수에서 뿜어져 나오는 강력한 호밀의 스파이스와 오크의 대담함을 가감 없이 보여줍니다.",
         tags: ["배럴프루프", "라이위스키", "대담한"],
         imageUrl: "https://dewinespot.co/cdn/shop/files/ElijahCraigBarrelProofRyeBatchA126_1024x1024_33505925-9db1-4482-aa30-3f12805da1a5.jpg?v=1771455498&width=1214",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-8", name: "13th Colony 113 Maple Bourbon", type: "버번", region: "미국 조지아",
@@ -405,7 +405,7 @@ availableDate: "2026-04-19"
         description: "메이플 나무 스파이럴을 사용하여 숙성한 독특한 공법의 버번으로, 풍부한 단풍나무 시럽의 달콤함과 버번 특유의 옥수수 단맛이 조화로운 디저트 같은 위스키입니다.",
         tags: ["메이플피니시", "버번", "달콤한"],
         imageUrl: "https://seelbachs.com/cdn/shop/files/13thColonyDistillery113BourbonFinishedWithMapleWoodSpirals.jpg?format=webp&height=1200&v=1771515787",
-availableDate: "2026-04-19"
+availableDate: "2026-04-29"
     },
     {
         id: "n2602-9", name: "Kavalan Triple Sherry Cask (Golden Steed)", type: "싱글 몰트", region: "대만",
