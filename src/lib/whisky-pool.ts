@@ -748,7 +748,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 6, body: 8 },
         description: "스페이사이드 몰트를 블렌딩한 18년 숙성 2026년 에디션입니다. 셰리 숙성에서 오는 다크 초콜릿과 오렌지 필, 토스트한 호두의 깊은 풍미가 일품입니다.",
         imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["스페이사이드", "셰리숙성", "고숙성"]
     },
     {
@@ -757,7 +757,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 7, fruit: 7, spice: 7, body: 7 },
         description: "틸링의 'Wonders of Wood' 네 번째 시리즈로, 희귀한 카르파티아 오크에서 숙성되었습니다. 로즈워터와 샌달우드의 독특한 향이 매력적인 아이리시 위스키입니다.",
         imageUrl: "https://teelingwhiskey.com/wonders-of-wood-carpathian-oak",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["아이리시", "유니크오크", "틸링"]
     },
     {
@@ -766,7 +766,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 8, fruit: 8, spice: 7, body: 9 },
         description: "18년 숙성된 켄터키 버번과 캐나디안 위스키를 블렌딩하여 카베르네 소비뇽과 소테른 캐스크에서 피니시한 복합적인 위스키입니다.",
         imageUrl: "https://images.unsplash.com/photo-1516550893885-7935ab0c6ad9?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["블렌디드", "고숙성", "와인피니시"]
     },
     {
@@ -775,7 +775,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 7, fruit: 7, spice: 5, body: 6 },
         description: "잉글랜드 요크셔 지역의 Ellers Farm 증류소 첫 번째 정식 릴리즈입니다. 지역의 특색을 담은 역사적인 첫 번째 빈티지로 소장 가치가 높습니다.",
         imageUrl: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["잉글랜드위스키", "첫출시", "희귀"]
     },
     {
@@ -784,7 +784,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 9, fruit: 5, spice: 8, body: 8 },
         description: "메이커스 마크의 2026년 우드 피니싱 시리즈입니다. 고유의 스테이브 피니싱 공법을 통해 배럴 스트렝스의 진하고 묵직한 버번 맛을 선사합니다.",
         imageUrl: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["버번", "메이커스마크", "우드피니싱"]
     },
     {
@@ -793,7 +793,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 3, sweet: 6, fruit: 7, spice: 4, body: 6 },
         description: "이탈리아 베네토 지역의 폴리 증류소에서 생산된 5년 숙성 싱글 몰트입니다. 피티드와 언피티드 몰트가 조화롭게 어우러진 신선한 풍미가 특징입니다.",
         imageUrl: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["이탈리아위스키", "신생증류소", "싱글몰트"]
     },
     {
@@ -802,7 +802,7 @@ availableDate: "2026-04-21",
         flavorProfile: { peat: 0, sweet: 8, fruit: 6, spice: 6, body: 9 },
         description: "2026년 초 출시된 가성비 최고의 버번입니다. 밀 함량이 높은 매시빌로 부드러우면서도 109.3 풀 프루프의 강력한 타격감을 보여줍니다.",
         imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1200",
-        availableDate: "2026-04-20",
+        availableDate: "2026-05-01",
         tags: ["버번", "가성비", "풀프루프"]
     }
 ];
