@@ -89,7 +89,7 @@ availableDate: "2026-05-04"
         description: "금주법 이전 스타일을 계승한 버번으로, 높은 호밀 함량과 긴 숙성 기간을 통해 강렬하고 대담한 오크와 스파이스 풍미를 선사합니다.",
         tags: ["풀바디", "오크", "놉크릭", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31280_source_1771582251.jpg?compression=lossy",
-availableDate: "2026-04-24"
+availableDate: "2026-05-05"
     },
     {
         id: "g40", name: "Wild Turkey 101", type: "버번", region: "미국 켄터키",
@@ -98,7 +98,7 @@ availableDate: "2026-04-24"
         description: "강력한 스파이스와 풍부한 카라멜 노트로 유명한 상징적인 고도수 버번으로, 니트나 칵테일 모두에 완벽합니다.",
         tags: ["스파이시", "고도수", "와일드터키", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31288_source_1770985848.jpg?compression=lossy",
-availableDate: "2026-04-24"
+availableDate: "2026-05-05"
     },
     {
         id: "g41", name: "Maker's Mark", type: "버번", region: "미국 켄터키",
@@ -107,7 +107,7 @@ availableDate: "2026-04-24"
         description: "호밀 대신 겨울 밀을 사용하여 일반적인 버번보다 훨씬 부드럽고 달콤한 풍미를 지닌 프리미엄 위티드 버번입니다.",
         tags: ["위티드", "부드러운", "메이커스마크", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31271_source_1770811280.jpg?compression=lossy",
-availableDate: "2026-04-24"
+availableDate: "2026-05-05"
     },
     {
         id: "g43", name: "Jack Daniel's No. 7", type: "테네시 위스키", region: "미국 테네시",
@@ -116,7 +116,7 @@ availableDate: "2026-04-24"
         description: "전 세계 판매 1위 위스키로, 숯 여과 과정을 거쳐 메이플과 바나나 향이 감도는 독특하고 부드러운 캐릭터를 완성했습니다.",
         tags: ["아이코닉", "차콜", "잭다니엘"],
         imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2019/06/JD2.jpg",
-availableDate: "2026-04-24"
+availableDate: "2026-05-05"
     },
     {
         id: "g45", name: "Tullamore D.E.W.", type: "블렌디드", region: "아일랜드",
@@ -125,7 +125,7 @@ availableDate: "2026-04-24"
         description: "세 가지 원액을 블렌딩한 전설적인 아이리시 위스키로, 풋사과 향과 함께 부드러운 복합미를 제공합니다.",
         tags: ["트리플디스틸드", "부드러운", "툴라모어"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31167_source_1771259474.jpg?compression=lossy",
-availableDate: "2026-04-25"
+availableDate: "2026-05-05"
     },
     {
         id: "g47", name: "Teeling Small Batch", type: "블렌디드", region: "아일랜드",
@@ -134,7 +134,7 @@ availableDate: "2026-04-25"
         description: "럼 캐스크에서 피니시하여 열대 과일의 달콤함과 바닐라 향이 한 층 더해진 혁신적인 스타일의 아이리시 블렌드입니다.",
         tags: ["럼캐스크", "달콤한", "틸링"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/39264_source_1771226467.jpg?compression=lossy",
-availableDate: "2026-04-25"
+availableDate: "2026-05-05"
     },
     {
         id: "g52", name: "Arran 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아란섬",
@@ -143,7 +143,7 @@ availableDate: "2026-04-25"
         description: "아란섬의 순수한 캐릭터를 담은 생기 넘치는 아일랜드 몰트로, 시트러스와 과수원 과일의 신선한 풍미가 돋보입니다.",
         tags: ["시트러스", "논피티드", "아란"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68557_source_1769713882.jpg?compression=lossy",
-availableDate: "2026-04-25"
+availableDate: "2026-05-05"
     },
     {
         id: "g53", name: "Jura 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 쥬라섬",
