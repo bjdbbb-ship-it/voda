@@ -152,7 +152,7 @@ availableDate: "2026-05-05"
         description: "하이랜드와 아일랜드 스타일의 조화로, 부드러운 셰리 영향력이 느껴지는 달콤함과 미세한 피트 연기가 특징입니다.",
         tags: ["스모크", "달콤한", "쥬라"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/12130_source_1771610491.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-06"
     },
     {
         id: "g54", name: "Highland Park 12 Year Old Viking Honour", type: "싱글 몰트", region: "스코틀랜드 오크니",
@@ -161,7 +161,7 @@ availableDate: "2026-04-26"
         description: "오크니 제도의 영혼을 담은 위스키로, 헤더 꿀의 달콤함과 은은한 향신료, 향기로운 피트 연기가 조화를 이룹니다.",
         tags: ["꿀", "스모크", "하일랜드파크"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/17319_source_1758883443.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-06"
     },
     {
         id: "g55", name: "Talisker 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 스카이섬",
@@ -170,7 +170,7 @@ availableDate: "2026-04-26"
         description: "스카이섬의 거친 바다를 닮은 걸작으로, 강력한 스모크 캐릭터와 특유의 후추 향, 소금기 넘치는 풍미가 압권입니다.",
         tags: ["매리타임", "페퍼", "탈리스커"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31517_source_1770831092.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-06"
     },
     {
         id: "g56", name: "Ardbeg 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
