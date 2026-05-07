@@ -179,7 +179,7 @@ availableDate: "2026-05-06"
         description: "피트의 강력함을 자랑하면서도 그 이면에 숨겨진 섬세한 달콤함과 복합미를 훌륭하게 표현해낸 아일라의 강자입니다.",
         tags: ["스모크", "컴플렉스", "아드벡"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/33963_source_1770987835.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-07"
     },
     {
         id: "g57", name: "Laphroaig 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -188,7 +188,7 @@ availableDate: "2026-04-26"
         description: "아일라 몰트 중 가장 약리적인 특징이 강하며, 해초, 요오드, 그리고 묵직한 피트 향으로 명성이 자자합니다.",
         tags: ["메디시널", "피트", "라프로익"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/25277/19593/2455_alt03__99004.1754563830.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-07"
     },
     {
         id: "g58", name: "Lagavulin 16 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -197,7 +197,7 @@ availableDate: "2026-04-26"
         description: "천천히 증류된 아일라의 클래식으로, 드라이하고 복합적인 스모크와 풍부한 셰리 노트가 어우러져 깊은 여운을 남깁니다.",
         tags: ["강렬한", "스모크", "라가불린"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31899_source_1771517444.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-07"
     },
     {
         id: "g59", name: "Caol Ila 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -206,7 +206,7 @@ availableDate: "2026-04-26"
         description: "정제되고 오일리한 아일라 몰트로, 무거운 약리적 느낌보다는 신선하고 우아한 스모크와 시트러스 향에 집중합니다.",
         tags: ["엘레강트스모크", "오일", "쿠일라"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33542_source_1771172435.jpg?compression=lossy",
-availableDate: "2026-04-26"
+availableDate: "2026-05-07"
     },
     {
         id: "g60", name: "Bowmore 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -215,6 +215,6 @@ availableDate: "2026-04-26"
         description: "아름답게 균형 잡힌 아일라 위스키로, 미묘한 연기 향과 함께 다크 초콜릿, 시트러스 향이 조화롭게 어우러집니다.",
         tags: ["밸런스", "스모크", "보우모어"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/33666_source_1771510984.jpg?compression=lossy",
-availableDate: "2026-04-27"
+availableDate: "2026-05-07"
     },
 ];
