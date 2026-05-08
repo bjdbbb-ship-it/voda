@@ -67,7 +67,7 @@ availableDate: "2026-05-07",
         description: "셰리 몬스터의 귀환으로 알려진 이 제품은 풍부한 다크 과일과 초콜릿, 견과류의 복합적인 조화가 일품입니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "mahogany", glassColor: "brown" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/9099_source_1758883760.jpg?compression=lossy",
-availableDate: "2026-04-28",
+availableDate: "2026-05-08",
         tags: ["셰리몬스터", "풍부한", "스페이사이드"]
     },
     {
@@ -77,7 +77,7 @@ availableDate: "2026-04-28",
         description: "섬세하고 부드러운 고숙성 하이랜드 몰트로, 꽃향기와 바닐라, 그리고 실크처럼 매끄러운 질감을 선사합니다.",
         visualProfile: { bottleShape: "tall", liquidColor: "gold", glassColor: "clear" },
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/32958_source_1766962850.jpg?compression=lossy",
-availableDate: "2026-04-28",
+availableDate: "2026-05-08",
         tags: ["부드러운", "플로럴", "하이랜드"]
     },
     {
@@ -87,7 +87,7 @@ availableDate: "2026-04-28",
         description: "6가지 다른 캐스크에서 숙성된 원액을 블렌딩하여 베리, 향신료, 와인의 복합적인 풍미가 겹겹이 쌓인 럭셔리한 경험을 선사합니다.",
         visualProfile: { bottleShape: "stout", liquidColor: "amber", glassColor: "clear" },
         imageUrl: "https://cdn.shopify.com/s/files/1/0099/0045/8042/products/Studio_Project-2022-05-25T130746.479.jpg?v=1653509284",
-availableDate: "2026-04-28",
+availableDate: "2026-05-08",
         tags: ["럭셔리", "멀티캐스크", "복합미"]
     },
     // --- Japanese (Faceted/Elegant) ---
@@ -557,7 +557,7 @@ availableDate: "2026-05-06",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 7, "spice": 9, "body": 9 },
         description: "60% ABV의 강력한 도수로 즐기는 클래식 스페이사이드 쉐리 위스키입니다. 글렌파클라스 가문의 자부심이 담긴 이 위스키는 사과와 배의 신선함 뒤에 숨겨진 묵직한 오크향과 스파이시한 피니시가 매력적입니다. 물 한 방울을 떨어뜨리면 숨겨진 달콤함이 피어납니다.",
         imageUrl: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Speyside", "High Proof", "Glenfarclas"]
     },
     {
@@ -566,7 +566,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 4, "sweet": 6, "fruit": 7, "spice": 5, "body": 7 },
         description: "지속 가능성을 추구하는 아드나머칸 증류소의 현대적 명작입니다. 피트와 논피트 원액을 정교하게 블렌딩하여 해안가의 바위, 바닷물, 모닥불 연기 같은 원초적인 풍미와 오렌지 오일의 상큼함을 동시에 담아냈습니다. 매우 깨끗하면서도 긴 여운을 남깁니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/high_ard2.jpg",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Highland", "Craft Distillery", "Ardnamurchan"]
     },
     // --- AI Generated New Releases ---
@@ -576,7 +576,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 5, "body": 6 },
         description: "100% 최상급 올로로소 쉐리 캐스크에서만 숙성된 스페이사이드의 숨은 보석입니다. 신선한 시나몬과 구운 견과류, 풍부한 베리류의 풍미가 층층이 쌓여 있으며, 쉐리 위스키 입문자와 애호가 모두를 만족시킬 수 있는 직관적인 달콤함을 선사합니다.",
         imageUrl: "https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Speyside", "OlorosoSherry", "Tamdhu"]
     },
     {
@@ -585,7 +585,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 9, "sweet": 5, "fruit": 4, "spice": 6, "body": 7 },
         description: "아일라 섬의 강렬한 피트 풍미를 현대적인 감각으로 재해석한 위스키입니다. 이름처럼 바닷바람의 짠맛과 짙은 연기 향이 특징이며, 25%의 원액을 쉐리 캐스크에서 숙성하여 거친 피트 뒤에 숨겨진 달콤한 반전을 제공합니다.",
         imageUrl: "https://images.unsplash.com/photo-1596377478065-22e382d6101f?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Islay", "Peated", "IndieBottler"]
     },
     {
@@ -594,7 +594,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 9, "spice": 6, "body": 8 },
         description: "아란 증류소의 과일 향이 가득한 원액을 퍼스트 필 쉐리 호그스헤드에서 풀 숙성한 제품입니다. 55.8%의 높은 도수임에도 불구하고 무화과, 건포도, 체리의 농축된 풍미가 부드럽게 펼쳐지며 압도적인 구조감을 자랑합니다.",
         imageUrl: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Islands", "CaskStrength", "Arran"]
     },
     {
@@ -603,7 +603,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 0, "sweet": 8, "fruit": 8, "spice": 7, "body": 9 },
         description: "아일랜드의 전통적인 싱글 팟 스틸 위스키와 유명 쉐리 하우스인 'Bodegas Lustau'의 협업으로 탄생했습니다. 크리미한 질감과 함께 말린 과일, 구운 아몬드의 고소함이 특징이며, 일반적인 위스키보다 한층 깊은 복합미를 제공합니다.",
         imageUrl: "https://images.unsplash.com/photo-1574626003470-87f5b2d7085a?auto=format&fit=crop&q=80&w=1200",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Ireland", "PotStill", "Redbreast"]
     },
     {
@@ -612,7 +612,7 @@ availableDate: "2026-04-27",
         flavorProfile: { "peat": 0, "sweet": 6, "fruit": 7, "spice": 7, "body": 9 },
         description: "'더 위 위치(The Wee Witchie)'라는 별칭으로 유명한 모틀락의 상징적인 엔트리 모델입니다. 2.81회 증류법을 통해 얻어진 묵직하고 고기 같은(Meaty) 육중한 바디감이 일품이며, 설탕에 절인 과일과 스파이시한 피니시가 훌륭합니다.",
         imageUrl: "https://img.thewhiskyexchange.com/900/speyside_mor2.jpg",
-availableDate: "2026-04-27",
+availableDate: "2026-05-08",
         tags: ["Speyside", "Meaty", "Mortlach"]
     },
     {
