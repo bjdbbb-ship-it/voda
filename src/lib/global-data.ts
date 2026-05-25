@@ -116,7 +116,7 @@ availableDate: "2026-05-24"
         description: "전 세계 판매 1위 위스키로, 숯 여과 과정을 거쳐 메이플과 바나나 향이 감도는 독특하고 부드러운 캐릭터를 완성했습니다.",
         tags: ["아이코닉", "차콜", "잭다니엘"],
         imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2019/06/JD2.jpg",
-availableDate: "2026-05-15"
+availableDate: "2026-05-25"
     },
     {
         id: "g45", name: "Tullamore D.E.W.", type: "블렌디드", region: "아일랜드",
@@ -125,7 +125,7 @@ availableDate: "2026-05-15"
         description: "세 가지 원액을 블렌딩한 전설적인 아이리시 위스키로, 풋사과 향과 함께 부드러운 복합미를 제공합니다.",
         tags: ["트리플디스틸드", "부드러운", "툴라모어"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31167_source_1771259474.jpg?compression=lossy",
-availableDate: "2026-05-15"
+availableDate: "2026-05-25"
     },
     {
         id: "g47", name: "Teeling Small Batch", type: "블렌디드", region: "아일랜드",
@@ -134,7 +134,7 @@ availableDate: "2026-05-15"
         description: "럼 캐스크에서 피니시하여 열대 과일의 달콤함과 바닐라 향이 한 층 더해진 혁신적인 스타일의 아이리시 블렌드입니다.",
         tags: ["럼캐스크", "달콤한", "틸링"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/39264_source_1771226467.jpg?compression=lossy",
-availableDate: "2026-05-15"
+availableDate: "2026-05-25"
     },
     {
         id: "g52", name: "Arran 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아란섬",
