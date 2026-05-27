@@ -206,7 +206,7 @@ availableDate: "2026-05-26"
         description: "정제되고 오일리한 아일라 몰트로, 무거운 약리적 느낌보다는 신선하고 우아한 스모크와 시트러스 향에 집중합니다.",
         tags: ["엘레강트스모크", "오일", "쿠일라"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/33542_source_1771172435.jpg?compression=lossy",
-availableDate: "2026-05-17"
+availableDate: "2026-05-27"
     },
     {
         id: "g60", name: "Bowmore 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -215,6 +215,6 @@ availableDate: "2026-05-17"
         description: "아름답게 균형 잡힌 아일라 위스키로, 미묘한 연기 향과 함께 다크 초콜릿, 시트러스 향이 조화롭게 어우러집니다.",
         tags: ["밸런스", "스모크", "보우모어"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/33666_source_1771510984.jpg?compression=lossy",
-availableDate: "2026-05-17"
+availableDate: "2026-05-27"
     },
 ];
