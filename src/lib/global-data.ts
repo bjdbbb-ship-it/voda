@@ -143,7 +143,7 @@ availableDate: "2026-06-04"
         description: "아란섬의 순수한 캐릭터를 담은 생기 넘치는 아일랜드 몰트로, 시트러스와 과수원 과일의 신선한 풍미가 돋보입니다.",
         tags: ["시트러스", "논피티드", "아란"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/68557_source_1769713882.jpg?compression=lossy",
-availableDate: "2026-05-26"
+availableDate: "2026-06-05"
     },
     {
         id: "g53", name: "Jura 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 쥬라섬",
@@ -152,7 +152,7 @@ availableDate: "2026-05-26"
         description: "하이랜드와 아일랜드 스타일의 조화로, 부드러운 셰리 영향력이 느껴지는 달콤함과 미세한 피트 연기가 특징입니다.",
         tags: ["스모크", "달콤한", "쥬라"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/12130_source_1771610491.jpg?compression=lossy",
-availableDate: "2026-05-26"
+availableDate: "2026-06-05"
     },
     {
         id: "g54", name: "Highland Park 12 Year Old Viking Honour", type: "싱글 몰트", region: "스코틀랜드 오크니",
@@ -161,7 +161,7 @@ availableDate: "2026-05-26"
         description: "오크니 제도의 영혼을 담은 위스키로, 헤더 꿀의 달콤함과 은은한 향신료, 향기로운 피트 연기가 조화를 이룹니다.",
         tags: ["꿀", "스모크", "하일랜드파크"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/17319_source_1758883443.jpg?compression=lossy",
-availableDate: "2026-05-26"
+availableDate: "2026-06-05"
     },
     {
         id: "g55", name: "Talisker 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 스카이섬",
