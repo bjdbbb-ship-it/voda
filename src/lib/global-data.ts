@@ -62,7 +62,7 @@ availableDate: "2026-06-11"
         description: "'The Original'로 알려진 이 위스키는 섬세한 꽃향기와 시트러스 노트로 하이랜드 몰트의 표준을 제시합니다.",
         tags: ["플로럴", "시트러스", "글렌모란지"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/59636_source_1769621474.jpg?compression=lossy",
-        availableDate: "2026-06-02"
+        availableDate: "2026-06-12"
     },
     {
         id: "g32", name: "Glenfarclas 12 Year Old", type: "싱글 몰트", region: "스코틀랜드 스페이사이드",
@@ -71,7 +71,7 @@ availableDate: "2026-06-11"
         description: "가족 경영 증류소에서 탄생한 셰리 오크의 걸작으로, 다크 과일과 향신료의 풍미가 입안 가득 풍성하게 펼쳐집니다.",
         tags: ["셰리", "패밀리", "글렌파클라스"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/55737_source_1769508693.jpg?compression=lossy",
-        availableDate: "2026-06-02"
+        availableDate: "2026-06-12"
     },
     {
         id: "g36", name: "Nikka Coffey Grain", type: "그레인 위스키", region: "일본",
@@ -80,7 +80,7 @@ availableDate: "2026-06-11"
         description: "코피 스틸에서 증류된 독특한 일본 그레인 위스키로, 바닐라 향과 함께 버번과 유사한 달콤하고 부드러운 풍미를 제공합니다.",
         tags: ["달콤한", "버번스타일", "니카"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/29642_source_1771623048.jpg?compression=lossy",
-availableDate: "2026-06-02"
+availableDate: "2026-06-12"
     },
     {
         id: "g39", name: "Knob Creek 9 Year", type: "버번", region: "미국 켄터키",
