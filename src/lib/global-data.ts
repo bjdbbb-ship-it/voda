@@ -170,7 +170,7 @@ availableDate: "2026-06-15"
         description: "스카이섬의 거친 바다를 닮은 걸작으로, 강력한 스모크 캐릭터와 특유의 후추 향, 소금기 넘치는 풍미가 압권입니다.",
         tags: ["매리타임", "페퍼", "탈리스커"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31517_source_1770831092.jpg?compression=lossy",
-availableDate: "2026-06-06"
+availableDate: "2026-06-16"
     },
     {
         id: "g56", name: "Ardbeg 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -179,7 +179,7 @@ availableDate: "2026-06-06"
         description: "피트의 강력함을 자랑하면서도 그 이면에 숨겨진 섬세한 달콤함과 복합미를 훌륭하게 표현해낸 아일라의 강자입니다.",
         tags: ["스모크", "컴플렉스", "아드벡"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/attribute_rule_images/33963_source_1770987835.jpg?compression=lossy",
-availableDate: "2026-06-06"
+availableDate: "2026-06-16"
     },
     {
         id: "g57", name: "Laphroaig 10 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
@@ -188,7 +188,7 @@ availableDate: "2026-06-06"
         description: "아일라 몰트 중 가장 약리적인 특징이 강하며, 해초, 요오드, 그리고 묵직한 피트 향으로 명성이 자자합니다.",
         tags: ["메디시널", "피트", "라프로익"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/3840w/products/25277/19593/2455_alt03__99004.1754563830.jpg?compression=lossy",
-availableDate: "2026-06-06"
+availableDate: "2026-06-16"
     },
     {
         id: "g58", name: "Lagavulin 16 Year Old", type: "싱글 몰트", region: "스코틀랜드 아일라",
