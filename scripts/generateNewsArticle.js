@@ -212,9 +212,10 @@ async function main() {
         const today = getKSTDate();
 
         // 0. 이미 오늘자 뉴스가 존재하면 스킵
-        const dataPath = path.join(process.cwd(), 'src/lib/data.ts');
-        const dataContent = fs.readFileSync(dataPath, 'utf-8');
-        if (dataContent.includes(`publishedAt: "${today}"`) && dataContent.includes(`category: "위스키 소식"`)) {
+        const dataModule = await import('../src/lib/data.ts');
+        const articles = dataModule.articles || [];
+        const todayNewsExists = articles.some(a => a.publishedAt === today && a.category === "위스키 소식");
+        if (todayNewsExists) {
             console.log(`\n⏭️  ${today} 날짜의 뉴스 기사가 이미 존재합니다. 건너뜁니다.`);
             return;
         }
