@@ -89,7 +89,7 @@ availableDate: "2026-06-22"
         description: "금주법 이전 스타일을 계승한 버번으로, 높은 호밀 함량과 긴 숙성 기간을 통해 강렬하고 대담한 오크와 스파이스 풍미를 선사합니다.",
         tags: ["풀바디", "오크", "놉크릭", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31280_source_1771582251.jpg?compression=lossy",
-availableDate: "2026-06-13"
+availableDate: "2026-06-23"
     },
     {
         id: "g40", name: "Wild Turkey 101", type: "버번", region: "미국 켄터키",
@@ -98,7 +98,7 @@ availableDate: "2026-06-13"
         description: "강력한 스파이스와 풍부한 카라멜 노트로 유명한 상징적인 고도수 버번으로, 니트나 칵테일 모두에 완벽합니다.",
         tags: ["스파이시", "고도수", "와일드터키", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31288_source_1770985848.jpg?compression=lossy",
-availableDate: "2026-06-13"
+availableDate: "2026-06-23"
     },
     {
         id: "g41", name: "Maker's Mark", type: "버번", region: "미국 켄터키",
@@ -107,7 +107,7 @@ availableDate: "2026-06-13"
         description: "호밀 대신 겨울 밀을 사용하여 일반적인 버번보다 훨씬 부드럽고 달콤한 풍미를 지닌 프리미엄 위티드 버번입니다.",
         tags: ["위티드", "부드러운", "메이커스마크", "버번"],
         imageUrl: "https://cdn11.bigcommerce.com/s-e8lbekfe7c/images/stencil/1024w/attribute_rule_images/31271_source_1770811280.jpg?compression=lossy",
-availableDate: "2026-06-13"
+availableDate: "2026-06-23"
     },
     {
         id: "g43", name: "Jack Daniel's No. 7", type: "테네시 위스키", region: "미국 테네시",
