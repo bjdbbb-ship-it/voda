@@ -115,7 +115,7 @@ availableDate: "2026-06-13"
         flavorProfile: { peat: 0, sweet: 8, fruit: 5, spice: 4, body: 6 },
         description: "전 세계 판매 1위 위스키로, 숯 여과 과정을 거쳐 메이플과 바나나 향이 감도는 독특하고 부드러운 캐릭터를 완성했습니다.",
         tags: ["아이코닉", "차콜", "잭다니엘"],
-        imageUrl: "https://www.masterofmalt.com/blog/wp-content/uploads/2019/06/JD2.jpg",
+        imageUrl: "https://images.unsplash.com/photo-1556767576-5ec41e3239ea?auto=format&fit=crop&q=80&w=1200",
 availableDate: "2026-06-14"
     },
     {

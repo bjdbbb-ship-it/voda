@@ -11,29 +11,19 @@ export interface ImageAsset {
 export const unsplashImagePool: ImageAsset[] = [
     // === Peat / Smoky / Islay ===
     {
-        url: "https://images.unsplash.com/photo-1574626003470-87f5b2d7085a?auto=format&fit=crop&q=80&w=1200",
+        url: "https://images.unsplash.com/photo-1508253578933-20b529302151?auto=format&fit=crop&q=80&w=1200",
         keywords: ["peat", "smoky", "islay", "smoke", "dark"],
-        description: "Dark moody whisky glass on rock"
+        description: "Whisky bottle and glass"
     },
     {
-        url: "https://images.unsplash.com/photo-1516550893885-7935ab0c6ad9?auto=format&fit=crop&q=80&w=1200",
+        url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
         keywords: ["islay", "scotland", "landscape", "misty"],
         description: "Misty Scotland landscape"
     },
     {
-        url: "https://images.unsplash.com/photo-1527281400683-1aabc8c4d5b5?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["peat", "smoke", "scotland", "coast"],
-        description: "Coastal Scottish vibe"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1629853381467-f3775432420f?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["peat", "fire", "bonfire"],
-        description: "Bonfire smoke vibe"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1596377478065-22e382d6101f?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["islay", "lagavulin", "distillery", "classic"],
-        description: "Lagavulin distillery mood"
+        url: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=1200",
+        keywords: ["peat", "smoke", "scotland", "coast", "fire"],
+        description: "Coastal smoke vibe"
     },
 
     // === Sherry / Rich / Sweet / Luxury ===
@@ -43,13 +33,8 @@ export const unsplashImagePool: ImageAsset[] = [
         description: "Dark barrels in cellar"
     },
     {
-        url: "https://images.unsplash.com/photo-1564395340660-8fdf669bc042?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["sherry", "cocktail", "rich", "amber"],
-        description: "Rich amber liquid in glass"
-    },
-    {
         url: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["luxury", "premium", "macallan", "rich"],
+        keywords: ["luxury", "premium", "macallan", "rich", "amber", "gold"],
         description: "Luxury whisky presentation"
     },
     {
@@ -75,62 +60,42 @@ export const unsplashImagePool: ImageAsset[] = [
         description: "Bright citrus cocktail"
     },
     {
-        url: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["cocktail", "bar", "night", "elegant"],
+        url: "https://images.unsplash.com/photo-1520174691701-bc555a3404ca?auto=format&fit=crop&q=80&w=1200",
+        keywords: ["cocktail", "bar", "night", "elegant", "refreshing"],
         description: "Elegant cocktail in bar"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["highball", "bubbles", "sparkling", "refreshing"],
-        description: "Bubbling highball celebration"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["cocktail", "mint", "summer", "green"],
-        description: "Fresh minty whiskey cocktail"
     },
 
     // === Production / Distillery / Science ===
     {
         url: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["science", "lab", "blending", "flask"],
+        keywords: ["science", "lab", "blending", "flask", "distillery"],
         description: "Laboratory glassware"
     },
     {
-        url: "https://images.unsplash.com/photo-1600728613961-d6ecbc8bc357?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["distillery", "production", "copper", "pot still"],
-        description: "Shiny copper stills"
+        url: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&q=80&w=1200",
+        keywords: ["distillery", "production", "copper", "pot still", "barrel"],
+        description: "Distillery barrels"
     },
     {
-        url: "https://images.unsplash.com/photo-1569158062925-dd2433efca28?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["barrel", "rickhouse", "aging", "warehouse"],
-        description: "Barrels in rickhouse"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1568213816046-0ee1c4295581?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["nature", "barley", "golden", "harvest"],
-        description: "Golden barley field"
+        url: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&q=80&w=1200",
+        keywords: ["barrel", "rickhouse", "aging", "warehouse", "production"],
+        description: "Barrels in warehouse"
     },
 
     // === Bar / Mood / Social ===
     {
-        url: "https://images.unsplash.com/photo-1557002665-c57c45873998?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["bar", "jazz", "vintage", "mood", "night"],
-        description: "Jazz bar atmosphere"
-    },
-    {
-        url: "https://images.unsplash.com/photo-1485872299827-72e3e58ebe92?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["bar", "interior", "elegant", "luxury"],
+        url: "https://images.unsplash.com/photo-1574096079513-d8259312b785?auto=format&fit=crop&q=80&w=1200",
+        keywords: ["bar", "vintage", "mood", "night", "interior"],
         description: "Modern elegant bar interior"
     },
     {
         url: "https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["cheers", "friends", "party", "social"],
+        keywords: ["bar", "cheers", "friends", "party", "social"],
         description: "Toasting glasses"
     },
     {
         url: "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&q=80&w=1200",
-        keywords: ["pouring", "motion", "action", "detail"],
+        keywords: ["pouring", "motion", "action", "detail", "bar"],
         description: "Action shot of whisky pour"
     }
 ];
