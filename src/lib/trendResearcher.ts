@@ -153,7 +153,7 @@ async function callGeminiAPI(prompt: string): Promise<string> {
     
     if (!primaryKey) throw new Error('GEMINI_API_KEY is missing');
 
-    const model = "gemini-flash-latest";
+    const model = "gemini-3.1-flash-lite";
     const MAX_RETRIES = 3;
     const INITIAL_DELAY = 5000;
 

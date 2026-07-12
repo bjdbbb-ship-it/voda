@@ -132,7 +132,7 @@ async function generateNewsContent(newsItems, today) {
 5. 각 뉴스 섹션 끝에 반드시 [원문 보기](URL) 형식으로 출처 링크를 포함하십시오.
 6. 마지막은 품격 있는 건배 멘트로 마무리하십시오.`;
 
-    const model = "gemini-flash-latest";
+    const model = "gemini-3.1-flash-lite";
     const MAX_RETRIES = 5;
     const INITIAL_DELAY = 2000;
 

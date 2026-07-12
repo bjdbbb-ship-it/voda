@@ -1,10 +1,10 @@
 name: Daily Auto Update All Categories
 
-# 매일 KST 기준 자정 넘기고 정오(낮 12:00) 쯤 실행되도록 세팅 (UTC 03:00)
+# KST 기준 매일 오전 9시 실행 (UTC 00:00)
 on:
   schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 수동 실행 가능
 
 jobs:
   generate-all:
@@ -55,14 +55,14 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/lib/data.ts src/lib/global-data.ts src/lib/whisky-pool.ts
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 Auto daily update: whiskies, magazine & news [$(date +'%Y-%m-%d')]" && git pull --rebase origin main && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto daily update: whiskies, magazine & news [$(date +'%Y-%m-%d')]" && git pull --rebase origin main && git push)
 
       - name: Notify success
         if: success()
-        run: echo "🎉 All categories successfully updated!"
+        run: echo "All categories successfully updated!"
 
       - name: Notify failure
         if: failure()
         run: |
-          echo "❌ FAILED: Auto update pipeline error!"
+          echo "FAILED: Auto update pipeline error!"
           exit 1

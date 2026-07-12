@@ -84,7 +84,7 @@ async function callGemini(prompt, maxTokens = 8192) {
     for (const apiKey of apiKeys) {
         for (let attempt = 0; attempt < 3; attempt++) {
             try {
-                const model = 'gemini-2.5-flash';
+                const model = 'gemini-3.1-flash-lite';
                 const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
                 const response = await fetch(url, {
                     method: 'POST',
@@ -222,12 +222,12 @@ async function main() {
         process.exit(1);
     }
 
-    console.log('🚀 위스키 매거진 콘텐츠 복구 시작 (2026-04-21 ~ 2026-05-12)\n');
+    console.log('🚀 위스키 매거진 콘텐츠 복구 시작 (2026-06-19 ~ 2026-07-13)\n');
 
     // 날짜 범위 생성
     const dates = [];
-    const start = new Date('2026-04-21');
-    const end = new Date('2026-05-12');
+    const start = new Date('2026-06-19');
+    const end = new Date('2026-07-13');
     for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
         dates.push(d.toISOString().split('T')[0]);
     }
