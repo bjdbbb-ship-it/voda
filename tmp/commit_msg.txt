@@ -1,0 +1,4 @@
+Fix model names and update daily workflow schedule
+- Update Gemini model to gemini-3.1-flash-lite in all scripts
+- Fix workflow cron schedule to KST 9AM daily
+- Update catch-up script date range
